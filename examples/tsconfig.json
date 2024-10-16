@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "lib": ["ESNext", "DOM", "DOM.Iterable", "WebWorker"],
+        "useDefineForClassFields": true,
+
+        "experimentalDecorators": true,
+        "rootDir": "src",
+        "module": "ESNext",
+
+        "moduleResolution": "bundler",
+
+        "resolveJsonModule": true,
+        "allowImportingTsExtensions": true,
+
+        "strict": true,
+        "strictPropertyInitialization": false,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitOverride": true,
+        "noEmit": true,
+        "outDir": "lib/types",
+        "isolatedModules": true,
+        "skipLibCheck": true
+    },
+    "include": ["src"]
+}

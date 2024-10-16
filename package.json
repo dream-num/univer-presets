@@ -1,0 +1,18 @@
+{
+    "name": "univer-presets",
+    "version": "1.0.0",
+    "private": true,
+    "packageManager": "pnpm@9.12.1",
+    "description": "Build Univer apps faster and easier",
+    "author": "DreamNum Inc. <developer@univer.ai>",
+    "license": "Apache-2.0",
+    "scripts": {
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix"
+    },
+    "devDependencies": {
+        "@antfu/eslint-config": "^3.7.3",
+        "eslint": "^9.12.0",
+        "eslint-plugin-format": "^0.1.2"
+    }
+}
