@@ -1,0 +1,9 @@
+# All i18n files should be generated when building so they are omitted from Git.
+# All supported languages should be listed here.
+**/zh-CN.ts
+**/en-US.ts
+**/ru-RU.ts
+**/zh-TW.ts
+**/vi-VN.ts
+**/fa-IR.ts
+

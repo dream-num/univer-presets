@@ -8,9 +8,9 @@ import copyPlugin from 'esbuild-plugin-copy';
 import vue from 'esbuild-plugin-vue3';
 import stylePlugin from 'esbuild-style-plugin';
 import minimist from 'minimist';
-import './scripts/generate-locales.mjs';
 
 const nodeModules = path.resolve(process.cwd(), './node_modules');
+const presetsNodeModules = path.resolve(process.cwd(), './node_modules/@univerjs/presets/node_modules');
 
 const args = minimist(process.argv.slice(2));
 
@@ -77,14 +77,16 @@ const ctx = await esbuild[args.watch ? 'context' : 'build']({
             renderOptions: {
                 lessOptions: {
                     rewriteUrls: 'all',
-                    paths: [nodeModules],
+                    paths: [
+                        nodeModules,
+                        presetsNodeModules,
+                    ],
                 },
             },
         }),
         vue(),
     ],
     entryPoints: [
-        // Here we build for demos.
         './src/sheets-basic/main.ts',
         './src/sheets-web-worker/main.ts',
     ],

@@ -1,16 +1,16 @@
 import { LocaleType, LogLevel } from '@univerjs/core';
 import { defaultTheme } from '@univerjs/design';
 import { createUniver } from '@univerjs/presets';
-import { univerSheetsBasicPreset } from '@univerjs/presets/sheets';
+import { UniverSheetsBasicPreset } from '@univerjs/presets/sheets/sheets-basic/index';
+import { zhCN } from '@univerjs/presets/sheets/sheets-basic/zh-CN';
 
-const { univer } = createUniver({
+const { univerAPI } = createUniver({
     logLevel: LogLevel.INFO,
     locale: LocaleType.ZH_CN,
     theme: defaultTheme,
     presets: [
-        univerSheetsBasicPreset({}),
+        UniverSheetsBasicPreset({ locales: { zhCN } }),
     ],
-    whenInit: (univer) => {
-        univer.registerPlugin();
-    },
 });
+
+univerAPI.createUniverSheet({ name: 'Test Sheet' });

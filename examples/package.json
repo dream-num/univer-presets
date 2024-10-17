@@ -9,8 +9,8 @@
         "build:demo": "node ./esbuild.config.mjs"
     },
     "dependencies": {
-        "@univerjs/core": "0.4.0-alpha.1",
-        "@univerjs/design": "0.4.0-alpha.1",
+        "@univerjs/core": "workspace:*",
+        "@univerjs/design": "workspace:*",
         "@univerjs/presets": "workspace:*",
         "clsx": "^2.1.1",
         "monaco-editor": "0.52.0",

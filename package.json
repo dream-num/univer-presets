@@ -10,6 +10,7 @@
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
         "dev": "pnpm --filter examples dev:demo",
+        "build:locales": "pnpm --filter @univerjs/presets build:locales",
         "build:demo": "pnpm --filter examples build:demo"
     },
     "devDependencies": {
