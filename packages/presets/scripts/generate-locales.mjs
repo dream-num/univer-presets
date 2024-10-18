@@ -22,13 +22,13 @@ function generateLocales(rootDir) {
 
     // Use regex to get all Univer packages from the string.
     const packageNameRE = /'(@univerjs(.*?))'/g;
-    const packageNames = Array.from(presetsFileContent.matchAll(packageNameRE))
+    let packageNames = Array.from(presetsFileContent.matchAll(packageNameRE))
         .map(m => m[1])
         .filter(m => !m.endsWith('facade'))
         .unique();
 
-    const deps = packageNames.filter(dep => fs.existsSync(path.resolve(__dirname, `../node_modules/${dep}/src/locale`)));
-    if (deps.length === 0) {
+    packageNames = packageNames.filter(dep => fs.existsSync(path.resolve(__dirname, `../node_modules/${dep}/src/locale`)));
+    if (packageNames.length === 0) {
         return;
     }
 
@@ -51,6 +51,8 @@ function generateLocales(rootDir) {
 import { Tools } from '@univerjs/core';
 `;
 
+    console.log('DEBUG', packageNames);
+
     /**
      * Generate for each language.
      *
@@ -58,15 +60,15 @@ import { Tools } from '@univerjs/core';
      */
     function generateForLocale(locale) {
         const output = path.join(rootDir, `${locale}.ts`);
-        const importStatements = deps.reduce((acc, dep) => {
+        const importStatements = packageNames.reduce((acc, dep) => {
             const formattedDep = dep.replace(/(@univerjs(-pro)?\/|-)/g, '');
             acc += `import ${formattedDep}${locale.replace(/-/g, '')} from '${dep}/locale/${locale}';\n`;
             return acc;
         }, '');
 
         const formattedLocale = locale.replace(/-/g, '');
-        const depStatements = deps.map((dep) => {
-            return `    ${dep.replace(/(@univerjs\/|-)/g, '')}${formattedLocale}`;
+        const depStatements = packageNames.map((dep) => {
+            return `    ${dep.replace(/(@univerjs(-pro)?\/|-)/g, '')}${formattedLocale}`;
         }).join(',\n');
 
         const exportStatements = `export const ${formattedLocale} = Tools.deepMerge(\n    {},\n${depStatements},\n);\n`;

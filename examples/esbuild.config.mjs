@@ -1,4 +1,5 @@
 import { execSync } from 'node:child_process';
+import http from 'node:http';
 import path from 'node:path';
 import process from 'node:process';
 import detect from 'detect-port';
@@ -7,7 +8,9 @@ import cleanPlugin from 'esbuild-plugin-clean';
 import copyPlugin from 'esbuild-plugin-copy';
 import vue from 'esbuild-plugin-vue3';
 import stylePlugin from 'esbuild-style-plugin';
+import httpProxy from 'http-proxy';
 import minimist from 'minimist';
+import 'dotenv/config';
 
 const nodeModules = path.resolve(process.cwd(), './node_modules');
 const presetsNodeModules = path.resolve(process.cwd(), './node_modules/@univerjs/presets/node_modules');
@@ -50,8 +53,12 @@ if (!args.watch) {
 
     define['process.env.GIT_COMMIT_HASH'] = `"${gitCommitHash}"`;
     define['process.env.GIT_REF_NAME'] = `"${gitRefName}"`;
-    define['process.env.BUILD_TIME'] = `"${new Date().toISOString()}"`;
 }
+
+define['process.env.BUILD_TIME'] = `"${new Date().toISOString()}"`;
+define['process.env.BUILD_TIMESTAMP'] = `"${new Date().toISOString() / 1000}"`;
+
+console.log('DEBUG DEFINE', define);
 
 const ctx = await esbuild[args.watch ? 'context' : 'build']({
     bundle: true,
@@ -88,6 +95,8 @@ const ctx = await esbuild[args.watch ? 'context' : 'build']({
     ],
     entryPoints: [
         './src/sheets-basic/main.ts',
+        './src/sheets-advanced/main.ts',
+        './src/sheets-collaboration/main.ts',
         './src/sheets-web-worker/main.ts',
     ],
 
@@ -99,14 +108,45 @@ const ctx = await esbuild[args.watch ? 'context' : 'build']({
 if (args.watch) {
     await monacoBuildTask();
     await ctx.watch();
-    const port = await detect(3002);
 
-    await ctx.serve({
+    const { host, port } = await ctx.serve({
         servedir: './local',
-        port,
+        port: 8011, // need different port for universer-api
     });
 
-    const url = `http://localhost:${port}`;
+    const needProxyRoutes = ['/universer-api', '/yuumi-api'];
+    const server = http.createServer((req, res) => {
+        const proxy = httpProxy.createProxyServer({});
 
-    console.log(`Local server: ${url}`);
+        if (needProxyRoutes.some(route => req.url?.startsWith(route))) {
+            proxy.web(req, res, {
+                target: process.env.APP_ENDPOINT,
+                changeOrigin: true,
+                secure: false,
+            });
+            return;
+        }
+
+        proxy.web(req, res, {
+            target: `http://${host}:${port}`,
+            changeOrigin: true,
+            secure: false,
+        });
+    }).listen(process.env.CLIENT_PORT || 3010);
+
+    server.on('upgrade', (req, socket, head) => {
+        const proxy = httpProxy.createProxyServer({
+            target: process.env.APP_ENDPOINT,
+            changeOrigin: true,
+            secure: false,
+            ws: true,
+        });
+        proxy.ws(req, socket, head);
+    });
+
+    console.log(
+        'Visit:\n'
+        + `http://localhost:${process.env.CLIENT_PORT || 3010}\n`
+        + `http://local.univer.plus:${process.env.CLIENT_PORT || 3010}`,
+    );
 }

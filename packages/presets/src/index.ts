@@ -1,5 +1,5 @@
-import type { IUniverConfig, Plugin, PluginCtor } from '@univerjs/core';
-import { LocaleType, Tools, Univer } from '@univerjs/core';
+import type { DependencyOverride, IUniverConfig, Plugin, PluginCtor } from '@univerjs/core';
+import { IAuthzIoService, IUndoRedoService, LocaleType, Tools, Univer } from '@univerjs/core';
 import { FUniver } from '@univerjs/facade';
 
 /**
@@ -17,22 +17,31 @@ interface IPresetOptions {
 type CreateUniverOptions = Partial<IUniverConfig> & {
     presets: Array<IPreset | [IPreset, IPresetOptions]>;
     plugins?: Array<PluginCtor<Plugin> | [PluginCtor<Plugin>, ConstructorParameters<PluginCtor<Plugin>>[0]]>;
+
+    collaboration?: true;
 };
 
 export function createUniver(options: CreateUniverOptions) {
-    const { presets, plugins, ...univerOptions } = options;
+    const { presets, plugins, collaboration, ...univerOptions } = options;
 
     let locales: IUniverConfig['locales'] = {};
     presets.forEach((preset) => {
         const l = Array.isArray(preset) ? preset[0].locales : preset.locales;
         if (l) {
-            locales = Tools.deepMerge(l);
+            locales = Tools.deepMerge(locales, l);
         }
     });
+
+    const override: DependencyOverride = [];
+    if (collaboration) {
+        override.push([IUndoRedoService, null]);
+        override.push([IAuthzIoService, null]);
+    }
 
     const univer = new Univer({
         ...univerOptions,
         locales,
+        override,
     });
 
     presets?.forEach((preset) => {
