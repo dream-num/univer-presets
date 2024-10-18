@@ -1,5 +1,6 @@
 import type { IUniverConfig } from '@univerjs/core';
 import type { IPreset } from '../../../type';
+import { UniverNetworkPlugin } from '@univerjs/network';
 import { UniverExchangeClientPlugin } from '@univerjs-pro/exchange-client';
 import { UniverLicensePlugin } from '@univerjs-pro/license';
 import { UniverSheetsExchangeClientPlugin } from '@univerjs-pro/sheets-exchange-client';
@@ -32,6 +33,7 @@ export function UniverSheetsAdvancedPreset(config: Partial<IUniverSheetsAdvanced
         locales,
         plugins: [
             [UniverLicensePlugin, { license }],
+            UniverNetworkPlugin,
             UniverSheetsPivotTablePlugin,
             UniverSheetsPivotTableUIPlugin,
             UniverSheetsPrintPlugin,

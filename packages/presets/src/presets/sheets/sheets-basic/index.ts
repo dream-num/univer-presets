@@ -1,5 +1,4 @@
 import type { IUniverConfig } from '@univerjs/core';
-import type { IUniverSheetsConfig } from '@univerjs/sheets';
 import type { IUniverSheetsUIConfig } from '@univerjs/sheets-ui';
 import type { IUniverUIConfig } from '@univerjs/ui';
 import type { IPreset } from '../../../type';
@@ -31,7 +30,6 @@ import { UniverSheetsSortUIPlugin } from '@univerjs/sheets-sort-ui';
 import { UniverSheetsUIPlugin } from '@univerjs/sheets-ui';
 import { UniverUIPlugin } from '@univerjs/ui';
 
-import { ImageIoService } from '@univerjs-pro/collaboration-client';
 // NOTE: here we copy code from everything.ts. That file (along with the package itself) would be removed in the future.
 import '@univerjs/sheets/facade';
 import '@univerjs/ui/facade';
@@ -46,18 +44,11 @@ import '@univerjs/sheets-hyper-link-ui/facade';
 
 export interface IUniverSheetsBasicPresetConfig extends
     Pick<IUniverUIConfig, 'container' | 'header' | 'footer' | 'toolbar' | 'menu' | 'contextMenu' | 'disableAutoFocus'>,
-    Pick<IUniverSheetsConfig, 'notExecuteFormula' | 'onlyRegisterFormulaRelatedMutations'>,
     Pick<IUniverSheetsUIConfig, 'formulaBar'> {
 
-    /**
-     *
-     */
     enableWebWorker?: true;
-
     collaboration?: true;
     locales?: IUniverConfig['locales'];
-
-    // TODO: add other config keys
 }
 
 /**
@@ -66,10 +57,8 @@ export interface IUniverSheetsBasicPresetConfig extends
 export function UniverSheetsBasicPreset(config: Partial<IUniverSheetsBasicPresetConfig> = {}): IPreset {
     const {
         container = 'app',
-        notExecuteFormula,
-        onlyRegisterFormulaRelatedMutations,
         collaboration = undefined,
-        // enableWebWorker = false,
+        enableWebWorker = false,
         locales,
     } = config;
 
@@ -82,7 +71,7 @@ export function UniverSheetsBasicPreset(config: Partial<IUniverSheetsBasicPreset
             UniverDocsUIPlugin,
             UniverFormulaEnginePlugin,
 
-            [UniverSheetsPlugin, { notExecuteFormula, onlyRegisterFormulaRelatedMutations }],
+            [UniverSheetsPlugin, { notExecuteFormula: enableWebWorker, onlyRegisterFormulaRelatedMutations: false }],
             UniverSheetsUIPlugin,
             UniverSheetsNumfmtPlugin,
 
@@ -118,3 +107,4 @@ export function UniverSheetsBasicPreset(config: Partial<IUniverSheetsBasicPreset
         ],
     };
 };
+

@@ -63,6 +63,7 @@
         "@univerjs/sheets-filter": "workspace:*",
         "@univerjs/sheets-filter-ui": "workspace:*",
         "@univerjs/sheets-find-replace": "workspace:*",
+        "@univerjs/network": "workspace:*",
         "@univerjs/sheets-formula": "workspace:*",
         "@univerjs/sheets-formula-ui": "workspace:*",
         "@univerjs/sheets-hyper-link": "workspace:*",

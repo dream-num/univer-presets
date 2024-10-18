@@ -15,7 +15,7 @@ createUniver({
     collaboration: true,
     presets: [
         UniverSheetsBasicPreset({ locales: { zhCN: basicZhCN }, collaboration: true }),
-        // UniverSheetsAdvancedPreset({ locales: { zhCN: advancedZhCN }, universerEndpoint }),
+        UniverSheetsAdvancedPreset({ locales: { zhCN: advancedZhCN } }),
         UniverSheetsCollaborationPreset({ locales: { zhCN: collaborationZhCN } }),
     ],
 });
