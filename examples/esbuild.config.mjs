@@ -58,8 +58,6 @@ if (!args.watch) {
 define['process.env.BUILD_TIME'] = `"${new Date().toISOString()}"`;
 define['process.env.BUILD_TIMESTAMP'] = `"${new Date().toISOString() / 1000}"`;
 
-console.log('DEBUG DEFINE', define);
-
 const ctx = await esbuild[args.watch ? 'context' : 'build']({
     bundle: true,
     format: 'esm',
@@ -67,7 +65,7 @@ const ctx = await esbuild[args.watch ? 'context' : 'build']({
     color: true,
     loader: { '.svg': 'file', '.ttf': 'file' },
     sourcemap: args.watch,
-    minify: true,
+    minify: !args.watch,
     target: 'chrome70',
     plugins: [
         copyPlugin({
@@ -95,8 +93,17 @@ const ctx = await esbuild[args.watch ? 'context' : 'build']({
     ],
     entryPoints: [
         './src/sheets-basic/main.ts',
+
+        './src/sheets-basic-with-worker/main.ts',
+        './src/sheets-basic-with-worker/worker.ts',
+
         './src/sheets-advanced/main.ts',
+
+        './src/sheets-collaboration-with-worker/main.ts',
+        './src/sheets-collaboration-with-worker/worker.ts',
+
         './src/sheets-collaboration/main.ts',
+
         './src/sheets-web-worker/main.ts',
     ],
 

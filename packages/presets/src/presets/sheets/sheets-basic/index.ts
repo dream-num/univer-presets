@@ -1,4 +1,5 @@
 import type { IUniverConfig } from '@univerjs/core';
+import type { IUniverRPCMainThreadConfig } from '@univerjs/rpc';
 import type { IUniverSheetsUIConfig } from '@univerjs/sheets-ui';
 import type { IUniverUIConfig } from '@univerjs/ui';
 import type { IPreset } from '../../../type';
@@ -9,6 +10,7 @@ import { UniverDrawingUIPlugin } from '@univerjs/drawing-ui';
 import { UniverFormulaEnginePlugin } from '@univerjs/engine-formula';
 import { UniverRenderEnginePlugin } from '@univerjs/engine-render';
 import { UniverFindReplacePlugin } from '@univerjs/find-replace';
+import { UniverRPCMainThreadPlugin } from '@univerjs/rpc';
 import { UniverSheetsPlugin } from '@univerjs/sheets';
 import { UniverSheetsConditionalFormattingPlugin } from '@univerjs/sheets-conditional-formatting';
 import { UniverSheetsConditionalFormattingUIPlugin } from '@univerjs/sheets-conditional-formatting-ui';
@@ -28,6 +30,7 @@ import { UniverSheetsNumfmtPlugin } from '@univerjs/sheets-numfmt';
 import { UniverSheetsSortPlugin } from '@univerjs/sheets-sort';
 import { UniverSheetsSortUIPlugin } from '@univerjs/sheets-sort-ui';
 import { UniverSheetsUIPlugin } from '@univerjs/sheets-ui';
+
 import { UniverUIPlugin } from '@univerjs/ui';
 
 // NOTE: here we copy code from everything.ts. That file (along with the package itself) would be removed in the future.
@@ -46,7 +49,8 @@ export interface IUniverSheetsBasicPresetConfig extends
     Pick<IUniverUIConfig, 'container' | 'header' | 'footer' | 'toolbar' | 'menu' | 'contextMenu' | 'disableAutoFocus'>,
     Pick<IUniverSheetsUIConfig, 'formulaBar'> {
 
-    enableWebWorker?: true;
+    workerURL: IUniverRPCMainThreadConfig['workerURL'];
+
     collaboration?: true;
     locales?: IUniverConfig['locales'];
 }
@@ -58,9 +62,11 @@ export function UniverSheetsBasicPreset(config: Partial<IUniverSheetsBasicPreset
     const {
         container = 'app',
         collaboration = undefined,
-        enableWebWorker = false,
+        workerURL,
         locales,
     } = config;
+
+    const useWebWorker = !!workerURL;
 
     return {
         locales,
@@ -69,9 +75,14 @@ export function UniverSheetsBasicPreset(config: Partial<IUniverSheetsBasicPreset
             UniverRenderEnginePlugin,
             [UniverUIPlugin, { container }],
             UniverDocsUIPlugin,
+
             UniverFormulaEnginePlugin,
 
-            [UniverSheetsPlugin, { notExecuteFormula: enableWebWorker, onlyRegisterFormulaRelatedMutations: false }],
+            useWebWorker
+                ? [UniverRPCMainThreadPlugin, { workerURL }]
+                : null,
+
+            [UniverSheetsPlugin, { notExecuteFormula: useWebWorker, onlyRegisterFormulaRelatedMutations: false }],
             UniverSheetsUIPlugin,
             UniverSheetsNumfmtPlugin,
 
@@ -93,9 +104,7 @@ export function UniverSheetsBasicPreset(config: Partial<IUniverSheetsBasicPreset
             UniverSheetsHyperLinkPlugin,
             UniverSheetsHyperLinkUIPlugin,
 
-            [UniverDrawingPlugin, {
-                override: collaboration ? [[IImageIoService, null]] : [],
-            }],
+            [UniverDrawingPlugin, { override: collaboration ? [[IImageIoService, null]] : [] }],
             UniverDrawingUIPlugin,
             UniverSheetsDrawingPlugin,
             UniverSheetsDrawingUIPlugin,
@@ -104,7 +113,6 @@ export function UniverSheetsBasicPreset(config: Partial<IUniverSheetsBasicPreset
             UniverSheetsFindReplacePlugin,
 
             UniverSheetsCrosshairHighlightPlugin,
-        ],
+        ].filter(v => !!v) as IPreset['plugins'],
     };
 };
-

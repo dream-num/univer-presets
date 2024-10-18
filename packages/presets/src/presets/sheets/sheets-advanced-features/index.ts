@@ -12,7 +12,10 @@ export interface IUniverSheetsAdvancedPresetConfig {
     universerEndpoint?: string;
     locales?: IUniverConfig['locales'];
     license?: string;
+    useWorker?: boolean;
 }
+
+// TODO: @jikkai we need to add univer-pro FACADE API here
 
 /**
  * This preset add advanced features into your Univer application.
@@ -25,6 +28,7 @@ export function UniverSheetsAdvancedPreset(config: Partial<IUniverSheetsAdvanced
         locales,
         license,
         universerEndpoint,
+        useWorker,
     } = config;
 
     const serverEndpoint = universerEndpoint ?? `${window.location.protocol}//${window.location.host}`;
@@ -32,10 +36,13 @@ export function UniverSheetsAdvancedPreset(config: Partial<IUniverSheetsAdvanced
     return {
         locales,
         plugins: [
-            [UniverLicensePlugin, { license }],
             UniverNetworkPlugin,
-            UniverSheetsPivotTablePlugin,
+            [UniverLicensePlugin, { license }],
+
+            // TODO: @wzhudev: if we use worker, we need to add different configurations to SheetsPivotTable
+            [UniverSheetsPivotTablePlugin, { notExecuteFormula: useWorker ?? undefined }],
             UniverSheetsPivotTableUIPlugin,
+
             UniverSheetsPrintPlugin,
             [UniverExchangeClientPlugin, {
                 uploadFileServerUrl: `${serverEndpoint}/universer-api/stream/file/upload`,
