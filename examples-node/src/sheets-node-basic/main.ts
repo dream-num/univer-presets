@@ -1,5 +1,5 @@
 import process from 'node:process';
-import { awaitTime, FUniver, LocaleType, LogLevel } from '@univerjs/core';
+import { awaitTime, LocaleType, LogLevel } from '@univerjs/core';
 import { createUniver } from '@univerjs/presets';
 import { UniverSheetsNodeBasicPreset } from '@univerjs/presets/sheets-node/sheets-node-basic/index';
 import { zhCN } from '@univerjs/presets/sheets-node/sheets-node-basic/zh-CN';

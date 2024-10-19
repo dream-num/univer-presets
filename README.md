@@ -1,8 +1,6 @@
 # Univer Presets
 
-Univer Presets provide collections of Univer plugins for out-of-the-box solutions to common problems.
-
-The Univer core team also build UMD bundles in this repository.
+This project provide several collections of Univer plugins for out-of-the-box solutions.
 
 ## Presets
 
@@ -11,24 +9,18 @@ The Univer core team also build UMD bundles in this repository.
 ### For Browsers
 
 -   Basic Spreadsheet
--   Basic Spreadsheet with Web Worker support
--   Spreadsheet with Web Worker and Advanced Features
--   Spreadsheet with Web Worker, Advanced Features, and Collaboration Features
+-   Spreadsheet with Advanced Features
+-   Spreadsheet with Advanced Features and Collaboration Features
 
 ### For Node.js
 
 -   Headless Spreadsheet
+-   [ ] Headless Spreadsheet with Advanced Features
 
-## What's included in each preset?
+## Usage
 
-
-## Special Note
-
-Univer Presets are meant for users who use package managers and bundlers. If you are not using package managers and bundlers, but script tags in HTML, please refer to our [demos](https://todo) here.
+Please to our [official website](https://univer.ai/guides/quick-start). If these presets do not meet your requirements, you can use code in examples and presets as references.
 
 ## Contributing
 
-### For Community Members
-
-Since this repo use `univer-pro` which is private as its submodule, you will fail to checkout submodules, install dependencies and run scripts. But you can use code in examples and presets as reference to build your own Univer application.
-
+Please open issues to submit your feature requirements.
