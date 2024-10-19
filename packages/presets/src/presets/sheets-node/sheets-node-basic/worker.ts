@@ -1,7 +1,7 @@
 import type { IUniverConfig } from '@univerjs/core';
 import type { IPreset } from '../../../type';
 import { UniverFormulaEnginePlugin } from '@univerjs/engine-formula';
-import { UniverRPCWorkerThreadPlugin } from '@univerjs/rpc';
+import { UniverRPCNodeWorkerPlugin } from '@univerjs/rpc-node';
 import { UniverSheetsPlugin } from '@univerjs/sheets';
 import { UniverRemoteSheetsFormulaPlugin } from '@univerjs/sheets-formula';
 
@@ -11,7 +11,7 @@ export function UniverSheetsBasicWorkerPreset(config: { locales: IUniverConfig['
         plugins: [
             [UniverSheetsPlugin, { onlyRegisterFormulaRelatedMutations: true }],
             UniverFormulaEnginePlugin,
-            UniverRPCWorkerThreadPlugin,
+            UniverRPCNodeWorkerPlugin,
             UniverRemoteSheetsFormulaPlugin,
         ],
     };

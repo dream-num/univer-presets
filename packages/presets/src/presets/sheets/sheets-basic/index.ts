@@ -62,11 +62,11 @@ export function UniverSheetsBasicPreset(config: Partial<IUniverSheetsBasicPreset
     const {
         container = 'app',
         collaboration = undefined,
-        workerURL,
+        workerURL: workerSrc,
         locales,
     } = config;
 
-    const useWebWorker = !!workerURL;
+    const useWorker = !!workerSrc;
 
     return {
         locales,
@@ -76,13 +76,12 @@ export function UniverSheetsBasicPreset(config: Partial<IUniverSheetsBasicPreset
             [UniverUIPlugin, { container }],
             UniverDocsUIPlugin,
 
-            UniverFormulaEnginePlugin,
-
-            useWebWorker
-                ? [UniverRPCMainThreadPlugin, { workerURL }]
+            useWorker
+                ? [UniverRPCMainThreadPlugin, { workerURL: workerSrc }]
                 : null,
+            [UniverFormulaEnginePlugin, { notExecuteFormula: useWorker }],
 
-            [UniverSheetsPlugin, { notExecuteFormula: useWebWorker, onlyRegisterFormulaRelatedMutations: false }],
+            [UniverSheetsPlugin, { notExecuteFormula: useWorker, onlyRegisterFormulaRelatedMutations: false }],
             UniverSheetsUIPlugin,
             UniverSheetsNumfmtPlugin,
 

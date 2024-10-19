@@ -10,13 +10,13 @@
     ],
     "exports": {
         ".": "./src/index.ts",
+        "./*": "./src/*",
         "./sheets": "./src/presets/sheets",
         "./sheets/*": "./src/presets/sheets/*.ts",
         "./docs": "./src/presets/docs/index.ts",
         "./docs/*": "./src/presets/docs/*.ts",
         "./sheets-node": "./src/presets/sheets-node/index.ts",
-        "./sheets-node/*": "./src/presets/sheets-node/*.ts",
-        "./*": "./src/*"
+        "./sheets-node/*": "./src/presets/sheets-node/*.ts"
     },
     "scripts": {
         "build:locales": "node ./scripts/generate-locales.mjs"
@@ -51,7 +51,9 @@
         "@univerjs/facade": "workspace:*",
         "@univerjs/find-replace": "workspace:*",
         "@univerjs/icons": "^0.1.79",
+        "@univerjs/network": "workspace:*",
         "@univerjs/rpc": "workspace:*",
+        "@univerjs/rpc-node": "workspace:*",
         "@univerjs/sheets": "workspace:*",
         "@univerjs/sheets-conditional-formatting": "workspace:*",
         "@univerjs/sheets-conditional-formatting-ui": "workspace:*",
@@ -63,7 +65,6 @@
         "@univerjs/sheets-filter": "workspace:*",
         "@univerjs/sheets-filter-ui": "workspace:*",
         "@univerjs/sheets-find-replace": "workspace:*",
-        "@univerjs/network": "workspace:*",
         "@univerjs/sheets-formula": "workspace:*",
         "@univerjs/sheets-formula-ui": "workspace:*",
         "@univerjs/sheets-hyper-link": "workspace:*",

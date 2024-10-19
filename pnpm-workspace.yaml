@@ -1,5 +1,6 @@
 packages:
     - examples
+    - examples-node
     - packages/*
     - submodules/univer-pro
     - submodules/univer-pro/packages-experimental/**/*

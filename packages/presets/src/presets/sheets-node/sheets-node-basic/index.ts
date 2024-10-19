@@ -1,43 +1,55 @@
-import { UniverFormulaEnginePlugin } from "@univerjs/engine-formula";
-import { IPreset } from "../../../type";
-import { UniverThreadCommentPlugin } from "@univerjs/thread-comment";
-import { UniverDocsPlugin } from "@univerjs/docs";
-import { UniverDocsDrawingPlugin } from '@univerjs/docs-drawing'
-import { UniverSheetsPlugin } from "@univerjs/sheets";
-import { UniverSheetsFormulaPlugin } from "@univerjs/sheets-formula";
-import { UniverSheetsDataValidationPlugin } from "@univerjs/sheets-data-validation";
-import { UniverSheetsFilterPlugin } from "@univerjs/sheets-filter";
-import { UniverSheetsHyperLinkPlugin } from "@univerjs/sheets-hyper-link";
-import { UniverSheetsDrawingPlugin } from "@univerjs/sheets-drawing";
-import { UniverSheetsSortPlugin } from "@univerjs/sheets-sort";
-import { IUniverConfig } from "@univerjs/core";
+import type { IUniverConfig } from '@univerjs/core';
+import type { IPreset } from '../../../type';
+import { UniverDocsPlugin } from '@univerjs/docs';
+import { UniverFormulaEnginePlugin } from '@univerjs/engine-formula';
+import { UniverRPCNodeMainPlugin } from '@univerjs/rpc-node';
+import { UniverSheetsPlugin } from '@univerjs/sheets';
+import { UniverSheetsDataValidationPlugin } from '@univerjs/sheets-data-validation';
+import { UniverSheetsDrawingPlugin } from '@univerjs/sheets-drawing';
+import { UniverSheetsFilterPlugin } from '@univerjs/sheets-filter';
+import { UniverSheetsFormulaPlugin } from '@univerjs/sheets-formula';
+import { UniverSheetsHyperLinkPlugin } from '@univerjs/sheets-hyper-link';
+import { UniverSheetsSortPlugin } from '@univerjs/sheets-sort';
+import { UniverThreadCommentPlugin } from '@univerjs/thread-comment';
+
+import '@univerjs/sheets/facade';
+import '@univerjs/sheets-data-validation/facade';
+import '@univerjs/engine-formula/facade';
+import '@univerjs/sheets-filter/facade';
+import '@univerjs/sheets-formula/facade';
 
 export interface IUniverSheetsNodeBasicPresetConfig {
     locales?: IUniverConfig['locales'];
+
+    workerSrc?: string;
 }
 
 export function UniverSheetsNodeBasicPreset(config: Partial<IUniverSheetsNodeBasicPresetConfig>): IPreset {
     const {
         locales,
-    } = config
+        workerSrc,
+    } = config;
+
+    const useWorker = !!workerSrc;
 
     return {
         locales,
         plugins: [
-            UniverFormulaEnginePlugin,
-            UniverThreadCommentPlugin,
+            useWorker
+                ? [UniverRPCNodeMainPlugin, { workerSrc }]
+                : null,
+            [UniverFormulaEnginePlugin, { notExecuteFormula: useWorker }],
 
+            UniverThreadCommentPlugin,
             UniverDocsPlugin,
-            UniverDocsDrawingPlugin,
 
             UniverSheetsPlugin,
-            UniverSheetsFormulaPlugin,
+            [UniverSheetsFormulaPlugin, { notExecuteFormula: useWorker }],
             UniverSheetsDataValidationPlugin,
             UniverSheetsFilterPlugin,
             UniverSheetsHyperLinkPlugin,
             UniverSheetsDrawingPlugin,
             UniverSheetsSortPlugin,
-        ]
-    }
+        ].filter(v => !!v) as IPreset['plugins'],
+    };
 }
-

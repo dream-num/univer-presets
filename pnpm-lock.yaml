@@ -88,6 +88,34 @@ importers:
         specifier: ^5.6.3
         version: 5.6.3
 
+  examples-node:
+    dependencies:
+      '@univerjs/core':
+        specifier: workspace:*
+        version: link:../submodules/univer-pro/submodules/univer/packages/core
+      '@univerjs/presets':
+        specifier: workspace:*
+        version: link:../packages/presets
+      rxjs:
+        specifier: ^7.8.1
+        version: 7.8.1
+    devDependencies:
+      esbuild:
+        specifier: ^0.24.0
+        version: 0.24.0
+      esbuild-plugin-clean:
+        specifier: ^1.0.1
+        version: 1.0.1(esbuild@0.24.0)
+      esbuild-plugin-copy:
+        specifier: ^2.1.1
+        version: 2.1.1(esbuild@0.24.0)
+      minimist:
+        specifier: ^1.2.8
+        version: 1.2.8
+      typescript:
+        specifier: ^5.6.3
+        version: 5.6.3
+
   packages/presets:
     dependencies:
       '@univerjs-pro/collaboration':
@@ -183,6 +211,9 @@ importers:
       '@univerjs/rpc':
         specifier: workspace:*
         version: link:../../submodules/univer-pro/submodules/univer/packages/rpc
+      '@univerjs/rpc-node':
+        specifier: workspace:*
+        version: link:../../submodules/univer-pro/submodules/univer/packages/rpc-node
       '@univerjs/sheets':
         specifier: workspace:*
         version: link:../../submodules/univer-pro/submodules/univer/packages/sheets
@@ -1940,31 +1971,6 @@ importers:
         specifier: ^2.1.2
         version: 2.1.3(@types/node@22.7.5)(happy-dom@15.0.0)(jsdom@24.1.3)(less@4.2.0)(sass@1.80.1)
 
-  submodules/univer-pro/submodules/univer/packages-experimental/rpc-node:
-    dependencies:
-      '@univerjs/core':
-        specifier: workspace:*
-        version: link:../../packages/core
-      '@univerjs/rpc':
-        specifier: workspace:*
-        version: link:../../packages/rpc
-      rxjs:
-        specifier: ^7.8.1
-        version: 7.8.1
-    devDependencies:
-      '@univerjs-infra/shared':
-        specifier: workspace:*
-        version: link:../../common/shared
-      typescript:
-        specifier: ^5.6.3
-        version: 5.6.3
-      vite:
-        specifier: ^5.4.8
-        version: 5.4.9(@types/node@22.7.5)(less@4.2.0)(sass@1.80.1)
-      vitest:
-        specifier: ^2.1.2
-        version: 2.1.3(@types/node@22.7.5)(happy-dom@15.0.0)(jsdom@24.1.3)(less@4.2.0)(sass@1.80.1)
-
   submodules/univer-pro/submodules/univer/packages-experimental/uni-docs-ui:
     dependencies:
       '@univerjs/core':
@@ -3150,6 +3156,31 @@ importers:
       rxjs:
         specifier: ^7.8.1
         version: 7.8.1
+      typescript:
+        specifier: ^5.6.3
+        version: 5.6.3
+      vite:
+        specifier: ^5.4.8
+        version: 5.4.9(@types/node@22.7.5)(less@4.2.0)(sass@1.80.1)
+      vitest:
+        specifier: ^2.1.2
+        version: 2.1.3(@types/node@22.7.5)(happy-dom@15.0.0)(jsdom@24.1.3)(less@4.2.0)(sass@1.80.1)
+
+  submodules/univer-pro/submodules/univer/packages/rpc-node:
+    dependencies:
+      '@univerjs/core':
+        specifier: workspace:*
+        version: link:../core
+      '@univerjs/rpc':
+        specifier: workspace:*
+        version: link:../rpc
+      rxjs:
+        specifier: ^7.8.1
+        version: 7.8.1
+    devDependencies:
+      '@univerjs-infra/shared':
+        specifier: workspace:*
+        version: link:../../common/shared
       typescript:
         specifier: ^5.6.3
         version: 5.6.3

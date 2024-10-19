@@ -1,6 +1,5 @@
 import type { DependencyOverride, IUniverConfig, Plugin, PluginCtor } from '@univerjs/core';
-import { IAuthzIoService, IUndoRedoService, LocaleType, Tools, Univer } from '@univerjs/core';
-import { FUniver } from '@univerjs/facade';
+import { FUniver, IAuthzIoService, IUndoRedoService, Tools, Univer } from '@univerjs/core';
 
 /**
  * A collection of plugins and their default configs.
