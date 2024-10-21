@@ -1,6 +1,5 @@
 import process from 'node:process';
-import { awaitTime, LocaleType, LogLevel } from '@univerjs/core';
-import { createUniver } from '@univerjs/presets';
+import { createUniver, LocaleType } from '@univerjs/presets';
 import { UniverSheetsNodeBasicPreset } from '@univerjs/presets/sheets-node/sheets-node-basic/index';
 import { zhCN } from '@univerjs/presets/sheets-node/sheets-node-basic/zh-CN';
 
@@ -8,7 +7,6 @@ import { zhCN } from '@univerjs/presets/sheets-node/sheets-node-basic/zh-CN';
 
 async function run(): Promise<void> {
     const { univerAPI } = createUniver({
-        logLevel: LogLevel.INFO,
         locale: LocaleType.ZH_CN,
         presets: [
             UniverSheetsNodeBasicPreset({ locales: { zhCN }, workerSrc: './worker.js' }),
@@ -32,6 +30,10 @@ async function run(): Promise<void> {
     console.log(univerSheet.save());
 
     process.exit(0);
+}
+
+function awaitTime(ms: number): Promise<void> {
+    return new Promise(res => setTimeout(res, ms));
 }
 
 run();

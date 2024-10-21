@@ -1,5 +1,5 @@
 import type { DependencyOverride, IUniverConfig, Plugin, PluginCtor } from '@univerjs/core';
-import { FUniver, IAuthzIoService, IUndoRedoService, Tools, Univer } from '@univerjs/core';
+import { FUniver, IAuthzIoService, IUndoRedoService, LogLevel, Tools, Univer } from '@univerjs/core';
 
 /**
  * A collection of plugins and their default configs.
@@ -38,6 +38,8 @@ export function createUniver(options: CreateUniverOptions) {
     }
 
     const univer = new Univer({
+        logLevel: LogLevel.WARN,
+
         ...univerOptions,
         locales,
         override,
@@ -62,3 +64,6 @@ export function createUniver(options: CreateUniverOptions) {
         univerAPI,
     };
 }
+
+export { LocaleType, LogLevel } from '@univerjs/core';
+export { defaultTheme, greenTheme } from '@univerjs/design';
