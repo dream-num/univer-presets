@@ -1,5 +1,4 @@
-import { defaultTheme } from '@univerjs/design';
-import { createUniver, LocaleType } from '@univerjs/presets';
+import { createUniver, defaultTheme, LocaleType } from '@univerjs/presets';
 import { UniverSheetsAdvancedPreset } from '@univerjs/presets/sheets/sheets-advanced-features/index';
 import { zhCN as advancedZhCN } from '@univerjs/presets/sheets/sheets-advanced-features/zh-CN';
 import { UniverSheetsBasicPreset } from '@univerjs/presets/sheets/sheets-basic/index';

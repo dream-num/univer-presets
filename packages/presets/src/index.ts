@@ -65,5 +65,5 @@ export function createUniver(options: CreateUniverOptions) {
     };
 }
 
-export { LocaleType, LogLevel } from '@univerjs/core';
+export { type IWorkbookData, LocaleType, LogLevel } from '@univerjs/core';
 export { defaultTheme, greenTheme } from '@univerjs/design';
