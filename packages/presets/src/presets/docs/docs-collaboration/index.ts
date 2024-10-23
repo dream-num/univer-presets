@@ -1,26 +1,16 @@
 import type { IUniverConfig } from '@univerjs/core';
 import type { IPreset } from '../../../type';
-import type { UniverSheetsAdvancedPreset } from '../sheets-advanced-features';
-import { UniverSheetsThreadCommentPlugin } from '@univerjs/sheets-thread-comment';
-import { UniverSheetsThreadCommentUIPlugin } from '@univerjs/sheets-thread-comment-ui';
+import { UniverDocsThreadCommentUIPlugin } from '@univerjs/docs-thread-comment-ui';
 import { UniverCollaborationPlugin } from '@univerjs-pro/collaboration';
 import { UniverCollaborationClientPlugin } from '@univerjs-pro/collaboration-client';
-import { UniverEditHistoryLoaderPlugin } from '@univerjs-pro/edit-history-loader';
 import { UniverThreadCommentDataSourcePlugin } from '@univerjs-pro/thread-comment-datasource';
-import '@univerjs/sheets-thread-comment/facade';
 
-export interface IUniverSheetsCollaborationPresetConfig {
+export interface IUniverDocsCollaborationPresetConfig {
     universerEndpoint?: string;
     locales?: IUniverConfig['locales'];
 }
 
-/**
- * This preset add collaboration features, including collaboration editing, collaboration cursors,
- * history and comments into your application.
- *
- * To use this plugin, you should import {@link UniverSheetsAdvancedPreset} first.
- */
-export function UniverSheetsCollaborationPreset(config: Partial<IUniverSheetsCollaborationPresetConfig>): IPreset {
+export function UniverDocsCollaborationPreset(config: Partial<IUniverDocsCollaborationPresetConfig>): IPreset {
     const { universerEndpoint, locales = {} } = config;
 
     const serverEndpoint = universerEndpoint ?? `${window.location.protocol}//${window.location.host}`;
@@ -43,12 +33,8 @@ export function UniverSheetsCollaborationPreset(config: Partial<IUniverSheetsCol
                 downloadEndpointUrl: `${serverEndpoint}/`,
                 sendChangesetTimeout: 200,
             }],
-            [UniverEditHistoryLoaderPlugin, {
-                historyListServerUrl: `${serverEndpoint}/universer-api/history`,
-            }],
 
-            UniverSheetsThreadCommentPlugin,
-            UniverSheetsThreadCommentUIPlugin,
+            UniverDocsThreadCommentUIPlugin,
             UniverThreadCommentDataSourcePlugin,
         ],
     };

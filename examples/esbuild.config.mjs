@@ -2,7 +2,6 @@ import { execSync } from 'node:child_process';
 import http from 'node:http';
 import path from 'node:path';
 import process from 'node:process';
-import detect from 'detect-port';
 import esbuild from 'esbuild';
 import cleanPlugin from 'esbuild-plugin-clean';
 import copyPlugin from 'esbuild-plugin-copy';
@@ -92,6 +91,10 @@ const ctx = await esbuild[args.watch ? 'context' : 'build']({
         vue(),
     ],
     entryPoints: [
+        './src/docs-basic/main.ts',
+
+        './src/docs-collaboration/main.ts',
+
         './src/sheets-basic/main.ts',
 
         './src/sheets-basic-with-worker/main.ts',

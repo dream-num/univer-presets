@@ -51,8 +51,6 @@ function generateLocales(rootDir) {
 import { Tools } from '@univerjs/core';
 `;
 
-    console.log('DEBUG', packageNames);
-
     /**
      * Generate for each language.
      *
