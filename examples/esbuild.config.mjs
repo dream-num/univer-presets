@@ -103,8 +103,6 @@ const ctx = await esbuild[args.watch ? 'context' : 'build']({
         './src/sheets-collaboration-with-worker/worker.ts',
 
         './src/sheets-collaboration/main.ts',
-
-        './src/sheets-web-worker/main.ts',
     ],
 
     outdir: './local',
