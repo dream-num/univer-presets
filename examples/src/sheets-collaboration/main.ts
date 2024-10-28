@@ -1,18 +1,26 @@
-import { createUniver, defaultTheme, LocaleType } from '@univerjs/presets';
-import { UniverSheetsAdvancedPreset } from '@univerjs/presets/sheets/sheets-advanced-features/index';
-import { zhCN as advancedZhCN } from '@univerjs/presets/sheets/sheets-advanced-features/zh-CN';
-import { UniverSheetsBasicPreset } from '@univerjs/presets/sheets/sheets-basic/index';
-import { zhCN as basicZhCN } from '@univerjs/presets/sheets/sheets-basic/zh-CN';
-import { UniverSheetsCollaborationPreset } from '@univerjs/presets/sheets/sheets-collaboration/index';
-import { zhCN as collaborationZhCN } from '@univerjs/presets/sheets/sheets-collaboration/zh-CN';
+import { createUniver, defaultTheme, LocaleType, Tools } from '@univerjs/presets';
+import { UniverSheetsAdvancedPreset } from '@univerjs/presets/preset-sheets-advanced';
+import sheetsAdvancedZhCN from '@univerjs/presets/preset-sheets-advanced/locales/zh-CN';
+import { UniverSheetsCollaborationPreset } from '@univerjs/presets/preset-sheets-collaboration';
+import sheetsCollaborationZhCN from '@univerjs/presets/preset-sheets-collaboration/locales/zh-CN';
+import { UniverSheetsCorePreset } from '@univerjs/presets/preset-sheets-core';
+import sheetsCoreZhCN from '@univerjs/presets/preset-sheets-core/locales/zh-CN';
 
 createUniver({
     locale: LocaleType.ZH_CN,
+    locales: {
+        zhCN: Tools.deepMerge(
+            {},
+            sheetsCoreZhCN,
+            sheetsAdvancedZhCN,
+            sheetsCollaborationZhCN,
+        ),
+    },
     theme: defaultTheme,
     collaboration: true,
     presets: [
-        UniverSheetsBasicPreset({ locales: { zhCN: basicZhCN }, collaboration: true }),
-        UniverSheetsAdvancedPreset({ locales: { zhCN: advancedZhCN } }),
-        UniverSheetsCollaborationPreset({ locales: { zhCN: collaborationZhCN } }),
+        UniverSheetsCorePreset(),
+        UniverSheetsAdvancedPreset(),
+        UniverSheetsCollaborationPreset(),
     ],
 });

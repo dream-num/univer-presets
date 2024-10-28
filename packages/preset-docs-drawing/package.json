@@ -1,0 +1,23 @@
+{
+    "name": "@univerjs/preset-docs-drawing",
+    "version": "0.5.0",
+    "author": "DreamNum Inc. <developer@univer.ai>",
+    "license": "Apache-2.0",
+    "keywords": [
+        "univer"
+    ],
+    "exports": {
+        ".": "./src/index.ts",
+        "./*": "./src/*",
+        "./locales/*": "./src/locales/*.ts"
+    },
+    "dependencies": {
+        "@univerjs/docs-drawing": "workspace:*",
+        "@univerjs/docs-drawing-ui": "workspace:*",
+        "@univerjs/drawing": "workspace:*",
+        "@univerjs/drawing-ui": "workspace:*"
+    },
+    "devDependencies": {
+        "typescript": "^5.6.3"
+    }
+}

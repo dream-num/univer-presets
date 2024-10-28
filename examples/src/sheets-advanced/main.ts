@@ -1,15 +1,26 @@
-import { createUniver, defaultTheme, LocaleType } from '@univerjs/presets';
-import { UniverSheetsAdvancedPreset } from '@univerjs/presets/sheets/sheets-advanced-features/index';
-import { zhCN as advancedZhCN } from '@univerjs/presets/sheets/sheets-advanced-features/zh-CN';
-import { UniverSheetsBasicPreset } from '@univerjs/presets/sheets/sheets-basic/index';
-import { zhCN as basicZhCN } from '@univerjs/presets/sheets/sheets-basic/zh-CN';
+import { createUniver, defaultTheme, LocaleType, Tools } from '@univerjs/presets';
+import { UniverSheetsAdvancedPreset } from '@univerjs/presets/preset-sheets-advanced';
+import sheetsAdvancedZhCN from '@univerjs/presets/preset-sheets-advanced/locales/zh-CN';
+import { UniverSheetsCorePreset } from '@univerjs/presets/preset-sheets-core';
+import sheetsCoreZhCN from '@univerjs/presets/preset-sheets-core/locales/zh-CN';
+import { UniverSheetsFilterPreset } from '@univerjs/presets/preset-sheets-filter';
 
 const { univerAPI } = createUniver({
     locale: LocaleType.ZH_CN,
+    locales: {
+        zhCN: Tools.deepMerge(
+            {},
+            sheetsCoreZhCN,
+            sheetsAdvancedZhCN,
+        ),
+    },
     theme: defaultTheme,
     presets: [
-        UniverSheetsBasicPreset({ locales: { zhCN: basicZhCN } }),
-        UniverSheetsAdvancedPreset({ locales: { zhCN: advancedZhCN }, universerEndpoint: 'https://dev.univer.plus' }),
+        UniverSheetsCorePreset(),
+        UniverSheetsFilterPreset(),
+        UniverSheetsAdvancedPreset({
+            universerEndpoint: 'https://dev.univer.plus',
+        }),
     ],
 });
 

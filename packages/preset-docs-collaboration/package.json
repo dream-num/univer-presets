@@ -1,0 +1,23 @@
+{
+    "name": "@univerjs/preset-docs-collaboration",
+    "version": "0.5.0",
+    "author": "DreamNum Inc. <developer@univer.ai>",
+    "license": "Apache-2.0",
+    "keywords": [
+        "univer"
+    ],
+    "exports": {
+        ".": "./src/index.ts",
+        "./*": "./src/*",
+        "./locales/*": "./src/locales/*.ts"
+    },
+    "dependencies": {
+        "@univerjs-pro/collaboration": "workspace:*",
+        "@univerjs-pro/collaboration-client": "workspace:*",
+        "@univerjs-pro/thread-comment-datasource": "workspace:*",
+        "@univerjs/docs-thread-comment-ui": "workspace:*"
+    },
+    "devDependencies": {
+        "typescript": "^5.6.3"
+    }
+}

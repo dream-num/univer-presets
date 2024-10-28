@@ -11,9 +11,6 @@ import httpProxy from 'http-proxy';
 import minimist from 'minimist';
 import 'dotenv/config';
 
-const nodeModules = path.resolve(process.cwd(), './node_modules');
-const presetsNodeModules = path.resolve(process.cwd(), './node_modules/@univerjs/presets/node_modules');
-
 const args = minimist(process.argv.slice(2));
 
 // User should also config their bunlder to build monaco editor's resources for web worker.
@@ -82,8 +79,9 @@ const ctx = await esbuild[args.watch ? 'context' : 'build']({
                 lessOptions: {
                     rewriteUrls: 'all',
                     paths: [
-                        nodeModules,
-                        presetsNodeModules,
+                        path.resolve(process.cwd(), './node_modules'),
+                        path.resolve(process.cwd(), './node_modules/@univerjs/presets/node_modules'),
+                        path.resolve(process.cwd(), './node_modules/@univerjs/presets/node_modules/@univerjs/preset-sheets-drawing/node_modules'),
                     ],
                 },
             },
@@ -91,14 +89,14 @@ const ctx = await esbuild[args.watch ? 'context' : 'build']({
         vue(),
     ],
     entryPoints: [
-        './src/docs-basic/main.ts',
+        './src/docs-core/main.ts',
 
         './src/docs-collaboration/main.ts',
 
-        './src/sheets-basic/main.ts',
+        './src/sheets-core/main.ts',
 
-        './src/sheets-basic-with-worker/main.ts',
-        './src/sheets-basic-with-worker/worker.ts',
+        './src/sheets-core-with-worker/main.ts',
+        './src/sheets-core-with-worker/worker.ts',
 
         './src/sheets-advanced/main.ts',
 
@@ -122,7 +120,7 @@ if (args.watch) {
         port: 8011, // need different port for universer-api
     });
 
-    const needProxyRoutes = ['/universer-api', '/yuumi-api'];
+    const needProxyRoutes = ['/universer-api'];
     const server = http.createServer((req, res) => {
         const proxy = httpProxy.createProxyServer({});
 
@@ -154,7 +152,6 @@ if (args.watch) {
 
     console.log(
         'Visit:\n'
-        + `http://localhost:${process.env.CLIENT_PORT || 3010}\n`
-        + `http://local.univer.plus:${process.env.CLIENT_PORT || 3010}`,
+        + `http://localhost:${process.env.CLIENT_PORT || 3010}\n`,
     );
 }

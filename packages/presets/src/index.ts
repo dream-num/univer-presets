@@ -1,11 +1,10 @@
 import type { DependencyOverride, IUniverConfig, Plugin, PluginCtor } from '@univerjs/core';
-import { FUniver, IAuthzIoService, IUndoRedoService, LogLevel, Tools, Univer } from '@univerjs/core';
+import { FUniver, IAuthzIoService, IUndoRedoService, LogLevel, Univer } from '@univerjs/core';
 
 /**
  * A collection of plugins and their default configs.
  */
 interface IPreset {
-    locales?: IUniverConfig['locales'];
     plugins: Array<PluginCtor<Plugin> | [PluginCtor<Plugin>, ConstructorParameters<PluginCtor<Plugin>>[0]]>;
 }
 
@@ -23,14 +22,6 @@ type CreateUniverOptions = Partial<IUniverConfig> & {
 export function createUniver(options: CreateUniverOptions) {
     const { presets, plugins, collaboration, ...univerOptions } = options;
 
-    let locales: IUniverConfig['locales'] = {};
-    presets.forEach((preset) => {
-        const l = Array.isArray(preset) ? preset[0].locales : preset.locales;
-        if (l) {
-            locales = Tools.deepMerge(locales, l);
-        }
-    });
-
     const override: DependencyOverride = [];
     if (collaboration) {
         override.push([IUndoRedoService, null]);
@@ -41,7 +32,6 @@ export function createUniver(options: CreateUniverOptions) {
         logLevel: LogLevel.WARN,
 
         ...univerOptions,
-        locales,
         override,
     });
 
@@ -57,6 +47,15 @@ export function createUniver(options: CreateUniverOptions) {
         });
     });
 
+    plugins?.forEach((plugin) => {
+        if (Array.isArray(plugin)) {
+            univer.registerPlugin(plugin[0], plugin[1]);
+        }
+        else {
+            univer.registerPlugin(plugin);
+        }
+    });
+
     // Finally we wrap all plugins into a Facade API to make it for convenient usage.
     const univerAPI = FUniver.newAPI(univer);
     return {
@@ -65,5 +64,6 @@ export function createUniver(options: CreateUniverOptions) {
     };
 }
 
-export { type IWorkbookData, LocaleType, LogLevel } from '@univerjs/core';
+export { type IWorkbookData, LocaleType, LogLevel, Tools } from '@univerjs/core';
+
 export { defaultTheme, greenTheme } from '@univerjs/design';

@@ -1,15 +1,22 @@
-import { createUniver, defaultTheme, LocaleType } from '@univerjs/presets';
-import { zhCN as basicZhCN } from '@univerjs/presets/docs/docs-basic/zh-CN';
-import { UniverDocsCollaborationPreset } from '@univerjs/presets/docs/docs-collaboration/index';
-import { zhCN as collaborationZhCH } from '@univerjs/presets/docs/docs-collaboration/zh-CN';
-import { UniverDocsBasicPreset } from '@univerjs/presets/presets/docs/docs-basic/index.js';
+import { createUniver, defaultTheme, LocaleType, Tools } from '@univerjs/presets';
+import { UniverDocsCollaborationPreset } from '@univerjs/presets/preset-docs-collaboration';
+import docsCollaborationZhCN from '@univerjs/presets/preset-docs-collaboration/locales/zh-CN';
+import { UniverDocsCorePreset } from '@univerjs/presets/preset-docs-core';
+import docsCoreZhCN from '@univerjs/presets/preset-docs-core/locales/zh-CN';
 
 createUniver({
     locale: LocaleType.ZH_CN,
+    locales: {
+        zhCN: Tools.deepMerge(
+            {},
+            docsCoreZhCN,
+            docsCollaborationZhCN,
+        ),
+    },
     theme: defaultTheme,
     collaboration: true,
     presets: [
-        UniverDocsBasicPreset({ locales: { zhCN: basicZhCN }, collaboration: true }),
-        UniverDocsCollaborationPreset({ locales: { zhCN: collaborationZhCH } }),
+        UniverDocsCorePreset({ collaboration: true }),
+        UniverDocsCollaborationPreset(),
     ],
 });

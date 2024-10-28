@@ -9,9 +9,7 @@
         "build:demo": "node ./esbuild.config.mjs"
     },
     "dependencies": {
-        "@univerjs/core": "workspace:*",
-        "@univerjs/presets": "workspace:*",
-        "rxjs": "^7.8.1"
+        "@univerjs/presets": "workspace:*"
     },
     "devDependencies": {
         "esbuild": "^0.24.0",

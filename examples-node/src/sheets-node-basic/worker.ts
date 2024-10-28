@@ -1,10 +1,9 @@
 import { createUniver, LocaleType } from '@univerjs/presets';
-import { UniverSheetsBasicWorkerPreset } from '@univerjs/presets/sheets-node/sheets-node-basic/worker';
-import { zhCN } from '@univerjs/presets/sheets-node/sheets-node-basic/zh-CN';
+import { UniverSheetsNodeCoreWorkerPreset } from '@univerjs/presets/preset-sheets-node-core/web-worker';
 
 createUniver({
     locale: LocaleType.ZH_CN,
     presets: [
-        UniverSheetsBasicWorkerPreset({ locales: { zhCN } }),
+        UniverSheetsNodeCoreWorkerPreset(),
     ],
 });

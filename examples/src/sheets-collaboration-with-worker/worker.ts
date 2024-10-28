@@ -1,13 +1,20 @@
-import { createUniver, LocaleType } from '@univerjs/presets';
-import { UniverSheetsAdvancedWorkerPreset } from '@univerjs/presets/sheets/sheets-advanced-features/web-worker';
-import { zhCN as advancedZhCN } from '@univerjs/presets/sheets/sheets-advanced-features/zh-CN';
-import { UniverSheetsBasicWorkerPreset } from '@univerjs/presets/sheets/sheets-basic/web-worker';
-import { zhCN as basicZhCN } from '@univerjs/presets/sheets/sheets-basic/zh-CN';
+import { createUniver, LocaleType, Tools } from '@univerjs/presets';
+import sheetsAdvancedZhCN from '@univerjs/presets/preset-sheets-advanced/locales/zh-CN';
+import { UniverSheetsAdvancedWorkerPreset } from '@univerjs/presets/preset-sheets-advanced/web-worker';
+import sheetsCoreZhCN from '@univerjs/presets/preset-sheets-core/locales/zh-CN';
+import { UniverSheetsCoreWorkerPreset } from '@univerjs/presets/preset-sheets-core/web-worker';
 
 createUniver({
     locale: LocaleType.ZH_CN,
+    locales: {
+        zhCN: Tools.deepMerge(
+            {},
+            sheetsCoreZhCN,
+            sheetsAdvancedZhCN,
+        ),
+    },
     presets: [
-        UniverSheetsBasicWorkerPreset({ locales: { zhCN: basicZhCN } }),
-        UniverSheetsAdvancedWorkerPreset({ locales: { zhCN: advancedZhCN } }),
+        UniverSheetsCoreWorkerPreset(),
+        UniverSheetsAdvancedWorkerPreset(),
     ],
 });

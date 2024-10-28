@@ -10,12 +10,14 @@
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
         "dev": "pnpm --filter examples dev:demo",
-        "build:locales": "pnpm --filter @univerjs/presets build:locales",
+        "build:locales": "node ./scripts/build-locales.mjs",
         "build:demo": "pnpm --filter examples build:demo"
     },
     "devDependencies": {
-        "@antfu/eslint-config": "^3.7.3",
-        "eslint": "^9.12.0",
-        "eslint-plugin-format": "^0.1.2"
+        "@antfu/eslint-config": "^3.8.0",
+        "@univerjs/core": "workspace:*",
+        "eslint": "^9.13.0",
+        "eslint-plugin-format": "^0.1.2",
+        "fs-extra": "^11.2.0"
     }
 }
