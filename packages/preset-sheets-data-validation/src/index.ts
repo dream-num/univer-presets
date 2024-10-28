@@ -5,7 +5,7 @@ import { UniverSheetsDataValidationUIPlugin } from '@univerjs/sheets-data-valida
 
 import '@univerjs/sheets-data-validation/facade';
 
-export function UniverSheetsFilterPreset(): IPreset {
+export function UniverSheetsDataValidationPreset(): IPreset {
     return {
         plugins: [
             UniverSheetsDataValidationPlugin,

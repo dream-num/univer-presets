@@ -98,6 +98,8 @@ const ctx = await esbuild[args.watch ? 'context' : 'build']({
         './src/sheets-core-with-worker/main.ts',
         './src/sheets-core-with-worker/worker.ts',
 
+        './src/sheets-rich-feature/main.ts',
+
         './src/sheets-advanced/main.ts',
 
         './src/sheets-collaboration-with-worker/main.ts',
