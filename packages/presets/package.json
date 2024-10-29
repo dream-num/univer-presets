@@ -40,7 +40,11 @@
         "./preset-sheets-node-core": "./src/preset-sheets-node-core/index.ts",
         "./preset-sheets-node-core/*": "./src/preset-sheets-node-core/*.ts",
         "./preset-sheets-sort": "./src/preset-sheets-sort/index.ts",
-        "./preset-sheets-sort/*": "./src/preset-sheets-sort/*.ts"
+        "./preset-sheets-sort/*": "./src/preset-sheets-sort/*.ts",
+        "./preset-sheets-thread-comment": "./src/preset-sheets-thread-comment/index.ts",
+        "./preset-sheets-thread-comment/*": "./src/preset-sheets-thread-comment/*.ts",
+        "./preset-docs-thread-comment": "./src/preset-docs-thread-comment/index.ts",
+        "./preset-docs-thread-comment/*": "./src/preset-docs-thread-comment/*.ts"
     },
     "dependencies": {
         "@univerjs/core": "workspace:*",
@@ -59,7 +63,9 @@
         "@univerjs/preset-sheets-find-replace": "workspace:*",
         "@univerjs/preset-sheets-hyper-link": "workspace:*",
         "@univerjs/preset-sheets-node-core": "workspace:*",
-        "@univerjs/preset-sheets-sort": "workspace:*"
+        "@univerjs/preset-sheets-sort": "workspace:*",
+        "@univerjs/preset-sheets-thread-comment": "workspace:*",
+        "@univerjs/preset-docs-thread-comment": "workspace:*"
     },
     "devDependencies": {
         "typescript": "^5.6.3"

@@ -1,8 +1,6 @@
 import type { IPreset } from '../../types';
-import { UniverDocsThreadCommentUIPlugin } from '@univerjs/docs-thread-comment-ui';
 import { UniverCollaborationPlugin } from '@univerjs-pro/collaboration';
 import { UniverCollaborationClientPlugin } from '@univerjs-pro/collaboration-client';
-import { UniverThreadCommentDataSourcePlugin } from '@univerjs-pro/thread-comment-datasource';
 
 export interface IUniverDocsCollaborationPresetConfig {
     universerEndpoint?: string;
@@ -30,9 +28,6 @@ export function UniverDocsCollaborationPreset(config: Partial<IUniverDocsCollabo
                 downloadEndpointUrl: `${serverEndpoint}/`,
                 sendChangesetTimeout: 200,
             }],
-
-            UniverDocsThreadCommentUIPlugin,
-            UniverThreadCommentDataSourcePlugin,
         ],
     };
 }

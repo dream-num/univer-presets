@@ -127,12 +127,6 @@ importers:
       '@univerjs-pro/collaboration-client':
         specifier: workspace:*
         version: link:../../submodules/univer-pro/packages/collaboration-client
-      '@univerjs-pro/thread-comment-datasource':
-        specifier: workspace:*
-        version: link:../../submodules/univer-pro/packages/thread-comment-data-source
-      '@univerjs/docs-thread-comment-ui':
-        specifier: workspace:*
-        version: link:../../submodules/univer-pro/submodules/univer/packages/docs-thread-comment-ui
     devDependencies:
       typescript:
         specifier: ^5.6.3
@@ -201,6 +195,19 @@ importers:
         specifier: ^5.6.3
         version: 5.6.3
 
+  packages/preset-docs-thread-comment:
+    dependencies:
+      '@univerjs-pro/thread-comment-datasource':
+        specifier: workspace:*
+        version: link:../../submodules/univer-pro/packages/thread-comment-data-source
+      '@univerjs/docs-thread-comment-ui':
+        specifier: workspace:*
+        version: link:../../submodules/univer-pro/submodules/univer/packages/docs-thread-comment-ui
+    devDependencies:
+      typescript:
+        specifier: ^5.6.3
+        version: 5.6.3
+
   packages/preset-sheets-advanced:
     dependencies:
       '@univerjs-pro/exchange-client':
@@ -240,18 +247,9 @@ importers:
       '@univerjs-pro/edit-history-loader':
         specifier: workspace:*
         version: link:../../submodules/univer-pro/packages/edit-history-loader
-      '@univerjs-pro/thread-comment-datasource':
-        specifier: workspace:*
-        version: link:../../submodules/univer-pro/packages/thread-comment-data-source
       '@univerjs/preset-sheets-advanced':
         specifier: workspace:*
         version: link:../preset-sheets-advanced
-      '@univerjs/sheets-thread-comment':
-        specifier: workspace:*
-        version: link:../../submodules/univer-pro/submodules/univer/packages/sheets-thread-comment
-      '@univerjs/sheets-thread-comment-ui':
-        specifier: workspace:*
-        version: link:../../submodules/univer-pro/submodules/univer/packages/sheets-thread-comment-ui
     devDependencies:
       typescript:
         specifier: ^5.6.3
@@ -461,6 +459,25 @@ importers:
         specifier: ^5.6.3
         version: 5.6.3
 
+  packages/preset-sheets-thread-comment:
+    dependencies:
+      '@univerjs-pro/thread-comment-datasource':
+        specifier: workspace:*
+        version: link:../../submodules/univer-pro/packages/thread-comment-data-source
+      '@univerjs/preset-sheets-advanced':
+        specifier: workspace:*
+        version: link:../preset-sheets-advanced
+      '@univerjs/sheets-thread-comment':
+        specifier: workspace:*
+        version: link:../../submodules/univer-pro/submodules/univer/packages/sheets-thread-comment
+      '@univerjs/sheets-thread-comment-ui':
+        specifier: workspace:*
+        version: link:../../submodules/univer-pro/submodules/univer/packages/sheets-thread-comment-ui
+    devDependencies:
+      typescript:
+        specifier: ^5.6.3
+        version: 5.6.3
+
   packages/presets:
     dependencies:
       '@univerjs/core':
@@ -514,6 +531,9 @@ importers:
       '@univerjs/preset-sheets-sort':
         specifier: workspace:*
         version: link:../preset-sheets-sort
+      '@univerjs/preset-sheets-thread-comment':
+        specifier: workspace:*
+        version: link:../preset-sheets-thread-comment
     devDependencies:
       typescript:
         specifier: ^5.6.3

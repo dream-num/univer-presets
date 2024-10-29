@@ -1,13 +1,8 @@
 import type { UniverSheetsAdvancedPreset } from '@univerjs/preset-sheets-advanced';
 import type { IPreset } from '../../types';
-import { UniverSheetsThreadCommentPlugin } from '@univerjs/sheets-thread-comment';
-import { UniverSheetsThreadCommentUIPlugin } from '@univerjs/sheets-thread-comment-ui';
 import { UniverCollaborationPlugin } from '@univerjs-pro/collaboration';
 import { UniverCollaborationClientPlugin } from '@univerjs-pro/collaboration-client';
 import { UniverEditHistoryLoaderPlugin } from '@univerjs-pro/edit-history-loader';
-import { UniverThreadCommentDataSourcePlugin } from '@univerjs-pro/thread-comment-datasource';
-
-import '@univerjs/sheets-thread-comment/facade';
 
 export interface IUniverSheetsCollaborationPresetConfig {
     universerEndpoint?: string;
@@ -15,9 +10,11 @@ export interface IUniverSheetsCollaborationPresetConfig {
 
 /**
  * This preset add collaboration features, including collaboration editing, collaboration cursors,
- * history and comments into your application.
+ * and history into your application.
  *
  * To use this plugin, you should import {@link UniverSheetsAdvancedPreset} first.
+ *
+ * @param {Partial<IUniverSheetsCollaborationPresetConfig>} config - The configuration object.
  */
 export function UniverSheetsCollaborationPreset(config: Partial<IUniverSheetsCollaborationPresetConfig> = {}): IPreset {
     const { universerEndpoint } = config;
@@ -45,9 +42,6 @@ export function UniverSheetsCollaborationPreset(config: Partial<IUniverSheetsCol
                 historyListServerUrl: `${serverEndpoint}/universer-api/history`,
             }],
 
-            UniverSheetsThreadCommentPlugin,
-            UniverSheetsThreadCommentUIPlugin,
-            UniverThreadCommentDataSourcePlugin,
         ],
     };
 }

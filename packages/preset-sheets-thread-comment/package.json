@@ -1,5 +1,5 @@
 {
-    "name": "@univerjs/preset-docs-collaboration",
+    "name": "@univerjs/preset-sheets-thread-comment",
     "version": "0.5.0",
     "author": "DreamNum Inc. <developer@univer.ai>",
     "license": "Apache-2.0",
@@ -12,8 +12,10 @@
         "./locales/*": "./src/locales/*.ts"
     },
     "dependencies": {
-        "@univerjs-pro/collaboration": "workspace:*",
-        "@univerjs-pro/collaboration-client": "workspace:*"
+        "@univerjs-pro/thread-comment-datasource": "workspace:*",
+        "@univerjs/preset-sheets-advanced": "workspace:*",
+        "@univerjs/sheets-thread-comment": "workspace:*",
+        "@univerjs/sheets-thread-comment-ui": "workspace:*"
     },
     "devDependencies": {
         "typescript": "^5.6.3"
