@@ -6,6 +6,7 @@ import sheetsCollaborationZhCN from '@univerjs/presets/preset-sheets-collaborati
 import { UniverSheetsCorePreset } from '@univerjs/presets/preset-sheets-core';
 import sheetsCoreZhCN from '@univerjs/presets/preset-sheets-core/locales/zh-CN';
 import { UniverSheetsThreadCommentPreset } from '@univerjs/presets/preset-sheets-thread-comment';
+import sheetsThreadCommentZhCN from '@univerjs/presets/preset-sheets-thread-comment/locales/zh-CN';
 
 createUniver({
     locale: LocaleType.ZH_CN,
@@ -15,6 +16,7 @@ createUniver({
             sheetsCoreZhCN,
             sheetsAdvancedZhCN,
             sheetsCollaborationZhCN,
+            sheetsThreadCommentZhCN,
         ),
     },
     theme: defaultTheme,
