@@ -12,10 +12,10 @@
         "./locales/*": "./src/locales/*.ts"
     },
     "dependencies": {
-        "@univerjs-pro/thread-comment-datasource": "workspace:*",
+        "@univerjs-pro/thread-comment-datasource": "0.4.1-nightly.202410291304",
         "@univerjs/preset-sheets-advanced": "workspace:*",
-        "@univerjs/sheets-thread-comment": "workspace:*",
-        "@univerjs/sheets-thread-comment-ui": "workspace:*"
+        "@univerjs/sheets-thread-comment": "0.4.1-nightly.202410291304",
+        "@univerjs/sheets-thread-comment-ui": "0.4.1-nightly.202410291304*"
     },
     "devDependencies": {
         "typescript": "^5.6.3"

@@ -9,10 +9,10 @@
         "build:demo": "node ./esbuild.config.mjs"
     },
     "dependencies": {
-        "@univerjs/core": "workspace:*",
-        "@univerjs/design": "workspace:*",
+        "@univerjs/core": "0.4.1-nightly.202410291304",
+        "@univerjs/design": "0.4.1-nightly.202410291304",
         "@univerjs/presets": "workspace:*",
-        "@univerjs/sheets-zen-editor": "workspace:*",
+        "@univerjs/sheets-zen-editor": "0.4.1-nightly.202410291304",
         "clsx": "^2.1.1",
         "monaco-editor": "0.52.0",
         "react": "18.3.1",

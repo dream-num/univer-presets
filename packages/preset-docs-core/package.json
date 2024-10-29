@@ -12,14 +12,14 @@
         "./locales/*": "./src/locales/*.ts"
     },
     "dependencies": {
-        "@univerjs/core": "workspace:*",
-        "@univerjs/design": "workspace:*",
-        "@univerjs/docs": "workspace:*",
-        "@univerjs/docs-ui": "workspace:*",
-        "@univerjs/engine-formula": "workspace:*",
-        "@univerjs/engine-render": "workspace:*",
-        "@univerjs/facade": "workspace:*",
-        "@univerjs/ui": "workspace:*"
+        "@univerjs/core": "0.4.1-nightly.202410291304",
+        "@univerjs/design": "0.4.1-nightly.202410291304",
+        "@univerjs/docs": "0.4.1-nightly.202410291304",
+        "@univerjs/docs-ui": "0.4.1-nightly.202410291304",
+        "@univerjs/engine-formula": "0.4.1-nightly.202410291304",
+        "@univerjs/engine-render": "0.4.1-nightly.202410291304",
+        "@univerjs/facade": "0.4.1-nightly.202410291304",
+        "@univerjs/ui": "0.4.1-nightly.202410291304"
     },
     "devDependencies": {
         "typescript": "^5.6.3"

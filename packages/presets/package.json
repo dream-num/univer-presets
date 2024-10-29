@@ -47,8 +47,8 @@
         "./preset-docs-thread-comment/*": "./src/preset-docs-thread-comment/*.ts"
     },
     "dependencies": {
-        "@univerjs/core": "workspace:*",
-        "@univerjs/design": "workspace:*",
+        "@univerjs/core": "0.4.1-nightly.202410291304",
+        "@univerjs/design": "0.4.1-nightly.202410291304",
         "@univerjs/preset-docs-collaboration": "workspace:*",
         "@univerjs/preset-docs-core": "workspace:*",
         "@univerjs/preset-docs-drawing": "workspace:*",

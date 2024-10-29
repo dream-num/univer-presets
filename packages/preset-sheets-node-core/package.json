@@ -13,22 +13,22 @@
         "./locales/*": "./src/locales/*.ts"
     },
     "dependencies": {
-        "@univerjs/core": "workspace:*",
-        "@univerjs/docs": "workspace:*",
-        "@univerjs/engine-formula": "workspace:*",
-        "@univerjs/engine-render": "workspace:*",
-        "@univerjs/facade": "workspace:*",
-        "@univerjs/rpc-node": "workspace:*",
-        "@univerjs/sheets": "workspace:*",
-        "@univerjs/sheets-data-validation": "workspace:*",
-        "@univerjs/sheets-drawing": "workspace:*",
-        "@univerjs/sheets-filter": "workspace:*",
-        "@univerjs/sheets-formula": "workspace:*",
-        "@univerjs/sheets-hyper-link": "workspace:*",
-        "@univerjs/sheets-numfmt": "workspace:*",
-        "@univerjs/sheets-sort": "workspace:*",
-        "@univerjs/sheets-thread-comment": "workspace:*",
-        "@univerjs/thread-comment": "workspace:*"
+        "@univerjs/core": "0.4.1-nightly.202410291304",
+        "@univerjs/docs": "0.4.1-nightly.202410291304",
+        "@univerjs/engine-formula": "0.4.1-nightly.202410291304",
+        "@univerjs/engine-render": "0.4.1-nightly.202410291304",
+        "@univerjs/facade": "0.4.1-nightly.202410291304",
+        "@univerjs/rpc-node": "0.4.1-nightly.202410291304",
+        "@univerjs/sheets": "0.4.1-nightly.202410291304",
+        "@univerjs/sheets-data-validation": "0.4.1-nightly.202410291304",
+        "@univerjs/sheets-drawing": "0.4.1-nightly.202410291304",
+        "@univerjs/sheets-filter": "0.4.1-nightly.202410291304",
+        "@univerjs/sheets-formula": "0.4.1-nightly.202410291304",
+        "@univerjs/sheets-hyper-link": "0.4.1-nightly.202410291304",
+        "@univerjs/sheets-numfmt": "0.4.1-nightly.202410291304",
+        "@univerjs/sheets-sort": "0.4.1-nightly.202410291304",
+        "@univerjs/sheets-thread-comment": "0.4.1-nightly.202410291304",
+        "@univerjs/thread-comment": "0.4.1-nightly.202410291304"
     },
     "devDependencies": {
         "typescript": "^5.6.3"

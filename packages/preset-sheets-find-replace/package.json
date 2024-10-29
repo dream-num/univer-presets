@@ -13,9 +13,9 @@
         "./locales/*": "./src/locales/*.ts"
     },
     "dependencies": {
-        "@univerjs/core": "workspace:*",
-        "@univerjs/find-replace": "workspace:*",
-        "@univerjs/sheets-find-replace": "workspace:*"
+        "@univerjs/core": "0.4.1-nightly.202410291304",
+        "@univerjs/find-replace": "0.4.1-nightly.202410291304",
+        "@univerjs/sheets-find-replace": "0.4.1-nightly.202410291304"
     },
     "devDependencies": {
         "typescript": "^5.6.3"

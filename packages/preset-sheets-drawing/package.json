@@ -12,10 +12,10 @@
         "./locales/*": "./src/locales/*.ts"
     },
     "dependencies": {
-        "@univerjs/drawing": "workspace:*",
-        "@univerjs/drawing-ui": "workspace:*",
-        "@univerjs/sheets-drawing": "workspace:*",
-        "@univerjs/sheets-drawing-ui": "workspace:*"
+        "@univerjs/drawing": "0.4.1-nightly.202410291304",
+        "@univerjs/drawing-ui": "0.4.1-nightly.202410291304",
+        "@univerjs/sheets-drawing": "0.4.1-nightly.202410291304",
+        "@univerjs/sheets-drawing-ui": "0.4.1-nightly.202410291304"
     },
     "devDependencies": {
         "typescript": "^5.6.3"

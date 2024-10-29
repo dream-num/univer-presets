@@ -15,7 +15,7 @@
     },
     "devDependencies": {
         "@antfu/eslint-config": "^3.8.0",
-        "@univerjs/core": "workspace:*",
+        "@univerjs/core": "0.4.1-nightly.202410291304",
         "eslint": "^9.13.0",
         "eslint-plugin-format": "^0.1.2",
         "fs-extra": "^11.2.0"

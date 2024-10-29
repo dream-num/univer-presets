@@ -12,23 +12,27 @@
         "./web-worker": "./src/web-worker.ts",
         "./locales/*": "./src/locales/*.ts"
     },
+    "scripts": {
+        "build": "node ./rollup.config.mjs"
+    },
     "dependencies": {
-        "@univerjs/core": "workspace:*",
-        "@univerjs/design": "workspace:*",
-        "@univerjs/docs": "workspace:*",
-        "@univerjs/docs-ui": "workspace:*",
-        "@univerjs/engine-formula": "workspace:*",
-        "@univerjs/engine-render": "workspace:*",
-        "@univerjs/facade": "workspace:*",
-        "@univerjs/rpc": "workspace:*",
-        "@univerjs/sheets": "workspace:*",
-        "@univerjs/sheets-formula": "workspace:*",
-        "@univerjs/sheets-formula-ui": "workspace:*",
-        "@univerjs/sheets-numfmt": "workspace:*",
-        "@univerjs/sheets-ui": "workspace:*",
-        "@univerjs/ui": "workspace:*"
+        "@univerjs/core": "0.4.1-nightly.202410291304",
+        "@univerjs/design": "0.4.1-nightly.202410291304",
+        "@univerjs/docs": "0.4.1-nightly.202410291304",
+        "@univerjs/docs-ui": "0.4.1-nightly.202410291304",
+        "@univerjs/engine-formula": "0.4.1-nightly.202410291304",
+        "@univerjs/engine-render": "0.4.1-nightly.202410291304",
+        "@univerjs/facade": "0.4.1-nightly.202410291304",
+        "@univerjs/rpc": "0.4.1-nightly.202410291304",
+        "@univerjs/sheets": "0.4.1-nightly.202410291304",
+        "@univerjs/sheets-formula": "0.4.1-nightly.202410291304",
+        "@univerjs/sheets-formula-ui": "0.4.1-nightly.202410291304",
+        "@univerjs/sheets-numfmt": "0.4.1-nightly.202410291304",
+        "@univerjs/sheets-ui": "0.4.1-nightly.202410291304",
+        "@univerjs/ui": "0.4.1-nightly.202410291304"
     },
     "devDependencies": {
+        "rollup": "^4.24.2",
         "typescript": "^5.6.3"
     }
 }

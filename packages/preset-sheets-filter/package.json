@@ -12,8 +12,8 @@
         "./locales/*": "./src/locales/*.ts"
     },
     "dependencies": {
-        "@univerjs/sheets-filter": "workspace:*",
-        "@univerjs/sheets-filter-ui": "workspace:*"
+        "@univerjs/sheets-filter": "0.4.1-nightly.202410291304",
+        "@univerjs/sheets-filter-ui": "0.4.1-nightly.202410291304"
     },
     "devDependencies": {
         "typescript": "^5.6.3"

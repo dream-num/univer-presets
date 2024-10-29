@@ -12,8 +12,8 @@
         "./locales/*": "./src/locales/*.ts"
     },
     "dependencies": {
-        "@univerjs/sheets-data-validation": "workspace:*",
-        "@univerjs/sheets-data-validation-ui": "workspace:*"
+        "@univerjs/sheets-data-validation": "0.4.1-nightly.202410291304",
+        "@univerjs/sheets-data-validation-ui": "0.4.1-nightly.202410291304"
     },
     "devDependencies": {
         "typescript": "^5.6.3"
