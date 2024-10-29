@@ -53,6 +53,7 @@
         "@univerjs/preset-docs-core": "workspace:*",
         "@univerjs/preset-docs-drawing": "workspace:*",
         "@univerjs/preset-docs-hyper-link": "workspace:*",
+        "@univerjs/preset-docs-thread-comment": "workspace:*",
         "@univerjs/preset-sheets-advanced": "workspace:*",
         "@univerjs/preset-sheets-collaboration": "workspace:*",
         "@univerjs/preset-sheets-conditional-formatting": "workspace:*",
@@ -64,8 +65,7 @@
         "@univerjs/preset-sheets-hyper-link": "workspace:*",
         "@univerjs/preset-sheets-node-core": "workspace:*",
         "@univerjs/preset-sheets-sort": "workspace:*",
-        "@univerjs/preset-sheets-thread-comment": "workspace:*",
-        "@univerjs/preset-docs-thread-comment": "workspace:*"
+        "@univerjs/preset-sheets-thread-comment": "workspace:*"
     },
     "devDependencies": {
         "typescript": "^5.6.3"
