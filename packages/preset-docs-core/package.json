@@ -1,0 +1,27 @@
+{
+    "name": "@univerjs/preset-docs-core",
+    "version": "0.5.0",
+    "author": "DreamNum Inc. <developer@univer.ai>",
+    "license": "Apache-2.0",
+    "keywords": [
+        "univer"
+    ],
+    "exports": {
+        ".": "./src/index.ts",
+        "./*": "./src/*",
+        "./locales/*": "./src/locales/*.ts"
+    },
+    "dependencies": {
+        "@univerjs/core": "workspace:*",
+        "@univerjs/design": "workspace:*",
+        "@univerjs/docs": "workspace:*",
+        "@univerjs/docs-ui": "workspace:*",
+        "@univerjs/engine-formula": "workspace:*",
+        "@univerjs/engine-render": "workspace:*",
+        "@univerjs/facade": "workspace:*",
+        "@univerjs/ui": "workspace:*"
+    },
+    "devDependencies": {
+        "typescript": "^5.6.3"
+    }
+}

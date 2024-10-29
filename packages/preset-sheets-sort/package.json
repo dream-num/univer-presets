@@ -1,0 +1,21 @@
+{
+    "name": "@univerjs/preset-sheets-sort",
+    "version": "0.5.0",
+    "author": "DreamNum Inc. <developer@univer.ai>",
+    "license": "Apache-2.0",
+    "keywords": [
+        "univer"
+    ],
+    "exports": {
+        ".": "./src/index.ts",
+        "./*": "./src/*",
+        "./locales/*": "./src/locales/*.ts"
+    },
+    "dependencies": {
+        "@univerjs/sheets-sort": "workspace:*",
+        "@univerjs/sheets-sort-ui": "workspace:*"
+    },
+    "devDependencies": {
+        "typescript": "^5.6.3"
+    }
+}

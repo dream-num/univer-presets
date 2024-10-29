@@ -1,0 +1,21 @@
+{
+    "name": "examples-node",
+    "version": "1.0.0",
+    "private": true,
+    "author": "DreamNum Inc. <developer@univer.ai>",
+    "license": "Apache-2.0",
+    "scripts": {
+        "dev:demo": "node ./esbuild.config.mjs --watch",
+        "build:demo": "node ./esbuild.config.mjs"
+    },
+    "dependencies": {
+        "@univerjs/presets": "workspace:*"
+    },
+    "devDependencies": {
+        "esbuild": "^0.24.0",
+        "esbuild-plugin-clean": "^1.0.1",
+        "esbuild-plugin-copy": "^2.1.1",
+        "minimist": "^1.2.8",
+        "typescript": "^5.6.3"
+    }
+}

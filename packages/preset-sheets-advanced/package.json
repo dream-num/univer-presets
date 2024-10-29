@@ -1,0 +1,27 @@
+{
+    "name": "@univerjs/preset-sheets-advanced",
+    "version": "0.5.0",
+    "author": "DreamNum Inc. <developer@univer.ai>",
+    "license": "Apache-2.0",
+    "keywords": [
+        "univer"
+    ],
+    "exports": {
+        ".": "./src/index.ts",
+        "./*": "./src/*",
+        "./web-worker": "./src/web-worker.ts",
+        "./locales/*": "./src/locales/*.ts"
+    },
+    "dependencies": {
+        "@univerjs-pro/exchange-client": "workspace:*",
+        "@univerjs-pro/license": "workspace:*",
+        "@univerjs-pro/sheets-exchange-client": "workspace:*",
+        "@univerjs-pro/sheets-pivot": "workspace:*",
+        "@univerjs-pro/sheets-pivot-ui": "workspace:*",
+        "@univerjs-pro/sheets-print": "workspace:*",
+        "@univerjs/network": "workspace:*"
+    },
+    "devDependencies": {
+        "typescript": "^5.6.3"
+    }
+}

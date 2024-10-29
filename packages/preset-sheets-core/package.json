@@ -1,0 +1,34 @@
+{
+    "name": "@univerjs/preset-sheets-core",
+    "version": "0.5.0",
+    "author": "DreamNum Inc. <developer@univer.ai>",
+    "license": "Apache-2.0",
+    "keywords": [
+        "univer"
+    ],
+    "exports": {
+        ".": "./src/index.ts",
+        "./*": "./src/*",
+        "./web-worker": "./src/web-worker.ts",
+        "./locales/*": "./src/locales/*.ts"
+    },
+    "dependencies": {
+        "@univerjs/core": "workspace:*",
+        "@univerjs/design": "workspace:*",
+        "@univerjs/docs": "workspace:*",
+        "@univerjs/docs-ui": "workspace:*",
+        "@univerjs/engine-formula": "workspace:*",
+        "@univerjs/engine-render": "workspace:*",
+        "@univerjs/facade": "workspace:*",
+        "@univerjs/rpc": "workspace:*",
+        "@univerjs/sheets": "workspace:*",
+        "@univerjs/sheets-formula": "workspace:*",
+        "@univerjs/sheets-formula-ui": "workspace:*",
+        "@univerjs/sheets-numfmt": "workspace:*",
+        "@univerjs/sheets-ui": "workspace:*",
+        "@univerjs/ui": "workspace:*"
+    },
+    "devDependencies": {
+        "typescript": "^5.6.3"
+    }
+}
