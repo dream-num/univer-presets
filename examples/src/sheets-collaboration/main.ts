@@ -5,7 +5,7 @@ import { UniverSheetsCollaborationPreset } from '@univerjs/presets/preset-sheets
 import sheetsCollaborationZhCN from '@univerjs/presets/preset-sheets-collaboration/locales/zh-CN';
 import { UniverSheetsCorePreset } from '@univerjs/presets/preset-sheets-core';
 import sheetsCoreZhCN from '@univerjs/presets/preset-sheets-core/locales/zh-CN';
-import { UniverSheetsCommentPreset } from '@univerjs/presets/preset-sheets-thread-comment';
+import { UniverSheetsThreadCommentPreset } from '@univerjs/presets/preset-sheets-thread-comment';
 
 createUniver({
     locale: LocaleType.ZH_CN,
@@ -23,6 +23,6 @@ createUniver({
         UniverSheetsCorePreset(),
         UniverSheetsAdvancedPreset(),
         UniverSheetsCollaborationPreset(),
-        UniverSheetsCommentPreset({ collaboration: true }),
+        UniverSheetsThreadCommentPreset({ collaboration: true }),
     ],
 });
