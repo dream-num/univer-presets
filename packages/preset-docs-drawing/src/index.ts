@@ -9,7 +9,7 @@ export interface IUniverDocsDrawingPresetConfig {
     collaboration?: boolean;
 }
 
-export function UniverDocsCorePreset(config: Partial<IUniverDocsDrawingPresetConfig> = {}): IPreset {
+export function UniverDocsDrawingPreset(config: Partial<IUniverDocsDrawingPresetConfig> = {}): IPreset {
     const { collaboration = false } = config;
 
     return {
