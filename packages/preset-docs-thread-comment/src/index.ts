@@ -2,7 +2,7 @@ import type { IPreset } from '../../types';
 import { UniverDocsThreadCommentUIPlugin } from '@univerjs/docs-thread-comment-ui';
 import { UniverThreadCommentDataSourcePlugin } from '@univerjs-pro/thread-comment-datasource';
 
-export interface IUniverSheetsThreadCommentPresetConfig {
+export interface IUniverDocsThreadCommentPresetConfig {
     /**
      * If you would like to use comment with Univer's first-party collaboration features,
      * please set this option to `true`.
@@ -13,9 +13,9 @@ export interface IUniverSheetsThreadCommentPresetConfig {
 /**
  * This preset add thread comment features into your application.
  *
- * @param {Partial<IUniverSheetsThreadCommentPresetConfig>} config - The configuration object.
+ * @param {Partial<IUniverDocsThreadCommentPresetConfig>} config - The configuration object.
  */
-export function UniverSheetsThreadCommentPreset(config: Partial<IUniverSheetsThreadCommentPresetConfig> = {}): IPreset {
+export function UniverDocsThreadCommentPreset(config: Partial<IUniverDocsThreadCommentPresetConfig> = {}): IPreset {
     const { collaboration } = config;
 
     const plugins: IPreset['plugins'] = [
