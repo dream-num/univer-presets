@@ -12,9 +12,9 @@
         "./locales/*": "./src/locales/*.ts"
     },
     "dependencies": {
-        "@univerjs-pro/collaboration": "0.4.1-nightly.202410291304",
-        "@univerjs-pro/collaboration-client": "0.4.1-nightly.202410291304",
-        "@univerjs-pro/edit-history-loader": "0.4.1-nightly.202410291304",
+        "@univerjs-pro/collaboration": "0.4.2-nightly.202410301606",
+        "@univerjs-pro/collaboration-client": "0.4.2-nightly.202410301606",
+        "@univerjs-pro/edit-history-loader": "0.4.2-nightly.202410301606",
         "@univerjs/preset-sheets-advanced": "workspace:*"
     },
     "devDependencies": {

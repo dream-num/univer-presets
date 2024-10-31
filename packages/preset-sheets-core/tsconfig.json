@@ -11,15 +11,14 @@
         "moduleResolution": "bundler",
 
         "resolveJsonModule": true,
-        // "allowImportingTsExtensions": true,
+        "allowImportingTsExtensions": true,
 
         "strict": true,
         "strictPropertyInitialization": false,
         "noFallthroughCasesInSwitch": true,
         "noImplicitOverride": true,
-        "emitDeclarationOnly": true,
         "noEmit": true,
-        "outDir": "./dist",
+        "outDir": "lib/types",
         "isolatedModules": true,
         "skipLibCheck": true
     },

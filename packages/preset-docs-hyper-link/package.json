@@ -12,8 +12,8 @@
         "./locales/*": "./src/locales/*.ts"
     },
     "dependencies": {
-        "@univerjs/docs-hyper-link": "0.4.1-nightly.202410291304",
-        "@univerjs/docs-hyper-link-ui": "0.4.1-nightly.202410291304"
+        "@univerjs/docs-hyper-link": "0.4.2-nightly.202410301606",
+        "@univerjs/docs-hyper-link-ui": "0.4.2-nightly.202410301606"
     },
     "devDependencies": {
         "typescript": "^5.6.3"

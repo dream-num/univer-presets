@@ -14,6 +14,12 @@ import { UniverSheetsNumfmtPlugin } from '@univerjs/sheets-numfmt';
 import { UniverSheetsUIPlugin } from '@univerjs/sheets-ui';
 import { UniverUIPlugin } from '@univerjs/ui';
 
+import '@univerjs/design/lib/index.css';
+import '@univerjs/ui/lib/index.css';
+import '@univerjs/docs-ui/lib/index.css';
+import '@univerjs/sheets-ui/lib/index.css';
+import '@univerjs/sheets-formula-ui/lib/index.css';
+
 // NOTE: here we copy code from everything.ts. That file (along with the package itself) would be removed in the future.
 import '@univerjs/sheets/facade';
 import '@univerjs/ui/facade';

@@ -16,23 +16,22 @@
         "build": "node ./rollup.config.mjs"
     },
     "dependencies": {
-        "@univerjs/core": "0.4.1-nightly.202410291304",
-        "@univerjs/design": "0.4.1-nightly.202410291304",
-        "@univerjs/docs": "0.4.1-nightly.202410291304",
-        "@univerjs/docs-ui": "0.4.1-nightly.202410291304",
-        "@univerjs/engine-formula": "0.4.1-nightly.202410291304",
-        "@univerjs/engine-render": "0.4.1-nightly.202410291304",
-        "@univerjs/facade": "0.4.1-nightly.202410291304",
-        "@univerjs/rpc": "0.4.1-nightly.202410291304",
-        "@univerjs/sheets": "0.4.1-nightly.202410291304",
-        "@univerjs/sheets-formula": "0.4.1-nightly.202410291304",
-        "@univerjs/sheets-formula-ui": "0.4.1-nightly.202410291304",
-        "@univerjs/sheets-numfmt": "0.4.1-nightly.202410291304",
-        "@univerjs/sheets-ui": "0.4.1-nightly.202410291304",
-        "@univerjs/ui": "0.4.1-nightly.202410291304"
+        "@univerjs/core": "0.4.2-nightly.202410301606",
+        "@univerjs/design": "0.4.2-nightly.202410301606",
+        "@univerjs/docs": "0.4.2-nightly.202410301606",
+        "@univerjs/docs-ui": "0.4.2-nightly.202410301606",
+        "@univerjs/engine-formula": "0.4.2-nightly.202410301606",
+        "@univerjs/engine-render": "0.4.2-nightly.202410301606",
+        "@univerjs/facade": "0.4.2-nightly.202410301606",
+        "@univerjs/rpc": "0.4.2-nightly.202410301606",
+        "@univerjs/sheets": "0.4.2-nightly.202410301606",
+        "@univerjs/sheets-formula": "0.4.2-nightly.202410301606",
+        "@univerjs/sheets-formula-ui": "0.4.2-nightly.202410301606",
+        "@univerjs/sheets-numfmt": "0.4.2-nightly.202410301606",
+        "@univerjs/sheets-ui": "0.4.2-nightly.202410301606",
+        "@univerjs/ui": "0.4.2-nightly.202410301606"
     },
     "devDependencies": {
-        "rollup": "^4.24.2",
         "typescript": "^5.6.3"
     }
 }

@@ -13,13 +13,13 @@
         "./locales/*": "./src/locales/*.ts"
     },
     "dependencies": {
-        "@univerjs-pro/exchange-client": "0.4.1-nightly.202410291304",
-        "@univerjs-pro/license": "0.4.1-nightly.202410291304",
-        "@univerjs-pro/sheets-exchange-client": "0.4.1-nightly.202410291304",
-        "@univerjs-pro/sheets-pivot": "0.4.1-nightly.202410291304",
-        "@univerjs-pro/sheets-pivot-ui": "0.4.1-nightly.202410291304",
-        "@univerjs-pro/sheets-print": "0.4.1-nightly.202410291304",
-        "@univerjs/network": "0.4.1-nightly.202410291304"
+        "@univerjs-pro/exchange-client": "0.4.2-nightly.202410301606",
+        "@univerjs-pro/license": "0.4.2-nightly.202410301606",
+        "@univerjs-pro/sheets-exchange-client": "0.4.2-nightly.202410301606",
+        "@univerjs-pro/sheets-pivot": "0.4.2-nightly.202410301606",
+        "@univerjs-pro/sheets-pivot-ui": "0.4.2-nightly.202410301606",
+        "@univerjs-pro/sheets-print": "0.4.2-nightly.202410301606",
+        "@univerjs/network": "0.4.2-nightly.202410301606"
     },
     "devDependencies": {
         "typescript": "^5.6.3"

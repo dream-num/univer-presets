@@ -37,6 +37,7 @@ export function createUniver(options: CreateUniverOptions) {
 
     presets?.forEach((preset) => {
         const plugins = Array.isArray(preset) ? preset[0].plugins : preset.plugins;
+
         plugins.forEach((p) => {
             if (Array.isArray(p)) {
                 univer.registerPlugin(p[0], p[1]);
