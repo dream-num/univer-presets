@@ -1,23 +1,24 @@
 {
     "name": "univer-presets",
-    "version": "1.0.0",
+    "version": "0.4.2",
     "private": true,
-    "packageManager": "pnpm@9.12.1",
-    "description": "Build Univer apps faster and easier",
+    "packageManager": "pnpm@9.12.2",
     "author": "DreamNum Inc. <developer@univer.ai>",
     "license": "Apache-2.0",
     "scripts": {
+        "prepare": "node ./scripts/build-locales.mjs",
+        "build": "turbo build --concurrency=50%",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
         "dev": "pnpm --filter examples dev:demo",
-        "build:locales": "node ./scripts/build-locales.mjs",
         "build:demo": "pnpm --filter examples build:demo"
     },
     "devDependencies": {
         "@antfu/eslint-config": "^3.8.0",
-        "@univerjs/core": "0.4.2-nightly.202410301606",
+        "@univerjs/core": "0.4.2-nightly.202410310419",
         "eslint": "^9.13.0",
         "eslint-plugin-format": "^0.1.2",
-        "fs-extra": "^11.2.0"
+        "fs-extra": "^11.2.0",
+        "turbo": "^2.2.3"
     }
 }

@@ -1,8 +1,22 @@
 {
     "name": "@univerjs/preset-sheets-filter",
-    "version": "0.5.0",
-    "author": "DreamNum Inc. <developer@univer.ai>",
+    "version": "0.4.2",
+    "private": false,
+    "description": "",
+    "author": "DreamNum <developer@univer.ai>",
     "license": "Apache-2.0",
+    "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/univer"
+    },
+    "homepage": "https://univer.ai",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dream-num/univer-presets"
+    },
+    "bugs": {
+        "url": "https://github.com/dream-num/univer-presets/issues"
+    },
     "keywords": [
         "univer"
     ],
@@ -11,11 +25,51 @@
         "./*": "./src/*",
         "./locales/*": "./src/locales/*.ts"
     },
+    "main": "./src/index.ts",
+    "publishConfig": {
+        "access": "public",
+        "main": "./lib/es/index.js",
+        "module": "./lib/es/index.js",
+        "exports": {
+            ".": {
+                "import": "./lib/es/index.js",
+                "types": "./lib/types/index.d.ts"
+            },
+            "./*": {
+                "import": "./lib/es/*",
+                "types": "./lib/types/index.d.ts"
+            },
+            "./lib/*": "./lib/*",
+            "./locales/*": {
+                "import": "./lib/locales/*.js",
+                "types": "./lib/types/locales/*.d.ts"
+            }
+        }
+    },
+    "directories": {
+        "lib": "lib"
+    },
+    "files": [
+        "lib"
+    ],
+    "scripts": {
+        "build:preset": "tsc && vite build"
+    },
+    "peerDependencies": {
+        "react": "^16.9.0 || ^17.0.0 || ^18.0.0",
+        "react-dom": "^16.9.0 || ^17.0.0 || ^18.0.0",
+        "rxjs": ">=7.0.0"
+    },
     "dependencies": {
-        "@univerjs/sheets-filter": "0.4.2-nightly.202410301606",
-        "@univerjs/sheets-filter-ui": "0.4.2-nightly.202410301606"
+        "@univerjs/sheets-filter": "0.4.2-nightly.202410310419",
+        "@univerjs/sheets-filter-ui": "0.4.2-nightly.202410310419"
+    },
+    "optionalDependencies": {
+        "vue": ">=3.0.0"
     },
     "devDependencies": {
-        "typescript": "^5.6.3"
+        "@univerjs-infra/shared": "workspace:*",
+        "typescript": "^5.6.3",
+        "vite": "^5.4.10"
     }
 }

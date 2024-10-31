@@ -1,4 +1,4 @@
-import type { IPreset } from '../../types';
+import type { IPreset } from './types';
 import { UniverNetworkPlugin } from '@univerjs/network';
 import { UniverExchangeClientPlugin } from '@univerjs-pro/exchange-client';
 import { UniverLicensePlugin } from '@univerjs-pro/license';
@@ -6,6 +6,13 @@ import { UniverSheetsExchangeClientPlugin } from '@univerjs-pro/sheets-exchange-
 import { UniverSheetsPivotTablePlugin } from '@univerjs-pro/sheets-pivot';
 import { UniverSheetsPivotTableUIPlugin } from '@univerjs-pro/sheets-pivot-ui';
 import { UniverSheetsPrintPlugin } from '@univerjs-pro/sheets-print';
+
+import '@univerjs-pro/exchange-client/facade';
+import '@univerjs-pro/sheets-pivot/facade';
+
+import '@univerjs-pro/exchange-client/lib/index.css';
+import '@univerjs-pro/sheets-pivot-ui/lib/index.css';
+import '@univerjs-pro/sheets-print/lib/index.css';
 
 export interface IUniverSheetsAdvancedPresetConfig {
     universerEndpoint?: string;

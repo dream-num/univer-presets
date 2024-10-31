@@ -1,8 +1,11 @@
 import type { UniverSheetsAdvancedPreset } from '@univerjs/preset-sheets-advanced';
-import type { IPreset } from '../../types';
+import type { IPreset } from './types';
 import { UniverCollaborationPlugin } from '@univerjs-pro/collaboration';
 import { UniverCollaborationClientPlugin } from '@univerjs-pro/collaboration-client';
 import { UniverEditHistoryLoaderPlugin } from '@univerjs-pro/edit-history-loader';
+
+import '@univerjs-pro/collaboration-client/lib/index.css';
+import '@univerjs-pro/edit-history-viewer/lib/index.css';
 
 export interface IUniverSheetsCollaborationPresetConfig {
     universerEndpoint?: string;

@@ -1,4 +1,4 @@
-import type { IPreset } from '../../types';
+import type { IPreset } from './types';
 import { UniverDocsPlugin } from '@univerjs/docs';
 import { UniverDocsUIPlugin } from '@univerjs/docs-ui';
 import { UniverFormulaEnginePlugin } from '@univerjs/engine-formula';

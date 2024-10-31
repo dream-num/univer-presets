@@ -1,6 +1,9 @@
-import type { IPreset } from '../../types';
+import type { IPreset } from './types';
 import { UniverDocsThreadCommentUIPlugin } from '@univerjs/docs-thread-comment-ui';
+import { UniverThreadCommentUIPlugin } from '@univerjs/thread-comment-ui';
 import { UniverThreadCommentDataSourcePlugin } from '@univerjs-pro/thread-comment-datasource';
+
+import '@univerjs/thread-comment-ui/lib/index.css';
 
 export interface IUniverDocsThreadCommentPresetConfig {
     /**
@@ -19,6 +22,7 @@ export function UniverDocsThreadCommentPreset(config: Partial<IUniverDocsThreadC
     const { collaboration } = config;
 
     const plugins: IPreset['plugins'] = [
+        UniverThreadCommentUIPlugin,
         UniverDocsThreadCommentUIPlugin,
     ];
 

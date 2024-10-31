@@ -1,8 +1,22 @@
 {
     "name": "@univerjs/preset-sheets-core",
-    "version": "0.5.0",
-    "author": "DreamNum Inc. <developer@univer.ai>",
+    "version": "0.4.2",
+    "private": false,
+    "description": "",
+    "author": "DreamNum <developer@univer.ai>",
     "license": "Apache-2.0",
+    "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/univer"
+    },
+    "homepage": "https://univer.ai",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dream-num/univer-presets"
+    },
+    "bugs": {
+        "url": "https://github.com/dream-num/univer-presets/issues"
+    },
     "keywords": [
         "univer"
     ],
@@ -12,26 +26,68 @@
         "./web-worker": "./src/web-worker.ts",
         "./locales/*": "./src/locales/*.ts"
     },
+    "publishConfig": {
+        "access": "public",
+        "main": "./lib/es/index.js",
+        "module": "./lib/es/index.js",
+        "exports": {
+            ".": {
+                "import": "./lib/es/index.js",
+                "types": "./lib/types/index.d.ts"
+            },
+            "./*": {
+                "import": "./lib/es/*",
+                "types": "./lib/types/index.d.ts"
+            },
+            "./lib/*": "./lib/*",
+            "./web-worker": {
+                "import": "./lib/web-worker.js",
+                "types": "./lib/types/web-worker.d.ts"
+            },
+            "./locales/*": {
+                "import": "./lib/locales/*.js",
+                "types": "./lib/types/locales/*.d.ts"
+            }
+        }
+    },
+    "main": "./src/index.ts",
+    "directories": {
+        "lib": "lib"
+    },
+    "files": [
+        "lib"
+    ],
     "scripts": {
-        "build": "node ./rollup.config.mjs"
+        "build:preset": "tsc && vite build"
+    },
+    "peerDependencies": {
+        "react": "^16.9.0 || ^17.0.0 || ^18.0.0",
+        "react-dom": "^16.9.0 || ^17.0.0 || ^18.0.0",
+        "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/core": "0.4.2-nightly.202410301606",
-        "@univerjs/design": "0.4.2-nightly.202410301606",
-        "@univerjs/docs": "0.4.2-nightly.202410301606",
-        "@univerjs/docs-ui": "0.4.2-nightly.202410301606",
-        "@univerjs/engine-formula": "0.4.2-nightly.202410301606",
-        "@univerjs/engine-render": "0.4.2-nightly.202410301606",
-        "@univerjs/facade": "0.4.2-nightly.202410301606",
-        "@univerjs/rpc": "0.4.2-nightly.202410301606",
-        "@univerjs/sheets": "0.4.2-nightly.202410301606",
-        "@univerjs/sheets-formula": "0.4.2-nightly.202410301606",
-        "@univerjs/sheets-formula-ui": "0.4.2-nightly.202410301606",
-        "@univerjs/sheets-numfmt": "0.4.2-nightly.202410301606",
-        "@univerjs/sheets-ui": "0.4.2-nightly.202410301606",
-        "@univerjs/ui": "0.4.2-nightly.202410301606"
+        "@univerjs/core": "0.4.2-nightly.202410310419",
+        "@univerjs/design": "0.4.2-nightly.202410310419",
+        "@univerjs/docs": "0.4.2-nightly.202410310419",
+        "@univerjs/docs-ui": "0.4.2-nightly.202410310419",
+        "@univerjs/engine-formula": "0.4.2-nightly.202410310419",
+        "@univerjs/engine-render": "0.4.2-nightly.202410310419",
+        "@univerjs/facade": "0.4.2-nightly.202410310419",
+        "@univerjs/rpc": "0.4.2-nightly.202410310419",
+        "@univerjs/sheets": "0.4.2-nightly.202410310419",
+        "@univerjs/sheets-formula": "0.4.2-nightly.202410310419",
+        "@univerjs/sheets-formula-ui": "0.4.2-nightly.202410310419",
+        "@univerjs/sheets-numfmt": "0.4.2-nightly.202410310419",
+        "@univerjs/sheets-numfmt-ui": "0.4.2-nightly.202410310419",
+        "@univerjs/sheets-ui": "0.4.2-nightly.202410310419",
+        "@univerjs/ui": "0.4.2-nightly.202410310419"
+    },
+    "optionalDependencies": {
+        "vue": ">=3.0.0"
     },
     "devDependencies": {
-        "typescript": "^5.6.3"
+        "@univerjs-infra/shared": "workspace:*",
+        "typescript": "^5.6.3",
+        "vite": "^5.4.10"
     }
 }

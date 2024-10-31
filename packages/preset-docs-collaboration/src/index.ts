@@ -1,6 +1,8 @@
-import type { IPreset } from '../../types';
+import type { IPreset } from './types';
 import { UniverCollaborationPlugin } from '@univerjs-pro/collaboration';
 import { UniverCollaborationClientPlugin } from '@univerjs-pro/collaboration-client';
+
+import '@univerjs-pro/collaboration-client/lib/index.css';
 
 export interface IUniverDocsCollaborationPresetConfig {
     universerEndpoint?: string;
