@@ -131,4 +131,8 @@ dist
 
 .DS_Store
 
+# turbo
+.turbo
+
 packages/**/src/locales
+packages/**/lib

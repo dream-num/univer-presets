@@ -1,9 +1,12 @@
-import type { IPreset } from '../../types';
+import type { IPreset } from './types';
 
 import { IImageIoService, UniverDrawingPlugin } from '@univerjs/drawing';
 import { UniverDrawingUIPlugin } from '@univerjs/drawing-ui';
 import { UniverSheetsDrawingPlugin } from '@univerjs/sheets-drawing';
 import { UniverSheetsDrawingUIPlugin } from '@univerjs/sheets-drawing-ui';
+
+import '@univerjs/drawing-ui/lib/index.css';
+import '@univerjs/sheets-drawing-ui/lib/index.css';
 
 export interface IUniverSheetsDrawingPresetConfig {
     collaboration?: boolean;

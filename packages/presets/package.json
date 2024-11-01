@@ -1,10 +1,22 @@
 {
     "name": "@univerjs/presets",
-    "version": "1.0.0",
-    "packageManager": "pnpm@9.12.1",
+    "version": "0.4.2",
+    "private": false,
     "description": "Build Univer apps faster and easier",
-    "author": "DreamNum Inc. <developer@univer.ai>",
+    "author": "DreamNum <developer@univer.ai>",
     "license": "Apache-2.0",
+    "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/univer"
+    },
+    "homepage": "https://univer.ai",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dream-num/univer-presets"
+    },
+    "bugs": {
+        "url": "https://github.com/dream-num/univer-presets/issues"
+    },
     "keywords": [
         "univer"
     ],
@@ -46,9 +58,74 @@
         "./preset-docs-thread-comment": "./src/preset-docs-thread-comment/index.ts",
         "./preset-docs-thread-comment/*": "./src/preset-docs-thread-comment/*.ts"
     },
+    "main": "./src/index.ts",
+    "publishConfig": {
+        "access": "public",
+        "main": "./lib/es/index.js",
+        "module": "./lib/es/index.js",
+        "exports": {
+            ".": {
+                "import": "./lib/es/index.js",
+                "types": "./lib/types/index.d.ts"
+            },
+            "./*": {
+                "import": "./lib/es/*",
+                "types": "./lib/types/index.d.ts"
+            },
+            "./lib/*": "./lib/*",
+            "./preset-docs-collaboration": "./lib/es/preset-docs-collaboration/index.ts",
+            "./preset-docs-collaboration/*": "./lib/es/preset-docs-collaboration/*.ts",
+            "./preset-docs-core": "./lib/es/preset-docs-core/index.ts",
+            "./preset-docs-core/*": "./lib/es/preset-docs-core/*.ts",
+            "./preset-docs-drawing": "./lib/es/preset-docs-drawing/index.ts",
+            "./preset-docs-drawing/*": "./lib/es/preset-docs-drawing/*.ts",
+            "./preset-docs-hyper-link": "./lib/es/preset-docs-hyper-link/index.ts",
+            "./preset-docs-hyper-link/*": "./lib/es/preset-docs-hyper-link/*.ts",
+            "./preset-sheets-advanced": "./lib/es/preset-sheets-advanced/index.ts",
+            "./preset-sheets-advanced/*": "./lib/es/preset-sheets-advanced/*.ts",
+            "./preset-sheets-collaboration": "./lib/es/preset-sheets-collaboration/index.ts",
+            "./preset-sheets-collaboration/*": "./lib/es/preset-sheets-collaboration/*.ts",
+            "./preset-sheets-conditional-formatting": "./lib/es/preset-sheets-conditional-formatting/index.ts",
+            "./preset-sheets-conditional-formatting/*": "./lib/es/preset-sheets-conditional-formatting/*.ts",
+            "./preset-sheets-core": "./lib/es/preset-sheets-core/index.ts",
+            "./preset-sheets-core/*": "./lib/es/preset-sheets-core/*.ts",
+            "./preset-sheets-data-validation": "./lib/es/preset-sheets-data-validation/index.ts",
+            "./preset-sheets-data-validation/*": "./lib/es/preset-sheets-data-validation/*.ts",
+            "./preset-sheets-drawing": "./lib/es/preset-sheets-drawing/index.ts",
+            "./preset-sheets-drawing/*": "./lib/es/preset-sheets-drawing/*.ts",
+            "./preset-sheets-filter": "./lib/es/preset-sheets-filter/index.ts",
+            "./preset-sheets-filter/*": "./lib/es/preset-sheets-filter/*.ts",
+            "./preset-sheets-find-replace": "./lib/es/preset-sheets-find-replace/index.ts",
+            "./preset-sheets-find-replace/*": "./lib/es/preset-sheets-find-replace/*.ts",
+            "./preset-sheets-hyper-link": "./lib/es/preset-sheets-hyper-link/index.ts",
+            "./preset-sheets-hyper-link/*": "./lib/es/preset-sheets-hyper-link/*.ts",
+            "./preset-sheets-node-core": "./lib/es/preset-sheets-node-core/index.ts",
+            "./preset-sheets-node-core/*": "./lib/es/preset-sheets-node-core/*.ts",
+            "./preset-sheets-sort": "./lib/es/preset-sheets-sort/index.ts",
+            "./preset-sheets-sort/*": "./lib/es/preset-sheets-sort/*.ts",
+            "./preset-sheets-thread-comment": "./lib/es/preset-sheets-thread-comment/index.ts",
+            "./preset-sheets-thread-comment/*": "./lib/es/preset-sheets-thread-comment/*.ts",
+            "./preset-docs-thread-comment": "./lib/es/preset-docs-thread-comment/index.ts",
+            "./preset-docs-thread-comment/*": "./lib/es/preset-docs-thread-comment/*.ts"
+        }
+    },
+    "directories": {
+        "lib": "lib"
+    },
+    "files": [
+        "lib"
+    ],
+    "scripts": {
+        "build": "tsc && vite build"
+    },
+    "peerDependencies": {
+        "react": "^16.9.0 || ^17.0.0 || ^18.0.0",
+        "react-dom": "^16.9.0 || ^17.0.0 || ^18.0.0",
+        "rxjs": ">=7.0.0"
+    },
     "dependencies": {
-        "@univerjs/core": "workspace:*",
-        "@univerjs/design": "workspace:*",
+        "@univerjs/core": "0.4.2-nightly.202410310419",
+        "@univerjs/design": "0.4.2-nightly.202410310419",
         "@univerjs/preset-docs-collaboration": "workspace:*",
         "@univerjs/preset-docs-core": "workspace:*",
         "@univerjs/preset-docs-drawing": "workspace:*",
@@ -68,6 +145,12 @@
         "@univerjs/preset-sheets-thread-comment": "workspace:*"
     },
     "devDependencies": {
-        "typescript": "^5.6.3"
+        "@types/fs-extra": "^11.0.4",
+        "@univerjs-infra/shared": "workspace:*",
+        "fs-extra": "^11.2.0",
+        "typescript": "^5.6.3",
+        "vite": "^5.4.10",
+        "vite-plugin-dts": "^4.3.0",
+        "vite-plugin-external": "^4.3.1"
     }
 }

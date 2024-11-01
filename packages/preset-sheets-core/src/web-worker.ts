@@ -1,4 +1,4 @@
-import type { IPreset } from '../../types';
+import type { IPreset } from './types';
 import { UniverFormulaEnginePlugin } from '@univerjs/engine-formula';
 import { UniverRPCWorkerThreadPlugin } from '@univerjs/rpc';
 import { UniverSheetsPlugin } from '@univerjs/sheets';

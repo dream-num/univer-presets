@@ -1,23 +1,36 @@
 {
     "name": "univer-presets",
-    "version": "1.0.0",
+    "version": "0.4.2",
     "private": true,
-    "packageManager": "pnpm@9.12.1",
-    "description": "Build Univer apps faster and easier",
+    "packageManager": "pnpm@9.12.2",
     "author": "DreamNum Inc. <developer@univer.ai>",
     "license": "Apache-2.0",
     "scripts": {
+        "prepare": "node ./scripts/build-locales.mjs",
+        "dev": "pnpm --filter examples dev:demo",
+        "build": "turbo build --concurrency=2",
+        "build:demo": "pnpm --filter examples build:demo",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
-        "dev": "pnpm --filter examples dev:demo",
-        "build:locales": "node ./scripts/build-locales.mjs",
-        "build:demo": "pnpm --filter examples build:demo"
+        "release": "release-it"
     },
     "devDependencies": {
         "@antfu/eslint-config": "^3.8.0",
-        "@univerjs/core": "workspace:*",
+        "@release-it-plugins/workspaces": "^4.2.0",
+        "@release-it/conventional-changelog": "^9.0.2",
+        "@univerjs/core": "0.4.2-nightly.202410310419",
         "eslint": "^9.13.0",
         "eslint-plugin-format": "^0.1.2",
-        "fs-extra": "^11.2.0"
+        "fs-extra": "^11.2.0",
+        "lint-staged": "^15.2.10",
+        "release-it": "^17.10.0",
+        "simple-git-hooks": "^2.11.1",
+        "turbo": "^2.2.3"
+    },
+    "simple-git-hooks": {
+        "pre-commit": "pnpm lint-staged"
+    },
+    "lint-staged": {
+        "*": "eslint"
     }
 }

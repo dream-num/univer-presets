@@ -2,11 +2,4 @@ packages:
     - examples
     - examples-node
     - packages/*
-    - submodules/univer-pro
-    - submodules/univer-pro/packages-experimental/**/*
-    - submodules/univer-pro/packages/**/*
-    - submodules/univer-pro/submodules/univer/common/shared
-    - submodules/univer-pro/submodules/univer/mockdata
-    - submodules/univer-pro/submodules/univer/packages/**/*
-    - submodules/univer-pro/submodules/univer/packages-experimental/**/*
-    - submodules/univer-pro/submodules/protocol/gen
+    - common/*

@@ -33,11 +33,12 @@ pkgs.forEach((pkg) => {
 
     fs.ensureDirSync(path.resolve(__mainPkg, `./src/${pkg}`));
 
+    const __pkg = path.resolve(__packagesDir, pkg);
+    const pkgJson = fs.readJSONSync(path.resolve(__pkg, 'package.json'));
+
     // create presets/preset-[pkg]/index.ts
     fs.writeFileSync(path.resolve(__mainPkg, `./src/${pkg}/index.ts`), `export * from '@univerjs/${pkg}';\n`);
 
-    const __pkg = path.resolve(__packagesDir, pkg);
-    const pkgJson = fs.readJSONSync(path.resolve(__pkg, 'package.json'));
     // create presets/preset-[pkg]/web-worker.ts
     if (pkgJson.exports['./web-worker']) {
         fs.writeFileSync(path.resolve(__mainPkg, `./src/${pkg}/web-worker.ts`), `export * from '@univerjs/${pkg}/web-worker';\n`);
@@ -54,7 +55,7 @@ pkgs.forEach((pkg) => {
     Object.keys(pkgJson.dependencies)
         .filter(dep => dep.startsWith('@univerjs/') || dep.startsWith('@univerjs-pro/'))
         .forEach((dep) => {
-            const hasLocales = fs.existsSync(path.resolve(__pkg, './node_modules', dep, './src/locale'));
+            const hasLocales = fs.existsSync(path.resolve(__pkg, './node_modules', dep, './lib/locale'));
 
             if (hasLocales) {
                 pkgWithLocales.push(dep);
