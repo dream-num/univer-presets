@@ -1,6 +1,11 @@
 import antfu from '@antfu/eslint-config';
 
 export default antfu({
+    ignores: [
+        '**/lib',
+        '**/node_moudles',
+        '**/local',
+    ],
     stylistic: {
         indent: 4,
         semi: true,

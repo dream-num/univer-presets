@@ -41,7 +41,7 @@ pkgs.forEach((pkg) => {
 
     // create presets/preset-[pkg]/web-worker.ts
     if (pkgJson.exports['./web-worker']) {
-        fs.writeFileSync(path.resolve(__mainPkg, `./src/${pkg}/web-worker.ts`), `\nexport * from '@univerjs/${pkg}/web-worker';\n`);
+        fs.writeFileSync(path.resolve(__mainPkg, `./src/${pkg}/web-worker.ts`), `export * from '@univerjs/${pkg}/web-worker';\n`);
     }
     // create presets/preset-[pkg]/locales/[lang].ts
     if (pkgJson.exports['./locales/*']) {

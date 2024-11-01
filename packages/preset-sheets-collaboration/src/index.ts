@@ -1,4 +1,3 @@
-import type { UniverSheetsAdvancedPreset } from '@univerjs/preset-sheets-advanced';
 import type { IPreset } from './types';
 import { UniverCollaborationPlugin } from '@univerjs-pro/collaboration';
 import { UniverCollaborationClientPlugin } from '@univerjs-pro/collaboration-client';
@@ -14,7 +13,6 @@ export interface IUniverSheetsCollaborationPresetConfig {
 /**
  * This preset add collaboration features, including collaboration editing, collaboration cursors,
  * and history into your application.
- *
  * To use this plugin, you should import {@link UniverSheetsAdvancedPreset} first.
  *
  * @param {Partial<IUniverSheetsCollaborationPresetConfig>} config - The configuration object.

@@ -69,11 +69,11 @@ exports.buildUMD = function buildUMD() {
 
             await build(mergeConfig({
                 build: {
-                    outDir: 'lib',
+                    outDir: 'lib/umd',
                     lib: {
                         entry: path.resolve(process.cwd(), 'src/index.ts'),
                         name: convertLibNameFromPackageName(pkg.name),
-                        fileName: () => 'umd/index.js',
+                        fileName: () => 'index.js',
                     },
                 },
             }, basicConfig));
@@ -82,11 +82,11 @@ exports.buildUMD = function buildUMD() {
             if (fs.existsSync(webWorkerFile)) {
                 await build(mergeConfig({
                     build: {
-                        outDir: 'lib',
+                        outDir: 'lib/umd',
                         lib: {
                             entry: path.resolve(process.cwd(), 'src/web-worker.ts'),
                             name: convertLibNameFromPackageName(`${pkg.name}WebWorker`),
-                            fileName: () => 'umd/web-worker.js',
+                            fileName: () => 'web-worker.js',
                         },
                     },
                 }, basicConfig));
