@@ -33,17 +33,20 @@
         "exports": {
             ".": {
                 "import": "./lib/es/index.js",
+                "require": "./lib/cjs/index.js",
                 "types": "./lib/types/index.d.ts"
             },
             "./*": {
                 "import": "./lib/es/*",
+                "require": "./lib/cjs/*",
                 "types": "./lib/types/index.d.ts"
             },
-            "./lib/*": "./lib/*",
             "./locales/*": {
-                "import": "./lib/locales/*.js",
+                "import": "./lib/es/locales/*.js",
+                "require": "./lib/cjs/locales/*.js",
                 "types": "./lib/types/locales/*.d.ts"
-            }
+            },
+            "./lib/*": "./lib/*"
         }
     },
     "main": "./src/index.ts",
@@ -54,33 +57,32 @@
         "lib"
     ],
     "scripts": {
-        "build:preset": "tsc && vite build"
+        "prebuild": "tsx prepare.ts",
+        "build:preset": "tsx build.ts"
     },
     "peerDependencies": {
         "react": "^16.9.0 || ^17.0.0 || ^18.0.0",
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/core": "0.4.2-nightly.202410310419",
-        "@univerjs/docs": "0.4.2-nightly.202410310419",
-        "@univerjs/engine-formula": "0.4.2-nightly.202410310419",
-        "@univerjs/engine-render": "0.4.2-nightly.202410310419",
-        "@univerjs/facade": "0.4.2-nightly.202410310419",
-        "@univerjs/rpc-node": "0.4.2-nightly.202410310419",
-        "@univerjs/sheets": "0.4.2-nightly.202410310419",
-        "@univerjs/sheets-data-validation": "0.4.2-nightly.202410310419",
-        "@univerjs/sheets-drawing": "0.4.2-nightly.202410310419",
-        "@univerjs/sheets-filter": "0.4.2-nightly.202410310419",
-        "@univerjs/sheets-formula": "0.4.2-nightly.202410310419",
-        "@univerjs/sheets-hyper-link": "0.4.2-nightly.202410310419",
-        "@univerjs/sheets-numfmt": "0.4.2-nightly.202410310419",
-        "@univerjs/sheets-sort": "0.4.2-nightly.202410310419",
-        "@univerjs/sheets-thread-comment": "0.4.2-nightly.202410310419",
-        "@univerjs/thread-comment": "0.4.2-nightly.202410310419"
+        "@univerjs/docs": "0.5.0-alpha.0",
+        "@univerjs/engine-formula": "0.5.0-alpha.0",
+        "@univerjs/engine-render": "0.5.0-alpha.0",
+        "@univerjs/rpc-node": "0.5.0-alpha.0",
+        "@univerjs/sheets": "0.5.0-alpha.0",
+        "@univerjs/sheets-data-validation": "0.5.0-alpha.0",
+        "@univerjs/sheets-drawing": "0.5.0-alpha.0",
+        "@univerjs/sheets-filter": "0.5.0-alpha.0",
+        "@univerjs/sheets-formula": "0.5.0-alpha.0",
+        "@univerjs/sheets-hyper-link": "0.5.0-alpha.0",
+        "@univerjs/sheets-numfmt": "0.5.0-alpha.0",
+        "@univerjs/sheets-sort": "0.5.0-alpha.0",
+        "@univerjs/sheets-thread-comment": "0.5.0-alpha.0",
+        "@univerjs/thread-comment": "0.5.0-alpha.0"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "typescript": "^5.6.3",
-        "vite": "^5.4.10"
+        "@univerjs/core": "0.5.0-alpha.0",
+        "typescript": "^5.6.3"
     }
 }

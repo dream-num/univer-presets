@@ -34,21 +34,25 @@
         "exports": {
             ".": {
                 "import": "./lib/es/index.js",
+                "require": "./lib/cjs/index.js",
                 "types": "./lib/types/index.d.ts"
             },
             "./*": {
                 "import": "./lib/es/*",
+                "require": "./lib/cjs/*",
                 "types": "./lib/types/index.d.ts"
             },
-            "./lib/*": "./lib/*",
             "./web-worker": {
-                "import": "./lib/web-worker.js",
+                "import": "./lib/es/web-worker.js",
+                "require": "./lib/cjs/locales/*.js",
                 "types": "./lib/types/web-worker.d.ts"
             },
             "./locales/*": {
-                "import": "./lib/locales/*.js",
+                "import": "./lib/es/locales/*.js",
+                "require": "./lib/cjs/locales/*.js",
                 "types": "./lib/types/locales/*.d.ts"
-            }
+            },
+            "./lib/*": "./lib/*"
         }
     },
     "directories": {
@@ -58,7 +62,8 @@
         "lib"
     ],
     "scripts": {
-        "build:preset": "tsc && vite build"
+        "prebuild": "tsx prepare.ts",
+        "build:preset": "tsx build.ts"
     },
     "peerDependencies": {
         "react": "^16.9.0 || ^17.0.0 || ^18.0.0",
@@ -66,20 +71,17 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs-pro/exchange-client": "0.4.2-nightly.202410310419",
-        "@univerjs-pro/license": "0.4.2-nightly.202410310419",
-        "@univerjs-pro/sheets-exchange-client": "0.4.2-nightly.202410310419",
-        "@univerjs-pro/sheets-pivot": "0.4.2-nightly.202410310419",
-        "@univerjs-pro/sheets-pivot-ui": "0.4.2-nightly.202410310419",
-        "@univerjs-pro/sheets-print": "0.4.2-nightly.202410310419",
-        "@univerjs/network": "0.4.2-nightly.202410310419"
-    },
-    "optionalDependencies": {
-        "vue": ">=3.0.0"
+        "@univerjs-pro/exchange-client": "0.5.0-alpha.0",
+        "@univerjs-pro/license": "0.5.0-alpha.0",
+        "@univerjs-pro/sheets-exchange-client": "0.5.0-alpha.0",
+        "@univerjs-pro/sheets-pivot": "0.5.0-alpha.0",
+        "@univerjs-pro/sheets-pivot-ui": "0.5.0-alpha.0",
+        "@univerjs-pro/sheets-print": "0.5.0-alpha.0",
+        "@univerjs/network": "0.5.0-alpha.0"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "typescript": "^5.6.3",
-        "vite": "^5.4.10"
+        "@univerjs/core": "0.5.0-alpha.0",
+        "typescript": "^5.6.3"
     }
 }

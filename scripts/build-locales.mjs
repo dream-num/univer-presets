@@ -55,7 +55,7 @@ pkgs.forEach((pkg) => {
     Object.keys(pkgJson.dependencies)
         .filter(dep => dep.startsWith('@univerjs/') || dep.startsWith('@univerjs-pro/'))
         .forEach((dep) => {
-            const hasLocales = fs.existsSync(path.resolve(__pkg, './node_modules', dep, './lib/locale'));
+            const hasLocales = fs.existsSync(path.resolve(__pkg, './node_modules', dep, './lib/es/locale'));
 
             if (hasLocales) {
                 pkgWithLocales.push(dep);
