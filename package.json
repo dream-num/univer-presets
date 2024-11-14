@@ -6,6 +6,7 @@
     "author": "DreamNum Inc. <developer@univer.ai>",
     "license": "Apache-2.0",
     "scripts": {
+        "prepare": "simple-git-hooks",
         "dev": "pnpm --filter examples dev:demo",
         "build": "turbo build --concurrency=2",
         "build:demo": "pnpm --filter examples build:demo",
