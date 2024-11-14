@@ -22,9 +22,7 @@ function convertImportNameFromPackageName(name: string) {
 }
 
 export function createLocalesFiles() {
-    if (!fs.pathExistsSync(path.resolve(__dirname, 'src/locales'))) {
-        fs.mkdirSync(path.resolve(__dirname, 'src/locales'));
-    }
+    fs.ensureDirSync(path.resolve(__dirname, 'src/locales'));
 
     LOCLAES_MAP.forEach((localeKey) => {
         let content = `import { Tools } from '@univerjs/core';\n\n`;
