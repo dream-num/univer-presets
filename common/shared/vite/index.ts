@@ -173,6 +173,7 @@ export async function build(options?: IBuildOptions) {
 
     if (mode === 'bootstrap') {
         const presets = fs.readdirSync(path.resolve(__dirname, 'src')).filter(dir => dir.startsWith('preset-'));
+
         for (const preset of presets) {
             const __presetDir = path.resolve(__dirname, 'src', preset);
             entry[`${preset}/index`] = path.resolve(__presetDir, 'index.ts');
@@ -181,6 +182,13 @@ export async function build(options?: IBuildOptions) {
             for (const file of locales) {
                 const localeValue = file.replace('.ts', '');
                 entry[`${preset}/locales/${localeValue}`] = path.resolve(__presetDir, 'locales', file);
+            }
+
+            const __cssFile = path.resolve(__dirname, 'node_modules', `@univerjs/${preset}`, 'lib/index.css');
+            const __cssOutputDir = path.resolve(__dirname, 'lib', 'styles');
+            fs.ensureDirSync(__cssOutputDir);
+            if (fs.existsSync(__cssFile)) {
+                fs.copyFileSync(__cssFile, path.resolve(__cssOutputDir, `${preset}.css`));
             }
         }
     }
