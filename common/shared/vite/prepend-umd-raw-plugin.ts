@@ -41,7 +41,10 @@ export function prependUMDRawPlugin(options: IOptions): Plugin {
                     umdContents.push(fs.readFileSync(__depFacade, 'utf8'));
                 }
             });
-            umdContents.push(fs.readFileSync(__umd, 'utf8'));
+
+            if (fs.existsSync(__umd)) {
+                umdContents.push(fs.readFileSync(__umd, 'utf8'));
+            }
 
             fs.writeFileSync(__umd, umdContents.join('\n\n'));
 
