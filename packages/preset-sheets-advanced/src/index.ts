@@ -1,5 +1,6 @@
 import type { IPreset } from './types';
 import { UniverNetworkPlugin } from '@univerjs/network';
+import { UniverProFormulaEnginePlugin } from '@univerjs-pro/engine-formula';
 import { UniverExchangeClientPlugin } from '@univerjs-pro/exchange-client';
 import { UniverLicensePlugin } from '@univerjs-pro/license';
 import { UniverSheetsExchangeClientPlugin } from '@univerjs-pro/sheets-exchange-client';
@@ -43,6 +44,7 @@ export function UniverSheetsAdvancedPreset(config: Partial<IUniverSheetsAdvanced
             // TODO: @wzhudev: if we use worker, we need to add different configurations to SheetsPivotTable
             [UniverSheetsPivotTablePlugin, { notExecuteFormula: useWorker ?? undefined }],
             UniverSheetsPivotTableUIPlugin,
+            UniverProFormulaEnginePlugin,
 
             UniverSheetsPrintPlugin,
             [UniverExchangeClientPlugin, {
