@@ -141,9 +141,9 @@ export async function build(options?: IBuildOptions) {
         }
     }
 
-    const hasWorker = fs.existsSync(path.resolve(__dirname, 'src/web-worker.ts'));
+    const hasWorker = fs.existsSync(path.resolve(__dirname, 'src/worker.ts'));
     if (hasWorker) {
-        entry.webWorker = path.resolve(__dirname, 'src/web-worker.ts');
+        entry.worker = path.resolve(__dirname, 'src/worker.ts');
     }
 
     const sharedConfig: InlineConfig = {
@@ -188,6 +188,10 @@ export async function build(options?: IBuildOptions) {
             for (const file of locales) {
                 const localeValue = file.replace('.ts', '');
                 entry[`${preset}/locales/${localeValue}`] = path.resolve(__presetDir, 'locales', file);
+            }
+
+            if (fs.existsSync(path.resolve(__presetDir, 'worker.ts'))) {
+                entry[`${preset}/worker`] = path.resolve(__presetDir, 'worker.ts');
             }
 
             const __cssFile = path.resolve(__dirname, 'node_modules', `@univerjs/${preset}`, 'lib/index.css');
