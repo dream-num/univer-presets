@@ -61,12 +61,22 @@ export function createLocalesFiles() {
 
 export function createPresetsFiles() {
     cleanupLibDir();
+
     Object.keys(pkg.dependencies).forEach((key) => {
         if (key.startsWith('@univerjs/preset')) {
             const indexTs = `export * from '${key}';\n`;
             const __indexTs = path.resolve(__dirname, 'src', `${key.replace('@univerjs/', '')}/index.ts`);
             fs.ensureFileSync(__indexTs);
             fs.writeFileSync(__indexTs, indexTs);
+
+            const __fromWorkerTs = path.resolve(__dirname, '../', `${key.replace('@univerjs/', '')}/src/worker.ts`);
+            if (fs.existsSync(__fromWorkerTs)) {
+                const workerTs = `export * from '${key}/worker';\n`;
+                const __toWorkerTs = path.resolve(__dirname, 'src', `${key.replace('@univerjs/', '')}/worker.ts`);
+
+                fs.ensureFileSync(__toWorkerTs);
+                fs.writeFileSync(__toWorkerTs, workerTs);
+            }
 
             LOCLAES_MAP.forEach((localeKey) => {
                 const localeTs = `export { default } from '${key}/locales/${localeKey}';\n`;

@@ -141,9 +141,9 @@ export async function build(options?: IBuildOptions) {
         }
     }
 
-    const hasWorker = fs.existsSync(path.resolve(__dirname, 'src/web-worker.ts'));
+    const hasWorker = fs.existsSync(path.resolve(__dirname, 'src/worker.ts'));
     if (hasWorker) {
-        entry.webWorker = path.resolve(__dirname, 'src/web-worker.ts');
+        entry.workder = path.resolve(__dirname, 'src/worker.ts');
     }
 
     const sharedConfig: InlineConfig = {
