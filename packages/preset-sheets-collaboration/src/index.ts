@@ -8,6 +8,9 @@ import '@univerjs-pro/edit-history-viewer/lib/index.css';
 
 export interface IUniverSheetsCollaborationPresetConfig {
     universerEndpoint?: string;
+    /**
+     * The container id of the history list, which is used to load the history list. same as the container id of the univer.
+     */
     univerContainerId?: string;
 }
 
