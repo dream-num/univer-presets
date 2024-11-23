@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-sheets-node-core",
-    "version": "0.5.0-nightly.202411230627",
+    "version": "0.5.0",
     "private": false,
     "description": "",
     "author": "DreamNum <developer@univer.ai>",
@@ -65,24 +65,24 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/docs": "0.5.0-nightly.202411230627",
-        "@univerjs/engine-formula": "0.5.0-nightly.202411230627",
-        "@univerjs/engine-render": "0.5.0-nightly.202411230627",
-        "@univerjs/rpc-node": "0.5.0-nightly.202411230627",
-        "@univerjs/sheets": "0.5.0-nightly.202411230627",
-        "@univerjs/sheets-data-validation": "0.5.0-nightly.202411230627",
-        "@univerjs/sheets-drawing": "0.5.0-nightly.202411230627",
-        "@univerjs/sheets-filter": "0.5.0-nightly.202411230627",
-        "@univerjs/sheets-formula": "0.5.0-nightly.202411230627",
-        "@univerjs/sheets-hyper-link": "0.5.0-nightly.202411230627",
-        "@univerjs/sheets-numfmt": "0.5.0-nightly.202411230627",
-        "@univerjs/sheets-sort": "0.5.0-nightly.202411230627",
-        "@univerjs/sheets-thread-comment": "0.5.0-nightly.202411230627",
-        "@univerjs/thread-comment": "0.5.0-nightly.202411230627"
+        "@univerjs/docs": "0.5.0",
+        "@univerjs/engine-formula": "0.5.0",
+        "@univerjs/engine-render": "0.5.0",
+        "@univerjs/rpc-node": "0.5.0",
+        "@univerjs/sheets": "0.5.0",
+        "@univerjs/sheets-data-validation": "0.5.0",
+        "@univerjs/sheets-drawing": "0.5.0",
+        "@univerjs/sheets-filter": "0.5.0",
+        "@univerjs/sheets-formula": "0.5.0",
+        "@univerjs/sheets-hyper-link": "0.5.0",
+        "@univerjs/sheets-numfmt": "0.5.0",
+        "@univerjs/sheets-sort": "0.5.0",
+        "@univerjs/sheets-thread-comment": "0.5.0",
+        "@univerjs/thread-comment": "0.5.0"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.5.0-nightly.202411230627",
+        "@univerjs/core": "0.5.0",
         "typescript": "^5.6.3"
     }
 }
