@@ -140,6 +140,11 @@ export async function build(options?: IBuildOptions) {
         }
     }
 
+    const hasWorker = fs.existsSync(path.resolve(__dirname, 'src/web-worker.ts'));
+    if (hasWorker) {
+        entry.webWorker = path.resolve(__dirname, 'src/web-worker.ts');
+    }
+
     const sharedConfig: InlineConfig = {
         configFile: false,
         build: {
