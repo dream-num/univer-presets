@@ -46,7 +46,9 @@ export function UniverSheetsAdvancedPreset(config: Partial<IUniverSheetsAdvanced
             [UniverLicensePlugin, { license }],
 
             // TODO: @wzhudev: if we use worker, we need to add different configurations to SheetsPivotTable
-            [UniverSheetsPivotTablePlugin, { notExecuteFormula: useWorker ?? undefined }],
+            useWorker
+                ? [UniverSheetsPivotTablePlugin, { notExecuteFormula: true }]
+                : [UniverSheetsPivotTablePlugin],
             UniverSheetsPivotTableUIPlugin,
 
             UniverProFormulaEnginePlugin,
