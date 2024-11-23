@@ -26,4 +26,6 @@ jobs:
               uses: ./.github/actions/setup-node
 
             - name: 🩺 Run build
-              run: pnpm build
+              run: |
+                  pnpm build
+                  pnpm build:demo
