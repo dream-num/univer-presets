@@ -41,6 +41,7 @@ function monacoBuildTask() {
 
 const define = {
     'process.env.NODE_ENV': args.watch ? '"development"' : '"production"',
+    'process.env.UNIVER_CLIENT_LICENSE': process.env.UNIVER_CLIENT_LICENSE ? `"${process.env.UNIVER_CLIENT_LICENSE}"` : 'undefined',
 };
 
 if (!args.watch) {
