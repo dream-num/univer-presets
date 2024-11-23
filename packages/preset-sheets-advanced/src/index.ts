@@ -51,7 +51,9 @@ export function UniverSheetsAdvancedPreset(config: Partial<IUniverSheetsAdvanced
                 : [UniverSheetsPivotTablePlugin],
             UniverSheetsPivotTableUIPlugin,
 
-            UniverProFormulaEnginePlugin,
+            useWorker
+                ? [UniverProFormulaEnginePlugin, { notExecuteFormula: true }]
+                : UniverProFormulaEnginePlugin,
 
             UniverSheetsPrintPlugin,
 
