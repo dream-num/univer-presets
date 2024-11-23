@@ -1,3 +1,4 @@
+import { execSync } from 'node:child_process';
 import path from 'node:path';
 import process from 'node:process';
 import fs from 'fs-extra';
@@ -59,14 +60,41 @@ export function createLocalesFiles() {
     });
 }
 
+interface IPkg {
+    name: string;
+    path: string;
+    private: boolean;
+    hasWorker: boolean;
+}
+
+function getWorkspacePkgs() {
+    const pkgs = JSON.parse(execSync('pnpm m ls --json').toString()) as IPkg[];
+    const result: Record<string, IPkg> = {};
+
+    pkgs.filter(it => it.name.startsWith('@univerjs/preset-')).forEach((it) => {
+        it.hasWorker = fs.existsSync(path.join(it.path, 'src', 'web-worker.ts'));
+        result[it.name] = it;
+    });
+    return result;
+}
+
 export function createPresetsFiles() {
     cleanupLibDir();
+    const presetPkgs = getWorkspacePkgs();
+
     Object.keys(pkg.dependencies).forEach((key) => {
         if (key.startsWith('@univerjs/preset')) {
             const indexTs = `export * from '${key}';\n`;
             const __indexTs = path.resolve(__dirname, 'src', `${key.replace('@univerjs/', '')}/index.ts`);
             fs.ensureFileSync(__indexTs);
             fs.writeFileSync(__indexTs, indexTs);
+
+            if (presetPkgs[key].hasWorker) {
+                const workerTs = `export * from '${key}/web-worker';\n`;
+                const __workerTs = path.resolve(__dirname, 'src', `${key.replace('@univerjs/', '')}/web-worker.ts`);
+                fs.ensureFileSync(__workerTs);
+                fs.writeFileSync(__workerTs, workerTs);
+            }
 
             LOCLAES_MAP.forEach((localeKey) => {
                 const localeTs = `export { default } from '${key}/locales/${localeKey}';\n`;
