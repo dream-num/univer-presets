@@ -45,7 +45,7 @@ const define = {
 
 if (!args.watch) {
     const gitCommitHash = execSync('git rev-parse --short HEAD').toString().trim();
-    const gitRefName = execSync('git symbolic-ref -q --short HEAD || git describe --tags --exact-match').toString().trim();
+    const gitRefName = execSync('git symbolic-ref -q --short HEAD || git describe --tags --exact-match || echo "unknown"').toString().trim();
 
     define['process.env.GIT_COMMIT_HASH'] = `"${gitCommitHash}"`;
     define['process.env.GIT_REF_NAME'] = `"${gitRefName}"`;
