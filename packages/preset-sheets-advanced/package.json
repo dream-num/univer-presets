@@ -84,6 +84,8 @@
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
+        "@univerjs-pro/engine-pivot": "0.5.0-nightly.202411230627",
+        "@univerjs-pro/print": "0.5.0-nightly.202411230627",
         "@univerjs/core": "0.5.0-nightly.202411230627",
         "typescript": "^5.6.3"
     }
