@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-sheets-find-replace",
-    "version": "0.5.0-nightly.202411230545",
+    "version": "0.5.0-nightly.202411230627",
     "private": false,
     "description": "",
     "author": "DreamNum <developer@univer.ai>",
@@ -65,12 +65,12 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/find-replace": "0.5.0-nightly.202411230545",
-        "@univerjs/sheets-find-replace": "0.5.0-nightly.202411230545"
+        "@univerjs/find-replace": "0.5.0-nightly.202411230627",
+        "@univerjs/sheets-find-replace": "0.5.0-nightly.202411230627"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.5.0-nightly.202411230545",
+        "@univerjs/core": "0.5.0-nightly.202411230627",
         "typescript": "^5.6.3"
     }
 }
