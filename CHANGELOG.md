@@ -1,5 +1,12 @@
 
 
+# [0.5.0](https://github.com/dream-num/univer-presets/compare/v0.5.0-nightly.202411230627...v0.5.0) (2024-11-23)
+
+
+### Features
+
+* add notExecuteFormula and license with worker  ([#10](https://github.com/dream-num/univer-presets/issues/10)) ([911de4e](https://github.com/dream-num/univer-presets/commit/911de4e39d7c7b98bafaf8e13029d5e327f2146a))
+
 # 0.5.0-beta.1 (2024-11-16)
 
 
