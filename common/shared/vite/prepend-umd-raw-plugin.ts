@@ -67,9 +67,9 @@ export function prependUMDRawPlugin(options: IOptions): Plugin {
 
                 if (fs.existsSync(__locale)) {
                     localeContents.push(fs.readFileSync(__locale, 'utf8'));
-                }
 
-                fs.writeFileSync(__locale, localeContents.join('\n\n'));
+                    fs.writeFileSync(__locale, localeContents.join('\n\n'));
+                }
             });
         },
     };
