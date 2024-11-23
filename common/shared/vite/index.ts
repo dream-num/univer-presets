@@ -7,7 +7,7 @@ import dts from 'vite-plugin-dts';
 import vitePluginExternal from 'vite-plugin-external';
 
 import { autoDetectedExternalPlugin } from './auto-detected-external-plugin';
-import { prependUMDRawPlugin } from './prepend-umd-raw-plugin';
+import prependUMDRaw from './prepend-umd-raw';
 
 import { convertLibNameFromPackageName } from './utils';
 
@@ -80,7 +80,7 @@ async function buildCJS(sharedConfig: InlineConfig, options: IBuildExecuterOptio
 async function buildUMD(sharedConfig: InlineConfig, options: IBuildExecuterOptions) {
     const { pkg, entry, umdDeps } = options;
 
-    return await Promise.all(Object.keys(entry).map((key) => {
+    await Promise.all(Object.keys(entry).map((key) => {
         let name = convertLibNameFromPackageName(pkg.name);
 
         if (key.includes('locales')) {
@@ -101,15 +101,16 @@ async function buildUMD(sharedConfig: InlineConfig, options: IBuildExecuterOptio
                     formats: ['umd'],
                 },
             },
-            plugins: [
-                prependUMDRawPlugin({
-                    umdDeps,
-                }),
-            ],
         });
 
         return viteBuild(config);
     }));
+
+    prependUMDRaw({
+        umdDeps,
+    });
+
+    return Promise.resolve();
 }
 
 interface IBuildOptions {

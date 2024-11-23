@@ -21,7 +21,12 @@ function convertImportNameFromPackageName(name: string) {
         .replace(/-/g, '');
 }
 
+function cleanupLibDir() {
+    fs.removeSync(path.resolve(__dirname, 'lib'));
+}
+
 export function createLocalesFiles() {
+    cleanupLibDir();
     fs.ensureDirSync(path.resolve(__dirname, 'src/locales'));
 
     LOCLAES_MAP.forEach((localeKey) => {
@@ -55,6 +60,7 @@ export function createLocalesFiles() {
 }
 
 export function createPresetsFiles() {
+    cleanupLibDir();
     Object.keys(pkg.dependencies).forEach((key) => {
         if (key.startsWith('@univerjs/preset')) {
             const indexTs = `export * from '${key}';\n`;
