@@ -12,8 +12,7 @@ import { UniverSheetsPrintPlugin } from '@univerjs-pro/sheets-print';
 
 import '@univerjs-pro/exchange-client/facade';
 import '@univerjs-pro/sheets-pivot/facade';
-// TODO: should use pro facade here.
-// import '@univerjs-pro/engine-formula/facade';
+import '@univerjs-pro/engine-formula/facade';
 
 import '@univerjs-pro/exchange-client/lib/index.css';
 import '@univerjs-pro/sheets-pivot-ui/lib/index.css';
@@ -67,8 +66,5 @@ export function UniverSheetsAdvancedPreset(config: Partial<IUniverSheetsAdvanced
             }],
             UniverSheetsExchangeClientPlugin,
         ].filter(v => !!v) as IPreset['plugins'],
-        overridePluginNames: {
-            [UniverProFormulaEnginePlugin.pluginName]: UniverProFormulaEnginePlugin,
-        },
     };
 };
