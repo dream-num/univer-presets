@@ -3,6 +3,8 @@ import { UniverNetworkPlugin } from '@univerjs/network';
 import { UniverProFormulaEnginePlugin } from '@univerjs-pro/engine-formula';
 import { UniverExchangeClientPlugin } from '@univerjs-pro/exchange-client';
 import { UniverLicensePlugin } from '@univerjs-pro/license';
+import { UniverSheetsChartPlugin } from '@univerjs-pro/sheets-chart';
+import { UniverSheetsChartUIPlugin } from '@univerjs-pro/sheets-chart-ui';
 import { UniverSheetsExchangeClientPlugin } from '@univerjs-pro/sheets-exchange-client';
 import { UniverSheetsPivotTablePlugin } from '@univerjs-pro/sheets-pivot';
 import { UniverSheetsPivotTableUIPlugin } from '@univerjs-pro/sheets-pivot-ui';
@@ -10,10 +12,13 @@ import { UniverSheetsPrintPlugin } from '@univerjs-pro/sheets-print';
 
 import '@univerjs-pro/exchange-client/facade';
 import '@univerjs-pro/sheets-pivot/facade';
+// TODO: should use pro facade here.
+// import '@univerjs-pro/engine-formula/facade';
 
 import '@univerjs-pro/exchange-client/lib/index.css';
 import '@univerjs-pro/sheets-pivot-ui/lib/index.css';
 import '@univerjs-pro/sheets-print/lib/index.css';
+import '@univerjs-pro/sheets-chart-ui/lib/index.css';
 
 export interface IUniverSheetsAdvancedPresetConfig {
     universerEndpoint?: string;
@@ -26,7 +31,7 @@ export interface IUniverSheetsAdvancedPresetConfig {
  */
 export function UniverSheetsAdvancedPreset(config: Partial<IUniverSheetsAdvancedPresetConfig> = {
     license: '',
-    universerEndpoint: ``,
+    universerEndpoint: '',
 }): IPreset {
     const {
         license,
@@ -44,9 +49,14 @@ export function UniverSheetsAdvancedPreset(config: Partial<IUniverSheetsAdvanced
             // TODO: @wzhudev: if we use worker, we need to add different configurations to SheetsPivotTable
             [UniverSheetsPivotTablePlugin, { notExecuteFormula: useWorker ?? undefined }],
             UniverSheetsPivotTableUIPlugin,
+
             UniverProFormulaEnginePlugin,
 
             UniverSheetsPrintPlugin,
+
+            UniverSheetsChartPlugin,
+            UniverSheetsChartUIPlugin,
+
             [UniverExchangeClientPlugin, {
                 uploadFileServerUrl: `${serverEndpoint}/universer-api/stream/file/upload`,
                 getTaskServerUrl: `${serverEndpoint}/universer-api/exchange/task/{taskID}`,
@@ -57,5 +67,8 @@ export function UniverSheetsAdvancedPreset(config: Partial<IUniverSheetsAdvanced
             }],
             UniverSheetsExchangeClientPlugin,
         ].filter(v => !!v) as IPreset['plugins'],
+        overridePluginNames: {
+            [UniverProFormulaEnginePlugin.pluginName]: UniverProFormulaEnginePlugin,
+        },
     };
 };

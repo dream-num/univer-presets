@@ -35,26 +35,35 @@ export function createUniver(options: CreateUniverOptions) {
         override,
     });
 
+    const pluginsMap = new Map<string, {
+        plugin: PluginCtor<Plugin>;
+        options: any;
+    }>();
+
     presets?.forEach((preset) => {
-        const plugins = Array.isArray(preset) ? preset[0].plugins : preset.plugins;
+        const realPreset = Array.isArray(preset) ? preset[0] : preset;
+
+        const { plugins } = realPreset;
 
         plugins.forEach((p) => {
-            if (Array.isArray(p)) {
-                univer.registerPlugin(p[0], p[1]);
+            const [realPlugin, pluginConfig] = Array.isArray(p) ? [p[0], p[1]] : [p];
+
+            if (pluginsMap.has(realPlugin.pluginName)) {
+                pluginsMap.delete(realPlugin.pluginName);
             }
-            else {
-                univer.registerPlugin(p);
-            }
+
+            pluginsMap.set(realPlugin.pluginName, { plugin: realPlugin, options: pluginConfig });
         });
     });
 
     plugins?.forEach((plugin) => {
-        if (Array.isArray(plugin)) {
-            univer.registerPlugin(plugin[0], plugin[1]);
-        }
-        else {
-            univer.registerPlugin(plugin);
-        }
+        const [realPlugin, pluginConfig] = Array.isArray(plugin) ? [plugin[0], plugin[1]] : [plugin];
+
+        pluginsMap.set(realPlugin.pluginName, { plugin: realPlugin, options: pluginConfig });
+    });
+
+    pluginsMap.forEach(({ plugin, options }) => {
+        univer.registerPlugin(plugin, options);
     });
 
     // Finally we wrap all plugins into a Facade API to make it for convenient usage.

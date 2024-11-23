@@ -331,6 +331,12 @@ importers:
       '@univerjs-pro/license':
         specifier: 0.5.0-beta.1
         version: 0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react@18.3.1)(rxjs@7.8.1)
+      '@univerjs-pro/sheets-chart':
+        specifier: 0.5.0-beta.1
+        version: 0.5.0-beta.1(@univerjs/core@0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react@18.3.1)(rxjs@7.8.1))(@univerjs/sheets@0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react@18.3.1)(rxjs@7.8.1))(rxjs@7.8.1)
+      '@univerjs-pro/sheets-chart-ui':
+        specifier: 0.5.0-beta.1
+        version: 0.5.0-beta.1(@grpc/grpc-js@1.9.14)(@univerjs/core@0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react@18.3.1)(rxjs@7.8.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.6.3)
       '@univerjs-pro/sheets-exchange-client':
         specifier: 0.5.0-beta.1
         version: 0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.6.3)
@@ -2127,6 +2133,19 @@ packages:
   '@univerjs-pro/print@0.5.0-beta.1':
     resolution: {integrity: sha512-NolSQi39Y6bdc6raCxtbqFM6VZo5oo5fZTAnCfMYUDGk5O4KnTU0bijaqtOvM/h8AFXn5Ml2MyH6qTD0GiIUfQ==}
 
+  '@univerjs-pro/sheets-chart-ui@0.5.0-beta.1':
+    resolution: {integrity: sha512-TMkhXoQU9/NSobz2t2tj8ZJN9EPQhjHLNGSZqdFxIXXWwmR4/+oCCclzD+2qU91CWQG98TgneSCdVHsT+rlQ7A==}
+    peerDependencies:
+      '@univerjs/core': 0.5.0-beta.1
+      rxjs: '>=7.0.0'
+
+  '@univerjs-pro/sheets-chart@0.5.0-beta.1':
+    resolution: {integrity: sha512-Nkq5KgshjuGdtZl1yMubj2PiKxL6sJq3n/mMSFAvdKNeJLWd0EkrNczf9qQzDtMoN0/t66TAMcW4Gmym0RDDcA==}
+    peerDependencies:
+      '@univerjs/core': 0.5.0-beta.1
+      '@univerjs/sheets': 0.5.0-beta.1
+      rxjs: '>=7.0.0'
+
   '@univerjs-pro/sheets-exchange-client@0.5.0-beta.1':
     resolution: {integrity: sha512-LccBTxNlNJUOobTeHMEZi3vgkkA8zjEK8TNgEDhMsGP7TKNAafM+aw7V57jeGCvPRTWxB1A3FE6Dp5XAzeZspg==}
 
@@ -3022,6 +3041,9 @@ packages:
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
+
+  echarts@5.5.1:
+    resolution: {integrity: sha512-Fce8upazaAXUVUVsjgV6mBnGuqgO+JNDlcgF79Dksy4+wgGpQB2lmYoO4TSweFg/mZITdpGHomw/cNBJZj1icA==}
 
   electron-to-chromium@1.5.57:
     resolution: {integrity: sha512-xS65H/tqgOwUBa5UmOuNSLuslDo7zho0y/lgQw35pnrqiZh7UOWHCeL/Bt6noJATbA6tpQJGCifsFsIRZj1Fqg==}
@@ -4696,6 +4718,12 @@ packages:
   rbush@4.0.1:
     resolution: {integrity: sha512-IP0UpfeWQujYC8Jg162rMNc01Rf0gWMMAb2Uxus/Q0qOFw4lCcq6ZnQEZwUoJqWyUGJ9th7JjwI4yIWo+uvoAQ==}
 
+  rc-collapse@3.9.0:
+    resolution: {integrity: sha512-swDdz4QZ4dFTo4RAUMLL50qP0EY62N2kvmk2We5xYdRwcRn8WcYtuetCJpwpaCbUfUt5+huLpVxhvmnK+PHrkA==}
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+
   rc-dialog@9.6.0:
     resolution: {integrity: sha512-ApoVi9Z8PaCQg6FsUzS8yvBEQy0ZL2PkuvAgrmohPkN3okps5WZ5WQWPc1RNuiOKaAYv8B97ACdsFU5LizzCqg==}
     peerDependencies:
@@ -5312,6 +5340,9 @@ packages:
     peerDependencies:
       typescript: '>=4.2.0'
 
+  tslib@2.3.0:
+    resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
+
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
@@ -5645,6 +5676,9 @@ packages:
   yoctocolors-cjs@2.1.2:
     resolution: {integrity: sha512-cYVsTjKl8b+FrnidjibDWskAv7UKOfcwaVZdp/it9n1s9fU3IkgDbhdIRKCW4JDsAlECJY0ytoVPT3sK6kideA==}
     engines: {node: '>=18'}
+
+  zrender@5.6.0:
+    resolution: {integrity: sha512-uzgraf4njmmHAbEUxMJ8Oxg+P3fT04O+9p7gY+wJRVxo8Ge+KmYv0WJev945EH4wFuc4OY2NLXz46FZrWS9xJg==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -6871,6 +6905,40 @@ snapshots:
       - rxjs
 
   '@univerjs-pro/print@0.5.0-beta.1': {}
+
+  '@univerjs-pro/sheets-chart-ui@0.5.0-beta.1(@grpc/grpc-js@1.9.14)(@univerjs/core@0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react@18.3.1)(rxjs@7.8.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.6.3)':
+    dependencies:
+      '@univerjs-pro/sheets-chart': 0.5.0-beta.1(@univerjs/core@0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react@18.3.1)(rxjs@7.8.1))(@univerjs/sheets@0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react@18.3.1)(rxjs@7.8.1))(rxjs@7.8.1)
+      '@univerjs/core': 0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react@18.3.1)(rxjs@7.8.1)
+      '@univerjs/design': 0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)
+      '@univerjs/docs-ui': 0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.6.3)
+      '@univerjs/drawing': 0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)
+      '@univerjs/engine-formula': 0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react@18.3.1)(rxjs@7.8.1)
+      '@univerjs/engine-render': 0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react@18.3.1)(rxjs@7.8.1)
+      '@univerjs/icons': 0.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@univerjs/sheets': 0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react@18.3.1)(rxjs@7.8.1)
+      '@univerjs/sheets-drawing': 0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)
+      '@univerjs/sheets-drawing-ui': 0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.6.3)
+      '@univerjs/sheets-ui': 0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.6.3)
+      '@univerjs/ui': 0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.6.3)
+      clsx: 2.1.1
+      echarts: 5.5.1
+      rc-collapse: 3.9.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      rxjs: 7.8.1
+    transitivePeerDependencies:
+      - '@grpc/grpc-js'
+      - date-fns
+      - luxon
+      - moment
+      - react
+      - react-dom
+      - typescript
+
+  '@univerjs-pro/sheets-chart@0.5.0-beta.1(@univerjs/core@0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react@18.3.1)(rxjs@7.8.1))(@univerjs/sheets@0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react@18.3.1)(rxjs@7.8.1))(rxjs@7.8.1)':
+    dependencies:
+      '@univerjs/core': 0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react@18.3.1)(rxjs@7.8.1)
+      '@univerjs/sheets': 0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react@18.3.1)(rxjs@7.8.1)
+      rxjs: 7.8.1
 
   '@univerjs-pro/sheets-exchange-client@0.5.0-beta.1(@grpc/grpc-js@1.9.14)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.6.3)':
     dependencies:
@@ -8420,6 +8488,11 @@ snapshots:
   dotenv@16.4.5: {}
 
   eastasianwidth@0.2.0: {}
+
+  echarts@5.5.1:
+    dependencies:
+      tslib: 2.3.0
+      zrender: 5.6.0
 
   electron-to-chromium@1.5.57: {}
 
@@ -10380,6 +10453,15 @@ snapshots:
     dependencies:
       quickselect: 3.0.0
 
+  rc-collapse@3.9.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      '@babel/runtime': 7.26.0
+      classnames: 2.5.1
+      rc-motion: 2.9.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      rc-util: 5.43.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   rc-dialog@9.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@babel/runtime': 7.26.0
@@ -11094,6 +11176,8 @@ snapshots:
     dependencies:
       typescript: 5.6.3
 
+  tslib@2.3.0: {}
+
   tslib@2.8.1: {}
 
   tsx@4.19.2:
@@ -11392,5 +11476,9 @@ snapshots:
   yocto-queue@0.1.0: {}
 
   yoctocolors-cjs@2.1.2: {}
+
+  zrender@5.6.0:
+    dependencies:
+      tslib: 2.3.0
 
   zwitch@2.0.4: {}

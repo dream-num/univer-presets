@@ -64,7 +64,11 @@ export function prependUMDRawPlugin(options: IOptions): Plugin {
                 });
 
                 const __locale = path.resolve(__localeDir, `${localeKey}.js`);
-                fs.ensureFileSync(__locale);
+
+                if (fs.existsSync(__locale)) {
+                    localeContents.push(fs.readFileSync(__locale, 'utf8'));
+                }
+
                 fs.writeFileSync(__locale, localeContents.join('\n\n'));
             });
         },
