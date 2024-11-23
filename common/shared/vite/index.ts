@@ -184,6 +184,10 @@ export async function build(options?: IBuildOptions) {
             const __presetDir = path.resolve(__dirname, 'src', preset);
             entry[`${preset}/index`] = path.resolve(__presetDir, 'index.ts');
 
+            if (fs.existsSync(path.resolve(__presetDir, 'web-worker.ts'))) {
+                entry[`${preset}/web-worker`] = path.resolve(__presetDir, 'web-worker.ts');
+            }
+
             const locales = fs.readdirSync(path.resolve(__presetDir, 'locales'));
             for (const file of locales) {
                 const localeValue = file.replace('.ts', '');
