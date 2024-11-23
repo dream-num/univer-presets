@@ -8,6 +8,10 @@ import '@univerjs-pro/edit-history-viewer/lib/index.css';
 
 export interface IUniverSheetsCollaborationPresetConfig {
     universerEndpoint?: string;
+    /**
+     * The container id of the history list, which is used to load the history list. same as the container id of the univer.
+     */
+    univerContainerId?: string;
 }
 
 /**
@@ -18,7 +22,7 @@ export interface IUniverSheetsCollaborationPresetConfig {
  * @param {Partial<IUniverSheetsCollaborationPresetConfig>} config - The configuration object.
  */
 export function UniverSheetsCollaborationPreset(config: Partial<IUniverSheetsCollaborationPresetConfig> = {}): IPreset {
-    const { universerEndpoint } = config;
+    const { universerEndpoint, univerContainerId } = config;
 
     const serverEndpoint = universerEndpoint ?? `${window.location.protocol}//${window.location.host}`;
 
@@ -40,9 +44,9 @@ export function UniverSheetsCollaborationPreset(config: Partial<IUniverSheetsCol
                 sendChangesetTimeout: 200,
             }],
             [UniverEditHistoryLoaderPlugin, {
+                univerContainerId,
                 historyListServerUrl: `${serverEndpoint}/universer-api/history`,
             }],
-
         ],
     };
 }
