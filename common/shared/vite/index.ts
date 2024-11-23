@@ -190,6 +190,10 @@ export async function build(options?: IBuildOptions) {
                 entry[`${preset}/locales/${localeValue}`] = path.resolve(__presetDir, 'locales', file);
             }
 
+            if (fs.existsSync(path.resolve(__presetDir, 'worker.ts'))) {
+                entry[`${preset}/worker`] = path.resolve(__presetDir, 'worker.ts');
+            }
+
             const __cssFile = path.resolve(__dirname, 'node_modules', `@univerjs/${preset}`, 'lib/index.css');
             const __cssOutputDir = path.resolve(__dirname, 'lib', 'styles');
             fs.ensureDirSync(__cssOutputDir);
