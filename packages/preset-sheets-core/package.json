@@ -23,7 +23,7 @@
     "exports": {
         ".": "./src/index.ts",
         "./*": "./src/*",
-        "./web-worker": "./src/web-worker.ts",
+        "./worker": "./src/worker.ts",
         "./locales/*": "./src/locales/*.ts"
     },
     "publishConfig": {
@@ -41,10 +41,10 @@
                 "require": "./lib/cjs/*",
                 "types": "./lib/types/index.d.ts"
             },
-            "./web-worker": {
-                "import": "./lib/es/web-worker.js",
+            "./worker": {
+                "import": "./lib/es/worker.js",
                 "require": "./lib/cjs/locales/*.js",
-                "types": "./lib/types/web-worker.d.ts"
+                "types": "./lib/types/worker.d.ts"
             },
             "./locales/*": {
                 "import": "./lib/es/locales/*.js",

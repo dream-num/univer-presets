@@ -72,7 +72,7 @@ function getWorkspacePkgs() {
     const result: Record<string, IPkg> = {};
 
     pkgs.filter(it => it.name.startsWith('@univerjs/preset-')).forEach((it) => {
-        it.hasWorker = fs.existsSync(path.join(it.path, 'src', 'web-worker.ts'));
+        it.hasWorker = fs.existsSync(path.join(it.path, 'src', 'worker.ts'));
         result[it.name] = it;
     });
     return result;
@@ -90,8 +90,8 @@ export function createPresetsFiles() {
             fs.writeFileSync(__indexTs, indexTs);
 
             if (presetPkgs[key].hasWorker) {
-                const workerTs = `export * from '${key}/web-worker';\n`;
-                const __workerTs = path.resolve(__dirname, 'src', `${key.replace('@univerjs/', '')}/web-worker.ts`);
+                const workerTs = `export * from '${key}/worker';\n`;
+                const __workerTs = path.resolve(__dirname, 'src', `${key.replace('@univerjs/', '')}/worker.ts`);
                 fs.ensureFileSync(__workerTs);
                 fs.writeFileSync(__workerTs, workerTs);
             }

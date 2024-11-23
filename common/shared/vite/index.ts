@@ -141,9 +141,9 @@ export async function build(options?: IBuildOptions) {
         }
     }
 
-    const hasWorker = fs.existsSync(path.resolve(__dirname, 'src/web-worker.ts'));
+    const hasWorker = fs.existsSync(path.resolve(__dirname, 'src/worker.ts'));
     if (hasWorker) {
-        entry.webWorker = path.resolve(__dirname, 'src/web-worker.ts');
+        entry.webWorker = path.resolve(__dirname, 'src/worker.ts');
     }
 
     const sharedConfig: InlineConfig = {
@@ -184,8 +184,8 @@ export async function build(options?: IBuildOptions) {
             const __presetDir = path.resolve(__dirname, 'src', preset);
             entry[`${preset}/index`] = path.resolve(__presetDir, 'index.ts');
 
-            if (fs.existsSync(path.resolve(__presetDir, 'web-worker.ts'))) {
-                entry[`${preset}/web-worker`] = path.resolve(__presetDir, 'web-worker.ts');
+            if (fs.existsSync(path.resolve(__presetDir, 'worker.ts'))) {
+                entry[`${preset}/worker`] = path.resolve(__presetDir, 'worker.ts');
             }
 
             const locales = fs.readdirSync(path.resolve(__presetDir, 'locales'));
