@@ -11,5 +11,6 @@ build({
         '@univerjs/engine-render',
         '@univerjs/engine-numfmt',
         '@univerjs/engine-formula',
+        '@univerjs/drawing',
     ],
 });
