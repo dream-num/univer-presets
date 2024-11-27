@@ -15,25 +15,28 @@ interface IPresetOptions {
 type CreateUniverOptions = Partial<IUniverConfig> & {
     presets: Array<IPreset | [IPreset, IPresetOptions]>;
     plugins?: Array<PluginCtor<Plugin> | [PluginCtor<Plugin>, ConstructorParameters<PluginCtor<Plugin>>[0]]>;
-
+    /**
+     * Overrides the dependencies defined in the plugin. Only dependencies that are identified by `IdentifierDecorator` can be overridden.
+     * If you override a dependency with `null`, the original dependency will be removed.
+     */
+    override?: DependencyOverride;
     collaboration?: true;
 };
 
 export function createUniver(options: CreateUniverOptions) {
-    const { presets, plugins, collaboration, ...univerOptions } = options;
+    const { presets, plugins, collaboration, override, ...univerOptions } = options;
 
-    const override: DependencyOverride = [];
+    const _override: DependencyOverride = override ?? [];
     if (collaboration) {
-        override.push([IUndoRedoService, null]);
-        override.push([IAuthzIoService, null]);
-        override.push([IMentionIOService, null]);
+        _override.push([IUndoRedoService, null]);
+        _override.push([IAuthzIoService, null]);
+        _override.push([IMentionIOService, null]);
     }
 
     const univer = new Univer({
         logLevel: LogLevel.WARN,
-
         ...univerOptions,
-        override,
+        override: _override,
     });
 
     const pluginsMap = new Map<string, {
