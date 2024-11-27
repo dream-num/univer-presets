@@ -14,6 +14,19 @@ export interface IUniverSheetsCollaborationPresetConfig {
     univerContainerId?: string;
 }
 
+function transformUrlProtocolToWs(url: string) {
+    const wsUrl = new URL(url, window.location.origin);
+    switch (wsUrl.protocol) {
+        case 'https:':
+            wsUrl.protocol = 'wss:';
+            break;
+        case 'http:':
+            wsUrl.protocol = 'ws:';
+            break;
+    }
+    return wsUrl.toString();
+}
+
 /**
  * This preset add collaboration features, including collaboration editing, collaboration cursors,
  * and history into your application.
@@ -36,7 +49,7 @@ export function UniverSheetsCollaborationPreset(config: Partial<IUniverSheetsCol
                 authzUrl: `${serverEndpoint}/universer-api/authz`,
                 snapshotServerUrl: `${serverEndpoint}/universer-api/snapshot`,
                 collabSubmitChangesetUrl: `${serverEndpoint}/universer-api/comb`,
-                collabWebSocketUrl: `${serverEndpoint}/universer-api/comb/connect`,
+                collabWebSocketUrl: transformUrlProtocolToWs(`${serverEndpoint}/universer-api/comb/connect`),
                 loginUrlKey: `${serverEndpoint}/universer-api/oidc/authpage`,
                 uploadFileServerUrl: `${serverEndpoint}/universer-api/stream/file/upload`,
                 signUrlServerUrl: `${serverEndpoint}/universer-api/file/{fileID}/sign-url`,
