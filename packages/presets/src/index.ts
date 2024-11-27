@@ -1,5 +1,5 @@
 import type { DependencyOverride, IUniverConfig, Plugin, PluginCtor } from '@univerjs/core';
-import { FUniver, IAuthzIoService, IUndoRedoService, LogLevel, Univer } from '@univerjs/core';
+import { FUniver, IAuthzIoService, IMentionIOService, IUndoRedoService, LogLevel, Univer } from '@univerjs/core';
 
 /**
  * A collection of plugins and their default configs.
@@ -26,6 +26,7 @@ export function createUniver(options: CreateUniverOptions) {
     if (collaboration) {
         override.push([IUndoRedoService, null]);
         override.push([IAuthzIoService, null]);
+        override.push([IMentionIOService, null]);
     }
 
     const univer = new Univer({
