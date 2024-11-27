@@ -24,19 +24,18 @@ type CreateUniverOptions = Partial<IUniverConfig> & {
 };
 
 export function createUniver(options: CreateUniverOptions) {
-    const { presets, plugins, collaboration, override, ...univerOptions } = options;
+    const { presets, plugins, collaboration, override = [], ...univerOptions } = options;
 
-    const _override: DependencyOverride = override ?? [];
     if (collaboration) {
-        _override.push([IUndoRedoService, null]);
-        _override.push([IAuthzIoService, null]);
-        _override.push([IMentionIOService, null]);
+        override.push([IUndoRedoService, null]);
+        override.push([IAuthzIoService, null]);
+        override.push([IMentionIOService, null]);
     }
 
     const univer = new Univer({
         logLevel: LogLevel.WARN,
         ...univerOptions,
-        override: _override,
+        override,
     });
 
     const pluginsMap = new Map<string, {
