@@ -8,7 +8,7 @@
     "scripts": {
         "prepare": "simple-git-hooks",
         "dev": "pnpm --filter examples dev:demo",
-        "build": "turbo build --concurrency=2",
+        "build": "turbo --filter @univerjs/preset-* build --concurrency=2 && pnpm --filter @univerjs/presets build",
         "build:demo": "pnpm --filter examples build:demo",
         "build:node-demo": "pnpm --filter examples-node build:demo",
         "lint": "eslint .",

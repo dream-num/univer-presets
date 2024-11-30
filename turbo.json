@@ -4,14 +4,8 @@
         "//"
     ],
     "tasks": {
-        "prebuild": {
-            "cache": false
-        },
         "build:preset": {
-            "cache": false,
-            "dependsOn": [
-                "prebuild"
-            ]
+            "cache": false
         },
         "build": {
             "cache": false,

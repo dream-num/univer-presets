@@ -27,3 +27,8 @@ jobs:
 
             - name: 🩺 Run build
               run: pnpm build
+
+            - name: 🩺 Run build:demo
+              run: |
+                  pnpm build:demo
+                  pnpm build:node-demo
