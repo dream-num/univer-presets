@@ -5,6 +5,7 @@ import fs from 'fs-extra';
 const LOCLAES_MAP = [
     'en-US',
     'fa-IR',
+    'fr-FR',
     'ru-RU',
     'vi-VN',
     'zh-CN',
