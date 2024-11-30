@@ -63,7 +63,7 @@
         "lib"
     ],
     "scripts": {
-        "prepare": "tsx prepare.ts",
+        "prebuild:preset": "tsx prepare.ts",
         "build:preset": "tsx build.ts"
     },
     "peerDependencies": {
