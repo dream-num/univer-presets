@@ -5,6 +5,10 @@ import { UniverThreadCommentDataSourcePlugin } from '@univerjs-pro/thread-commen
 
 import '@univerjs/thread-comment-ui/lib/index.css';
 
+export * from '@univerjs/docs-thread-comment-ui';
+export * from '@univerjs/thread-comment-ui';
+export * from '@univerjs-pro/thread-comment-datasource';
+
 export interface IUniverDocsThreadCommentPresetConfig {
     /**
      * If you would like to use comment with Univer's first-party collaboration features,

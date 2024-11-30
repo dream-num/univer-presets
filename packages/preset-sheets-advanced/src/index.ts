@@ -19,6 +19,17 @@ import '@univerjs-pro/sheets-pivot-ui/lib/index.css';
 import '@univerjs-pro/sheets-print/lib/index.css';
 import '@univerjs-pro/sheets-chart-ui/lib/index.css';
 
+export * from '@univerjs/network';
+export * from '@univerjs-pro//engine-formula';
+export * from '@univerjs-pro/exchange-client';
+export * from '@univerjs-pro/license';
+export * from '@univerjs-pro/sheets-chart';
+export * from '@univerjs-pro/sheets-chart-ui';
+export * from '@univerjs-pro/sheets-exchange-client';
+export * from '@univerjs-pro/sheets-pivot';
+export * from '@univerjs-pro/sheets-pivot-ui';
+export * from '@univerjs-pro/sheets-print';
+
 export interface IUniverSheetsAdvancedPresetConfig {
     universerEndpoint?: string;
     license?: string;

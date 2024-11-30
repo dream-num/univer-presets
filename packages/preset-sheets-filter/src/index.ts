@@ -7,6 +7,9 @@ import '@univerjs/sheets-filter/facade';
 
 import '@univerjs/sheets-filter-ui/lib/index.css';
 
+export * from '@univerjs/sheets-filter';
+export * from '@univerjs/sheets-filter-ui';
+
 export function UniverSheetsFilterPreset(): IPreset {
     return {
         plugins: [

@@ -4,6 +4,9 @@ import { UniverCollaborationClientPlugin } from '@univerjs-pro/collaboration-cli
 
 import '@univerjs-pro/collaboration-client/lib/index.css';
 
+export * from '@univerjs-pro/collaboration';
+export * from '@univerjs-pro/collaboration-client';
+
 export interface IUniverDocsCollaborationPresetConfig {
     universerEndpoint?: string;
 }

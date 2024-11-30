@@ -20,6 +20,7 @@
     "keywords": [
         "univer"
     ],
+    "sideEffects": false,
     "exports": {
         ".": "./src/index.ts",
         "./*": "./src/*",
@@ -65,12 +66,12 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/sheets-conditional-formatting": "0.5.0",
-        "@univerjs/sheets-conditional-formatting-ui": "0.5.0"
+        "@univerjs/sheets-conditional-formatting": "0.5.0-nightly.202411291606",
+        "@univerjs/sheets-conditional-formatting-ui": "0.5.0-nightly.202411291606"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.5.0",
+        "@univerjs/core": "0.5.0-nightly.202411291606",
         "typescript": "^5.7.2"
     }
 }

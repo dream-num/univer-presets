@@ -8,8 +8,13 @@ import { type IUniverUIConfig, UniverUIPlugin } from '@univerjs/ui';
 import '@univerjs/design/lib/index.css';
 import '@univerjs/ui/lib/index.css';
 import '@univerjs/docs-ui/lib/index.css';
-
 import '@univerjs/docs-ui/facade';
+
+export * from '@univerjs/docs';
+export * from '@univerjs/docs-ui';
+export * from '@univerjs/engine-formula';
+export * from '@univerjs/engine-render';
+export * from '@univerjs/ui';
 
 export interface IUniverDocsCorePresetConfig extends
     Pick<IUniverUIConfig, 'container' | 'header' | 'footer' | 'toolbar' | 'menu' | 'contextMenu' | 'disableAutoFocus'> {

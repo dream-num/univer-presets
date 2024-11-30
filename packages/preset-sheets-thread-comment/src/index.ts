@@ -8,6 +8,11 @@ import '@univerjs/sheets-thread-comment/facade';
 
 import '@univerjs/thread-comment-ui/lib/index.css';
 
+export * from '@univerjs/sheets-thread-comment';
+export * from '@univerjs/sheets-thread-comment-ui';
+export * from '@univerjs/thread-comment-ui';
+export * from '@univerjs-pro/thread-comment-datasource';
+
 export interface IUniverSheetsThreadCommentPresetConfig {
     /**
      * If you would like to use comment with Univer's first-party collaboration features,

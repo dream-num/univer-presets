@@ -6,6 +6,10 @@ import { UniverEditHistoryLoaderPlugin } from '@univerjs-pro/edit-history-loader
 import '@univerjs-pro/collaboration-client/lib/index.css';
 import '@univerjs-pro/edit-history-viewer/lib/index.css';
 
+export * from '@univerjs-pro/collaboration';
+export * from '@univerjs-pro/collaboration-client';
+export * from '@univerjs-pro/edit-history-loader';
+
 export interface IUniverSheetsCollaborationPresetConfig {
     universerEndpoint?: string;
     /**

@@ -5,6 +5,9 @@ import { UniverDocsHyperLinkUIPlugin } from '@univerjs/docs-hyper-link-ui';
 
 import '@univerjs/docs-hyper-link-ui/lib/index.css';
 
+export * from '@univerjs/docs-hyper-link';
+export * from '@univerjs/docs-hyper-link-ui';
+
 export function UniverDocsHyperLinkPreset(): IPreset {
     return {
         plugins: [

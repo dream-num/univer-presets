@@ -20,6 +20,7 @@
     "keywords": [
         "univer"
     ],
+    "sideEffects": false,
     "exports": {
         ".": "./src/index.ts",
         "./*": "./src/*",
@@ -263,8 +264,8 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/core": "0.5.0",
-        "@univerjs/design": "0.5.0",
+        "@univerjs/core": "0.5.0-nightly.202411291606",
+        "@univerjs/design": "0.5.0-nightly.202411291606",
         "@univerjs/preset-docs-collaboration": "workspace:*",
         "@univerjs/preset-docs-core": "workspace:*",
         "@univerjs/preset-docs-drawing": "workspace:*",
@@ -285,13 +286,13 @@
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/drawing": "0.5.0",
-        "@univerjs/engine-formula": "0.5.0",
-        "@univerjs/engine-numfmt": "0.5.0",
-        "@univerjs/engine-render": "0.5.0",
+        "@univerjs/drawing": "0.5.0-nightly.202411291606",
+        "@univerjs/engine-formula": "0.5.0-nightly.202411291606",
+        "@univerjs/engine-numfmt": "0.5.0-nightly.202411291606",
+        "@univerjs/engine-render": "0.5.0-nightly.202411291606",
         "@univerjs/protocol": "0.1.39-alpha.38",
-        "@univerjs/rpc": "0.5.0",
-        "@univerjs/telemetry": "0.5.0",
+        "@univerjs/rpc": "0.5.0-nightly.202411291606",
+        "@univerjs/telemetry": "0.5.0-nightly.202411291606",
         "typescript": "^5.7.2"
     }
 }
