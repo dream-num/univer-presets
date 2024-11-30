@@ -136,3 +136,7 @@ dist
 
 packages/**/src/locales
 packages/**/lib
+
+
+# tsx
+**/tsx-0
