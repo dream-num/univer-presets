@@ -65,12 +65,12 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/find-replace": "0.5.0",
-        "@univerjs/sheets-find-replace": "0.5.0"
+        "@univerjs/find-replace": "0.5.0-nightly.202411291606",
+        "@univerjs/sheets-find-replace": "0.5.0-nightly.202411291606"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.5.0",
+        "@univerjs/core": "0.5.0-nightly.202411291606",
         "typescript": "^5.7.2"
     }
 }

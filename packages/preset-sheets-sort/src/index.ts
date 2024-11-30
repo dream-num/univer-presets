@@ -5,6 +5,9 @@ import { UniverSheetsSortUIPlugin } from '@univerjs/sheets-sort-ui';
 
 import '@univerjs/sheets-sort-ui/lib/index.css';
 
+export * from '@univerjs/sheets-sort';
+export * from '@univerjs/sheets-sort-ui';
+
 export function UniverSheetsSortPreset(): IPreset {
     return {
         plugins: [

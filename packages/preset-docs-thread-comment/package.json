@@ -65,13 +65,13 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs-pro/thread-comment-datasource": "0.5.0",
-        "@univerjs/docs-thread-comment-ui": "0.5.0",
-        "@univerjs/thread-comment-ui": "0.5.0"
+        "@univerjs-pro/thread-comment-datasource": "0.5.0-nightly.202411291606",
+        "@univerjs/docs-thread-comment-ui": "0.5.0-nightly.202411291606",
+        "@univerjs/thread-comment-ui": "0.5.0-nightly.202411291606"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.5.0",
+        "@univerjs/core": "0.5.0-nightly.202411291606",
         "typescript": "^5.7.2"
     }
 }

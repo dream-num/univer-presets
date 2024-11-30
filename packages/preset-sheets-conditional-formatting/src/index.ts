@@ -5,6 +5,9 @@ import { UniverSheetsConditionalFormattingUIPlugin } from '@univerjs/sheets-cond
 
 import '@univerjs/sheets-conditional-formatting-ui/lib/index.css';
 
+export * from '@univerjs/sheets-conditional-formatting';
+export * from '@univerjs/sheets-conditional-formatting-ui';
+
 export function UniverSheetsConditionalFormattingPreset(): IPreset {
     return {
         plugins: [

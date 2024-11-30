@@ -8,6 +8,11 @@ import { UniverSheetsDrawingUIPlugin } from '@univerjs/sheets-drawing-ui';
 import '@univerjs/drawing-ui/lib/index.css';
 import '@univerjs/sheets-drawing-ui/lib/index.css';
 
+export * from '@univerjs/drawing';
+export * from '@univerjs/drawing-ui';
+export * from '@univerjs/sheets-drawing';
+export * from '@univerjs/sheets-drawing-ui';
+
 export interface IUniverSheetsDrawingPresetConfig {
     collaboration?: boolean;
 }

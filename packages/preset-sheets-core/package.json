@@ -71,24 +71,24 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/design": "0.5.0",
-        "@univerjs/docs": "0.5.0",
-        "@univerjs/docs-ui": "0.5.0",
-        "@univerjs/engine-formula": "0.5.0",
-        "@univerjs/engine-render": "0.5.0",
-        "@univerjs/facade": "0.5.0",
-        "@univerjs/rpc": "0.5.0",
-        "@univerjs/sheets": "0.5.0",
-        "@univerjs/sheets-formula": "0.5.0",
-        "@univerjs/sheets-formula-ui": "0.5.0",
-        "@univerjs/sheets-numfmt": "0.5.0",
-        "@univerjs/sheets-numfmt-ui": "0.5.0",
-        "@univerjs/sheets-ui": "0.5.0",
-        "@univerjs/ui": "0.5.0"
+        "@univerjs/design": "0.5.0-nightly.202411291606",
+        "@univerjs/docs": "0.5.0-nightly.202411291606",
+        "@univerjs/docs-ui": "0.5.0-nightly.202411291606",
+        "@univerjs/engine-formula": "0.5.0-nightly.202411291606",
+        "@univerjs/engine-render": "0.5.0-nightly.202411291606",
+        "@univerjs/facade": "0.5.0-nightly.202411291606",
+        "@univerjs/rpc": "0.5.0-nightly.202411291606",
+        "@univerjs/sheets": "0.5.0-nightly.202411291606",
+        "@univerjs/sheets-formula": "0.5.0-nightly.202411291606",
+        "@univerjs/sheets-formula-ui": "0.5.0-nightly.202411291606",
+        "@univerjs/sheets-numfmt": "0.5.0-nightly.202411291606",
+        "@univerjs/sheets-numfmt-ui": "0.5.0-nightly.202411291606",
+        "@univerjs/sheets-ui": "0.5.0-nightly.202411291606",
+        "@univerjs/ui": "0.5.0-nightly.202411291606"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.5.0",
+        "@univerjs/core": "0.5.0-nightly.202411291606",
         "typescript": "^5.7.2"
     }
 }
