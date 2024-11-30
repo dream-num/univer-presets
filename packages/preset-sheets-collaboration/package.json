@@ -66,15 +66,15 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs-pro/collaboration": "0.5.0-nightly.202411291606",
-        "@univerjs-pro/collaboration-client": "0.5.0-nightly.202411291606",
-        "@univerjs-pro/edit-history-loader": "0.5.0-nightly.202411291606",
-        "@univerjs-pro/edit-history-viewer": "0.5.0-nightly.202411291606",
+        "@univerjs-pro/collaboration": "0.5.1",
+        "@univerjs-pro/collaboration-client": "0.5.1",
+        "@univerjs-pro/edit-history-loader": "0.5.1",
+        "@univerjs-pro/edit-history-viewer": "0.5.1",
         "@univerjs/preset-sheets-advanced": "workspace:*"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.5.0-nightly.202411291606",
+        "@univerjs/core": "0.5.1",
         "typescript": "^5.7.2"
     }
 }
