@@ -19,6 +19,12 @@ export interface IUniverDocsCorePresetConfig extends
 export function UniverDocsCorePreset(config: Partial<IUniverDocsCorePresetConfig> = {}): IPreset {
     const {
         container = 'app',
+        header,
+        footer,
+        toolbar,
+        menu,
+        contextMenu,
+        disableAutoFocus,
     } = config;
 
     return {
@@ -26,7 +32,15 @@ export function UniverDocsCorePreset(config: Partial<IUniverDocsCorePresetConfig
             UniverDocsPlugin,
             UniverRenderEnginePlugin,
             UniverFormulaEnginePlugin,
-            [UniverUIPlugin, { container }],
+            [UniverUIPlugin, {
+                container,
+                header,
+                footer,
+                toolbar,
+                menu,
+                contextMenu,
+                disableAutoFocus,
+            }],
             UniverDocsUIPlugin,
         ],
     };

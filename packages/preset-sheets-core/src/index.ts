@@ -45,6 +45,12 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
     const {
         container = 'app',
         workerURL: workerSrc,
+        header,
+        footer,
+        toolbar,
+        menu,
+        contextMenu,
+        disableAutoFocus,
     } = config;
 
     const useWorker = !!workerSrc;
@@ -53,7 +59,15 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
         plugins: [
             UniverDocsPlugin,
             UniverRenderEnginePlugin,
-            [UniverUIPlugin, { container }],
+            [UniverUIPlugin, {
+                container,
+                header,
+                footer,
+                toolbar,
+                menu,
+                contextMenu,
+                disableAutoFocus,
+            }],
             UniverDocsUIPlugin,
 
             useWorker
