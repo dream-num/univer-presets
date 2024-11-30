@@ -138,5 +138,5 @@ packages/**/src/locales
 packages/**/lib
 
 
-#tsx
+# tsx
 **/tsx-0
