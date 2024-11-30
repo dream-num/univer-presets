@@ -6,9 +6,6 @@
     "tasks": {
         "build:preset": {
             "cache": false
-        },
-        "build": {
-            "cache": false
         }
     }
 }
