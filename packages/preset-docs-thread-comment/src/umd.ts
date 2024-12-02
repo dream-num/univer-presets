@@ -1,7 +1,7 @@
 import type { IPreset } from './types';
+import { UniverThreadCommentDataSourcePlugin } from '@univerjs-pro/thread-comment-datasource';
 import { UniverDocsThreadCommentUIPlugin } from '@univerjs/docs-thread-comment-ui';
 import { UniverThreadCommentUIPlugin } from '@univerjs/thread-comment-ui';
-import { UniverThreadCommentDataSourcePlugin } from '@univerjs-pro/thread-comment-datasource';
 
 import '@univerjs/thread-comment-ui/lib/index.css';
 
