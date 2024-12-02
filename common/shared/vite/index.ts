@@ -19,6 +19,32 @@ interface IBuildExecuterOptions {
     umdDeps: string[];
 }
 
+function getSharedConfig(): InlineConfig {
+    const sharedConfig: InlineConfig = {
+        configFile: false,
+        build: {
+            target: 'chrome70',
+        },
+        define: {
+            'process.env.NODE_ENV': JSON.stringify('production'),
+            'process.env.BUILD_TIMESTAMP': JSON.stringify(Math.floor(Date.now() / 1000)),
+        },
+        css: {
+            modules: {
+                localsConvention: 'camelCaseOnly',
+                generateScopedName: 'univer-[local]',
+            },
+        },
+        plugins: [
+            autoDetectedExternalPlugin(),
+            vitePluginExternal({
+                nodeBuiltins: true,
+            }),
+        ],
+    };
+    return sharedConfig;
+}
+
 async function buildESM(sharedConfig: InlineConfig, options: IBuildExecuterOptions) {
     const { entry } = options;
 
@@ -79,6 +105,9 @@ async function buildCJS(sharedConfig: InlineConfig, options: IBuildExecuterOptio
 
 async function buildUMD(sharedConfig: InlineConfig, options: IBuildExecuterOptions) {
     const { pkg, entry, umdDeps } = options;
+
+    const __dirname = process.cwd();
+    entry.index = path.resolve(__dirname, 'src/umd.ts');
 
     await Promise.all(Object.keys(entry).map((key) => {
         let name = convertLibNameFromPackageName(pkg.name);
@@ -146,36 +175,13 @@ export async function build(options?: IBuildOptions) {
         entry.worker = path.resolve(__dirname, 'src/worker.ts');
     }
 
-    const sharedConfig: InlineConfig = {
-        configFile: false,
-        build: {
-            target: 'chrome70',
-        },
-        define: {
-            'process.env.NODE_ENV': JSON.stringify('production'),
-            'process.env.BUILD_TIMESTAMP': JSON.stringify(Math.floor(Date.now() / 1000)),
-        },
-        css: {
-            modules: {
-                localsConvention: 'camelCaseOnly',
-                generateScopedName: 'univer-[local]',
-            },
-        },
-        plugins: [
-            autoDetectedExternalPlugin(),
-            vitePluginExternal({
-                nodeBuiltins: true,
-            }),
-        ],
-    };
-
     const buildExecuterOptions: IBuildExecuterOptions = {
         pkg,
         entry,
         umdDeps,
     };
 
-    buildUMD(sharedConfig, buildExecuterOptions);
+    buildUMD(getSharedConfig(), buildExecuterOptions);
 
     if (mode === 'bootstrap') {
         const presets = fs.readdirSync(path.resolve(__dirname, 'src')).filter(dir => dir.startsWith('preset-'));
@@ -203,6 +209,6 @@ export async function build(options?: IBuildOptions) {
         }
     }
 
-    buildESM(sharedConfig, buildExecuterOptions);
-    buildCJS(sharedConfig, buildExecuterOptions);
+    buildESM(getSharedConfig(), buildExecuterOptions);
+    buildCJS(getSharedConfig(), buildExecuterOptions);
 }
