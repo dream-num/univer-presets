@@ -8,14 +8,14 @@ This project provide several collections of Univer plugins for out-of-the-box so
 
 ### For Browsers
 
--   Basic Spreadsheet
--   Spreadsheet with Advanced Features
--   Spreadsheet with Advanced Features and Collaboration Features
+- Basic Spreadsheet
+- Spreadsheet with Advanced Features
+- Spreadsheet with Advanced Features and Collaboration Features
 
 ### For Node.js
 
--   Headless Spreadsheet
--   [ ] Headless Spreadsheet with Advanced Features
+- Headless Spreadsheet
+- [ ] Headless Spreadsheet with Advanced Features
 
 ## Usage
 
