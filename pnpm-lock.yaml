@@ -867,8 +867,8 @@ importers:
         specifier: 0.5.1
         version: 0.5.1(@grpc/grpc-js@1.9.14)(react@18.3.1)(rxjs@7.8.1)
       '@univerjs/protocol':
-        specifier: 0.1.39-alpha.38
-        version: 0.1.39-alpha.38(@grpc/grpc-js@1.9.14)(rxjs@7.8.1)
+        specifier: 0.1.39
+        version: 0.1.39(@grpc/grpc-js@1.9.14)(rxjs@7.8.1)
       '@univerjs/rpc':
         specifier: 0.5.1
         version: 0.5.1(@grpc/grpc-js@1.9.14)(react@18.3.1)(rxjs@7.8.1)
@@ -2286,13 +2286,6 @@ packages:
 
   '@univerjs/protocol@0.1.39':
     resolution: {integrity: sha512-KduLLVX/r1K39VIMcSTneH8j735qkztV3xgeXrtJWLJFufClZd5rwbX3VMJxJG18lY+WdRuQc1FwoCTIEVGdeQ==}
-    engines: {node: '>=16.0.0', npm: '>=8.0.0'}
-    peerDependencies:
-      '@grpc/grpc-js': 1.9.14
-      rxjs: '>=7.0.0'
-
-  '@univerjs/protocol@0.1.39-alpha.38':
-    resolution: {integrity: sha512-+Ug7UGAryCWkySw+par8BVUNl7gTGaG6ZLs1CXhnnVeW4T4AvA8uW8X7VLmraaRPuAZdXZgOgW4c0aE9RUvf3Q==}
     engines: {node: '>=16.0.0', npm: '>=8.0.0'}
     peerDependencies:
       '@grpc/grpc-js': 1.9.14
@@ -7318,11 +7311,6 @@ snapshots:
       - react
 
   '@univerjs/protocol@0.1.39(@grpc/grpc-js@1.9.14)(rxjs@7.8.1)':
-    dependencies:
-      '@grpc/grpc-js': 1.9.14
-      rxjs: 7.8.1
-
-  '@univerjs/protocol@0.1.39-alpha.38(@grpc/grpc-js@1.9.14)(rxjs@7.8.1)':
     dependencies:
       '@grpc/grpc-js': 1.9.14
       rxjs: 7.8.1

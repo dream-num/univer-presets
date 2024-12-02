@@ -292,7 +292,7 @@
         "@univerjs/engine-formula": "0.5.1",
         "@univerjs/engine-numfmt": "0.5.1",
         "@univerjs/engine-render": "0.5.1",
-        "@univerjs/protocol": "0.1.39-alpha.38",
+        "@univerjs/protocol": "0.1.39",
         "@univerjs/rpc": "0.5.1",
         "@univerjs/telemetry": "0.5.1",
         "typescript": "^5.7.2"
