@@ -1,5 +1,4 @@
 import type { IPreset } from './types';
-import { UniverNetworkPlugin } from '@univerjs/network';
 import { UniverProFormulaEnginePlugin } from '@univerjs-pro/engine-formula';
 import { UniverExchangeClientPlugin } from '@univerjs-pro/exchange-client';
 import { UniverLicensePlugin } from '@univerjs-pro/license';
@@ -9,6 +8,7 @@ import { UniverSheetsExchangeClientPlugin } from '@univerjs-pro/sheets-exchange-
 import { UniverSheetsPivotTablePlugin } from '@univerjs-pro/sheets-pivot';
 import { UniverSheetsPivotTableUIPlugin } from '@univerjs-pro/sheets-pivot-ui';
 import { UniverSheetsPrintPlugin } from '@univerjs-pro/sheets-print';
+import { UniverNetworkPlugin } from '@univerjs/network';
 
 import '@univerjs-pro/exchange-client/facade';
 import '@univerjs-pro/sheets-pivot/facade';
