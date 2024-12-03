@@ -58,6 +58,7 @@ export function UniverSheetsCollaborationPreset(config: Partial<IUniverSheetsCol
                 uploadFileServerUrl: `${serverEndpoint}/universer-api/stream/file/upload`,
                 signUrlServerUrl: `${serverEndpoint}/universer-api/file/{fileID}/sign-url`,
                 downloadEndpointUrl: `${serverEndpoint}/`,
+                wsSessionTicketUrl: `${serverEndpoint}/universer-api/user/session-ticket`,
                 sendChangesetTimeout: 200,
             }],
             [UniverEditHistoryLoaderPlugin, {
