@@ -11,6 +11,7 @@
     "dependencies": {
         "@univerjs/core": "0.5.1",
         "@univerjs/design": "0.5.1",
+        "@univerjs/engine-formula": "0.5.1",
         "@univerjs/presets": "workspace:*",
         "@univerjs/sheets-zen-editor": "0.5.1",
         "clsx": "^2.1.1",
