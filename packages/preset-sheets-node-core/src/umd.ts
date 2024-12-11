@@ -1,3 +1,5 @@
+import type { IUniverEngineFormulaConfig } from '@univerjs/engine-formula';
+import type { IUniverSheetsFormulaBaseConfig } from '@univerjs/sheets-formula';
 import type { IPreset } from './types';
 import { UniverDocsPlugin } from '@univerjs/docs';
 import { UniverFormulaEnginePlugin } from '@univerjs/engine-formula';
@@ -18,12 +20,14 @@ import '@univerjs/sheets-data-validation/facade';
 import '@univerjs/engine-formula/facade';
 import '@univerjs/sheets-filter/facade';
 
-export interface IUniverSheetsNodeCorePresetConfig {
+export interface IUniverSheetsNodeCorePresetConfig extends
+    Pick<IUniverEngineFormulaConfig, 'function'>,
+    Pick<IUniverSheetsFormulaBaseConfig, 'description'> {
     workerSrc?: string;
 }
 
 export function UniverSheetsNodeCorePreset(config: Partial<IUniverSheetsNodeCorePresetConfig>): IPreset {
-    const { workerSrc } = config;
+    const { workerSrc, function: functionUser, description } = config;
 
     const useWorker = !!workerSrc;
 
@@ -32,13 +36,13 @@ export function UniverSheetsNodeCorePreset(config: Partial<IUniverSheetsNodeCore
             useWorker
                 ? [UniverRPCNodeMainPlugin, { workerSrc }]
                 : null,
-            [UniverFormulaEnginePlugin, { notExecuteFormula: useWorker }],
+            [UniverFormulaEnginePlugin, { notExecuteFormula: useWorker, function: functionUser }],
 
             UniverThreadCommentPlugin,
             UniverDocsPlugin,
 
             UniverSheetsPlugin,
-            [UniverSheetsFormulaPlugin, { notExecuteFormula: useWorker }],
+            [UniverSheetsFormulaPlugin, { notExecuteFormula: useWorker, description }],
             UniverSheetsDataValidationPlugin,
             UniverSheetsFilterPlugin,
             UniverSheetsHyperLinkPlugin,
