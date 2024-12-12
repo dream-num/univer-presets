@@ -1,4 +1,6 @@
 import type { IUniverConfig, Plugin, PluginCtor } from '@univerjs/core';
+import type { IUniverEngineFormulaConfig } from '@univerjs/engine-formula';
+import type { IUniverSheetsFormulaBaseConfig } from '@univerjs/sheets-formula';
 
 /**
  * A collection of plugins and their default configs.
@@ -10,4 +12,13 @@ export interface IPreset {
 
 export interface IPresetOptions {
     lazy?: boolean;
+}
+
+export interface IUniverFormulaConfig extends
+    Pick<IUniverEngineFormulaConfig, 'function'>,
+    Pick<IUniverSheetsFormulaBaseConfig, 'description'> {
+}
+
+export interface IUniverFormulaWorkerConfig extends
+    Pick<IUniverEngineFormulaConfig, 'function'> {
 }

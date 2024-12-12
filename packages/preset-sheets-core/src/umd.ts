@@ -1,7 +1,7 @@
 import type { IUniverRPCMainThreadConfig } from '@univerjs/rpc';
 import type { IUniverSheetsUIConfig } from '@univerjs/sheets-ui';
 import type { IUniverUIConfig } from '@univerjs/ui';
-import type { IPreset } from './types';
+import type { IPreset, IUniverFormulaConfig } from './types';
 import { UniverDocsPlugin } from '@univerjs/docs';
 import { UniverDocsUIPlugin } from '@univerjs/docs-ui';
 import { UniverFormulaEnginePlugin } from '@univerjs/engine-formula';
@@ -35,6 +35,14 @@ export interface IUniverSheetsCorePresetConfig extends
     Pick<IUniverUIConfig, 'container' | 'header' | 'footer' | 'toolbar' | 'menu' | 'contextMenu' | 'disableAutoFocus'>,
     Pick<IUniverSheetsUIConfig, 'formulaBar'> {
 
+    /**
+     * The formula configuration.
+     */
+    formula?: IUniverFormulaConfig;
+
+    /**
+     * The URL of the worker script.
+     */
     workerURL: IUniverRPCMainThreadConfig['workerURL'];
 }
 
@@ -51,6 +59,7 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
         menu,
         contextMenu,
         disableAutoFocus,
+        formula,
     } = config;
 
     const useWorker = !!workerSrc;
@@ -73,14 +82,14 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
             useWorker
                 ? [UniverRPCMainThreadPlugin, { workerURL: workerSrc }]
                 : null,
-            [UniverFormulaEnginePlugin, { notExecuteFormula: useWorker }],
+            [UniverFormulaEnginePlugin, { notExecuteFormula: useWorker, function: formula?.function }],
 
             [UniverSheetsPlugin, { notExecuteFormula: useWorker, onlyRegisterFormulaRelatedMutations: false }],
             UniverSheetsUIPlugin,
             UniverSheetsNumfmtPlugin,
             UniverSheetsNumfmtUIPlugin,
 
-            UniverSheetsFormulaPlugin,
+            [UniverSheetsFormulaPlugin, { notExecuteFormula: useWorker, description: formula?.description }],
             UniverSheetsFormulaUIPlugin,
         ].filter(v => !!v) as IPreset['plugins'],
     };
