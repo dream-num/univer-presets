@@ -1,9 +1,7 @@
-import type { IUniverEngineFormulaConfig } from '@univerjs/engine-formula';
 import type { IUniverRPCMainThreadConfig } from '@univerjs/rpc';
-import type { IUniverSheetsFormulaBaseConfig } from '@univerjs/sheets-formula';
 import type { IUniverSheetsUIConfig } from '@univerjs/sheets-ui';
 import type { IUniverUIConfig } from '@univerjs/ui';
-import type { IPreset } from './types';
+import type { IPreset, IUniverFormulaConfig } from './types';
 import { UniverDocsPlugin } from '@univerjs/docs';
 import { UniverDocsUIPlugin } from '@univerjs/docs-ui';
 import { UniverFormulaEnginePlugin } from '@univerjs/engine-formula';
@@ -35,10 +33,16 @@ import '@univerjs/sheets-numfmt-ui/lib/index.css';
 
 export interface IUniverSheetsCorePresetConfig extends
     Pick<IUniverUIConfig, 'container' | 'header' | 'footer' | 'toolbar' | 'menu' | 'contextMenu' | 'disableAutoFocus'>,
-    Pick<IUniverSheetsUIConfig, 'formulaBar'>,
-    Pick<IUniverEngineFormulaConfig, 'function'>,
-    Pick<IUniverSheetsFormulaBaseConfig, 'description'> {
+    Pick<IUniverSheetsUIConfig, 'formulaBar'> {
 
+    /**
+     * The formula configuration.
+     */
+    formula?: IUniverFormulaConfig;
+
+    /**
+     * The URL of the worker script.
+     */
     workerURL: IUniverRPCMainThreadConfig['workerURL'];
 }
 
@@ -55,8 +59,7 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
         menu,
         contextMenu,
         disableAutoFocus,
-        function: functionUser,
-        description,
+        formula,
     } = config;
 
     const useWorker = !!workerSrc;
@@ -79,14 +82,14 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
             useWorker
                 ? [UniverRPCMainThreadPlugin, { workerURL: workerSrc }]
                 : null,
-            [UniverFormulaEnginePlugin, { notExecuteFormula: useWorker, function: functionUser }],
+            [UniverFormulaEnginePlugin, { notExecuteFormula: useWorker, function: formula?.function }],
 
             [UniverSheetsPlugin, { notExecuteFormula: useWorker, onlyRegisterFormulaRelatedMutations: false }],
             UniverSheetsUIPlugin,
             UniverSheetsNumfmtPlugin,
             UniverSheetsNumfmtUIPlugin,
 
-            [UniverSheetsFormulaPlugin, { notExecuteFormula: useWorker, description }],
+            [UniverSheetsFormulaPlugin, { notExecuteFormula: useWorker, description: formula?.description }],
             UniverSheetsFormulaUIPlugin,
         ].filter(v => !!v) as IPreset['plugins'],
     };

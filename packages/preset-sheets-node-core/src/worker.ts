@@ -1,5 +1,4 @@
-import type { IUniverEngineFormulaConfig } from '@univerjs/engine-formula';
-import type { IPreset } from './types';
+import type { IPreset, IUniverFormulaWorkerConfig } from './types';
 import { UniverFormulaEnginePlugin } from '@univerjs/engine-formula';
 import { UniverRPCNodeWorkerPlugin } from '@univerjs/rpc-node';
 import { UniverSheetsPlugin } from '@univerjs/sheets';
@@ -10,18 +9,19 @@ export * from '@univerjs/rpc-node';
 export * from '@univerjs/sheets';
 export * from '@univerjs/sheets-formula';
 
-export interface IUniverSheetsNodeCoreWorkerPresetConfig extends
-    Pick<IUniverEngineFormulaConfig, 'function'> {}
+export interface IUniverSheetsNodeCoreWorkerPresetConfig {
+    formula?: IUniverFormulaWorkerConfig;
+}
 
 export function UniverSheetsNodeCoreWorkerPreset(config: Partial<IUniverSheetsNodeCoreWorkerPresetConfig> = {}): IPreset {
     const {
-        function: functionUser,
+        formula,
     } = config;
 
     return {
         plugins: [
             [UniverSheetsPlugin, { onlyRegisterFormulaRelatedMutations: true }],
-            [UniverFormulaEnginePlugin, { function: functionUser }],
+            [UniverFormulaEnginePlugin, { function: formula?.function }],
             UniverRPCNodeWorkerPlugin,
             UniverRemoteSheetsFormulaPlugin,
         ],

@@ -1,21 +1,21 @@
-import type { IUniverEngineFormulaConfig } from '@univerjs/engine-formula';
-import type { IPreset } from './types';
+import type { IPreset, IUniverFormulaWorkerConfig } from './types';
 import { UniverFormulaEnginePlugin } from '@univerjs/engine-formula';
 import { UniverRPCWorkerThreadPlugin } from '@univerjs/rpc';
 import { UniverSheetsPlugin } from '@univerjs/sheets';
 import { UniverRemoteSheetsFormulaPlugin } from '@univerjs/sheets-formula';
 
-export interface IUniverSheetsCoreWorkerPresetConfig extends
-    Pick<IUniverEngineFormulaConfig, 'function'> {}
+export interface IUniverSheetsCoreWorkerPresetConfig {
+    formula?: IUniverFormulaWorkerConfig;
+}
 
 export function UniverSheetsCoreWorkerPreset(config: Partial<IUniverSheetsCoreWorkerPresetConfig> = {}): IPreset {
     const {
-        function: functionUser,
+        formula,
     } = config;
     return {
         plugins: [
             [UniverSheetsPlugin, { onlyRegisterFormulaRelatedMutations: true }],
-            [UniverFormulaEnginePlugin, { function: functionUser }],
+            [UniverFormulaEnginePlugin, { function: formula?.function }],
             UniverRPCWorkerThreadPlugin,
             UniverRemoteSheetsFormulaPlugin,
         ],
