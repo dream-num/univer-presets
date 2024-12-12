@@ -10,6 +10,9 @@ export * from '@univerjs/sheets';
 export * from '@univerjs/sheets-formula';
 
 export interface IUniverSheetsNodeCoreWorkerPresetConfig {
+    /**
+     * The formula worker config.
+     */
     formula?: IUniverFormulaWorkerConfig;
 }
 

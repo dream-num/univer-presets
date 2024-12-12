@@ -5,6 +5,9 @@ import { UniverSheetsPlugin } from '@univerjs/sheets';
 import { UniverRemoteSheetsFormulaPlugin } from '@univerjs/sheets-formula';
 
 export interface IUniverSheetsCoreWorkerPresetConfig {
+    /**
+     * The formula worker config.
+     */
     formula?: IUniverFormulaWorkerConfig;
 }
 

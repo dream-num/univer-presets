@@ -19,7 +19,14 @@ import '@univerjs/engine-formula/facade';
 import '@univerjs/sheets-filter/facade';
 
 export interface IUniverSheetsNodeCorePresetConfig {
+    /**
+     * The formula configuration.
+     */
     formula?: IUniverFormulaConfig;
+
+    /**
+     * The URL of the worker script.
+     */
     workerSrc?: string;
 }
 
