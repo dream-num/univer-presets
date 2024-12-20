@@ -17,6 +17,9 @@ importers:
       '@release-it/conventional-changelog':
         specifier: ^9.0.3
         version: 9.0.3(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@17.10.0(typescript@5.7.2))
+      '@types/fs-extra':
+        specifier: ^11.0.4
+        version: 11.0.4
       '@univerjs/core':
         specifier: 0.5.1
         version: 0.5.1(@grpc/grpc-js@1.9.14)(react@18.3.1)(rxjs@7.8.1)

@@ -13,12 +13,14 @@
         "build:node-demo": "pnpm --filter examples-node build:demo",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
-        "release": "release-it"
+        "release": "release-it",
+        "update-deps": "tsx scripts/update-dependencies.ts"
     },
     "devDependencies": {
         "@antfu/eslint-config": "^3.11.2",
         "@release-it-plugins/workspaces": "^4.2.0",
         "@release-it/conventional-changelog": "^9.0.3",
+        "@types/fs-extra": "^11.0.4",
         "@univerjs/core": "0.5.1",
         "eslint": "^9.16.0",
         "eslint-plugin-format": "^0.1.3",
