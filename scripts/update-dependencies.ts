@@ -26,9 +26,9 @@
  */
 
 import { execSync } from 'node:child_process';
-import * as fs from 'node:fs';
 import * as path from 'node:path';
 import process from 'node:process';
+import fs from 'fs-extra';
 
 const RELEASE_CHANNEL = process.env.RELEASE_CHANNEL || 'latest';
 const NEW_VERSION = process.env.NEW_VERSION || getLatestTagVersion('@univerjs/core', RELEASE_CHANNEL);
@@ -89,7 +89,7 @@ function updateDependencies() {
         });
 
         if (hasUpdates) {
-            fs.writeFileSync(packageJsonPath, `${JSON.stringify(packageJson, null, 4)}\n`);
+            fs.writeJSONSync(packageJsonPath, packageJson, { spaces: 4 });
         }
     });
 
