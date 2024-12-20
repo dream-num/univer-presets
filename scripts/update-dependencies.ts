@@ -26,7 +26,7 @@
  */
 
 import { execSync } from 'node:child_process';
-import * as path from 'node:path';
+import path from 'node:path';
 import process from 'node:process';
 import fs from 'fs-extra';
 
@@ -89,7 +89,7 @@ function updateDependencies() {
         });
 
         if (hasUpdates) {
-            fs.writeJSONSync(packageJsonPath, packageJson, { spaces: 4 });
+            fs.writeJSONSync(packageJsonPath, packageJson, { spaces: 4, EOL: '\n' });
         }
     });
 
