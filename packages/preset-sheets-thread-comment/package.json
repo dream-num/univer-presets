@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-sheets-thread-comment",
-    "version": "0.5.1",
+    "version": "0.5.1-nightly.202412231606",
     "private": false,
     "description": "",
     "author": "DreamNum <developer@univer.ai>",
@@ -68,14 +68,14 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs-pro/thread-comment-datasource": "0.5.1",
-        "@univerjs/sheets-thread-comment": "0.5.1",
-        "@univerjs/sheets-thread-comment-ui": "0.5.1",
-        "@univerjs/thread-comment-ui": "0.5.1"
+        "@univerjs-pro/thread-comment-datasource": "0.5.1-nightly.202412231606",
+        "@univerjs/sheets-thread-comment": "0.5.1-nightly.202412231606",
+        "@univerjs/sheets-thread-comment-ui": "0.5.1-nightly.202412231606",
+        "@univerjs/thread-comment-ui": "0.5.1-nightly.202412231606"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.5.1",
+        "@univerjs/core": "0.5.1-nightly.202412231606",
         "typescript": "^5.7.2"
     }
 }

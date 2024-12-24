@@ -8,17 +8,21 @@ import { UniverSheetsExchangeClientPlugin } from '@univerjs-pro/sheets-exchange-
 import { UniverSheetsPivotTablePlugin } from '@univerjs-pro/sheets-pivot';
 import { UniverSheetsPivotTableUIPlugin } from '@univerjs-pro/sheets-pivot-ui';
 import { UniverSheetsPrintPlugin } from '@univerjs-pro/sheets-print';
+import { UniverSheetSparklinePlugin } from '@univerjs-pro/sheets-sparkline';
+import { UniverSheetSparklineUIPlugin } from '@univerjs-pro/sheets-sparkline-ui';
 import { UniverNetworkPlugin } from '@univerjs/network';
 
 import '@univerjs-pro/exchange-client/facade';
 import '@univerjs-pro/sheets-pivot/facade';
 import '@univerjs-pro/engine-formula/facade';
 import '@univerjs-pro/sheets-print/facade';
+import '@univerjs-pro/sheets-sparkline/facade';
 
 import '@univerjs-pro/exchange-client/lib/index.css';
 import '@univerjs-pro/sheets-pivot-ui/lib/index.css';
 import '@univerjs-pro/sheets-print/lib/index.css';
 import '@univerjs-pro/sheets-chart-ui/lib/index.css';
+import '@univerjs-pro/sheets-sparkline-ui/lib/index.css';
 
 export interface IUniverSheetsAdvancedPresetConfig {
     universerEndpoint?: string;
@@ -60,6 +64,9 @@ export function UniverSheetsAdvancedPreset(config: Partial<IUniverSheetsAdvanced
 
             UniverSheetsChartPlugin,
             UniverSheetsChartUIPlugin,
+
+            UniverSheetSparklinePlugin,
+            UniverSheetSparklineUIPlugin,
 
             [UniverExchangeClientPlugin, {
                 uploadFileServerUrl: `${serverEndpoint}/universer-api/stream/file/upload`,

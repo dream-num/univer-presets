@@ -33,7 +33,7 @@ import '@univerjs/sheets-numfmt-ui/lib/index.css';
 
 export interface IUniverSheetsCorePresetConfig extends
     Pick<IUniverUIConfig, 'container' | 'header' | 'footer' | 'toolbar' | 'menu' | 'contextMenu' | 'disableAutoFocus'>,
-    Pick<IUniverSheetsUIConfig, 'formulaBar'> {
+    Pick<IUniverSheetsUIConfig, 'formulaBar' | 'customComponents'> {
 
     /**
      * The formula configuration.
@@ -60,6 +60,7 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
         contextMenu,
         disableAutoFocus,
         formula,
+        customComponents,
     } = config;
 
     const useWorker = !!workerSrc;
@@ -85,7 +86,7 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
             [UniverFormulaEnginePlugin, { notExecuteFormula: useWorker, function: formula?.function }],
 
             [UniverSheetsPlugin, { notExecuteFormula: useWorker, onlyRegisterFormulaRelatedMutations: false }],
-            UniverSheetsUIPlugin,
+            [UniverSheetsUIPlugin, { customComponents }],
             UniverSheetsNumfmtPlugin,
             UniverSheetsNumfmtUIPlugin,
 
