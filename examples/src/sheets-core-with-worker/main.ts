@@ -1,6 +1,9 @@
 import { createUniver, defaultTheme, LocaleType } from '@univerjs/presets';
+
 import { UniverSheetsCorePreset } from '@univerjs/presets/preset-sheets-core';
 import zhCN from '@univerjs/presets/preset-sheets-core/locales/zh-CN';
+
+import '@univerjs/presets/lib/styles/preset-sheets-core.css';
 
 const { univerAPI } = createUniver({
     locale: LocaleType.ZH_CN,

@@ -1,8 +1,9 @@
 import type { IPreset } from './types';
 import { UniverCollaborationPlugin } from '@univerjs-pro/collaboration';
 import { UniverCollaborationClientPlugin } from '@univerjs-pro/collaboration-client';
+import { UniverCollaborationClientUIPlugin } from '@univerjs-pro/collaboration-client-ui';
 
-import '@univerjs-pro/collaboration-client/lib/index.css';
+import '@univerjs-pro/collaboration-client-ui/lib/index.css';
 
 export interface IUniverDocsCollaborationPresetConfig {
     universerEndpoint?: string;
@@ -44,6 +45,7 @@ export function UniverDocsCollaborationPreset(config: Partial<IUniverDocsCollabo
                 wsSessionTicketUrl: `${serverEndpoint}/universer-api/user/session-ticket`,
                 sendChangesetTimeout: 200,
             }],
+            UniverCollaborationClientUIPlugin,
         ],
     };
 }

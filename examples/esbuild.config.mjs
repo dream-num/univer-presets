@@ -2,15 +2,18 @@ import { execSync } from 'node:child_process';
 import http from 'node:http';
 import path from 'node:path';
 import process from 'node:process';
+import { fileURLToPath } from 'node:url';
 import esbuild from 'esbuild';
 import cleanPlugin from 'esbuild-plugin-clean';
 import copyPlugin from 'esbuild-plugin-copy';
 import vue from 'esbuild-plugin-vue3';
 import stylePlugin from 'esbuild-style-plugin';
+import fs from 'fs-extra';
 import httpProxy from 'http-proxy';
 import minimist from 'minimist';
 import 'dotenv/config';
 
+const LINK_PRESET_TO_LIB = process.env.LINK_PRESET_TO_LIB === 'true';
 const args = minimist(process.argv.slice(2));
 
 // User should also config their bunlder to build monaco editor's resources for web worker.
@@ -55,6 +58,94 @@ if (!args.watch) {
 define['process.env.BUILD_TIME'] = `"${new Date().toISOString()}"`;
 define['process.env.BUILD_TIMESTAMP'] = `"${new Date().toISOString() / 1000}"`;
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+/**
+ * link preset to lib
+ * use `LINK_PRESET_TO_LIB=true pnpm dev:demo`
+ */
+const linkPresetToLibPlugin = {
+    name: 'link-preset-to-lib-esbuild-plugin',
+    setup(build) {
+        console.log('[link-preset-to-lib-esbuild-plugin] enabled, preset will link to lib');
+        build.onResolve({ filter: /@univerjs\/preset.*/ }, async (args) => {
+            try {
+                const pkgNameParts = args.path.split('/');
+                const pkgDir = path.resolve(__dirname, '..', 'packages', pkgNameParts[1]);
+                const pkgJson = fs.readJSONSync(path.resolve(pkgDir, 'package.json'));
+                const targetPath = pkgNameParts.length > 2 ? pkgNameParts.slice(2).join('/') : '';
+                const exportsConfig = pkgJson.publishConfig.exports;
+
+                let resolvedPath;
+                if (args.path === pkgJson.name) {
+                    resolvedPath = path.resolve(pkgDir, exportsConfig['.'].import);
+                }
+                else if (fs.existsSync(path.join(pkgDir, targetPath))) {
+                    resolvedPath = path.join(pkgDir, targetPath);
+                }
+                else {
+                    const ruleKey = Object.keys(exportsConfig).find((it) => {
+                        if (it === '.') {
+                            return false;
+                        }
+
+                        if (targetPath) {
+                            return it === targetPath || new RegExp(`^${it.replace('./', '').replace('*', '.*')}$`).test(targetPath);
+                        }
+                        return it === '*';
+                    });
+
+                    if (ruleKey) {
+                        resolvedPath = path.join(pkgDir, exportsConfig[ruleKey].import.replace('*', targetPath));
+                        if (fs.existsSync(resolvedPath)) {
+                            resolvedPath = path.join(resolvedPath, 'index.js');
+                        }
+                        else if (path.extname(resolvedPath) === '') {
+                            resolvedPath = `${resolvedPath}.js`;
+                        }
+                    }
+                }
+                if (resolvedPath) {
+                    return { path: resolvedPath };
+                }
+            }
+            catch (e) {
+                console.error('Resolution error for', args.path, ':', e);
+                process.exit(1);
+            }
+        });
+    },
+};
+
+/**
+ * fix `import '@univerjs/presets/lib/styles/preset-sheets-core.css'` not work on source code dev mode
+ *
+ * The `stylePlugin` must be loaded after the `presetLinkToProductionPlugin`.
+ */
+const skipPresetLibCssEsbuildPlugin = {
+    name: 'skip-preset-lib-css-esbuild-plugin',
+    setup(build) {
+        console.log('[skip-preset-lib-css-esbuild-plugin] enabled, resolve will skip `import \'@univerjs/presets/lib/**/*.css\'`');
+
+        build.onResolve({ filter: /\/lib\/.*\.css$/ }, async (args) => {
+            if (args.path.includes('@univerjs/preset')) {
+                return {
+                    path: args.path,
+                    namespace: 'preset-production-css',
+                };
+            }
+        });
+
+        build.onLoad({ filter: /.*/, namespace: 'preset-production-css' }, async () => {
+            // return virtual css content
+            return {
+                contents: ``,
+                loader: 'css',
+            };
+        });
+    },
+};
+
 const ctx = await esbuild[args.watch ? 'context' : 'build']({
     bundle: true,
     format: 'esm',
@@ -71,6 +162,7 @@ const ctx = await esbuild[args.watch ? 'context' : 'build']({
                 to: ['./'],
             },
         }),
+        LINK_PRESET_TO_LIB ? linkPresetToLibPlugin : skipPresetLibCssEsbuildPlugin,
         stylePlugin({
             cssModulesOptions: {
                 localsConvention: 'camelCaseOnly',
