@@ -1,9 +1,9 @@
 import type { IPreset } from './types';
 import { UniverCollaborationPlugin } from '@univerjs-pro/collaboration';
 import { UniverCollaborationClientPlugin } from '@univerjs-pro/collaboration-client';
+import { UniverCollaborationClientUIPlugin } from '@univerjs-pro/collaboration-client-ui';
 import { UniverEditHistoryLoaderPlugin } from '@univerjs-pro/edit-history-loader';
-
-import '@univerjs-pro/collaboration-client/lib/index.css';
+import '@univerjs-pro/collaboration-client-ui/lib/index.css';
 import '@univerjs-pro/edit-history-viewer/lib/index.css';
 
 export interface IUniverSheetsCollaborationPresetConfig {
@@ -57,6 +57,7 @@ export function UniverSheetsCollaborationPreset(config: Partial<IUniverSheetsCol
                 wsSessionTicketUrl: `${serverEndpoint}/universer-api/user/session-ticket`,
                 sendChangesetTimeout: 200,
             }],
+            [UniverCollaborationClientUIPlugin, {}],
             [UniverEditHistoryLoaderPlugin, {
                 univerContainerId,
                 historyListServerUrl: `${serverEndpoint}/universer-api/history`,

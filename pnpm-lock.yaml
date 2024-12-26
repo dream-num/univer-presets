@@ -170,6 +170,9 @@ importers:
       '@univerjs-pro/collaboration-client':
         specifier: 0.5.1-nightly.202412231606
         version: 0.5.1-nightly.202412231606(@grpc/grpc-js@1.9.14)(react@18.3.1)(rxjs@7.8.1)
+      '@univerjs-pro/collaboration-client-ui':
+        specifier: 0.5.1-nightly.202412231606
+        version: 0.5.1-nightly.202412231606(@grpc/grpc-js@1.9.14)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.7.2)
       react:
         specifier: ^16.9.0 || ^17.0.0 || ^18.0.0
         version: 18.3.1
@@ -395,6 +398,9 @@ importers:
       '@univerjs-pro/collaboration-client':
         specifier: 0.5.1-nightly.202412231606
         version: 0.5.1-nightly.202412231606(@grpc/grpc-js@1.9.14)(react@18.3.1)(rxjs@7.8.1)
+      '@univerjs-pro/collaboration-client-ui':
+        specifier: 0.5.1-nightly.202412231606
+        version: 0.5.1-nightly.202412231606(@grpc/grpc-js@1.9.14)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.7.2)
       '@univerjs-pro/edit-history-loader':
         specifier: 0.5.1-nightly.202412231606
         version: 0.5.1-nightly.202412231606(@grpc/grpc-js@1.9.14)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.7.2)
