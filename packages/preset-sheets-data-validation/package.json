@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-sheets-data-validation",
-    "version": "0.5.1",
+    "version": "0.5.1-nightly.202412231606",
     "private": false,
     "description": "",
     "author": "DreamNum <developer@univer.ai>",
@@ -68,13 +68,13 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/data-validation": "0.5.1",
-        "@univerjs/sheets-data-validation": "0.5.1",
-        "@univerjs/sheets-data-validation-ui": "0.5.1"
+        "@univerjs/data-validation": "0.5.1-nightly.202412231606",
+        "@univerjs/sheets-data-validation": "0.5.1-nightly.202412231606",
+        "@univerjs/sheets-data-validation-ui": "0.5.1-nightly.202412231606"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.5.1",
+        "@univerjs/core": "0.5.1-nightly.202412231606",
         "typescript": "^5.7.2"
     }
 }

@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-sheets-collaboration",
-    "version": "0.5.1",
+    "version": "0.5.1-nightly.202412231606",
     "private": false,
     "description": "",
     "author": "DreamNum <developer@univer.ai>",
@@ -68,15 +68,15 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs-pro/collaboration": "0.5.1",
-        "@univerjs-pro/collaboration-client": "0.5.1",
-        "@univerjs-pro/edit-history-loader": "0.5.1",
-        "@univerjs-pro/edit-history-viewer": "0.5.1",
+        "@univerjs-pro/collaboration": "0.5.1-nightly.202412231606",
+        "@univerjs-pro/collaboration-client": "0.5.1-nightly.202412231606",
+        "@univerjs-pro/edit-history-loader": "0.5.1-nightly.202412231606",
+        "@univerjs-pro/edit-history-viewer": "0.5.1-nightly.202412231606",
         "@univerjs/preset-sheets-advanced": "workspace:*"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.5.1",
+        "@univerjs/core": "0.5.1-nightly.202412231606",
         "typescript": "^5.7.2"
     }
 }
