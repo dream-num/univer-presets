@@ -410,6 +410,9 @@ importers:
       '@univerjs-pro/edit-history-viewer':
         specifier: 0.5.1-nightly.202412231606
         version: 0.5.1-nightly.202412231606(@grpc/grpc-js@1.9.14)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.7.2)
+      '@univerjs-pro/thread-comment-datasource':
+        specifier: 0.5.1-nightly.202412231606
+        version: 0.5.1-nightly.202412231606(@grpc/grpc-js@1.9.14)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.7.2)
       '@univerjs/preset-sheets-advanced':
         specifier: workspace:*
         version: link:../preset-sheets-advanced
@@ -777,6 +780,9 @@ importers:
       '@univerjs/sheets-thread-comment-ui':
         specifier: 0.5.1-nightly.202412231606
         version: 0.5.1-nightly.202412231606(@grpc/grpc-js@1.9.14)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.7.2)
+      '@univerjs/thread-comment':
+        specifier: 0.5.1-nightly.202412231606
+        version: 0.5.1-nightly.202412231606(@grpc/grpc-js@1.9.14)(react@18.3.1)(rxjs@7.8.1)
       '@univerjs/thread-comment-ui':
         specifier: 0.5.1-nightly.202412231606
         version: 0.5.1-nightly.202412231606(@grpc/grpc-js@1.9.14)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.7.2)
