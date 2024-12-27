@@ -14,5 +14,8 @@ build({
         '@univerjs-pro/sheets-print',
         '@univerjs-pro/sheets-chart',
         '@univerjs-pro/sheets-chart-ui',
+        '@univerjs/sheets-graphics',
+        '@univerjs-pro/sheets-sparkline',
+        '@univerjs-pro/sheets-sparkline-ui',
     ],
 });

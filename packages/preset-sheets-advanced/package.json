@@ -85,7 +85,8 @@
         "@univerjs-pro/sheets-print": "0.5.1-nightly.202412231606",
         "@univerjs-pro/sheets-sparkline": "0.5.1-nightly.202412231606",
         "@univerjs-pro/sheets-sparkline-ui": "0.5.1-nightly.202412231606",
-        "@univerjs/network": "0.5.1-nightly.202412231606"
+        "@univerjs/network": "0.5.1-nightly.202412231606",
+        "@univerjs/sheets-graphics": "0.5.1-nightly.202412231606"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
