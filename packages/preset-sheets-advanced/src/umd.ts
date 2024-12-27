@@ -12,12 +12,14 @@ import { UniverSheetSparklinePlugin } from '@univerjs-pro/sheets-sparkline';
 import { UniverSheetSparklineUIPlugin } from '@univerjs-pro/sheets-sparkline-ui';
 import { UniverNetworkPlugin } from '@univerjs/network';
 
+import '@univerjs/network/facade';
 import '@univerjs-pro/exchange-client/facade';
 import '@univerjs-pro/sheets-pivot/facade';
 import '@univerjs-pro/engine-formula/facade';
 import '@univerjs-pro/sheets-print/facade';
-import '@univerjs-pro/sheets-sparkline/facade';
 import '@univerjs-pro/sheets-chart-ui/facade';
+import '@univerjs-pro/sheets-pivot-ui/facade';
+import '@univerjs-pro/sheets-sparkline/facade';
 
 import '@univerjs-pro/exchange-client/lib/index.css';
 import '@univerjs-pro/sheets-pivot-ui/lib/index.css';

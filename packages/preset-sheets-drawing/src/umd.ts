@@ -6,6 +6,8 @@ import { UniverDrawingUIPlugin } from '@univerjs/drawing-ui';
 import { UniverSheetsDrawingPlugin } from '@univerjs/sheets-drawing';
 import { UniverSheetsDrawingUIPlugin } from '@univerjs/sheets-drawing-ui';
 
+import '@univerjs/sheets-drawing-ui/facade';
+
 import '@univerjs/drawing-ui/lib/index.css';
 import '@univerjs/sheets-drawing-ui/lib/index.css';
 
