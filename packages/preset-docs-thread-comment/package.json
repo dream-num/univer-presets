@@ -68,7 +68,6 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs-pro/thread-comment-datasource": "0.5.1-nightly.202412231606",
         "@univerjs/docs-thread-comment-ui": "0.5.1-nightly.202412231606",
         "@univerjs/thread-comment-ui": "0.5.1-nightly.202412231606"
     },
