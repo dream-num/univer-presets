@@ -30,7 +30,7 @@ export function UniverSheetsThreadCommentPreset(config: Partial<IUniverSheetsThr
         UniverSheetsThreadCommentUIPlugin,
     ];
 
-    if (collaboration) {
+    if (collaboration && UniverThreadCommentDataSourcePlugin) {
         plugins.push(UniverThreadCommentDataSourcePlugin);
     }
 

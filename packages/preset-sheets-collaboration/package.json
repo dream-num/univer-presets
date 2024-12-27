@@ -73,6 +73,7 @@
         "@univerjs-pro/collaboration-client-ui": "0.5.1-nightly.202412231606",
         "@univerjs-pro/edit-history-loader": "0.5.1-nightly.202412231606",
         "@univerjs-pro/edit-history-viewer": "0.5.1-nightly.202412231606",
+        "@univerjs-pro/thread-comment-datasource": "0.5.1-nightly.202412231606",
         "@univerjs/preset-sheets-advanced": "workspace:*"
     },
     "devDependencies": {
