@@ -19,6 +19,8 @@ interface IBuildExecuterOptions {
     umdDeps: string[];
 }
 
+const clone = (data: any) => JSON.parse(JSON.stringify(data));
+
 function getSharedConfig(): InlineConfig {
     const sharedConfig: InlineConfig = {
         configFile: false,
@@ -181,7 +183,7 @@ export async function build(options?: IBuildOptions) {
         umdDeps,
     };
 
-    buildUMD(getSharedConfig(), buildExecuterOptions);
+    buildUMD(getSharedConfig(), clone(buildExecuterOptions));
 
     if (mode === 'bootstrap') {
         const presets = fs.readdirSync(path.resolve(__dirname, 'src')).filter(dir => dir.startsWith('preset-'));
@@ -209,6 +211,6 @@ export async function build(options?: IBuildOptions) {
         }
     }
 
-    buildESM(getSharedConfig(), buildExecuterOptions);
-    buildCJS(getSharedConfig(), buildExecuterOptions);
+    buildESM(getSharedConfig(), clone(buildExecuterOptions));
+    buildCJS(getSharedConfig(), clone(buildExecuterOptions));
 }
