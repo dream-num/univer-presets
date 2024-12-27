@@ -18,7 +18,6 @@ import '@univerjs-pro/sheets-pivot/facade';
 import '@univerjs-pro/engine-formula/facade';
 import '@univerjs-pro/sheets-print/facade';
 import '@univerjs-pro/sheets-chart-ui/facade';
-import '@univerjs-pro/sheets-pivot-ui/facade';
 import '@univerjs-pro/sheets-sparkline/facade';
 
 import '@univerjs-pro/exchange-client/lib/index.css';
