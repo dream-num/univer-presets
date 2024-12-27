@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/presets",
-    "version": "0.5.1-nightly.202412231606",
+    "version": "0.5.1-nightly.202412261606",
     "private": false,
     "description": "Build Univer apps faster and easier",
     "author": "DreamNum <developer@univer.ai>",
@@ -266,8 +266,8 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/core": "0.5.1-nightly.202412231606",
-        "@univerjs/design": "0.5.1-nightly.202412231606",
+        "@univerjs/core": "0.5.1-nightly.202412261606",
+        "@univerjs/design": "0.5.1-nightly.202412261606",
         "@univerjs/preset-docs-collaboration": "workspace:*",
         "@univerjs/preset-docs-core": "workspace:*",
         "@univerjs/preset-docs-drawing": "workspace:*",
@@ -288,13 +288,13 @@
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/drawing": "0.5.1-nightly.202412231606",
-        "@univerjs/engine-formula": "0.5.1-nightly.202412231606",
-        "@univerjs/engine-numfmt": "0.5.1-nightly.202412231606",
-        "@univerjs/engine-render": "0.5.1-nightly.202412231606",
+        "@univerjs/drawing": "0.5.1-nightly.202412261606",
+        "@univerjs/engine-formula": "0.5.1-nightly.202412261606",
+        "@univerjs/engine-numfmt": "0.5.1-nightly.202412261606",
+        "@univerjs/engine-render": "0.5.1-nightly.202412261606",
         "@univerjs/protocol": "0.1.39",
-        "@univerjs/rpc": "0.5.1-nightly.202412231606",
-        "@univerjs/telemetry": "0.5.1-nightly.202412231606",
+        "@univerjs/rpc": "0.5.1-nightly.202412261606",
+        "@univerjs/telemetry": "0.5.1-nightly.202412261606",
         "typescript": "^5.7.2"
     }
 }

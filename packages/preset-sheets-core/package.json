@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-sheets-core",
-    "version": "0.5.1-nightly.202412231606",
+    "version": "0.5.1-nightly.202412261606",
     "private": false,
     "description": "",
     "author": "DreamNum <developer@univer.ai>",
@@ -74,24 +74,24 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/design": "0.5.1-nightly.202412231606",
-        "@univerjs/docs": "0.5.1-nightly.202412231606",
-        "@univerjs/docs-ui": "0.5.1-nightly.202412231606",
-        "@univerjs/engine-formula": "0.5.1-nightly.202412231606",
-        "@univerjs/engine-render": "0.5.1-nightly.202412231606",
-        "@univerjs/facade": "0.5.1-nightly.202412231606",
-        "@univerjs/rpc": "0.5.1-nightly.202412231606",
-        "@univerjs/sheets": "0.5.1-nightly.202412231606",
-        "@univerjs/sheets-formula": "0.5.1-nightly.202412231606",
-        "@univerjs/sheets-formula-ui": "0.5.1-nightly.202412231606",
-        "@univerjs/sheets-numfmt": "0.5.1-nightly.202412231606",
-        "@univerjs/sheets-numfmt-ui": "0.5.1-nightly.202412231606",
-        "@univerjs/sheets-ui": "0.5.1-nightly.202412231606",
-        "@univerjs/ui": "0.5.1-nightly.202412231606"
+        "@univerjs/design": "0.5.1-nightly.202412261606",
+        "@univerjs/docs": "0.5.1-nightly.202412261606",
+        "@univerjs/docs-ui": "0.5.1-nightly.202412261606",
+        "@univerjs/engine-formula": "0.5.1-nightly.202412261606",
+        "@univerjs/engine-render": "0.5.1-nightly.202412261606",
+        "@univerjs/facade": "0.5.1-nightly.202412261606",
+        "@univerjs/rpc": "0.5.1-nightly.202412261606",
+        "@univerjs/sheets": "0.5.1-nightly.202412261606",
+        "@univerjs/sheets-formula": "0.5.1-nightly.202412261606",
+        "@univerjs/sheets-formula-ui": "0.5.1-nightly.202412261606",
+        "@univerjs/sheets-numfmt": "0.5.1-nightly.202412261606",
+        "@univerjs/sheets-numfmt-ui": "0.5.1-nightly.202412261606",
+        "@univerjs/sheets-ui": "0.5.1-nightly.202412261606",
+        "@univerjs/ui": "0.5.1-nightly.202412261606"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.5.1-nightly.202412231606",
+        "@univerjs/core": "0.5.1-nightly.202412261606",
         "typescript": "^5.7.2"
     }
 }
