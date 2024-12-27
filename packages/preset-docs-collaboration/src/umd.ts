@@ -3,6 +3,8 @@ import { UniverCollaborationPlugin } from '@univerjs-pro/collaboration';
 import { UniverCollaborationClientPlugin } from '@univerjs-pro/collaboration-client';
 import { UniverCollaborationClientUIPlugin } from '@univerjs-pro/collaboration-client-ui';
 
+import '@univerjs-pro/collaboration-client/facade';
+
 import '@univerjs-pro/collaboration-client-ui/lib/index.css';
 
 export interface IUniverDocsCollaborationPresetConfig {
