@@ -40,6 +40,6 @@ createUniver({
         UniverSheetsDrawingPreset({ collaboration: true }),
         UniverSheetsAdvancedPreset(),
         UniverSheetsCollaborationPreset(),
-        UniverSheetsThreadCommentPreset({ collaboration: true }),
+        UniverSheetsThreadCommentPreset(),
     ],
 });
