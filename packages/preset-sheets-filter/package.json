@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-sheets-filter",
-    "version": "0.5.1-nightly.202412271606",
+    "version": "0.5.2",
     "private": false,
     "description": "",
     "author": "DreamNum <developer@univer.ai>",
@@ -68,12 +68,12 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/sheets-filter": "0.5.1-nightly.202412271606",
-        "@univerjs/sheets-filter-ui": "0.5.1-nightly.202412271606"
+        "@univerjs/sheets-filter": "0.5.2",
+        "@univerjs/sheets-filter-ui": "0.5.2"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.5.1-nightly.202412271606",
+        "@univerjs/core": "0.5.2",
         "typescript": "^5.7.2"
     }
 }

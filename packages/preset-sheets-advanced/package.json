@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-sheets-advanced",
-    "version": "0.5.1-nightly.202412271606",
+    "version": "0.5.2",
     "private": false,
     "description": "",
     "author": "DreamNum <developer@univer.ai>",
@@ -74,25 +74,25 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs-pro/engine-formula": "0.5.1-nightly.202412271606",
-        "@univerjs-pro/exchange-client": "0.5.1-nightly.202412271606",
-        "@univerjs-pro/license": "0.5.1-nightly.202412271606",
-        "@univerjs-pro/sheets-chart": "0.5.1-nightly.202412271606",
-        "@univerjs-pro/sheets-chart-ui": "0.5.1-nightly.202412271606",
-        "@univerjs-pro/sheets-exchange-client": "0.5.1-nightly.202412271606",
-        "@univerjs-pro/sheets-pivot": "0.5.1-nightly.202412271606",
-        "@univerjs-pro/sheets-pivot-ui": "0.5.1-nightly.202412271606",
-        "@univerjs-pro/sheets-print": "0.5.1-nightly.202412271606",
-        "@univerjs-pro/sheets-sparkline": "0.5.1-nightly.202412271606",
-        "@univerjs-pro/sheets-sparkline-ui": "0.5.1-nightly.202412271606",
-        "@univerjs/network": "0.5.1-nightly.202412271606",
-        "@univerjs/sheets-graphics": "0.5.1-nightly.202412271606"
+        "@univerjs-pro/engine-formula": "0.5.2",
+        "@univerjs-pro/exchange-client": "0.5.2",
+        "@univerjs-pro/license": "0.5.2",
+        "@univerjs-pro/sheets-chart": "0.5.2",
+        "@univerjs-pro/sheets-chart-ui": "0.5.2",
+        "@univerjs-pro/sheets-exchange-client": "0.5.2",
+        "@univerjs-pro/sheets-pivot": "0.5.2",
+        "@univerjs-pro/sheets-pivot-ui": "0.5.2",
+        "@univerjs-pro/sheets-print": "0.5.2",
+        "@univerjs-pro/sheets-sparkline": "0.5.2",
+        "@univerjs-pro/sheets-sparkline-ui": "0.5.2",
+        "@univerjs/network": "0.5.2",
+        "@univerjs/sheets-graphics": "0.5.2"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs-pro/engine-pivot": "0.5.1-nightly.202412271606",
-        "@univerjs-pro/print": "0.5.1-nightly.202412271606",
-        "@univerjs/core": "0.5.1-nightly.202412271606",
+        "@univerjs-pro/engine-pivot": "0.5.2",
+        "@univerjs-pro/print": "0.5.2",
+        "@univerjs/core": "0.5.2",
         "typescript": "^5.7.2"
     }
 }

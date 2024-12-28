@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-docs-drawing",
-    "version": "0.5.1-nightly.202412271606",
+    "version": "0.5.2",
     "private": false,
     "description": "",
     "author": "DreamNum <developer@univer.ai>",
@@ -68,14 +68,14 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/docs-drawing": "0.5.1-nightly.202412271606",
-        "@univerjs/docs-drawing-ui": "0.5.1-nightly.202412271606",
-        "@univerjs/drawing": "0.5.1-nightly.202412271606",
-        "@univerjs/drawing-ui": "0.5.1-nightly.202412271606"
+        "@univerjs/docs-drawing": "0.5.2",
+        "@univerjs/docs-drawing-ui": "0.5.2",
+        "@univerjs/drawing": "0.5.2",
+        "@univerjs/drawing-ui": "0.5.2"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.5.1-nightly.202412271606",
+        "@univerjs/core": "0.5.2",
         "typescript": "^5.7.2"
     }
 }
