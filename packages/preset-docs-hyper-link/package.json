@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-docs-hyper-link",
-    "version": "0.5.1-nightly.202412261606",
+    "version": "0.5.1-nightly.202412271606",
     "private": false,
     "description": "",
     "author": "DreamNum <developer@univer.ai>",
@@ -68,12 +68,12 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/docs-hyper-link": "0.5.1-nightly.202412261606",
-        "@univerjs/docs-hyper-link-ui": "0.5.1-nightly.202412261606"
+        "@univerjs/docs-hyper-link": "0.5.1-nightly.202412271606",
+        "@univerjs/docs-hyper-link-ui": "0.5.1-nightly.202412271606"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.5.1-nightly.202412261606",
+        "@univerjs/core": "0.5.1-nightly.202412271606",
         "typescript": "^5.7.2"
     }
 }
