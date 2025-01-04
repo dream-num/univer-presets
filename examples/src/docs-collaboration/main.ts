@@ -1,4 +1,4 @@
-import { createUniver, defaultTheme, LocaleType, Tools } from '@univerjs/presets';
+import { createUniver, defaultTheme, LocaleType, merge } from '@univerjs/presets';
 
 import { UniverDocsCollaborationPreset } from '@univerjs/presets/preset-docs-collaboration';
 import docsCollaborationZhCN from '@univerjs/presets/preset-docs-collaboration/locales/zh-CN';
@@ -12,7 +12,7 @@ import '@univerjs/presets/lib/styles/preset-docs-collaboration.css';
 createUniver({
     locale: LocaleType.ZH_CN,
     locales: {
-        zhCN: Tools.deepMerge(
+        zhCN: merge(
             {},
             docsCoreZhCN,
             docsCollaborationZhCN,

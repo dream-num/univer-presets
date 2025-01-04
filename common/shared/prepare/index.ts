@@ -31,7 +31,7 @@ export function createLocalesFiles() {
     fs.ensureDirSync(path.resolve(__dirname, 'src/locales'));
 
     LOCLAES_MAP.forEach((localeKey) => {
-        let content = `import { Tools } from '@univerjs/core';\n\n`;
+        let content = `import { merge } from '@univerjs/core';\n\n`;
         const depsSet = new Set<string>();
         Object.keys(pkg.dependencies).forEach((key) => {
             if (key.startsWith('@univerjs')) {
@@ -48,7 +48,7 @@ export function createLocalesFiles() {
             content += `import ${convertImportNameFromPackageName(key)} from '${key}/locale/${localeKey}';\n`;
         });
 
-        content += `\nexport default Tools.deepMerge(\n    {},\n`;
+        content += `\nexport default merge(\n    {},\n`;
 
         depsSet.forEach((key) => {
             content += `    ${convertImportNameFromPackageName(key)},\n`;

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Univer Sheets Collaboration UMD</title>
+        <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/rxjs@7/dist/bundles/rxjs.umd.min.js"></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+
+        <script src="/packages/presets/lib/umd/index.js"></script>
+
+        <script src="/packages/preset-sheets-core/lib/umd/index.js"></script>
+        <script src="/packages/preset-sheets-core/lib/umd/locales/en-US.js"></script>
+        <link rel="stylesheet" href="/packages/presets/lib/styles/preset-sheets-core.css" />
+
+        <script src="/packages/preset-sheets-drawing/lib/umd/index.js"></script>
+        <script src="/packages/preset-sheets-drawing/lib/umd/locales/en-US.js"></script>
+        <link rel="stylesheet" href="/packages/presets/lib/styles/preset-sheets-drawing.css" />
+
+        <script src="/packages/preset-sheets-advanced/lib/umd/index.js"></script>
+        <script src="/packages/preset-sheets-advanced/lib/umd/locales/en-US.js"></script>
+        <link rel="stylesheet" href="/packages/presets/lib/styles/preset-sheets-advanced.css" />
+
+        <script src="/packages/preset-sheets-data-validation/lib/umd/index.js"></script>
+        <script src="/packages/preset-sheets-data-validation/lib/umd/locales/en-US.js"></script>
+        <link rel="stylesheet" href="/packages/presets/lib/styles/preset-sheets-data-validation.css" />
+
+        <script src="/packages/preset-sheets-hyper-link/lib/umd/index.js"></script>
+        <script src="/packages/preset-sheets-hyper-link/lib/umd/locales/en-US.js"></script>
+        <link rel="stylesheet" href="/packages/presets/lib/styles/preset-sheets-hyper-link.css" />
+
+        <script src="/packages/preset-sheets-conditional-formatting/lib/umd/index.js"></script>
+        <script src="/packages/preset-sheets-conditional-formatting/lib/umd/locales/en-US.js"></script>
+        <link rel="stylesheet" href="/packages/presets/lib/styles/preset-sheets-conditional-formatting.css" />
+
+        <script src="/packages/preset-sheets-thread-comment/lib/umd/index.js"></script>
+        <script src="/packages/preset-sheets-thread-comment/lib/umd/locales/en-US.js"></script>
+        <link rel="stylesheet" href="/packages/presets/lib/styles/preset-sheets-thread-comment.css" />
+
+        <script src="/packages/preset-sheets-filter/lib/umd/index.js"></script>
+        <script src="/packages/preset-sheets-filter/lib/umd/locales/en-US.js"></script>
+        <link rel="stylesheet" href="/packages/presets/lib/styles/preset-sheets-filter.css" />
+
+        <script src="/packages/preset-sheets-find-replace/lib/umd/index.js"></script>
+        <script src="/packages/preset-sheets-find-replace/lib/umd/locales/en-US.js"></script>
+        <link rel="stylesheet" href="/packages/presets/lib/styles/preset-sheets-find-replace.css" />
+
+        <script src="/packages/preset-sheets-sort/lib/umd/index.js"></script>
+        <script src="/packages/preset-sheets-sort/lib/umd/locales/en-US.js"></script>
+        <link rel="stylesheet" href="/packages/presets/lib/styles/preset-sheets-sort.css" />
+
+        <!-- 打开就卡死 -->
+        <script src="/packages/preset-sheets-collaboration/lib/umd/index.js"></script>
+        <script src="/packages/preset-sheets-collaboration/lib/umd/locales/en-US.js"></script>
+        <link rel="stylesheet" href="/packages/presets/lib/styles/preset-sheets-collaboration.css" />
+
+        <style>
+            html,
+            body,
+            #app {
+                margin: 0;
+                padding: 0;
+                width: 100vw;
+                height: 100vh;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="app"></div>
+
+        <script>
+            const { createUniver, LocaleType, merge, defaultTheme } = UniverPresets;
+            const { UniverSheetsCorePreset } = UniverPresetSheetsCore;
+            const { UniverSheetsAdvancedPreset } = UniverPresetSheetsAdvanced;
+            const { UniverSheetsCollaborationPreset } = UniverPresetSheetsCollaboration;
+
+            const { UniverSheetsThreadCommentPreset } = UniverPresetSheetsThreadComment;
+            const { UniverSheetsConditionalFormattingPreset } = UniverPresetSheetsConditionalFormatting;
+            const { UniverSheetsDataValidationPreset } = UniverPresetSheetsDataValidation;
+            const { UniverSheetsDrawingPreset } = UniverPresetSheetsDrawing;
+            const { UniverSheetsFilterPreset } = UniverPresetSheetsFilter;
+            const { UniverSheetsFindReplacePreset } = UniverPresetSheetsFindReplace;
+            const { UniverSheetsSortPreset } = UniverPresetSheetsSort;
+            const { UniverSheetsHyperLinkPreset } = UniverPresetSheetsHyperLink;
+
+            const { UniverInstanceType } = window.UniverCore;
+
+            const UNIVER_SERVER_ENDPOINT = location.origin;
+
+            const collaboration = true;
+
+            const { univerAPI, univer } = createUniver({
+                locale: LocaleType.EN_US,
+                locales: {
+                    [LocaleType.EN_US]: merge(
+                        {},
+                        UniverPresetSheetsCoreEnUS,
+                        UniverPresetSheetsAdvancedEnUS,
+                        UniverPresetSheetsCollaborationEnUS,
+                        UniverPresetSheetsThreadCommentEnUS,
+                        UniverPresetSheetsConditionalFormattingEnUS,
+                        UniverPresetSheetsDataValidationEnUS,
+                        UniverPresetSheetsDrawingEnUS,
+                        UniverPresetSheetsFilterEnUS,
+                        UniverPresetSheetsFindReplaceEnUS,
+                        UniverPresetSheetsHyperLinkEnUS,
+                        UniverPresetSheetsSortEnUS,
+                        // UniverPresetSheetsZenEditorEnUS,
+                    ),
+                },
+                collaboration,
+                // logLevel: LogLevel.VERBOSE,
+                theme: defaultTheme,
+                presets: [
+                    UniverSheetsCorePreset({
+                        container: 'app',
+                        header: true,
+                        footer: true,
+                        // workerURL: new Worker(new URL(workerURL, import.meta.url), {
+                        //   type: 'module',
+                        // }),
+                    }),
+                    UniverSheetsDrawingPreset({
+                        collaboration,
+                    }),
+                    UniverSheetsAdvancedPreset({
+                        useWorker: true,
+                        // if univer page is not in the same domain as the server, you need to set the following parameters
+                        UNIVER_SERVER_ENDPOINT,
+                        // if you want to use the no-limit business feature, you can get 30-day trial license from https://univer.ai/pro/license
+                        // eslint-disable-next-line node/prefer-global/process
+                        // license: 'your license.txt',
+                    }),
+
+                    UniverSheetsHyperLinkPreset(),
+                    UniverSheetsDataValidationPreset(),
+                    UniverSheetsThreadCommentPreset({
+                        collaboration,
+                    }),
+                    UniverSheetsConditionalFormattingPreset(),
+                    UniverSheetsFilterPreset(),
+                    UniverSheetsFindReplacePreset(),
+                    UniverSheetsSortPreset(),
+
+                    UniverSheetsCollaborationPreset(),
+                ],
+                plugins: [
+                    // UniverSheetsCrosshairHighlightPlugin,
+                    // UniverSheetsZenEditorPlugin,
+                ],
+            });
+
+            const injector = univer.__getInjector();
+        </script>
+    </body>
+</html>

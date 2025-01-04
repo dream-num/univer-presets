@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Univer Sheets Core UMD</title>
+        <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/rxjs@7/dist/bundles/rxjs.umd.min.js"></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+
+        <script src="/packages/presets/lib/umd/index.js"></script>
+
+        <script src="/packages/preset-sheets-core/lib/umd/index.js"></script>
+        <script src="/packages/preset-sheets-core/lib/umd/locales/en-US.js"></script>
+        <link rel="stylesheet" href="/packages/presets/lib/styles/preset-sheets-core.css" />
+
+        <style>
+            html,
+            body,
+            #app {
+                margin: 0;
+                padding: 0;
+                width: 100vw;
+                height: 100vh;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="app"></div>
+
+        <script>
+            const { createUniver, LocaleType, merge, defaultTheme } = UniverPresets;
+            const { UniverSheetsCorePreset } = UniverPresetSheetsCore;
+
+            const { univerAPI } = createUniver({
+                locale: LocaleType.ZH_CN,
+                locales: {
+                    zhCN: merge({}, UniverPresetSheetsCoreEnUS),
+                },
+                theme: defaultTheme,
+                presets: [UniverSheetsCorePreset()],
+            });
+
+            univerAPI.createUniverSheet({ name: 'Test Sheet' });
+        </script>
+    </body>
+</html>

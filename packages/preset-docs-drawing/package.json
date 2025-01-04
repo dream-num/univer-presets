@@ -68,14 +68,14 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/docs-drawing": "0.5.2",
-        "@univerjs/docs-drawing-ui": "0.5.2",
-        "@univerjs/drawing": "0.5.2",
-        "@univerjs/drawing-ui": "0.5.2"
+        "@univerjs/docs-drawing": "0.5.3",
+        "@univerjs/docs-drawing-ui": "0.5.3",
+        "@univerjs/drawing": "0.5.3",
+        "@univerjs/drawing-ui": "0.5.3"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.5.2",
+        "@univerjs/core": "0.5.3",
         "typescript": "^5.7.2"
     }
 }
