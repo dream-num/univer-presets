@@ -1,4 +1,4 @@
-import { createUniver, defaultTheme, LocaleType, Tools } from '@univerjs/presets';
+import { createUniver, defaultTheme, LocaleType, merge } from '@univerjs/presets';
 
 import { UniverSheetsConditionalFormattingPreset } from '@univerjs/presets/preset-sheets-conditional-formatting';
 import sheetsConditionalFormattingZhCN from '@univerjs/presets/preset-sheets-conditional-formatting/locales/zh-CN';
@@ -40,7 +40,7 @@ import '@univerjs/sheets-zen-editor/lib/index.css';
 const { univerAPI } = createUniver({
     locale: LocaleType.ZH_CN,
     locales: {
-        zhCN: Tools.deepMerge(
+        zhCN: merge(
             {},
             sheetsCoreZhCN,
             sheetsZenEditorZhCN,
