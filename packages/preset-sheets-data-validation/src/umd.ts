@@ -8,6 +8,8 @@ import '@univerjs/sheets-data-validation/facade';
 
 import '@univerjs/sheets-data-validation-ui/lib/index.css';
 
+export type * from '@univerjs/sheets-data-validation/facade';
+
 export function UniverSheetsDataValidationPreset(): IPreset {
     return {
         plugins: [

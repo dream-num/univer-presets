@@ -7,6 +7,8 @@ import '@univerjs/sheets-thread-comment/facade';
 
 import '@univerjs/thread-comment-ui/lib/index.css';
 
+export type * from '@univerjs/sheets-thread-comment/facade';
+
 export interface IUniverSheetsThreadCommentPresetConfig {
 }
 

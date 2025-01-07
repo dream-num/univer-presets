@@ -11,6 +11,8 @@ import '@univerjs/sheets-drawing-ui/facade';
 import '@univerjs/drawing-ui/lib/index.css';
 import '@univerjs/sheets-drawing-ui/lib/index.css';
 
+export type * from '@univerjs/sheets-drawing-ui/facade';
+
 export interface IUniverSheetsDrawingPresetConfig {
     collaboration?: boolean;
 }

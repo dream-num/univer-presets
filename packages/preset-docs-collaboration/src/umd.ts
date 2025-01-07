@@ -7,6 +7,8 @@ import '@univerjs-pro/collaboration-client/facade';
 
 import '@univerjs-pro/collaboration-client-ui/lib/index.css';
 
+export type * from '@univerjs-pro/collaboration-client/facade';
+
 export interface IUniverDocsCollaborationPresetConfig {
     universerEndpoint?: string;
 }

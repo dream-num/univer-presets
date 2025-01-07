@@ -7,6 +7,8 @@ import '@univerjs/sheets-sort/facade';
 
 import '@univerjs/sheets-sort-ui/lib/index.css';
 
+export type * from '@univerjs/sheets-sort/facade';
+
 export function UniverSheetsSortPreset(): IPreset {
     return {
         plugins: [

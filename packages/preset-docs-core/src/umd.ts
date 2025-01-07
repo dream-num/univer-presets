@@ -5,10 +5,13 @@ import { UniverFormulaEnginePlugin } from '@univerjs/engine-formula';
 import { UniverRenderEnginePlugin } from '@univerjs/engine-render';
 import { type IUniverUIConfig, UniverUIPlugin } from '@univerjs/ui';
 
+import '@univerjs/docs-ui/facade';
+
 import '@univerjs/design/lib/index.css';
 import '@univerjs/ui/lib/index.css';
 import '@univerjs/docs-ui/lib/index.css';
-import '@univerjs/docs-ui/facade';
+
+export type * from '@univerjs/docs-ui/facade';
 
 export interface IUniverDocsCorePresetConfig extends
     Pick<IUniverUIConfig, 'container' | 'header' | 'footer' | 'toolbar' | 'menu' | 'contextMenu' | 'disableAutoFocus'> {
