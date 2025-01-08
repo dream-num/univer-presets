@@ -26,6 +26,14 @@ import '@univerjs-pro/sheets-print/lib/index.css';
 import '@univerjs-pro/sheets-chart-ui/lib/index.css';
 import '@univerjs-pro/sheets-sparkline-ui/lib/index.css';
 
+export type * from '@univerjs-pro/engine-formula/facade';
+export type * from '@univerjs-pro/exchange-client/facade';
+export type * from '@univerjs-pro/sheets-chart-ui/facade';
+export type * from '@univerjs-pro/sheets-pivot/facade';
+export type * from '@univerjs-pro/sheets-print/facade';
+export type * from '@univerjs-pro/sheets-sparkline/facade';
+export type * from '@univerjs/network/facade';
+
 export interface IUniverSheetsAdvancedPresetConfig {
     universerEndpoint?: string;
     license?: string;

@@ -76,6 +76,3 @@ export function createUniver(options: CreateUniverOptions) {
         univerAPI,
     };
 }
-
-export * from '@univerjs/core';
-export * from '@univerjs/design';

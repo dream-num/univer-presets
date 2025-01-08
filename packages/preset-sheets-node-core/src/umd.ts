@@ -18,6 +18,12 @@ import '@univerjs/sheets-data-validation/facade';
 import '@univerjs/engine-formula/facade';
 import '@univerjs/sheets-filter/facade';
 
+export type * from '@univerjs/engine-formula/facade';
+export type * from '@univerjs/sheets-data-validation/facade';
+export type * from '@univerjs/sheets-filter/facade';
+export type * from '@univerjs/sheets-formula/facade';
+export type * from '@univerjs/sheets/facade';
+
 export interface IUniverSheetsNodeCorePresetConfig {
     /**
      * The formula configuration.

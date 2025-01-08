@@ -7,6 +7,8 @@ import '@univerjs/sheets-hyper-link/facade';
 
 import '@univerjs/sheets-hyper-link-ui/lib/index.css';
 
+export type * from '@univerjs/sheets-hyper-link/facade';
+
 export function UniverSheetsHyperLinkPreset(): IPreset {
     return {
         plugins: [

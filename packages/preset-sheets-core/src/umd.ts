@@ -31,6 +31,14 @@ import '@univerjs/sheets-ui/lib/index.css';
 import '@univerjs/sheets-formula-ui/lib/index.css';
 import '@univerjs/sheets-numfmt-ui/lib/index.css';
 
+export type * from '@univerjs/docs-ui/facade';
+export type * from '@univerjs/engine-formula/facade';
+export type * from '@univerjs/sheets-formula/facade';
+export type * from '@univerjs/sheets-numfmt/facade';
+export type * from '@univerjs/sheets-ui/facade';
+export type * from '@univerjs/sheets/facade';
+export type * from '@univerjs/ui/facade';
+
 export interface IUniverSheetsCorePresetConfig extends
     Pick<IUniverUIConfig, 'container' | 'header' | 'footer' | 'toolbar' | 'menu' | 'contextMenu' | 'disableAutoFocus'>,
     Pick<IUniverSheetsUIConfig, 'formulaBar' | 'customComponents'> {
