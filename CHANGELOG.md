@@ -1,5 +1,13 @@
 
 
+## [0.5.4](https://github.com/dream-num/univer-presets/compare/v0.5.3...v0.5.4) (2025-01-13)
+
+
+### Features
+
+* add types-check & update to 0.5.4 ([#34](https://github.com/dream-num/univer-presets/issues/34)) ([113c360](https://github.com/dream-num/univer-presets/commit/113c360d88ead7b45a2f32f2e7001b9ade38b25a))
+* export types from all facade modules ([#33](https://github.com/dream-num/univer-presets/issues/33)) ([8d659ff](https://github.com/dream-num/univer-presets/commit/8d659ffe1871f9c516f159b9980d406ad539d152))
+
 ## [0.5.3](https://github.com/dream-num/univer-presets/compare/v0.5.2...v0.5.3) (2025-01-04)
 
 ## [0.5.2](https://github.com/dream-num/univer-presets/compare/v0.5.1...v0.5.2) (2024-12-28)
