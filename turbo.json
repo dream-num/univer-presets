@@ -6,6 +6,9 @@
     "tasks": {
         "build:preset": {
             "cache": false
+        },
+        "lint:types": {
+            "cache": false
         }
     }
 }

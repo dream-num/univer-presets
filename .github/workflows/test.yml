@@ -25,6 +25,9 @@ jobs:
             - name: Setup Node.js
               uses: ./.github/actions/setup-node
 
+            - name: Types Check
+              run: pnpm lint:types
+
             - name: 🩺 Run build
               run: pnpm build
 

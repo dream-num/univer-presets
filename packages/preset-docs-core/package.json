@@ -60,7 +60,8 @@
     ],
     "scripts": {
         "prebuild:preset": "tsx prepare.ts",
-        "build:preset": "tsx build.ts"
+        "build:preset": "tsx build.ts",
+        "lint:types": "tsc --noEmit"
     },
     "peerDependencies": {
         "react": "^16.9.0 || ^17.0.0 || ^18.0.0",
@@ -68,16 +69,16 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/design": "0.5.3",
-        "@univerjs/docs": "0.5.3",
-        "@univerjs/docs-ui": "0.5.3",
-        "@univerjs/engine-formula": "0.5.3",
-        "@univerjs/engine-render": "0.5.3",
-        "@univerjs/ui": "0.5.3"
+        "@univerjs/design": "0.5.3-nightly.202501121605",
+        "@univerjs/docs": "0.5.3-nightly.202501121605",
+        "@univerjs/docs-ui": "0.5.3-nightly.202501121605",
+        "@univerjs/engine-formula": "0.5.3-nightly.202501121605",
+        "@univerjs/engine-render": "0.5.3-nightly.202501121605",
+        "@univerjs/ui": "0.5.3-nightly.202501121605"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.5.3",
+        "@univerjs/core": "0.5.3-nightly.202501121605",
         "typescript": "^5.7.2"
     }
 }
