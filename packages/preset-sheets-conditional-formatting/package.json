@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-sheets-conditional-formatting",
-    "version": "0.5.3",
+    "version": "0.5.4-test.0",
     "private": false,
     "description": "",
     "author": "DreamNum <developer@univer.ai>",
@@ -69,12 +69,12 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/sheets-conditional-formatting": "0.5.3-nightly.202501121605",
-        "@univerjs/sheets-conditional-formatting-ui": "0.5.3-nightly.202501121605"
+        "@univerjs/sheets-conditional-formatting": "0.5.4",
+        "@univerjs/sheets-conditional-formatting-ui": "0.5.4"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.5.3-nightly.202501121605",
+        "@univerjs/core": "0.5.4",
         "typescript": "^5.7.2"
     }
 }

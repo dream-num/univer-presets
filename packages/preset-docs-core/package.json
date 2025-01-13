@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-docs-core",
-    "version": "0.5.3",
+    "version": "0.5.4-test.0",
     "private": false,
     "description": "",
     "author": "DreamNum <developer@univer.ai>",
@@ -69,16 +69,16 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/design": "0.5.3-nightly.202501121605",
-        "@univerjs/docs": "0.5.3-nightly.202501121605",
-        "@univerjs/docs-ui": "0.5.3-nightly.202501121605",
-        "@univerjs/engine-formula": "0.5.3-nightly.202501121605",
-        "@univerjs/engine-render": "0.5.3-nightly.202501121605",
-        "@univerjs/ui": "0.5.3-nightly.202501121605"
+        "@univerjs/design": "0.5.4",
+        "@univerjs/docs": "0.5.4",
+        "@univerjs/docs-ui": "0.5.4",
+        "@univerjs/engine-formula": "0.5.4",
+        "@univerjs/engine-render": "0.5.4",
+        "@univerjs/ui": "0.5.4"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.5.3-nightly.202501121605",
+        "@univerjs/core": "0.5.4",
         "typescript": "^5.7.2"
     }
 }
