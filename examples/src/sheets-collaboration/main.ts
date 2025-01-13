@@ -12,6 +12,9 @@ import sheetsCoreZhCN from '@univerjs/presets/preset-sheets-core/locales/zh-CN';
 import { UniverSheetsDrawingPreset } from '@univerjs/presets/preset-sheets-drawing';
 import sheetsDrawingZhCN from '@univerjs/presets/preset-sheets-drawing/locales/zh-CN';
 
+import { UniverSheetsFilterPreset } from '@univerjs/presets/preset-sheets-filter';
+import sheetsSheetsFilterZhCN from '@univerjs/presets/preset-sheets-filter/locales/zh-CN';
+
 import { UniverSheetsThreadCommentPreset } from '@univerjs/presets/preset-sheets-thread-comment';
 import sheetsThreadCommentZhCN from '@univerjs/presets/preset-sheets-thread-comment/locales/zh-CN';
 
@@ -20,8 +23,9 @@ import '@univerjs/presets/lib/styles/preset-sheets-collaboration.css';
 import '@univerjs/presets/lib/styles/preset-sheets-core.css';
 import '@univerjs/presets/lib/styles/preset-sheets-thread-comment.css';
 import '@univerjs/presets/lib/styles/preset-sheets-drawing.css';
+import '@univerjs/presets/lib/styles/preset-sheets-filter.css';
 
-createUniver({
+const { univerAPI } = createUniver({
     locale: LocaleType.ZH_CN,
     locales: {
         zhCN: merge(
@@ -31,6 +35,7 @@ createUniver({
             sheetsCollaborationZhCN,
             sheetsThreadCommentZhCN,
             sheetsDrawingZhCN,
+            sheetsSheetsFilterZhCN,
         ),
     },
     theme: defaultTheme,
@@ -39,7 +44,16 @@ createUniver({
         UniverSheetsCorePreset(),
         UniverSheetsDrawingPreset({ collaboration: true }),
         UniverSheetsAdvancedPreset(),
-        UniverSheetsCollaborationPreset(),
         UniverSheetsThreadCommentPreset(),
+        UniverSheetsFilterPreset(),
+        UniverSheetsCollaborationPreset(),
     ],
 });
+
+window.univerAPI = univerAPI;
+
+declare global{
+    interface Window {
+        univerAPI: any;
+    }
+}

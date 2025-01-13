@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-sheets-core",
-    "version": "0.5.3",
+    "version": "0.5.4",
     "private": false,
     "description": "",
     "author": "DreamNum <developer@univer.ai>",
@@ -66,7 +66,8 @@
     ],
     "scripts": {
         "prebuild:preset": "tsx prepare.ts",
-        "build:preset": "tsx build.ts"
+        "build:preset": "tsx build.ts",
+        "lint:types": "tsc --noEmit"
     },
     "peerDependencies": {
         "react": "^16.9.0 || ^17.0.0 || ^18.0.0",
@@ -74,24 +75,24 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/design": "0.5.3",
-        "@univerjs/docs": "0.5.3",
-        "@univerjs/docs-ui": "0.5.3",
-        "@univerjs/engine-formula": "0.5.3",
-        "@univerjs/engine-render": "0.5.3",
-        "@univerjs/facade": "0.5.3",
-        "@univerjs/rpc": "0.5.3",
-        "@univerjs/sheets": "0.5.3",
-        "@univerjs/sheets-formula": "0.5.3",
-        "@univerjs/sheets-formula-ui": "0.5.3",
-        "@univerjs/sheets-numfmt": "0.5.3",
-        "@univerjs/sheets-numfmt-ui": "0.5.3",
-        "@univerjs/sheets-ui": "0.5.3",
-        "@univerjs/ui": "0.5.3"
+        "@univerjs/design": "0.5.4",
+        "@univerjs/docs": "0.5.4",
+        "@univerjs/docs-ui": "0.5.4",
+        "@univerjs/engine-formula": "0.5.4",
+        "@univerjs/engine-render": "0.5.4",
+        "@univerjs/facade": "0.5.4",
+        "@univerjs/rpc": "0.5.4",
+        "@univerjs/sheets": "0.5.4",
+        "@univerjs/sheets-formula": "0.5.4",
+        "@univerjs/sheets-formula-ui": "0.5.4",
+        "@univerjs/sheets-numfmt": "0.5.4",
+        "@univerjs/sheets-numfmt-ui": "0.5.4",
+        "@univerjs/sheets-ui": "0.5.4",
+        "@univerjs/ui": "0.5.4"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.5.3",
+        "@univerjs/core": "0.5.4",
         "typescript": "^5.7.2"
     }
 }

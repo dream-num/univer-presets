@@ -6,11 +6,12 @@
     "license": "Apache-2.0",
     "scripts": {
         "dev:demo": "node ./esbuild.config.mjs --watch",
+        "dev:demo-lib": "cross-env LINK_PRESET_TO_LIB=true pnpm dev:demo",
         "build:demo": "node ./esbuild.config.mjs"
     },
     "dependencies": {
         "@univerjs/presets": "workspace:*",
-        "@univerjs/sheets-zen-editor": "0.5.3",
+        "@univerjs/sheets-zen-editor": "0.5.4",
         "clsx": "^2.1.1",
         "monaco-editor": "0.52.0",
         "react": "18.3.1",
@@ -21,6 +22,7 @@
     "devDependencies": {
         "@types/react": "^18.3.12",
         "@types/react-dom": "^18.3.1",
+        "cross-env": "^7.0.3",
         "detect-port": "^1.6.1",
         "dotenv": "^16.4.5",
         "esbuild": "^0.24.0",

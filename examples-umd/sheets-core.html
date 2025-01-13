@@ -31,7 +31,9 @@
         <div id="app"></div>
 
         <script>
-            const { createUniver, LocaleType, merge, defaultTheme } = UniverPresets;
+            const { createUniver } = UniverPresets;
+            const { LocaleType, merge } = UniverCore;
+            const { defaultTheme } = UniverDesign;
             const { UniverSheetsCorePreset } = UniverPresetSheetsCore;
 
             const { univerAPI } = createUniver({
@@ -43,7 +45,9 @@
                 presets: [UniverSheetsCorePreset()],
             });
 
-            univerAPI.createUniverSheet({ name: 'Test Sheet' });
+            univerAPI.createWorkbook({ name: 'Test Sheet' });
+
+            window.univerAPI = univerAPI;
         </script>
     </body>
 </html>

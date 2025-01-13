@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-sheets-drawing",
-    "version": "0.5.3",
+    "version": "0.5.4",
     "private": false,
     "description": "",
     "author": "DreamNum <developer@univer.ai>",
@@ -60,7 +60,8 @@
     ],
     "scripts": {
         "prebuild:preset": "tsx prepare.ts",
-        "build:preset": "tsx build.ts"
+        "build:preset": "tsx build.ts",
+        "lint:types": "tsc --noEmit"
     },
     "peerDependencies": {
         "react": "^16.9.0 || ^17.0.0 || ^18.0.0",
@@ -68,15 +69,15 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/docs-drawing": "0.5.3",
-        "@univerjs/drawing": "0.5.3",
-        "@univerjs/drawing-ui": "0.5.3",
-        "@univerjs/sheets-drawing": "0.5.3",
-        "@univerjs/sheets-drawing-ui": "0.5.3"
+        "@univerjs/docs-drawing": "0.5.4",
+        "@univerjs/drawing": "0.5.4",
+        "@univerjs/drawing-ui": "0.5.4",
+        "@univerjs/sheets-drawing": "0.5.4",
+        "@univerjs/sheets-drawing-ui": "0.5.4"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.5.3",
+        "@univerjs/core": "0.5.4",
         "typescript": "^5.7.2"
     }
 }

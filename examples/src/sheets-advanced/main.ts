@@ -50,4 +50,12 @@ const { univerAPI } = createUniver({
     ],
 });
 
-univerAPI.createUniverSheet({ name: 'Test Sheet' });
+univerAPI.createWorkbook({ name: 'Test Sheet' });
+
+window.univerAPI = univerAPI;
+
+declare global{
+    interface Window {
+        univerAPI: any;
+    }
+}
