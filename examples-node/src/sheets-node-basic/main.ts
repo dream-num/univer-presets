@@ -12,7 +12,7 @@ async function run(): Promise<void> {
         ],
     });
 
-    const univerSheet = univerAPI.createUniverSheet({});
+    const univerSheet = univerAPI.createWorkbook({});
 
     const a1 = univerSheet.getActiveSheet().getRange('A1');
     await a1.setValue({ v: 123 });

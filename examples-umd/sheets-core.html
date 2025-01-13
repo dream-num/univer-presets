@@ -45,7 +45,9 @@
                 presets: [UniverSheetsCorePreset()],
             });
 
-            univerAPI.createUniverSheet({ name: 'Test Sheet' });
+            univerAPI.createWorkbook({ name: 'Test Sheet' });
+
+            window.univerAPI = univerAPI;
         </script>
     </body>
 </html>
