@@ -51,7 +51,6 @@
         <script src="/packages/preset-sheets-sort/lib/umd/locales/en-US.js"></script>
         <link rel="stylesheet" href="/packages/presets/lib/styles/preset-sheets-sort.css" />
 
-        <!-- 打开就卡死 -->
         <script src="/packages/preset-sheets-collaboration/lib/umd/index.js"></script>
         <script src="/packages/preset-sheets-collaboration/lib/umd/locales/en-US.js"></script>
         <link rel="stylesheet" href="/packages/presets/lib/styles/preset-sheets-collaboration.css" />
@@ -72,7 +71,9 @@
         <div id="app"></div>
 
         <script>
-            const { createUniver, LocaleType, merge, defaultTheme } = UniverPresets;
+            const { createUniver } = UniverPresets;
+            const { LocaleType, merge } = UniverCore;
+            const { defaultTheme } = UniverDesign;
             const { UniverSheetsCorePreset } = UniverPresetSheetsCore;
             const { UniverSheetsAdvancedPreset } = UniverPresetSheetsAdvanced;
             const { UniverSheetsCollaborationPreset } = UniverPresetSheetsCollaboration;
