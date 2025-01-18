@@ -35,7 +35,7 @@ function transformUrlProtocolToWs(url: string) {
  * @param {Partial<IUniverSheetsCollaborationPresetConfig>} config - The configuration object.
  */
 export function UniverSheetsCollaborationPreset(config: Partial<IUniverSheetsCollaborationPresetConfig> = {}): IPreset {
-    const { universerEndpoint, univerContainerId } = config;
+    const { universerEndpoint, univerContainerId = 'app' } = config;
 
     const serverEndpoint = universerEndpoint ?? `${window.location.protocol}//${window.location.host}`;
 
