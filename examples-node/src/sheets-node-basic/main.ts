@@ -8,7 +8,7 @@ async function run(): Promise<void> {
     const { univerAPI } = createUniver({
         locale: LocaleType.ZH_CN,
         presets: [
-            UniverSheetsNodeCorePreset({ workerSrc: './worker.js' }),
+            UniverSheetsNodeCorePreset({}),
         ],
     });
 
