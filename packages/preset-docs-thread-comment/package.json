@@ -69,12 +69,12 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/docs-thread-comment-ui": "0.5.4-nightly.202501191605",
-        "@univerjs/thread-comment-ui": "0.5.4-nightly.202501191605"
+        "@univerjs/docs-thread-comment-ui": "0.5.5",
+        "@univerjs/thread-comment-ui": "0.5.5"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.5.4-nightly.202501191605",
+        "@univerjs/core": "0.5.5",
         "typescript": "^5.7.2"
     }
 }
