@@ -1,5 +1,12 @@
 
 
+## [0.5.5](https://github.com/dream-num/univer-presets/compare/v0.5.4...v0.5.5) (2025-01-20)
+
+
+### Features
+
+* update to 0.5.5 ([#35](https://github.com/dream-num/univer-presets/issues/35)) ([286ceb9](https://github.com/dream-num/univer-presets/commit/286ceb92381d4512c49c312f1b5e258b88c5d48c))
+
 ## [0.5.4](https://github.com/dream-num/univer-presets/compare/v0.5.3...v0.5.4) (2025-01-13)
 
 
