@@ -9,7 +9,7 @@ async function run(): Promise<void> {
         locale: LocaleType.ZH_CN,
         locales: {},
         presets: [
-            UniverSheetsNodeCorePreset({}),
+            UniverSheetsNodeCorePreset({ workerSrc: './worker.js' }),
         ],
     });
 
