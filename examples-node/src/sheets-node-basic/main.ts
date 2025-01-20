@@ -7,6 +7,7 @@ import { UniverSheetsNodeCorePreset } from '@univerjs/presets/preset-sheets-node
 async function run(): Promise<void> {
     const { univerAPI } = createUniver({
         locale: LocaleType.ZH_CN,
+        locales: {},
         presets: [
             UniverSheetsNodeCorePreset({ workerSrc: './worker.js' }),
         ],

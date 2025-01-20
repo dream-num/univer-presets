@@ -69,12 +69,12 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/sheets-sort": "0.5.4",
-        "@univerjs/sheets-sort-ui": "0.5.4"
+        "@univerjs/sheets-sort": "0.5.5",
+        "@univerjs/sheets-sort-ui": "0.5.5"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.5.4",
+        "@univerjs/core": "0.5.5",
         "typescript": "^5.7.2"
     }
 }

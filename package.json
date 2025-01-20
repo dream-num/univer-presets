@@ -17,7 +17,7 @@
         "lint:types": "turbo lint:types",
         "release": "release-it",
         "update:sdk": "tsx scripts/update-dependencies.ts",
-        "update:sdk-nightly": "cross-env RELEASE_CHANNEL=nightly pnpm update:sdk"
+        "update:sdk-nightly": "cross-env SDK_RELEASE_CHANNEL=nightly pnpm update:sdk"
     },
     "devDependencies": {
         "@antfu/eslint-config": "^3.11.2",

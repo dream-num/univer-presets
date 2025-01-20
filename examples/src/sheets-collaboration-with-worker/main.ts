@@ -17,7 +17,7 @@ import '@univerjs/presets/lib/styles/preset-sheets-drawing.css';
 import '@univerjs/presets/lib/styles/preset-sheets-advanced.css';
 import '@univerjs/presets/lib/styles/preset-sheets-collaboration.css';
 
-createUniver({
+const { univerAPI } = createUniver({
     locale: LocaleType.ZH_CN,
     locales: {
         zhCN: merge(
@@ -46,3 +46,5 @@ createUniver({
         UniverSheetsCollaborationPreset(),
     ],
 });
+
+window.univerAPI = univerAPI;
