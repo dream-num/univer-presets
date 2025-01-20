@@ -69,12 +69,12 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/docs-hyper-link": "0.5.4",
-        "@univerjs/docs-hyper-link-ui": "0.5.4"
+        "@univerjs/docs-hyper-link": "0.5.4-nightly.202501191605",
+        "@univerjs/docs-hyper-link-ui": "0.5.4-nightly.202501191605"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.5.4",
+        "@univerjs/core": "0.5.4-nightly.202501191605",
         "typescript": "^5.7.2"
     }
 }

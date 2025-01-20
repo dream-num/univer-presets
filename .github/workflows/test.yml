@@ -35,3 +35,7 @@ jobs:
               run: |
                   pnpm build:demo
                   pnpm build:node-demo
+            - name: Run test
+              run: |
+                  pnpm exec tsx ./examples-node/src/sheets-node-basic/main.ts
+                  node ./examples-node/dist/main.js
