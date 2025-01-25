@@ -5,6 +5,7 @@ export default antfu({
         '**/lib',
         '**/node_moudles',
         '**/local',
+        'common/shared/react-polyfill/react-polyfill.js',
     ],
     stylistic: {
         indent: 4,

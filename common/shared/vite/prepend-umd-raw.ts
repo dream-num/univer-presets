@@ -14,15 +14,21 @@ const LOCLAES_MAP = [
 
 interface IOptions {
     umdDeps: string[];
+    umdAdditionalFiles: string[];
 }
 
 export default function prependUMDRaw(options: IOptions) {
-    const { umdDeps } = options;
+    const { umdDeps, umdAdditionalFiles } = options;
 
     const __nodeModules = path.resolve(process.cwd(), 'node_modules');
     const __umd = path.resolve(process.cwd(), 'lib/umd/index.js');
 
     const umdContentsMap: Map<string, string> = new Map();
+
+    umdAdditionalFiles.forEach((file) => {
+        const content = `// ${file}\n${fs.readFileSync(file, 'utf8')}`;
+        umdContentsMap.set(file, content);
+    });
 
     umdDeps.forEach((dep) => {
         const __dep = path.resolve(__nodeModules, dep);
