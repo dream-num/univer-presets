@@ -1,4 +1,4 @@
-import { createUniver, defaultTheme, LocaleType, merge } from '@univerjs/presets';
+import { createUniver, defaultTheme, LocaleType, merge, UniverInstanceType } from '@univerjs/presets';
 
 import { UniverSheetsAdvancedPreset } from '@univerjs/presets/preset-sheets-advanced';
 import sheetsAdvancedZhCN from '@univerjs/presets/preset-sheets-advanced/locales/zh-CN';
@@ -51,6 +51,43 @@ const { univerAPI } = createUniver({
 });
 
 window.univerAPI = univerAPI;
+
+// check if the unit is already created
+const url = new URL(window.location.href);
+const unit = url.searchParams.get('unit');
+if (unit) {
+    // waiting for the unit to be loaded
+}
+else {
+    fetch(`/universer-api/snapshot/2/unit/-/create`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            type: UniverInstanceType.UNIVER_SHEET,
+            name: 'New Sheet By Univer',
+            creator: 'user',
+        }),
+    })
+        .then((response) => {
+            if (!response.ok)
+                throw new Error('Failed to create new sheet');
+
+            return response.json();
+        })
+        .then((data) => {
+            if (!data.unitID)
+                throw new Error('create unit failed');
+
+            url.searchParams.set('unit', data.unitID);
+            url.searchParams.set('type', String(UniverInstanceType.UNIVER_SHEET));
+            window.location.href = url.toString();
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+}
 
 declare global{
     interface Window {
