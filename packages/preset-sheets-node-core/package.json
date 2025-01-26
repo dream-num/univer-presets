@@ -77,6 +77,7 @@
         "@univerjs/sheets-data-validation": "0.6.0-alpha.0",
         "@univerjs/sheets-drawing": "0.6.0-alpha.0",
         "@univerjs/sheets-filter": "0.6.0-alpha.0",
+        "@univerjs/sheets-find-replace": "0.6.0-alpha.0",
         "@univerjs/sheets-formula": "0.6.0-alpha.0",
         "@univerjs/sheets-hyper-link": "0.6.0-alpha.0",
         "@univerjs/sheets-numfmt": "0.6.0-alpha.0",

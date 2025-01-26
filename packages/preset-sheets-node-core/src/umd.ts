@@ -17,11 +17,21 @@ import '@univerjs/sheets-formula/facade';
 import '@univerjs/sheets-data-validation/facade';
 import '@univerjs/engine-formula/facade';
 import '@univerjs/sheets-filter/facade';
+import '@univerjs/sheets-find-replace/facade';
+import '@univerjs/sheets-hyper-link/facade';
+import '@univerjs/sheets-numfmt/facade';
+import '@univerjs/sheets-sort/facade';
+import '@univerjs/sheets-thread-comment/facade';
 
 export type * from '@univerjs/engine-formula/facade';
 export type * from '@univerjs/sheets-data-validation/facade';
 export type * from '@univerjs/sheets-filter/facade';
+export type * from '@univerjs/sheets-find-replace/facade';
 export type * from '@univerjs/sheets-formula/facade';
+export type * from '@univerjs/sheets-hyper-link/facade';
+export type * from '@univerjs/sheets-numfmt/facade';
+export type * from '@univerjs/sheets-sort/facade';
+export type * from '@univerjs/sheets-thread-comment/facade';
 export type * from '@univerjs/sheets/facade';
 
 export interface IUniverSheetsNodeCorePresetConfig {
