@@ -11,7 +11,7 @@
     },
     "dependencies": {
         "@univerjs/presets": "workspace:*",
-        "@univerjs/sheets-zen-editor": "0.5.5",
+        "@univerjs/sheets-zen-editor": "0.6.0-alpha.0",
         "clsx": "^2.1.1",
         "monaco-editor": "0.52.0",
         "react": "18.3.1",

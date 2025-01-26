@@ -1,3 +1,4 @@
+import path from 'node:path';
 import { build } from '@univerjs-infra/shared/vite';
 
 build({
@@ -12,5 +13,8 @@ build({
         '@univerjs/engine-numfmt',
         '@univerjs/engine-formula',
         '@univerjs/drawing',
+    ],
+    umdAdditionalFiles: [
+        path.resolve(__dirname, './node_modules/@univerjs-infra/shared/react-polyfill/react-polyfill.js'),
     ],
 });
