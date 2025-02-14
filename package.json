@@ -1,6 +1,6 @@
 {
     "name": "univer-presets",
-    "version": "0.6.0-alpha.0",
+    "version": "0.6.0",
     "private": true,
     "packageManager": "pnpm@9.12.2",
     "author": "DreamNum Inc. <developer@univer.ai>",
@@ -8,7 +8,7 @@
     "scripts": {
         "prepare": "simple-git-hooks",
         "dev": "pnpm --filter examples dev:demo",
-        "dev:lib": "pnpm --filter examples dev:demo-lib",
+        "dev:libs": "pnpm --filter examples dev:demo-libs",
         "build": "turbo build:preset --concurrency=2 && pnpm --filter @univerjs/presets build",
         "build:demo": "pnpm --filter examples build:demo",
         "build:node-demo": "pnpm --filter examples-node build:demo",

@@ -1,7 +1,7 @@
 import type { IPreset } from './types';
 import { UniverCollaborationPlugin } from '@univerjs-pro/collaboration';
 import { UniverCollaborationClientPlugin } from '@univerjs-pro/collaboration-client';
-import { UniverCollaborationClientUIPlugin } from '@univerjs-pro/collaboration-client-ui';
+import { BrowserCollaborationSocketService, UniverCollaborationClientUIPlugin } from '@univerjs-pro/collaboration-client-ui';
 
 import '@univerjs-pro/collaboration-client/facade';
 
@@ -35,6 +35,7 @@ export function UniverDocsCollaborationPreset(config: Partial<IUniverDocsCollabo
         plugins: [
             UniverCollaborationPlugin,
             [UniverCollaborationClientPlugin, {
+                socketService: BrowserCollaborationSocketService,
                 enableOfflineEditing: true,
                 enableSingleActiveInstanceLock: true,
                 enableAuthServer: true,

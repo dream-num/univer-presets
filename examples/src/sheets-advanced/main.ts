@@ -15,14 +15,27 @@ import sheetsDrawingZhCN from '@univerjs/presets/preset-sheets-drawing/locales/z
 import { UniverSheetsFilterPreset } from '@univerjs/presets/preset-sheets-filter';
 import sheetsFilterZhCN from '@univerjs/presets/preset-sheets-filter/locales/zh-CN';
 
+import { UniverSheetsFindReplacePreset } from '@univerjs/presets/preset-sheets-find-replace';
+import sheetsFindReplaceZhCN from '@univerjs/presets/preset-sheets-find-replace/locales/zh-CN';
+
 import { UniverSheetsHyperLinkPreset } from '@univerjs/presets/preset-sheets-hyper-link';
 import sheetsHyperLinkZhCN from '@univerjs/presets/preset-sheets-hyper-link/locales/zh-CN';
 
+import { UniverSheetsSortPreset } from '@univerjs/presets/preset-sheets-sort';
+import sheetsSortZhCN from '@univerjs/presets/preset-sheets-sort/locales/zh-CN';
+
+import { UniverSheetsThreadCommentPreset } from '@univerjs/presets/preset-sheets-thread-comment';
+import sheetsThreadCommentZhCN from '@univerjs/presets/preset-sheets-thread-comment/locales/zh-CN';
+
 import '@univerjs/presets/lib/styles/preset-sheets-core.css';
+import '@univerjs/presets/lib/styles/preset-sheets-advanced.css';
 import '@univerjs/presets/lib/styles/preset-sheets-drawing.css';
 import '@univerjs/presets/lib/styles/preset-sheets-filter.css';
 import '@univerjs/presets/lib/styles/preset-sheets-hyper-link.css';
 import '@univerjs/presets/lib/styles/preset-sheets-data-validation.css';
+import '@univerjs/presets/lib/styles/preset-sheets-find-replace.css';
+import '@univerjs/presets/lib/styles/preset-sheets-sort.css';
+import '@univerjs/presets/lib/styles/preset-sheets-thread-comment.css';
 
 const { univerAPI } = createUniver({
     locale: LocaleType.ZH_CN,
@@ -35,6 +48,9 @@ const { univerAPI } = createUniver({
             sheetsFilterZhCN,
             sheetsHyperLinkZhCN,
             sheetsDataValidationZhCN,
+            sheetsFindReplaceZhCN,
+            sheetsSortZhCN,
+            sheetsThreadCommentZhCN,
         ),
     },
     theme: defaultTheme,
@@ -47,6 +63,9 @@ const { univerAPI } = createUniver({
         }),
         UniverSheetsHyperLinkPreset(),
         UniverSheetsDataValidationPreset(),
+        UniverSheetsFindReplacePreset(),
+        UniverSheetsSortPreset(),
+        UniverSheetsThreadCommentPreset(),
     ],
 });
 

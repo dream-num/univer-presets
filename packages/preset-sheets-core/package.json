@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-sheets-core",
-    "version": "0.6.0-alpha.0",
+    "version": "0.6.0-nightly.202502140800",
     "private": false,
     "description": "",
     "author": "DreamNum <developer@univer.ai>",
@@ -75,23 +75,23 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/design": "0.6.0-alpha.0",
-        "@univerjs/docs": "0.6.0-alpha.0",
-        "@univerjs/docs-ui": "0.6.0-alpha.0",
-        "@univerjs/engine-formula": "0.6.0-alpha.0",
-        "@univerjs/engine-render": "0.6.0-alpha.0",
-        "@univerjs/rpc": "0.6.0-alpha.0",
-        "@univerjs/sheets": "0.6.0-alpha.0",
-        "@univerjs/sheets-formula": "0.6.0-alpha.0",
-        "@univerjs/sheets-formula-ui": "0.6.0-alpha.0",
-        "@univerjs/sheets-numfmt": "0.6.0-alpha.0",
-        "@univerjs/sheets-numfmt-ui": "0.6.0-alpha.0",
-        "@univerjs/sheets-ui": "0.6.0-alpha.0",
-        "@univerjs/ui": "0.6.0-alpha.0"
+        "@univerjs/design": "0.6.0",
+        "@univerjs/docs": "0.6.0",
+        "@univerjs/docs-ui": "0.6.0",
+        "@univerjs/engine-formula": "0.6.0",
+        "@univerjs/engine-render": "0.6.0",
+        "@univerjs/rpc": "0.6.0",
+        "@univerjs/sheets": "0.6.0",
+        "@univerjs/sheets-formula": "0.6.0",
+        "@univerjs/sheets-formula-ui": "0.6.0",
+        "@univerjs/sheets-numfmt": "0.6.0",
+        "@univerjs/sheets-numfmt-ui": "0.6.0",
+        "@univerjs/sheets-ui": "0.6.0",
+        "@univerjs/ui": "0.6.0"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.6.0-alpha.0",
+        "@univerjs/core": "0.6.0",
         "typescript": "^5.7.2"
     }
 }

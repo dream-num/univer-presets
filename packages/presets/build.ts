@@ -16,5 +16,7 @@ build({
     ],
     umdAdditionalFiles: [
         path.resolve(__dirname, './node_modules/@univerjs-infra/shared/react-polyfill/react-polyfill.js'),
+        path.resolve(__dirname, './node_modules/@wendellhu/redi/dist/redi.js'),
+        path.resolve(__dirname, './node_modules/@wendellhu/redi/dist/react-bindings.js'),
     ],
 });
