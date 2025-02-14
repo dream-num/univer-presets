@@ -6,7 +6,7 @@
     "license": "Apache-2.0",
     "scripts": {
         "dev:demo": "node ./esbuild.config.mjs --watch",
-        "dev:demo-lib": "cross-env LINK_PRESET_TO_LIB=true pnpm dev:demo",
+        "dev:demo-libs": "cross-env LINK_PRESET_TO_LIB=true pnpm dev:demo",
         "build:demo": "node ./esbuild.config.mjs"
     },
     "dependencies": {
