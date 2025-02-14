@@ -1,6 +1,5 @@
 
 
-# [0.6.0-nightly.202502140800](https://github.com/dream-num/univer-presets/compare/v0.6.0-nightly.202502131606...v0.6.0-nightly.202502140800) (2025-02-14)
 
 # [0.6.0-alpha.0](https://github.com/dream-num/univer-presets/compare/v0.5.5...v0.6.0-alpha.0) (2025-01-26)
 
