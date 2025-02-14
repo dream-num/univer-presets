@@ -890,6 +890,9 @@ importers:
       '@univerjs/telemetry':
         specifier: 0.6.0-nightly.202502131606
         version: 0.6.0-nightly.202502131606(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
+      '@wendellhu/redi':
+        specifier: 0.17.1
+        version: 0.17.1
       typescript:
         specifier: ^5.7.2
         version: 5.7.2

@@ -296,6 +296,7 @@
         "@univerjs/protocol": "0.1.39",
         "@univerjs/rpc": "0.6.0-nightly.202502131606",
         "@univerjs/telemetry": "0.6.0-nightly.202502131606",
+        "@wendellhu/redi": "0.17.1",
         "typescript": "^5.7.2"
     }
 }
