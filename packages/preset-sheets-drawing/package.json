@@ -69,15 +69,15 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/docs-drawing": "0.6.0-alpha.0",
-        "@univerjs/drawing": "0.6.0-alpha.0",
-        "@univerjs/drawing-ui": "0.6.0-alpha.0",
-        "@univerjs/sheets-drawing": "0.6.0-alpha.0",
-        "@univerjs/sheets-drawing-ui": "0.6.0-alpha.0"
+        "@univerjs/docs-drawing": "0.6.0-nightly.202502131606",
+        "@univerjs/drawing": "0.6.0-nightly.202502131606",
+        "@univerjs/drawing-ui": "0.6.0-nightly.202502131606",
+        "@univerjs/sheets-drawing": "0.6.0-nightly.202502131606",
+        "@univerjs/sheets-drawing-ui": "0.6.0-nightly.202502131606"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.6.0-alpha.0",
+        "@univerjs/core": "0.6.0-nightly.202502131606",
         "typescript": "^5.7.2"
     }
 }

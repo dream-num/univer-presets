@@ -69,13 +69,13 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/data-validation": "0.6.0-alpha.0",
-        "@univerjs/sheets-data-validation": "0.6.0-alpha.0",
-        "@univerjs/sheets-data-validation-ui": "0.6.0-alpha.0"
+        "@univerjs/data-validation": "0.6.0-nightly.202502131606",
+        "@univerjs/sheets-data-validation": "0.6.0-nightly.202502131606",
+        "@univerjs/sheets-data-validation-ui": "0.6.0-nightly.202502131606"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.6.0-alpha.0",
+        "@univerjs/core": "0.6.0-nightly.202502131606",
         "typescript": "^5.7.2"
     }
 }
