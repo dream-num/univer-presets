@@ -69,12 +69,12 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/sheets-conditional-formatting": "0.6.0-nightly.202502131606",
-        "@univerjs/sheets-conditional-formatting-ui": "0.6.0-nightly.202502131606"
+        "@univerjs/sheets-conditional-formatting": "0.6.0",
+        "@univerjs/sheets-conditional-formatting-ui": "0.6.0"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.6.0-nightly.202502131606",
+        "@univerjs/core": "0.6.0",
         "typescript": "^5.7.2"
     }
 }
