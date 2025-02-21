@@ -109,7 +109,7 @@ function updateDependencies() {
     updateDependency(path.join(ROOT_DIR, 'examples-node'));
 
     console.log('Running pnpm install to update lock file...');
-    execSync('pnpm install', { stdio: 'inherit' });
+    execSync('pnpm install --no-frozen-lockfile', { stdio: 'inherit' });
 
     console.log('Dependencies update completed!');
 }
