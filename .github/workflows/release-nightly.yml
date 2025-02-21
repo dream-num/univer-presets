@@ -1,0 +1,86 @@
+name: 🥷 Release Nightly
+
+on:
+    workflow_dispatch:
+    schedule:
+        - cron: '45 16 * * *'
+
+concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: true
+
+permissions:
+    contents: read
+
+jobs:
+    prepare:
+        runs-on: ubuntu-latest
+        timeout-minutes: 5
+
+        outputs:
+            version: ${{ steps.nightly-version.outputs.version }}
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                  token: ${{ secrets.GH_TOKEN }}
+                  submodules: true
+
+            - name: Install pnpm
+              uses: pnpm/action-setup@v4
+              with:
+                  run_install: false
+
+            - name: Install Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 18
+
+            - name: 📌 Get package version (version + date)
+              id: nightly-version
+              run: |
+                  echo "version=$(npm view @univerjs/core@nightly version)" >> $GITHUB_OUTPUT
+
+    release-nightly:
+        needs: [prepare]
+        timeout-minutes: 30
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                  token: ${{ secrets.GH_TOKEN }}
+                  submodules: true
+
+            - name: Install pnpm
+              uses: pnpm/action-setup@v4
+              with:
+                  run_install: false
+
+            - name: Install Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 18
+                  cache: pnpm
+
+            - name: 🔏 Set all monorepo's package version
+              run: |
+                  pnpm update:sdk-nightly
+                  for package in $(ls common); do
+                      node -e "const fs = require('fs'); const package = JSON.parse(fs.readFileSync('./common/$package/package.json')); package.version = 'xxx'; fs.writeFileSync('./common/$package/package.json', JSON.stringify(package, null, 4));"
+                  done
+
+            - name: 📦 Install dependencies
+              run: |
+                  pnpm install
+
+            - name: 🏗️ Build
+              run: |
+                  pnpm build
+
+            - name: 🐙 Publish (With @univerjs)
+              run: |
+                  pnpm publish --access public --tag nightly -r --no-git-checks
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
