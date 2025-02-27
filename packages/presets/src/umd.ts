@@ -3,6 +3,7 @@ import { IAuthzIoService, IMentionIOService, IUndoRedoService, LogLevel, Univer 
 import { FUniver } from '@univerjs/core/facade';
 
 export * from '@univerjs/core/facade';
+
 /**
  * A collection of plugins and their default configs.
  */
