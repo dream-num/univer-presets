@@ -75,23 +75,23 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/design": "0.6.1",
-        "@univerjs/docs": "0.6.1",
-        "@univerjs/docs-ui": "0.6.1",
-        "@univerjs/engine-formula": "0.6.1",
-        "@univerjs/engine-render": "0.6.1",
-        "@univerjs/rpc": "0.6.1",
-        "@univerjs/sheets": "0.6.1",
-        "@univerjs/sheets-formula": "0.6.1",
-        "@univerjs/sheets-formula-ui": "0.6.1",
-        "@univerjs/sheets-numfmt": "0.6.1",
-        "@univerjs/sheets-numfmt-ui": "0.6.1",
-        "@univerjs/sheets-ui": "0.6.1",
-        "@univerjs/ui": "0.6.1"
+        "@univerjs/design": "0.6.2",
+        "@univerjs/docs": "0.6.2",
+        "@univerjs/docs-ui": "0.6.2",
+        "@univerjs/engine-formula": "0.6.2",
+        "@univerjs/engine-render": "0.6.2",
+        "@univerjs/rpc": "0.6.2",
+        "@univerjs/sheets": "0.6.2",
+        "@univerjs/sheets-formula": "0.6.2",
+        "@univerjs/sheets-formula-ui": "0.6.2",
+        "@univerjs/sheets-numfmt": "0.6.2",
+        "@univerjs/sheets-numfmt-ui": "0.6.2",
+        "@univerjs/sheets-ui": "0.6.2",
+        "@univerjs/ui": "0.6.2"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.6.1",
+        "@univerjs/core": "0.6.2",
         "typescript": "^5.7.3"
     }
 }

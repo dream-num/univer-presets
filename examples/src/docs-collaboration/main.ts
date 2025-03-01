@@ -6,8 +6,12 @@ import docsCollaborationZhCN from '@univerjs/presets/preset-docs-collaboration/l
 import { UniverDocsCorePreset } from '@univerjs/presets/preset-docs-core';
 import docsCoreZhCN from '@univerjs/presets/preset-docs-core/locales/zh-CN';
 
+import { UniverDocsDrawingPreset } from '@univerjs/presets/preset-docs-drawing';
+import docsDrawingZhCN from '@univerjs/presets/preset-docs-drawing/locales/zh-CN';
+
 import '@univerjs/presets/lib/styles/preset-docs-core.css';
 import '@univerjs/presets/lib/styles/preset-docs-collaboration.css';
+import '@univerjs/presets/lib/styles/preset-docs-drawing.css';
 
 createUniver({
     locale: LocaleType.ZH_CN,
@@ -16,6 +20,7 @@ createUniver({
             {},
             docsCoreZhCN,
             docsCollaborationZhCN,
+            docsDrawingZhCN,
         ),
     },
     theme: defaultTheme,
@@ -23,6 +28,7 @@ createUniver({
     presets: [
         UniverDocsCorePreset({ collaboration: true }),
         UniverDocsCollaborationPreset(),
+        UniverDocsDrawingPreset({ collaboration: true }),
     ],
 });
 
