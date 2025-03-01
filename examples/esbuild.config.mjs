@@ -210,7 +210,7 @@ if (args.watch) {
     await monacoBuildTask();
     await ctx.watch();
 
-    const { host, port } = await ctx.serve({
+    const { hosts, port } = await ctx.serve({
         servedir: './local',
         port: 8011, // need different port for universer-api
     });
@@ -229,7 +229,7 @@ if (args.watch) {
         }
 
         proxy.web(req, res, {
-            target: `http://${host}:${port}`,
+            target: `http://${hosts[0]}:${port}`,
             changeOrigin: true,
             secure: false,
         });
