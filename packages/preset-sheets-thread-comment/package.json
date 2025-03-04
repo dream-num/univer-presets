@@ -69,14 +69,14 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/sheets-thread-comment": "0.6.2",
-        "@univerjs/sheets-thread-comment-ui": "0.6.2",
-        "@univerjs/thread-comment": "0.6.2",
-        "@univerjs/thread-comment-ui": "0.6.2"
+        "@univerjs/sheets-thread-comment": "0.6.3",
+        "@univerjs/sheets-thread-comment-ui": "0.6.3",
+        "@univerjs/thread-comment": "0.6.3",
+        "@univerjs/thread-comment-ui": "0.6.3"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.6.2",
+        "@univerjs/core": "0.6.3",
         "typescript": "^5.7.3"
     }
 }
