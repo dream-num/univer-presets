@@ -69,16 +69,16 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/design": "0.6.2",
-        "@univerjs/docs": "0.6.2",
-        "@univerjs/docs-ui": "0.6.2",
-        "@univerjs/engine-formula": "0.6.2",
-        "@univerjs/engine-render": "0.6.2",
-        "@univerjs/ui": "0.6.2"
+        "@univerjs/design": "0.6.3",
+        "@univerjs/docs": "0.6.3",
+        "@univerjs/docs-ui": "0.6.3",
+        "@univerjs/engine-formula": "0.6.3",
+        "@univerjs/engine-render": "0.6.3",
+        "@univerjs/ui": "0.6.3"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.6.2",
+        "@univerjs/core": "0.6.3",
         "typescript": "^5.7.3"
     }
 }

@@ -69,13 +69,13 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs-pro/collaboration": "0.6.2",
-        "@univerjs-pro/collaboration-client": "0.6.2",
-        "@univerjs-pro/collaboration-client-ui": "0.6.2"
+        "@univerjs-pro/collaboration": "0.6.3",
+        "@univerjs-pro/collaboration-client": "0.6.3",
+        "@univerjs-pro/collaboration-client-ui": "0.6.3"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.6.2",
+        "@univerjs/core": "0.6.3",
         "typescript": "^5.7.3"
     }
 }
