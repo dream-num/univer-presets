@@ -23,7 +23,7 @@ import '@univerjs/sheets-ui/facade';
 import '@univerjs/engine-formula/facade';
 import '@univerjs/sheets-formula/facade';
 import '@univerjs/sheets-numfmt/facade';
-
+import '@univerjs/sheets-formula-ui/facade';
 import '@univerjs/design/lib/index.css';
 import '@univerjs/ui/lib/index.css';
 import '@univerjs/docs-ui/lib/index.css';
@@ -33,6 +33,7 @@ import '@univerjs/sheets-numfmt-ui/lib/index.css';
 
 export type * from '@univerjs/docs-ui/facade';
 export type * from '@univerjs/engine-formula/facade';
+export type * from '@univerjs/sheets-formula-ui/facade';
 export type * from '@univerjs/sheets-formula/facade';
 export type * from '@univerjs/sheets-numfmt/facade';
 export type * from '@univerjs/sheets-ui/facade';
