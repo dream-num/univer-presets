@@ -1,5 +1,13 @@
 
 
+## [0.6.3](https://github.com/dream-num/univer-presets/compare/v0.6.2...v0.6.3) (2025-03-04)
+
+
+### Features
+
+* add sheets-formula-ui facade ([#42](https://github.com/dream-num/univer-presets/issues/42)) ([846df79](https://github.com/dream-num/univer-presets/commit/846df799666443f03bae297728168a7f77d3d839))
+* update to 0.6.3 ([#43](https://github.com/dream-num/univer-presets/issues/43)) ([8661c19](https://github.com/dream-num/univer-presets/commit/8661c19a3533e642eb65836d27caa50c29f8f428))
+
 ## [0.6.2](https://github.com/dream-num/univer-presets/compare/v0.6.1...v0.6.2) (2025-03-01)
 
 
