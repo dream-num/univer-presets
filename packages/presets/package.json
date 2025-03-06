@@ -293,10 +293,10 @@
         "@univerjs/engine-formula": "0.6.3",
         "@univerjs/engine-numfmt": "0.6.3",
         "@univerjs/engine-render": "0.6.3",
-        "@univerjs/protocol": "0.1.43",
+        "@univerjs/protocol": "0.1.44",
         "@univerjs/rpc": "0.6.3",
         "@univerjs/telemetry": "0.6.3",
         "@wendellhu/redi": "0.17.1",
-        "typescript": "^5.7.3"
+        "typescript": "^5.8.2"
     }
 }

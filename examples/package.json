@@ -30,6 +30,6 @@
         "http-proxy": "^1.18.1",
         "less": "^4.2.2",
         "minimist": "^1.2.8",
-        "typescript": "^5.7.3"
+        "typescript": "^5.8.2"
     }
 }

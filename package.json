@@ -2,9 +2,13 @@
     "name": "univer-presets",
     "version": "0.6.3",
     "private": true,
-    "packageManager": "pnpm@9.12.2",
+    "packageManager": "pnpm@10.5.2",
     "author": "DreamNum Inc. <developer@univer.ai>",
     "license": "Apache-2.0",
+    "engines": {
+        "node": ">=20",
+        "pnpm": ">=10"
+    },
     "scripts": {
         "prepare": "simple-git-hooks",
         "dev": "pnpm --filter examples dev:demo",
@@ -20,11 +24,11 @@
         "update:sdk-nightly": "cross-env SDK_RELEASE_CHANNEL=nightly pnpm update:sdk"
     },
     "devDependencies": {
-        "@antfu/eslint-config": "^4.3.0",
+        "@antfu/eslint-config": "^4.5.1",
         "@release-it-plugins/workspaces": "^4.2.0",
         "@release-it/conventional-changelog": "^9.0.3",
         "@types/fs-extra": "^11.0.4",
-        "@univerjs/core": "^0.6.1",
+        "@univerjs/core": "^0.6.3",
         "cross-env": "^7.0.3",
         "eslint": "^9.21.0",
         "eslint-plugin-format": "^1.0.1",
