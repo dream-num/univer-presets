@@ -69,13 +69,13 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/data-validation": "0.6.3",
-        "@univerjs/sheets-data-validation": "0.6.3",
-        "@univerjs/sheets-data-validation-ui": "0.6.3"
+        "@univerjs/data-validation": "0.6.4",
+        "@univerjs/sheets-data-validation": "0.6.4",
+        "@univerjs/sheets-data-validation-ui": "0.6.4"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.6.3",
+        "@univerjs/core": "0.6.4",
         "typescript": "^5.8.2"
     }
 }
