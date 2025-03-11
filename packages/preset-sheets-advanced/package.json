@@ -86,7 +86,6 @@
         "@univerjs-pro/sheets-print": "0.6.4",
         "@univerjs-pro/sheets-sparkline": "0.6.4",
         "@univerjs-pro/sheets-sparkline-ui": "0.6.4",
-        "@univerjs/network": "0.6.4",
         "@univerjs/sheets-graphics": "0.6.4"
     },
     "devDependencies": {

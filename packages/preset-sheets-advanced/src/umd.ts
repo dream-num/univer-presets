@@ -10,9 +10,7 @@ import { UniverSheetsPivotTableUIPlugin } from '@univerjs-pro/sheets-pivot-ui';
 import { UniverSheetsPrintPlugin } from '@univerjs-pro/sheets-print';
 import { UniverSheetSparklinePlugin } from '@univerjs-pro/sheets-sparkline';
 import { UniverSheetSparklineUIPlugin } from '@univerjs-pro/sheets-sparkline-ui';
-import { UniverNetworkPlugin } from '@univerjs/network';
 
-import '@univerjs/network/facade';
 import '@univerjs-pro/exchange-client/facade';
 import '@univerjs-pro/sheets-pivot/facade';
 import '@univerjs-pro/engine-formula/facade';
@@ -32,7 +30,6 @@ export type * from '@univerjs-pro/sheets-chart-ui/facade';
 export type * from '@univerjs-pro/sheets-pivot/facade';
 export type * from '@univerjs-pro/sheets-print/facade';
 export type * from '@univerjs-pro/sheets-sparkline/facade';
-export type * from '@univerjs/network/facade';
 
 export interface IUniverSheetsAdvancedPresetConfig {
     universerEndpoint?: string;
@@ -57,7 +54,6 @@ export function UniverSheetsAdvancedPreset(config: Partial<IUniverSheetsAdvanced
 
     return {
         plugins: [
-            UniverNetworkPlugin,
             [UniverLicensePlugin, { license }],
 
             // TODO: @wzhudev: if we use worker, we need to add different configurations to SheetsPivotTable

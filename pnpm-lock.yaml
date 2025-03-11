@@ -201,6 +201,9 @@ importers:
       '@univerjs/engine-render':
         specifier: 0.6.4
         version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
+      '@univerjs/network':
+        specifier: 0.6.4
+        version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
       '@univerjs/ui':
         specifier: 0.6.4
         version: 0.6.4(@grpc/grpc-js@1.9.14)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
@@ -349,9 +352,6 @@ importers:
       '@univerjs-pro/sheets-sparkline-ui':
         specifier: 0.6.4
         version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
-      '@univerjs/network':
-        specifier: 0.6.4
-        version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
       '@univerjs/sheets-graphics':
         specifier: 0.6.4
         version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
@@ -467,6 +467,9 @@ importers:
         specifier: 0.6.4
         version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
       '@univerjs/engine-render':
+        specifier: 0.6.4
+        version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
+      '@univerjs/network':
         specifier: 0.6.4
         version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
       '@univerjs/rpc':
@@ -870,6 +873,9 @@ importers:
         specifier: 0.6.4
         version: 0.6.4
       '@univerjs/engine-render':
+        specifier: 0.6.4
+        version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
+      '@univerjs/network':
         specifier: 0.6.4
         version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
       '@univerjs/protocol':

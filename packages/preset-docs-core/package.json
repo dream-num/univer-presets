@@ -74,6 +74,7 @@
         "@univerjs/docs-ui": "0.6.4",
         "@univerjs/engine-formula": "0.6.4",
         "@univerjs/engine-render": "0.6.4",
+        "@univerjs/network": "0.6.4",
         "@univerjs/ui": "0.6.4"
     },
     "devDependencies": {
