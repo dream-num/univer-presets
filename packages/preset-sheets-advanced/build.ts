@@ -3,7 +3,6 @@ import { build } from '@univerjs-infra/shared/vite';
 build({
     umdDeps: [
         '@univerjs-pro/license',
-        '@univerjs/network',
         '@univerjs-pro/engine-formula',
         '@univerjs-pro/exchange-client',
         '@univerjs-pro/sheets-exchange-client',

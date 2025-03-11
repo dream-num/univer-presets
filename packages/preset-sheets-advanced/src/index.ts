@@ -11,5 +11,4 @@ export * from '@univerjs-pro/sheets-pivot-ui';
 export * from '@univerjs-pro/sheets-print';
 export * from '@univerjs-pro/sheets-sparkline';
 export * from '@univerjs-pro/sheets-sparkline-ui';
-export * from '@univerjs/network';
 export * from '@univerjs/sheets-graphics';

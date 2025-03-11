@@ -6,6 +6,7 @@ build({
     umdDeps: [
         '@univerjs/protocol',
         '@univerjs/core',
+        '@univerjs/network',
         '@univerjs/telemetry',
         '@univerjs/rpc',
         '@univerjs/design',

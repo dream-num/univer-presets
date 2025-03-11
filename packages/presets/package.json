@@ -293,6 +293,7 @@
         "@univerjs/engine-formula": "0.6.4",
         "@univerjs/engine-numfmt": "0.6.4",
         "@univerjs/engine-render": "0.6.4",
+        "@univerjs/network": "0.6.4",
         "@univerjs/protocol": "0.1.44",
         "@univerjs/rpc": "0.6.4",
         "@univerjs/telemetry": "0.6.4",

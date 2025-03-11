@@ -6,6 +6,7 @@ import { UniverDocsPlugin } from '@univerjs/docs';
 import { UniverDocsUIPlugin } from '@univerjs/docs-ui';
 import { UniverFormulaEnginePlugin } from '@univerjs/engine-formula';
 import { UniverRenderEnginePlugin } from '@univerjs/engine-render';
+import { UniverNetworkPlugin } from '@univerjs/network';
 import { UniverRPCMainThreadPlugin } from '@univerjs/rpc';
 import { UniverSheetsPlugin } from '@univerjs/sheets';
 import { UniverSheetsFormulaPlugin } from '@univerjs/sheets-formula';
@@ -16,6 +17,7 @@ import { UniverSheetsUIPlugin } from '@univerjs/sheets-ui';
 import { UniverUIPlugin } from '@univerjs/ui';
 
 // NOTE: here we copy code from everything.ts. That file (along with the package itself) would be removed in the future.
+import '@univerjs/network/facade';
 import '@univerjs/sheets/facade';
 import '@univerjs/ui/facade';
 import '@univerjs/docs-ui/facade';
@@ -33,6 +35,7 @@ import '@univerjs/sheets-numfmt-ui/lib/index.css';
 
 export type * from '@univerjs/docs-ui/facade';
 export type * from '@univerjs/engine-formula/facade';
+export type * from '@univerjs/network/facade';
 export type * from '@univerjs/sheets-formula-ui/facade';
 export type * from '@univerjs/sheets-formula/facade';
 export type * from '@univerjs/sheets-numfmt/facade';
@@ -76,6 +79,7 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
 
     return {
         plugins: [
+            UniverNetworkPlugin,
             UniverDocsPlugin,
             UniverRenderEnginePlugin,
             [UniverUIPlugin, {
