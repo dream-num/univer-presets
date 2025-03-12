@@ -69,24 +69,24 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/docs": "0.6.4",
-        "@univerjs/engine-formula": "0.6.4",
-        "@univerjs/engine-render": "0.6.4",
-        "@univerjs/rpc-node": "0.6.4",
-        "@univerjs/sheets": "0.6.4",
-        "@univerjs/sheets-data-validation": "0.6.4",
-        "@univerjs/sheets-drawing": "0.6.4",
-        "@univerjs/sheets-filter": "0.6.4",
-        "@univerjs/sheets-formula": "0.6.4",
-        "@univerjs/sheets-hyper-link": "0.6.4",
-        "@univerjs/sheets-numfmt": "0.6.4",
-        "@univerjs/sheets-sort": "0.6.4",
-        "@univerjs/sheets-thread-comment": "0.6.4",
-        "@univerjs/thread-comment": "0.6.4"
+        "@univerjs/docs": "0.6.5",
+        "@univerjs/engine-formula": "0.6.5",
+        "@univerjs/engine-render": "0.6.5",
+        "@univerjs/rpc-node": "0.6.5",
+        "@univerjs/sheets": "0.6.5",
+        "@univerjs/sheets-data-validation": "0.6.5",
+        "@univerjs/sheets-drawing": "0.6.5",
+        "@univerjs/sheets-filter": "0.6.5",
+        "@univerjs/sheets-formula": "0.6.5",
+        "@univerjs/sheets-hyper-link": "0.6.5",
+        "@univerjs/sheets-numfmt": "0.6.5",
+        "@univerjs/sheets-sort": "0.6.5",
+        "@univerjs/sheets-thread-comment": "0.6.5",
+        "@univerjs/thread-comment": "0.6.5"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.6.4",
+        "@univerjs/core": "0.6.5",
         "typescript": "^5.8.2"
     }
 }
