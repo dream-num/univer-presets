@@ -4,6 +4,7 @@ build({
     umdDeps: [
         '@univerjs-pro/license',
         '@univerjs-pro/engine-formula',
+        '@univerjs-pro/engine-chart',
         '@univerjs-pro/exchange-client',
         '@univerjs-pro/sheets-exchange-client',
         '@univerjs-pro/engine-pivot',
