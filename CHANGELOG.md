@@ -1,5 +1,19 @@
 
 
+## [0.6.5](https://github.com/dream-num/univer-presets/compare/v0.6.4...v0.6.5) (2025-03-12)
+
+
+### Bug Fixes
+
+* fix peerDependencies ([#47](https://github.com/dream-num/univer-presets/issues/47)) ([c5639b3](https://github.com/dream-num/univer-presets/commit/c5639b3f2ac96b2285ba761ae44295b922ff8b8d))
+
+
+### Features
+
+* add @univerjs/network package for docs & sheets presets ([#46](https://github.com/dream-num/univer-presets/issues/46)) ([522cb8d](https://github.com/dream-num/univer-presets/commit/522cb8d2081ce49f4d982b36be86a72836ce23f4))
+* enhance UniverSheetsCorePreset with formulaBar and statusBarStatistic support ([#48](https://github.com/dream-num/univer-presets/issues/48)) ([4862bb4](https://github.com/dream-num/univer-presets/commit/4862bb499fc8559045a251f2c123e1949e49a357))
+* update 0.6.5 ([#49](https://github.com/dream-num/univer-presets/issues/49)) ([f90fc54](https://github.com/dream-num/univer-presets/commit/f90fc546cbbc4e8e680220b1a6b45581194480bb))
+
 ## [0.6.4](https://github.com/dream-num/univer-presets/compare/v0.6.3...v0.6.4) (2025-03-08)
 
 
