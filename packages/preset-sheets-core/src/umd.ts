@@ -45,7 +45,7 @@ export type * from '@univerjs/ui/facade';
 
 export interface IUniverSheetsCorePresetConfig extends
     Pick<IUniverUIConfig, 'container' | 'header' | 'footer' | 'toolbar' | 'menu' | 'contextMenu' | 'disableAutoFocus'>,
-    Pick<IUniverSheetsUIConfig, 'formulaBar' | 'customComponents'> {
+    Pick<IUniverSheetsUIConfig, 'formulaBar' | 'statusBarStatistic' | 'customComponents'> {
 
     /**
      * The formula configuration.
@@ -68,6 +68,8 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
         header,
         footer,
         toolbar,
+        formulaBar,
+        statusBarStatistic,
         menu,
         contextMenu,
         disableAutoFocus,
@@ -92,18 +94,28 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
                 disableAutoFocus,
             }],
             UniverDocsUIPlugin,
-
             useWorker
                 ? [UniverRPCMainThreadPlugin, { workerURL: workerSrc }]
                 : null,
-            [UniverFormulaEnginePlugin, { notExecuteFormula: useWorker, function: formula?.function }],
-
-            [UniverSheetsPlugin, { notExecuteFormula: useWorker, onlyRegisterFormulaRelatedMutations: false }],
-            [UniverSheetsUIPlugin, { customComponents }],
+            [UniverFormulaEnginePlugin, {
+                notExecuteFormula: useWorker,
+                function: formula?.function,
+            }],
+            [UniverSheetsPlugin, {
+                notExecuteFormula: useWorker,
+                onlyRegisterFormulaRelatedMutations: false,
+            }],
+            [UniverSheetsUIPlugin, {
+                customComponents,
+                formulaBar,
+                statusBarStatistic,
+            }],
             UniverSheetsNumfmtPlugin,
             UniverSheetsNumfmtUIPlugin,
-
-            [UniverSheetsFormulaPlugin, { notExecuteFormula: useWorker, description: formula?.description }],
+            [UniverSheetsFormulaPlugin, {
+                notExecuteFormula: useWorker,
+                description: formula?.description,
+            }],
             UniverSheetsFormulaUIPlugin,
         ].filter(v => !!v) as IPreset['plugins'],
     };
