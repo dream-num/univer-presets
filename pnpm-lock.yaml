@@ -165,10 +165,10 @@ importers:
         specifier: 0.6.4
         version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
       react:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1
       react-dom:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
@@ -208,10 +208,10 @@ importers:
         specifier: 0.6.4
         version: 0.6.4(@grpc/grpc-js@1.9.14)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
       react:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1
       react-dom:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
@@ -242,10 +242,10 @@ importers:
         specifier: 0.6.4
         version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
       react:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1
       react-dom:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
@@ -270,10 +270,10 @@ importers:
         specifier: 0.6.4
         version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
       react:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1
       react-dom:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
@@ -298,10 +298,10 @@ importers:
         specifier: 0.6.4
         version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
       react:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1
       react-dom:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
@@ -356,10 +356,10 @@ importers:
         specifier: 0.6.4
         version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
       react:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1
       react-dom:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
@@ -405,10 +405,10 @@ importers:
         specifier: workspace:*
         version: link:../preset-sheets-advanced
       react:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1
       react-dom:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
@@ -433,10 +433,10 @@ importers:
         specifier: 0.6.4
         version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
       react:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1
       react-dom:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
@@ -497,10 +497,10 @@ importers:
         specifier: 0.6.4
         version: 0.6.4(@grpc/grpc-js@1.9.14)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
       react:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1
       react-dom:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
@@ -528,10 +528,10 @@ importers:
         specifier: 0.6.4
         version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
       react:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1
       react-dom:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
@@ -565,10 +565,10 @@ importers:
         specifier: 0.6.4
         version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
       react:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1
       react-dom:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
@@ -593,10 +593,10 @@ importers:
         specifier: 0.6.4
         version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
       react:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1
       react-dom:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
@@ -621,10 +621,10 @@ importers:
         specifier: 0.6.4
         version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
       react:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1
       react-dom:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
@@ -649,10 +649,10 @@ importers:
         specifier: 0.6.4
         version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
       react:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1
       react-dom:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
@@ -713,7 +713,7 @@ importers:
         specifier: 0.6.4
         version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
       react:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1
       rxjs:
         specifier: '>=7.0.0'
@@ -738,10 +738,10 @@ importers:
         specifier: 0.6.4
         version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
       react:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1
       react-dom:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
@@ -772,10 +772,10 @@ importers:
         specifier: 0.6.4
         version: 0.6.4(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
       react:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1
       react-dom:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
@@ -851,10 +851,10 @@ importers:
         specifier: workspace:*
         version: link:../preset-sheets-thread-comment
       react:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1
       react-dom:
-        specifier: '>=16.9.0 || >=17 || >=18 || >=19'
+        specifier: '>=16.9.0'
         version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
