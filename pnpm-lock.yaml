@@ -164,12 +164,6 @@ importers:
       '@univerjs-pro/collaboration-client-ui':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
-      react:
-        specifier: '>=16.9.0'
-        version: 18.3.1
-      react-dom:
-        specifier: '>=16.9.0'
-        version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
         version: 7.8.1
@@ -180,6 +174,12 @@ importers:
       '@univerjs/core':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
+      react:
+        specifier: 18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
@@ -207,12 +207,6 @@ importers:
       '@univerjs/ui':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
-      react:
-        specifier: '>=16.9.0'
-        version: 18.3.1
-      react-dom:
-        specifier: '>=16.9.0'
-        version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
         version: 7.8.1
@@ -223,6 +217,12 @@ importers:
       '@univerjs/core':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
+      react:
+        specifier: 18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
@@ -241,12 +241,6 @@ importers:
       '@univerjs/drawing-ui':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
-      react:
-        specifier: '>=16.9.0'
-        version: 18.3.1
-      react-dom:
-        specifier: '>=16.9.0'
-        version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
         version: 7.8.1
@@ -257,6 +251,12 @@ importers:
       '@univerjs/core':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
+      react:
+        specifier: 18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
@@ -269,12 +269,6 @@ importers:
       '@univerjs/docs-hyper-link-ui':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
-      react:
-        specifier: '>=16.9.0'
-        version: 18.3.1
-      react-dom:
-        specifier: '>=16.9.0'
-        version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
         version: 7.8.1
@@ -285,6 +279,12 @@ importers:
       '@univerjs/core':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
+      react:
+        specifier: 18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
@@ -297,12 +297,6 @@ importers:
       '@univerjs/thread-comment-ui':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
-      react:
-        specifier: '>=16.9.0'
-        version: 18.3.1
-      react-dom:
-        specifier: '>=16.9.0'
-        version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
         version: 7.8.1
@@ -313,6 +307,12 @@ importers:
       '@univerjs/core':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
+      react:
+        specifier: 18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
@@ -358,12 +358,6 @@ importers:
       '@univerjs/sheets-graphics':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
-      react:
-        specifier: '>=16.9.0'
-        version: 18.3.1
-      react-dom:
-        specifier: '>=16.9.0'
-        version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
         version: 7.8.1
@@ -380,6 +374,12 @@ importers:
       '@univerjs/core':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
+      react:
+        specifier: 18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
@@ -407,12 +407,6 @@ importers:
       '@univerjs/preset-sheets-advanced':
         specifier: workspace:*
         version: link:../preset-sheets-advanced
-      react:
-        specifier: '>=16.9.0'
-        version: 18.3.1
-      react-dom:
-        specifier: '>=16.9.0'
-        version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
         version: 7.8.1
@@ -423,6 +417,12 @@ importers:
       '@univerjs/core':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
+      react:
+        specifier: 18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
@@ -435,12 +435,6 @@ importers:
       '@univerjs/sheets-conditional-formatting-ui':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
-      react:
-        specifier: '>=16.9.0'
-        version: 18.3.1
-      react-dom:
-        specifier: '>=16.9.0'
-        version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
         version: 7.8.1
@@ -451,6 +445,12 @@ importers:
       '@univerjs/core':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
+      react:
+        specifier: 18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
@@ -499,12 +499,6 @@ importers:
       '@univerjs/ui':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
-      react:
-        specifier: '>=16.9.0'
-        version: 18.3.1
-      react-dom:
-        specifier: '>=16.9.0'
-        version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
         version: 7.8.1
@@ -515,6 +509,12 @@ importers:
       '@univerjs/core':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
+      react:
+        specifier: 18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
@@ -530,12 +530,6 @@ importers:
       '@univerjs/sheets-data-validation-ui':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
-      react:
-        specifier: '>=16.9.0'
-        version: 18.3.1
-      react-dom:
-        specifier: '>=16.9.0'
-        version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
         version: 7.8.1
@@ -546,6 +540,12 @@ importers:
       '@univerjs/core':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
+      react:
+        specifier: 18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
@@ -567,12 +567,6 @@ importers:
       '@univerjs/sheets-drawing-ui':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
-      react:
-        specifier: '>=16.9.0'
-        version: 18.3.1
-      react-dom:
-        specifier: '>=16.9.0'
-        version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
         version: 7.8.1
@@ -583,6 +577,12 @@ importers:
       '@univerjs/core':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
+      react:
+        specifier: 18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
@@ -595,12 +595,6 @@ importers:
       '@univerjs/sheets-filter-ui':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
-      react:
-        specifier: '>=16.9.0'
-        version: 18.3.1
-      react-dom:
-        specifier: '>=16.9.0'
-        version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
         version: 7.8.1
@@ -611,6 +605,12 @@ importers:
       '@univerjs/core':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
+      react:
+        specifier: 18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
@@ -623,12 +623,6 @@ importers:
       '@univerjs/sheets-find-replace':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
-      react:
-        specifier: '>=16.9.0'
-        version: 18.3.1
-      react-dom:
-        specifier: '>=16.9.0'
-        version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
         version: 7.8.1
@@ -639,6 +633,12 @@ importers:
       '@univerjs/core':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
+      react:
+        specifier: 18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
@@ -651,12 +651,6 @@ importers:
       '@univerjs/sheets-hyper-link-ui':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
-      react:
-        specifier: '>=16.9.0'
-        version: 18.3.1
-      react-dom:
-        specifier: '>=16.9.0'
-        version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
         version: 7.8.1
@@ -667,6 +661,12 @@ importers:
       '@univerjs/core':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
+      react:
+        specifier: 18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
@@ -715,9 +715,6 @@ importers:
       '@univerjs/thread-comment':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
-      react:
-        specifier: '>=16.9.0'
-        version: 18.3.1
       rxjs:
         specifier: '>=7.0.0'
         version: 7.8.1
@@ -740,12 +737,6 @@ importers:
       '@univerjs/sheets-sort-ui':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
-      react:
-        specifier: '>=16.9.0'
-        version: 18.3.1
-      react-dom:
-        specifier: '>=16.9.0'
-        version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
         version: 7.8.1
@@ -756,6 +747,12 @@ importers:
       '@univerjs/core':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
+      react:
+        specifier: 18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
@@ -774,12 +771,6 @@ importers:
       '@univerjs/thread-comment-ui':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.8.2)
-      react:
-        specifier: '>=16.9.0'
-        version: 18.3.1
-      react-dom:
-        specifier: '>=16.9.0'
-        version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
         version: 7.8.1
@@ -790,6 +781,12 @@ importers:
       '@univerjs/core':
         specifier: 0.6.5
         version: 0.6.5(@grpc/grpc-js@1.9.14)(@wendellhu/redi@0.17.1)(rxjs@7.8.1)
+      react:
+        specifier: 18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
@@ -853,12 +850,6 @@ importers:
       '@univerjs/preset-sheets-thread-comment':
         specifier: workspace:*
         version: link:../preset-sheets-thread-comment
-      react:
-        specifier: '>=16.9.0'
-        version: 18.3.1
-      react-dom:
-        specifier: '>=16.9.0'
-        version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: '>=7.0.0'
         version: 7.8.1
@@ -893,6 +884,12 @@ importers:
       '@wendellhu/redi':
         specifier: 0.17.1
         version: 0.17.1
+      react:
+        specifier: 18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
