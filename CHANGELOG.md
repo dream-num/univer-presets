@@ -1,5 +1,14 @@
 
 
+## [0.6.6](https://github.com/dream-num/univer-presets/compare/v0.6.5...v0.6.6) (2025-03-14)
+
+
+### Features
+
+* add chart export ([#51](https://github.com/dream-num/univer-presets/issues/51)) ([cfaf480](https://github.com/dream-num/univer-presets/commit/cfaf48077f55d398f0526cf48816493442291bcf))
+* update react and react-dom to version 18.3.1 in multiple packages ([#50](https://github.com/dream-num/univer-presets/issues/50)) ([145d491](https://github.com/dream-num/univer-presets/commit/145d491eeacd673917bcbabcaa3add5174f7551b))
+* update sdk to 0.6.6 ([4326b58](https://github.com/dream-num/univer-presets/commit/4326b584fe7af8ec78278ff4723d260d4fa44d4b))
+
 ## [0.6.5](https://github.com/dream-num/univer-presets/compare/v0.6.4...v0.6.5) (2025-03-12)
 
 
