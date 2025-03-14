@@ -1,5 +1,6 @@
 export * from './umd';
 
+export * from '@univerjs-pro/engine-chart';
 export * from '@univerjs-pro/engine-formula';
 export * from '@univerjs-pro/exchange-client';
 export * from '@univerjs-pro/license';
