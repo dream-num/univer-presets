@@ -5,6 +5,6 @@ export function UniverSheetsFilterWorkerPreset(): IPreset {
     return {
         plugins: [
             UniverSheetsFilterPlugin,
-        ].filter(v => !!v) as IPreset['plugins'],
+        ],
     };
 };

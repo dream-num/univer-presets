@@ -26,6 +26,7 @@
     "exports": {
         ".": "./src/index.ts",
         "./*": "./src/*",
+        "./worker": "./src/worker.ts",
         "./locales/*": "./src/locales/*.ts"
     },
     "main": "./src/index.ts",
