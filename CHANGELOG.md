@@ -1,5 +1,13 @@
 
 
+## [0.6.7](https://github.com/dream-num/univer-presets/compare/v0.6.6...v0.6.7) (2025-03-26)
+
+
+### Features
+
+* supplement sheets-filter worker.ts ([#52](https://github.com/dream-num/univer-presets/issues/52)) ([8c9d8cf](https://github.com/dream-num/univer-presets/commit/8c9d8cfc33213fe6d54a44e20acbdc7b9054e86b))
+* update dependencies to version 0.6.7 across multiple packages ([#53](https://github.com/dream-num/univer-presets/issues/53)) ([a57b838](https://github.com/dream-num/univer-presets/commit/a57b83884ef754193afadcaa898e2c0ab21cb410))
+
 ## [0.6.6](https://github.com/dream-num/univer-presets/compare/v0.6.5...v0.6.6) (2025-03-14)
 
 
