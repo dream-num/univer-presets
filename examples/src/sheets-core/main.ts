@@ -20,7 +20,10 @@ const { univerAPI } = createUniver({
     },
     theme: defaultTheme,
     presets: [
-        UniverSheetsCorePreset(),
+        UniverSheetsCorePreset({
+            disableTextFormatAlert: true,
+            disableTextFormatMark: true,
+        }),
     ],
     plugins: [UniverSheetsZenEditorPlugin],
 });

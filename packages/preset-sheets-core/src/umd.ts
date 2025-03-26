@@ -1,4 +1,5 @@
 import type { IUniverRPCMainThreadConfig } from '@univerjs/rpc';
+import type { IUniverSheetsNumfmtConfig } from '@univerjs/sheets-numfmt';
 import type { IUniverSheetsUIConfig } from '@univerjs/sheets-ui';
 import type { IUniverUIConfig } from '@univerjs/ui';
 import type { IPreset, IUniverFormulaConfig } from './types';
@@ -45,7 +46,8 @@ export type * from '@univerjs/ui/facade';
 
 export interface IUniverSheetsCorePresetConfig extends
     Pick<IUniverUIConfig, 'container' | 'header' | 'footer' | 'toolbar' | 'menu' | 'contextMenu' | 'disableAutoFocus'>,
-    Pick<IUniverSheetsUIConfig, 'formulaBar' | 'statusBarStatistic' | 'customComponents'> {
+    Pick<IUniverSheetsUIConfig, 'formulaBar' | 'statusBarStatistic' | 'customComponents'>,
+    IUniverSheetsNumfmtConfig {
 
     /**
      * The formula configuration.
@@ -75,6 +77,8 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
         disableAutoFocus,
         formula,
         customComponents,
+        disableTextFormatAlert,
+        disableTextFormatMark,
     } = config;
 
     const useWorker = !!workerSrc;
@@ -110,7 +114,10 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
                 formulaBar,
                 statusBarStatistic,
             }],
-            UniverSheetsNumfmtPlugin,
+            [UniverSheetsNumfmtPlugin, {
+                disableTextFormatAlert,
+                disableTextFormatMark,
+            }],
             UniverSheetsNumfmtUIPlugin,
             [UniverSheetsFormulaPlugin, {
                 notExecuteFormula: useWorker,
