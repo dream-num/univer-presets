@@ -1,4 +1,11 @@
+# Changelog
 
+## [0.6.8](https://github.com/dream-num/univer-presets/compare/v0.6.7...v0.6.8) (2025-04-02)
+
+
+### Bug Fixes
+
+* **deps:** update react peer dependency version range ([#54](https://github.com/dream-num/univer-presets/issues/54)) ([181a608](https://github.com/dream-num/univer-presets/commit/181a6081b71b06da834f417ca0a7d750e0189da5))
 
 ## [0.6.7](https://github.com/dream-num/univer-presets/compare/v0.6.6...v0.6.7) (2025-03-26)
 
