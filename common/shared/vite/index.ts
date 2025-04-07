@@ -51,7 +51,7 @@ function getSharedConfig(): InlineConfig {
 async function buildESM(sharedConfig: InlineConfig, options: IBuildExecuterOptions) {
     const { entry } = options;
 
-    return Promise.all(Object.keys(entry).map((key) => {
+    await Promise.all(Object.keys(entry).map((key) => {
         const config: InlineConfig = mergeConfig(sharedConfig, {
             build: {
                 emptyOutDir: false,
@@ -72,16 +72,22 @@ async function buildESM(sharedConfig: InlineConfig, options: IBuildExecuterOptio
             plugins: [
                 key === 'index'
                     ? dts({
-                        entryRoot: 'src',
-                        outDir: 'lib/types',
-                        clearPureImport: false,
-                    })
+                            entryRoot: 'src',
+                            outDir: 'lib/types',
+                            clearPureImport: false,
+                        })
                     : null,
             ],
         });
 
         return viteBuild(config);
     }));
+
+    const __dirname = process.cwd();
+    const libDir = path.resolve(__dirname, 'lib');
+    const esmDir = path.resolve(__dirname, 'lib/es');
+
+    fs.copySync(esmDir, libDir);
 }
 
 async function buildCJS(sharedConfig: InlineConfig, options: IBuildExecuterOptions) {
