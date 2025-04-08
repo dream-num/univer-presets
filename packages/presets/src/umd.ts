@@ -65,6 +65,10 @@ export function createUniver(options: CreateUniverOptions) {
     plugins?.forEach((plugin) => {
         const [realPlugin, pluginConfig] = Array.isArray(plugin) ? [plugin[0], plugin[1]] : [plugin];
 
+        if (pluginsMap.has(realPlugin.pluginName)) {
+            throw new Error(`Plugin ${realPlugin.pluginName} already registered by presets or other ways! Repeated registration may cause potential problems, please check your code.`);
+        }
+
         pluginsMap.set(realPlugin.pluginName, { plugin: realPlugin, options: pluginConfig });
     });
 
