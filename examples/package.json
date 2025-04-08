@@ -1,6 +1,6 @@
 {
     "name": "examples",
-    "version": "0.5.0",
+    "version": "0.6.9",
     "private": true,
     "author": "DreamNum Inc. <developer@univer.ai>",
     "license": "Apache-2.0",
@@ -22,14 +22,14 @@
         "cross-env": "^7.0.3",
         "detect-port": "^2.1.0",
         "dotenv": "^16.4.7",
-        "esbuild": "^0.25.0",
+        "esbuild": "^0.25.2",
         "esbuild-plugin-clean": "^1.0.1",
         "esbuild-plugin-copy": "^2.1.1",
         "esbuild-plugin-vue3": "^0.4.2",
         "esbuild-style-plugin": "^1.6.3",
         "http-proxy": "^1.18.1",
-        "less": "^4.2.2",
+        "less": "^4.3.0",
         "minimist": "^1.2.8",
-        "typescript": "^5.8.2"
+        "typescript": "^5.8.3"
     }
 }
