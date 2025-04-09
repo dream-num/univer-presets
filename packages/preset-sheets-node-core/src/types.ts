@@ -16,7 +16,7 @@ export interface IPresetOptions {
 
 export interface IUniverFormulaConfig extends
     Pick<IUniverEngineFormulaConfig, 'function'>,
-    Pick<IUniverSheetsFormulaBaseConfig, 'description'> {
+    Pick<IUniverSheetsFormulaBaseConfig, 'description' | 'initialFormulaComputing'> {
 }
 
 export interface IUniverFormulaWorkerConfig extends

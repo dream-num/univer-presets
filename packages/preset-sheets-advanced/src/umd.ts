@@ -1,3 +1,4 @@
+import type { IUniverEngineFormulaConfig } from '@univerjs-pro/engine-formula';
 import type { IPreset } from './types';
 import { UniverProFormulaEnginePlugin } from '@univerjs-pro/engine-formula';
 import { UniverExchangeClientPlugin } from '@univerjs-pro/exchange-client';
@@ -35,6 +36,7 @@ export interface IUniverSheetsAdvancedPresetConfig {
     universerEndpoint?: string;
     license?: string;
     useWorker?: boolean;
+    formula?: Pick<IUniverEngineFormulaConfig, 'function'>;
 }
 
 /**
@@ -48,6 +50,7 @@ export function UniverSheetsAdvancedPreset(config: Partial<IUniverSheetsAdvanced
         license,
         universerEndpoint,
         useWorker,
+        formula,
     } = config;
 
     const serverEndpoint = universerEndpoint ?? `${window.location.protocol}//${window.location.host}`;
@@ -62,9 +65,10 @@ export function UniverSheetsAdvancedPreset(config: Partial<IUniverSheetsAdvanced
                 : [UniverSheetsPivotTablePlugin],
             UniverSheetsPivotTableUIPlugin,
 
-            useWorker
-                ? [UniverProFormulaEnginePlugin, { notExecuteFormula: true }]
-                : UniverProFormulaEnginePlugin,
+            [UniverProFormulaEnginePlugin, {
+                notExecuteFormula: useWorker,
+                function: formula?.function,
+            }],
 
             UniverSheetsPrintPlugin,
 

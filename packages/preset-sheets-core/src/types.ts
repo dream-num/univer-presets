@@ -1,6 +1,9 @@
 import type { IUniverConfig, Plugin, PluginCtor } from '@univerjs/core';
+import type { IUniverDocsConfig } from '@univerjs/docs';
 import type { IUniverEngineFormulaConfig } from '@univerjs/engine-formula';
+import type { IUniverSheetsConfig } from '@univerjs/sheets';
 import type { IUniverSheetsFormulaBaseConfig } from '@univerjs/sheets-formula';
+import type { IUniverSheetsUIConfig } from '@univerjs/sheets-ui';
 
 /**
  * A collection of plugins and their default configs.
@@ -16,9 +19,18 @@ export interface IPresetOptions {
 
 export interface IUniverFormulaConfig extends
     Pick<IUniverEngineFormulaConfig, 'function'>,
-    Pick<IUniverSheetsFormulaBaseConfig, 'description'> {
+    Pick<IUniverSheetsFormulaBaseConfig, 'description' | 'initialFormulaComputing'> {
 }
 
 export interface IUniverFormulaWorkerConfig extends
     Pick<IUniverEngineFormulaConfig, 'function'> {
+}
+
+export interface IUniverDocsPresetConfig extends
+    IUniverDocsConfig {
+}
+
+export interface IUniverSheetsPresetConfig extends
+    Pick<IUniverSheetsConfig, 'isRowStylePrecedeColumnStyle' | 'autoHeightForMergedCells'>,
+    Pick<IUniverSheetsUIConfig, 'maxAutoHeightCount' | 'clipboardConfig' | 'scrollConfig'> {
 }

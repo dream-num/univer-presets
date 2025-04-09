@@ -54,13 +54,20 @@ export function UniverSheetsNodeCorePreset(config: Partial<IUniverSheetsNodeCore
             useWorker
                 ? [UniverRPCNodeMainPlugin, { workerSrc }]
                 : null,
-            [UniverFormulaEnginePlugin, { notExecuteFormula: useWorker, function: formula?.function }],
+            [UniverFormulaEnginePlugin, {
+                notExecuteFormula: useWorker,
+                function: formula?.function,
+            }],
 
             UniverThreadCommentPlugin,
             UniverDocsPlugin,
 
             UniverSheetsPlugin,
-            [UniverSheetsFormulaPlugin, { notExecuteFormula: useWorker, description: formula?.description }],
+            [UniverSheetsFormulaPlugin, {
+                notExecuteFormula: useWorker,
+                description: formula?.description,
+                initialFormulaComputing: formula?.initialFormulaComputing,
+            }],
             UniverSheetsDataValidationPlugin,
             UniverSheetsFilterPlugin,
             UniverSheetsHyperLinkPlugin,
