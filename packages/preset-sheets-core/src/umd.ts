@@ -2,7 +2,7 @@ import type { IUniverRPCMainThreadConfig } from '@univerjs/rpc';
 import type { IUniverSheetsNumfmtConfig } from '@univerjs/sheets-numfmt';
 import type { IUniverSheetsUIConfig } from '@univerjs/sheets-ui';
 import type { IUniverUIConfig } from '@univerjs/ui';
-import type { IPreset, IUniverFormulaConfig } from './types';
+import type { IPreset, IUniverDocsPresetConfig, IUniverFormulaConfig, IUniverSheetsPresetConfig } from './types';
 import { UniverDocsPlugin } from '@univerjs/docs';
 import { UniverDocsUIPlugin } from '@univerjs/docs-ui';
 import { UniverFormulaEnginePlugin } from '@univerjs/engine-formula';
@@ -50,7 +50,17 @@ export interface IUniverSheetsCorePresetConfig extends
     IUniverSheetsNumfmtConfig {
 
     /**
-     * The formula configuration.
+     * The docs related configuration.
+     */
+    docs?: IUniverDocsPresetConfig;
+
+    /**
+     * The sheets related configuration.
+     */
+    sheets?: IUniverSheetsPresetConfig;
+
+    /**
+     * The formula related configuration.
      */
     formula?: IUniverFormulaConfig;
 
@@ -75,6 +85,8 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
         menu,
         contextMenu,
         disableAutoFocus,
+        docs,
+        sheets,
         formula,
         customComponents,
         disableTextFormatAlert,
@@ -86,7 +98,9 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
     return {
         plugins: [
             UniverNetworkPlugin,
-            UniverDocsPlugin,
+            [UniverDocsPlugin, {
+                hasScroll: docs?.hasScroll,
+            }],
             UniverRenderEnginePlugin,
             [UniverUIPlugin, {
                 container,
@@ -108,11 +122,16 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
             [UniverSheetsPlugin, {
                 notExecuteFormula: useWorker,
                 onlyRegisterFormulaRelatedMutations: false,
+                isRowStylePrecedeColumnStyle: sheets?.isRowStylePrecedeColumnStyle,
+                autoHeightForMergedCells: sheets?.autoHeightForMergedCells,
             }],
             [UniverSheetsUIPlugin, {
                 customComponents,
                 formulaBar,
                 statusBarStatistic,
+                maxAutoHeightCount: sheets?.maxAutoHeightCount,
+                clipboardConfig: sheets?.clipboardConfig,
+                scrollConfig: sheets?.scrollConfig,
             }],
             [UniverSheetsNumfmtPlugin, {
                 disableTextFormatAlert,
@@ -122,6 +141,7 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
             [UniverSheetsFormulaPlugin, {
                 notExecuteFormula: useWorker,
                 description: formula?.description,
+                initialFormulaComputing: formula?.initialFormulaComputing,
             }],
             UniverSheetsFormulaUIPlugin,
         ].filter(v => !!v) as IPreset['plugins'],
