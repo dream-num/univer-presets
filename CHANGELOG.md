@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.6.10-alpha.0](https://github.com/dream-num/univer-presets/compare/v0.6.9...v0.6.10-alpha.0) (2025-04-10)
+
+
+### Features
+
+* add error handling for duplicate plugin registration in createUniver function ([#59](https://github.com/dream-num/univer-presets/issues/59)) ([6525179](https://github.com/dream-num/univer-presets/commit/65251797b349b559287a87229255657321f5c6f2))
+* supplement  plugin config ([#60](https://github.com/dream-num/univer-presets/issues/60)) ([2a81f80](https://github.com/dream-num/univer-presets/commit/2a81f80b4451a0ab91d4b99306bad99db04e84e0))
+* supplement collaboration preset facade ([#55](https://github.com/dream-num/univer-presets/issues/55)) ([128ac3c](https://github.com/dream-num/univer-presets/commit/128ac3ce1bec43db43e962c1f8c72c853e9817ba))
+* update buildESM function to await Promise.all and improve directory handling ([#58](https://github.com/dream-num/univer-presets/issues/58)) ([d4ca41c](https://github.com/dream-num/univer-presets/commit/d4ca41caf732c926b47831bef3b64083dc177d88))
+* update sdk to 0.6.10-alpha.0 ([#61](https://github.com/dream-num/univer-presets/issues/61)) ([053b00b](https://github.com/dream-num/univer-presets/commit/053b00b19e3a96a0b0f0116c84ec62ff90036c16))
+
 ## [0.6.9](https://github.com/dream-num/univer-presets/compare/v0.6.8...v0.6.9) (2025-04-02)
 
 ## [0.6.8](https://github.com/dream-num/univer-presets/compare/v0.6.7...v0.6.8) (2025-04-02)
