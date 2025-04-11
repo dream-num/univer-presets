@@ -44,7 +44,7 @@ export interface IUniverSheetsNodeCorePresetConfig {
     workerSrc?: string;
 }
 
-export function UniverSheetsNodeCorePreset(config: Partial<IUniverSheetsNodeCorePresetConfig>): IPreset {
+export function UniverSheetsNodeCorePreset(config: Partial<IUniverSheetsNodeCorePresetConfig> = {}): IPreset {
     const { workerSrc, formula } = config;
 
     const useWorker = !!workerSrc;
