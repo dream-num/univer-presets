@@ -18,15 +18,15 @@ import { UniverSheetsUIPlugin } from '@univerjs/sheets-ui';
 import { UniverUIPlugin } from '@univerjs/ui';
 
 // NOTE: here we copy code from everything.ts. That file (along with the package itself) would be removed in the future.
-import '@univerjs/network/facade';
-import '@univerjs/sheets/facade';
-import '@univerjs/ui/facade';
-import '@univerjs/docs-ui/facade';
-import '@univerjs/sheets-ui/facade';
-import '@univerjs/engine-formula/facade';
-import '@univerjs/sheets-formula/facade';
-import '@univerjs/sheets-numfmt/facade';
-import '@univerjs/sheets-formula-ui/facade';
+import '@univerjs/network/lib/facade';
+import '@univerjs/sheets/lib/facade';
+import '@univerjs/ui/lib/facade';
+import '@univerjs/docs-ui/lib/facade';
+import '@univerjs/sheets-ui/lib/facade';
+import '@univerjs/engine-formula/lib/facade';
+import '@univerjs/sheets-formula/lib/facade';
+import '@univerjs/sheets-numfmt/lib/facade';
+import '@univerjs/sheets-formula-ui/lib/facade';
 import '@univerjs/design/lib/index.css';
 import '@univerjs/ui/lib/index.css';
 import '@univerjs/docs-ui/lib/index.css';
@@ -34,15 +34,15 @@ import '@univerjs/sheets-ui/lib/index.css';
 import '@univerjs/sheets-formula-ui/lib/index.css';
 import '@univerjs/sheets-numfmt-ui/lib/index.css';
 
-export type * from '@univerjs/docs-ui/facade';
-export type * from '@univerjs/engine-formula/facade';
-export type * from '@univerjs/network/facade';
-export type * from '@univerjs/sheets-formula-ui/facade';
-export type * from '@univerjs/sheets-formula/facade';
-export type * from '@univerjs/sheets-numfmt/facade';
-export type * from '@univerjs/sheets-ui/facade';
-export type * from '@univerjs/sheets/facade';
-export type * from '@univerjs/ui/facade';
+export type * from '@univerjs/docs-ui/lib/facade';
+export type * from '@univerjs/engine-formula/lib/facade';
+export type * from '@univerjs/network/lib/facade';
+export type * from '@univerjs/sheets-formula-ui/lib/facade';
+export type * from '@univerjs/sheets-formula/lib/facade';
+export type * from '@univerjs/sheets-numfmt/lib/facade';
+export type * from '@univerjs/sheets-ui/lib/facade';
+export type * from '@univerjs/sheets/lib/facade';
+export type * from '@univerjs/ui/lib/facade';
 
 export interface IUniverSheetsCorePresetConfig extends
     Pick<IUniverUIConfig, 'container' | 'header' | 'footer' | 'toolbar' | 'menu' | 'contextMenu' | 'disableAutoFocus'>,
