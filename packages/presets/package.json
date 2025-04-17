@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/presets",
-    "version": "0.6.10-alpha.0",
+    "version": "0.6.10-nightly.202504161609",
     "private": false,
     "description": "Build Univer apps faster and easier",
     "author": "DreamNum <developer@univer.ai>",
@@ -267,8 +267,8 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/core": "0.6.10-alpha.0",
-        "@univerjs/design": "0.6.10-alpha.0",
+        "@univerjs/core": "0.6.10-nightly.202504161609",
+        "@univerjs/design": "0.6.10-nightly.202504161609",
         "@univerjs/preset-docs-collaboration": "workspace:*",
         "@univerjs/preset-docs-core": "workspace:*",
         "@univerjs/preset-docs-drawing": "workspace:*",
@@ -289,17 +289,17 @@
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/drawing": "0.6.10-alpha.0",
-        "@univerjs/engine-formula": "0.6.10-alpha.0",
-        "@univerjs/engine-numfmt": "0.6.10-alpha.0",
-        "@univerjs/engine-render": "0.6.10-alpha.0",
-        "@univerjs/network": "0.6.10-alpha.0",
+        "@univerjs/drawing": "0.6.10-nightly.202504161609",
+        "@univerjs/engine-formula": "0.6.10-nightly.202504161609",
+        "@univerjs/engine-numfmt": "0.6.10-nightly.202504161609",
+        "@univerjs/engine-render": "0.6.10-nightly.202504161609",
+        "@univerjs/network": "0.6.10-nightly.202504161609",
         "@univerjs/protocol": "0.1.44",
-        "@univerjs/rpc": "0.6.10-alpha.0",
-        "@univerjs/telemetry": "0.6.10-alpha.0",
+        "@univerjs/rpc": "0.6.10-nightly.202504161609",
+        "@univerjs/telemetry": "0.6.10-nightly.202504161609",
         "@wendellhu/redi": "0.17.1",
         "react": "18.3.1",
         "react-dom": "18.3.1",
-        "typescript": "^5.8.2"
+        "typescript": "^5.8.3"
     }
 }

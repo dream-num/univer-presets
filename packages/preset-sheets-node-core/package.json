@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-sheets-node-core",
-    "version": "0.6.10-alpha.0",
+    "version": "0.6.10-nightly.202504161609",
     "private": false,
     "description": "",
     "author": "DreamNum <developer@univer.ai>",
@@ -68,24 +68,24 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/docs": "0.6.10-alpha.0",
-        "@univerjs/engine-formula": "0.6.10-alpha.0",
-        "@univerjs/engine-render": "0.6.10-alpha.0",
-        "@univerjs/rpc-node": "0.6.10-alpha.0",
-        "@univerjs/sheets": "0.6.10-alpha.0",
-        "@univerjs/sheets-data-validation": "0.6.10-alpha.0",
-        "@univerjs/sheets-drawing": "0.6.10-alpha.0",
-        "@univerjs/sheets-filter": "0.6.10-alpha.0",
-        "@univerjs/sheets-formula": "0.6.10-alpha.0",
-        "@univerjs/sheets-hyper-link": "0.6.10-alpha.0",
-        "@univerjs/sheets-numfmt": "0.6.10-alpha.0",
-        "@univerjs/sheets-sort": "0.6.10-alpha.0",
-        "@univerjs/sheets-thread-comment": "0.6.10-alpha.0",
-        "@univerjs/thread-comment": "0.6.10-alpha.0"
+        "@univerjs/docs": "0.6.10-nightly.202504161609",
+        "@univerjs/engine-formula": "0.6.10-nightly.202504161609",
+        "@univerjs/engine-render": "0.6.10-nightly.202504161609",
+        "@univerjs/rpc-node": "0.6.10-nightly.202504161609",
+        "@univerjs/sheets": "0.6.10-nightly.202504161609",
+        "@univerjs/sheets-data-validation": "0.6.10-nightly.202504161609",
+        "@univerjs/sheets-drawing": "0.6.10-nightly.202504161609",
+        "@univerjs/sheets-filter": "0.6.10-nightly.202504161609",
+        "@univerjs/sheets-formula": "0.6.10-nightly.202504161609",
+        "@univerjs/sheets-hyper-link": "0.6.10-nightly.202504161609",
+        "@univerjs/sheets-numfmt": "0.6.10-nightly.202504161609",
+        "@univerjs/sheets-sort": "0.6.10-nightly.202504161609",
+        "@univerjs/sheets-thread-comment": "0.6.10-nightly.202504161609",
+        "@univerjs/thread-comment": "0.6.10-nightly.202504161609"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.6.10-alpha.0",
-        "typescript": "^5.8.2"
+        "@univerjs/core": "0.6.10-nightly.202504161609",
+        "typescript": "^5.8.3"
     }
 }
