@@ -69,17 +69,17 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs-pro/collaboration": "0.6.10-alpha.0",
-        "@univerjs-pro/collaboration-client": "0.6.10-alpha.0",
-        "@univerjs-pro/collaboration-client-ui": "0.6.10-alpha.0",
-        "@univerjs-pro/edit-history-loader": "0.6.10-alpha.0",
-        "@univerjs-pro/edit-history-viewer": "0.6.10-alpha.0",
-        "@univerjs-pro/thread-comment-datasource": "0.6.10-alpha.0",
+        "@univerjs-pro/collaboration": "0.6.10",
+        "@univerjs-pro/collaboration-client": "0.6.10",
+        "@univerjs-pro/collaboration-client-ui": "0.6.10",
+        "@univerjs-pro/edit-history-loader": "0.6.10",
+        "@univerjs-pro/edit-history-viewer": "0.6.10",
+        "@univerjs-pro/thread-comment-datasource": "0.6.10",
         "@univerjs/preset-sheets-advanced": "workspace:*"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.6.10-alpha.0",
+        "@univerjs/core": "0.6.10",
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "typescript": "^5.8.2"

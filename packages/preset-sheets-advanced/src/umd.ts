@@ -1,4 +1,5 @@
 import type { IUniverEngineFormulaConfig } from '@univerjs-pro/engine-formula';
+import type { IUniverExchangeClientOptions } from '@univerjs-pro/exchange-client';
 import type { IPreset } from './types';
 import { UniverProFormulaEnginePlugin } from '@univerjs-pro/engine-formula';
 import { UniverExchangeClientPlugin } from '@univerjs-pro/exchange-client';
@@ -37,6 +38,7 @@ export interface IUniverSheetsAdvancedPresetConfig {
     license?: string;
     useWorker?: boolean;
     formula?: Pick<IUniverEngineFormulaConfig, 'function'>;
+    exchangeClientOptions?: IUniverExchangeClientOptions;
 }
 
 /**
@@ -51,6 +53,7 @@ export function UniverSheetsAdvancedPreset(config: Partial<IUniverSheetsAdvanced
         universerEndpoint,
         useWorker,
         formula,
+        exchangeClientOptions,
     } = config;
 
     const serverEndpoint = universerEndpoint ?? `${window.location.protocol}//${window.location.host}`;
@@ -85,6 +88,7 @@ export function UniverSheetsAdvancedPreset(config: Partial<IUniverSheetsAdvanced
                 importServerUrl: `${serverEndpoint}/universer-api/exchange/{type}/import`,
                 exportServerUrl: `${serverEndpoint}/universer-api/exchange/{type}/export`,
                 downloadEndpointUrl: `${serverEndpoint}/`,
+                options: exchangeClientOptions,
             }],
             UniverSheetsExchangeClientPlugin,
         ].filter(v => !!v) as IPreset['plugins'],
