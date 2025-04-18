@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.6.10](https://github.com/dream-num/univer-presets/compare/v0.6.10-alpha.0...v0.6.10) (2025-04-18)
+
+
+### Bug Fixes
+
+* fix preset config ([#64](https://github.com/dream-num/univer-presets/issues/64)) ([96cd94b](https://github.com/dream-num/univer-presets/commit/96cd94bef6583243b90691802f9eb46b2b53b5ba))
+
+
+### Features
+
+* supplement preset config ([#63](https://github.com/dream-num/univer-presets/issues/63)) ([ac36e49](https://github.com/dream-num/univer-presets/commit/ac36e49cab1fdbfe4af1698cf946e0435347fa94))
+* update sdk to 0.6.10 ([1ce5c66](https://github.com/dream-num/univer-presets/commit/1ce5c6683419e162c3d8e43bcf3da5778eee7c6a))
+
 ## [0.6.10-alpha.0](https://github.com/dream-num/univer-presets/compare/v0.6.9...v0.6.10-alpha.0) (2025-04-10)
 
 
