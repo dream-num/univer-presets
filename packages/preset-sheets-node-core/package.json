@@ -44,6 +44,11 @@
                 "require": "./lib/cjs/*",
                 "types": "./lib/types/index.d.ts"
             },
+            "./worker": {
+                "import": "./lib/es/worker.js",
+                "require": "./lib/cjs/locales/*.js",
+                "types": "./lib/types/worker.d.ts"
+            },
             "./locales/*": {
                 "import": "./lib/es/locales/*.js",
                 "require": "./lib/cjs/locales/*.js",
