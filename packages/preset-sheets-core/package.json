@@ -79,6 +79,7 @@
         "@univerjs/docs": "0.6.10",
         "@univerjs/docs-ui": "0.6.10",
         "@univerjs/engine-formula": "0.6.10",
+        "@univerjs/engine-numfmt": "0.6.10",
         "@univerjs/engine-render": "0.6.10",
         "@univerjs/network": "0.6.10",
         "@univerjs/rpc": "0.6.10",
