@@ -469,6 +469,9 @@ importers:
       '@univerjs/engine-formula':
         specifier: 0.6.10
         version: 0.6.10(@grpc/grpc-js@1.13.2)(@wendellhu/redi@0.17.1)(rxjs@7.8.2)
+      '@univerjs/engine-numfmt':
+        specifier: 0.6.10
+        version: 0.6.10
       '@univerjs/engine-render':
         specifier: 0.6.10
         version: 0.6.10(@grpc/grpc-js@1.13.2)(@wendellhu/redi@0.17.1)(rxjs@7.8.2)
