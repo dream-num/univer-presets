@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-sheets-node-core",
-    "version": "0.6.10",
+    "version": "0.7.0-nightly.202505061607",
     "private": false,
     "description": "",
     "author": "DreamNum <developer@univer.ai>",
@@ -73,24 +73,24 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/docs": "0.6.10",
-        "@univerjs/engine-formula": "0.6.10",
-        "@univerjs/engine-render": "0.6.10",
-        "@univerjs/rpc-node": "0.6.10",
-        "@univerjs/sheets": "0.6.10",
-        "@univerjs/sheets-data-validation": "0.6.10",
-        "@univerjs/sheets-drawing": "0.6.10",
-        "@univerjs/sheets-filter": "0.6.10",
-        "@univerjs/sheets-formula": "0.6.10",
-        "@univerjs/sheets-hyper-link": "0.6.10",
-        "@univerjs/sheets-numfmt": "0.6.10",
-        "@univerjs/sheets-sort": "0.6.10",
-        "@univerjs/sheets-thread-comment": "0.6.10",
-        "@univerjs/thread-comment": "0.6.10"
+        "@univerjs/docs": "0.7.0-nightly.202505061607",
+        "@univerjs/engine-formula": "0.7.0-nightly.202505061607",
+        "@univerjs/engine-render": "0.7.0-nightly.202505061607",
+        "@univerjs/rpc-node": "0.7.0-nightly.202505061607",
+        "@univerjs/sheets": "0.7.0-nightly.202505061607",
+        "@univerjs/sheets-data-validation": "0.7.0-nightly.202505061607",
+        "@univerjs/sheets-drawing": "0.7.0-nightly.202505061607",
+        "@univerjs/sheets-filter": "0.7.0-nightly.202505061607",
+        "@univerjs/sheets-formula": "0.7.0-nightly.202505061607",
+        "@univerjs/sheets-hyper-link": "0.7.0-nightly.202505061607",
+        "@univerjs/sheets-numfmt": "0.7.0-nightly.202505061607",
+        "@univerjs/sheets-sort": "0.7.0-nightly.202505061607",
+        "@univerjs/sheets-thread-comment": "0.7.0-nightly.202505061607",
+        "@univerjs/thread-comment": "0.7.0-nightly.202505061607"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.6.10",
-        "typescript": "^5.8.2"
+        "@univerjs/core": "0.7.0-nightly.202505061607",
+        "typescript": "^5.8.3"
     }
 }

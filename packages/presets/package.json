@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/presets",
-    "version": "0.6.10",
+    "version": "0.7.0-nightly.202505061607",
     "private": false,
     "description": "Build Univer apps faster and easier",
     "author": "DreamNum <developer@univer.ai>",
@@ -54,8 +54,12 @@
         "./preset-sheets-hyper-link/*": "./src/preset-sheets-hyper-link/*.ts",
         "./preset-sheets-node-core": "./src/preset-sheets-node-core/index.ts",
         "./preset-sheets-node-core/*": "./src/preset-sheets-node-core/*.ts",
+        "./preset-sheets-note": "./src/preset-sheets-note/index.ts",
+        "./preset-sheets-note/*": "./src/preset-sheets-note/*.ts",
         "./preset-sheets-sort": "./src/preset-sheets-sort/index.ts",
         "./preset-sheets-sort/*": "./src/preset-sheets-sort/*.ts",
+        "./preset-sheets-table": "./src/preset-sheets-table/index.ts",
+        "./preset-sheets-table/*": "./src/preset-sheets-table/*.ts",
         "./preset-sheets-thread-comment": "./src/preset-sheets-thread-comment/index.ts",
         "./preset-sheets-thread-comment/*": "./src/preset-sheets-thread-comment/*.ts",
         "./preset-docs-thread-comment": "./src/preset-docs-thread-comment/index.ts",
@@ -267,8 +271,8 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/core": "0.6.10",
-        "@univerjs/design": "0.6.10",
+        "@univerjs/core": "0.7.0-nightly.202505061607",
+        "@univerjs/design": "0.7.0-nightly.202505061607",
         "@univerjs/preset-docs-collaboration": "workspace:*",
         "@univerjs/preset-docs-core": "workspace:*",
         "@univerjs/preset-docs-drawing": "workspace:*",
@@ -289,17 +293,17 @@
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/drawing": "0.6.10",
-        "@univerjs/engine-formula": "0.6.10",
-        "@univerjs/engine-numfmt": "0.6.10",
-        "@univerjs/engine-render": "0.6.10",
-        "@univerjs/network": "0.6.10",
-        "@univerjs/protocol": "0.1.44",
-        "@univerjs/rpc": "0.6.10",
-        "@univerjs/telemetry": "0.6.10",
-        "@wendellhu/redi": "0.17.1",
+        "@univerjs/drawing": "0.7.0-nightly.202505061607",
+        "@univerjs/engine-formula": "0.7.0-nightly.202505061607",
+        "@univerjs/engine-numfmt": "0.7.0-nightly.202505061607",
+        "@univerjs/engine-render": "0.7.0-nightly.202505061607",
+        "@univerjs/network": "0.7.0-nightly.202505061607",
+        "@univerjs/protocol": "0.1.45",
+        "@univerjs/rpc": "0.7.0-nightly.202505061607",
+        "@univerjs/telemetry": "0.7.0-nightly.202505061607",
+        "@wendellhu/redi": "0.18.0",
         "react": "18.3.1",
         "react-dom": "18.3.1",
-        "typescript": "^5.8.2"
+        "typescript": "^5.8.3"
     }
 }

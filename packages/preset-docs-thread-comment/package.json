@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-docs-thread-comment",
-    "version": "0.6.10",
+    "version": "0.7.0-nightly.202505061607",
     "private": false,
     "description": "",
     "author": "DreamNum <developer@univer.ai>",
@@ -69,14 +69,14 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/docs-thread-comment-ui": "0.6.10",
-        "@univerjs/thread-comment-ui": "0.6.10"
+        "@univerjs/docs-thread-comment-ui": "0.7.0-nightly.202505061607",
+        "@univerjs/thread-comment-ui": "0.7.0-nightly.202505061607"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.6.10",
+        "@univerjs/core": "0.7.0-nightly.202505061607",
         "react": "18.3.1",
         "react-dom": "18.3.1",
-        "typescript": "^5.8.2"
+        "typescript": "^5.8.3"
     }
 }

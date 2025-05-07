@@ -1,5 +1,5 @@
 {
-    "name": "@univerjs/preset-sheets-filter",
+    "name": "@univerjs/preset-sheets-table",
     "version": "0.7.0-nightly.202505061607",
     "private": false,
     "description": "",
@@ -26,10 +26,8 @@
     "exports": {
         ".": "./src/index.ts",
         "./*": "./src/*",
-        "./worker": "./src/worker.ts",
         "./locales/*": "./src/locales/*.ts"
     },
-    "main": "./src/index.ts",
     "publishConfig": {
         "access": "public",
         "main": "./lib/es/index.js",
@@ -45,11 +43,6 @@
                 "require": "./lib/cjs/*",
                 "types": "./lib/types/index.d.ts"
             },
-            "./worker": {
-                "import": "./lib/es/worker.js",
-                "require": "./lib/cjs/locales/*.js",
-                "types": "./lib/types/worker.d.ts"
-            },
             "./locales/*": {
                 "import": "./lib/es/locales/*.js",
                 "require": "./lib/cjs/locales/*.js",
@@ -58,6 +51,7 @@
             "./lib/*": "./lib/*"
         }
     },
+    "main": "./src/index.ts",
     "directories": {
         "lib": "lib"
     },
@@ -75,8 +69,8 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/sheets-filter": "0.7.0-nightly.202505061607",
-        "@univerjs/sheets-filter-ui": "0.7.0-nightly.202505061607"
+        "@univerjs/sheets-table": "0.7.0-nightly.202505061607",
+        "@univerjs/sheets-table-ui": "0.7.0-nightly.202505061607"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",

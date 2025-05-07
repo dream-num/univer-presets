@@ -1,6 +1,6 @@
 {
     "name": "univer-presets",
-    "version": "0.6.10",
+    "version": "0.7.0-nightly.202505061607",
     "private": true,
     "packageManager": "pnpm@10.7.0",
     "author": "DreamNum Inc. <developer@univer.ai>",
@@ -28,7 +28,7 @@
         "@release-it-plugins/workspaces": "^4.2.0",
         "@release-it/conventional-changelog": "^9.0.3",
         "@types/fs-extra": "^11.0.4",
-        "@univerjs/core": "0.6.10",
+        "@univerjs/core": "0.7.0-nightly.202505061607",
         "cross-env": "^7.0.3",
         "eslint": "^9.24.0",
         "eslint-plugin-format": "^1.0.1",
