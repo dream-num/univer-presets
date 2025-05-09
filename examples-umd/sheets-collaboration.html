@@ -52,6 +52,14 @@
         <script src="/packages/preset-sheets-sort/lib/umd/locales/en-US.js"></script>
         <link rel="stylesheet" href="/packages/presets/lib/styles/preset-sheets-sort.css" />
 
+        <script src="/packages/preset-sheets-note/lib/umd/index.js"></script>
+        <script src="/packages/preset-sheets-note/lib/umd/locales/en-US.js"></script>
+        <link rel="stylesheet" href="/packages/presets/lib/styles/preset-sheets-note.css" />
+
+        <script src="/packages/preset-sheets-table/lib/umd/index.js"></script>
+        <script src="/packages/preset-sheets-table/lib/umd/locales/en-US.js"></script>
+        <link rel="stylesheet" href="/packages/presets/lib/styles/preset-sheets-table.css" />
+
         <script src="/packages/preset-sheets-collaboration/lib/umd/index.js"></script>
         <script src="/packages/preset-sheets-collaboration/lib/umd/locales/en-US.js"></script>
         <link rel="stylesheet" href="/packages/presets/lib/styles/preset-sheets-collaboration.css" />
@@ -87,6 +95,8 @@
             const { UniverSheetsFindReplacePreset } = UniverPresetSheetsFindReplace;
             const { UniverSheetsSortPreset } = UniverPresetSheetsSort;
             const { UniverSheetsHyperLinkPreset } = UniverPresetSheetsHyperLink;
+            const { UniverSheetsNotePreset } = UniverPresetSheetsNote;
+            const { UniverSheetsTablePreset } = UniverPresetSheetsTable;
 
             const { UniverInstanceType } = window.UniverCore;
 
@@ -110,6 +120,8 @@
                         UniverPresetSheetsFindReplaceEnUS,
                         UniverPresetSheetsHyperLinkEnUS,
                         UniverPresetSheetsSortEnUS,
+                        UniverPresetSheetsNoteEnUS,
+                        UniverPresetSheetsTableEnUS,
                         // UniverPresetSheetsZenEditorEnUS,
                     ),
                 },
@@ -146,6 +158,8 @@
                     UniverSheetsFilterPreset(),
                     UniverSheetsFindReplacePreset(),
                     UniverSheetsSortPreset(),
+                    UniverSheetsNotePreset(),
+                    UniverSheetsTablePreset(),
 
                     UniverSheetsCollaborationPreset(),
                 ],
