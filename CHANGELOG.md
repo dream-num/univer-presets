@@ -1,5 +1,21 @@
 # Changelog
 
+# [0.7.0-beta.1](https://github.com/dream-num/univer-presets/compare/v0.6.10...v0.7.0-beta.1) (2025-05-09)
+
+
+### Bug Fixes
+
+* add missing packages ([#71](https://github.com/dream-num/univer-presets/issues/71)) ([685326f](https://github.com/dream-num/univer-presets/commit/685326ff1afbe0a7f9ffd797b16b489a5553beaa))
+* supplement package.json publishConfig exports worker related ([#67](https://github.com/dream-num/univer-presets/issues/67)) ([099b85e](https://github.com/dream-num/univer-presets/commit/099b85e909ef9efd87867c6a463f1afccf578841))
+
+
+### Features
+
+* add table & note presets ([#69](https://github.com/dream-num/univer-presets/issues/69)) ([c6ff08a](https://github.com/dream-num/univer-presets/commit/c6ff08ade3e4fa6a51d38ff3bdc05ceb84f7a8cc))
+* preset-sheets-core add engine-numfmt export ([#68](https://github.com/dream-num/univer-presets/issues/68)) ([b3d3513](https://github.com/dream-num/univer-presets/commit/b3d35139ce2bf8be84deb5a95dcdd154a7ceccb8))
+* supplement example sheets-note and sheets-table ([#70](https://github.com/dream-num/univer-presets/issues/70)) ([da63ace](https://github.com/dream-num/univer-presets/commit/da63ace2661c16a82572176e5689a2fad7920558))
+* update sdk to 0.7.0-beta.1 ([#72](https://github.com/dream-num/univer-presets/issues/72)) ([486fad6](https://github.com/dream-num/univer-presets/commit/486fad6467d4ce936d9de3ac0a4d1816396ef303))
+
 ## [0.6.10](https://github.com/dream-num/univer-presets/compare/v0.6.10-alpha.0...v0.6.10) (2025-04-18)
 
 
