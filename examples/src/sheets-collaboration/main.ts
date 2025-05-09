@@ -24,8 +24,14 @@ import sheetsFindReplaceZhCN from '@univerjs/presets/preset-sheets-find-replace/
 import { UniverSheetsHyperLinkPreset } from '@univerjs/presets/preset-sheets-hyper-link';
 import sheetsHyperLinkZhCN from '@univerjs/presets/preset-sheets-hyper-link/locales/zh-CN';
 
+import { UniverSheetsNotePreset } from '@univerjs/presets/preset-sheets-note';
+import sheetsNoteZhCN from '@univerjs/presets/preset-sheets-note/locales/zh-CN';
+
 import { UniverSheetsSortPreset } from '@univerjs/presets/preset-sheets-sort';
 import sheetsSortZhCN from '@univerjs/presets/preset-sheets-sort/locales/zh-CN';
+
+import { UniverSheetsTablePreset } from '@univerjs/presets/preset-sheets-table';
+import sheetsTableZhCN from '@univerjs/presets/preset-sheets-table/locales/zh-CN';
 
 import { UniverSheetsThreadCommentPreset } from '@univerjs/presets/preset-sheets-thread-comment';
 import sheetsThreadCommentZhCN from '@univerjs/presets/preset-sheets-thread-comment/locales/zh-CN';
@@ -39,7 +45,9 @@ import '@univerjs/presets/lib/styles/preset-sheets-filter.css';
 import '@univerjs/presets/lib/styles/preset-sheets-hyper-link.css';
 import '@univerjs/presets/lib/styles/preset-sheets-data-validation.css';
 import '@univerjs/presets/lib/styles/preset-sheets-find-replace.css';
+import '@univerjs/presets/lib/styles/preset-sheets-note.css';
 import '@univerjs/presets/lib/styles/preset-sheets-sort.css';
+import '@univerjs/presets/lib/styles/preset-sheets-table.css';
 
 const { univerAPI } = createUniver({
     locale: LocaleType.ZH_CN,
@@ -53,7 +61,9 @@ const { univerAPI } = createUniver({
             sheetsDrawingZhCN,
             sheetsSheetsFilterZhCN,
             sheetsFindReplaceZhCN,
+            sheetsNoteZhCN,
             sheetsSortZhCN,
+            sheetsTableZhCN,
             sheetsDataValidationZhCN,
             sheetsHyperLinkZhCN,
         ),
@@ -68,7 +78,9 @@ const { univerAPI } = createUniver({
         UniverSheetsFilterPreset(),
         UniverSheetsCollaborationPreset(),
         UniverSheetsFindReplacePreset(),
+        UniverSheetsNotePreset(),
         UniverSheetsSortPreset(),
+        UniverSheetsTablePreset(),
         UniverSheetsDataValidationPreset(),
         UniverSheetsHyperLinkPreset(),
     ],

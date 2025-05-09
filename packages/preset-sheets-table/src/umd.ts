@@ -7,7 +7,7 @@ import '@univerjs/sheets-table-ui/lib/index.css';
 
 export * from '@univerjs/sheets-table/facade';
 
-export function UniverDocsHyperLinkPreset(): IPreset {
+export function UniverSheetsTablePreset(): IPreset {
     return {
         plugins: [
             UniverSheetTablePlugin,

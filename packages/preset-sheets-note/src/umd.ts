@@ -7,7 +7,7 @@ import '@univerjs/sheets-note-ui/lib/index.css';
 
 export * from '@univerjs/sheets-note/facade';
 
-export function UniverDocsHyperLinkPreset(): IPreset {
+export function UniverSheetsNotePreset(): IPreset {
     return {
         plugins: [
             UniverSheetsNotePlugin,
