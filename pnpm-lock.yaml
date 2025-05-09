@@ -946,6 +946,9 @@ importers:
       '@univerjs/telemetry':
         specifier: 0.7.0-nightly.202505071607
         version: 0.7.0-nightly.202505071607(@grpc/grpc-js@1.13.2)(@wendellhu/redi@0.18.0)(rxjs@7.8.2)
+      '@univerjs/themes':
+        specifier: 0.7.0-nightly.202505071607
+        version: 0.7.0-nightly.202505071607
       '@wendellhu/redi':
         specifier: 0.18.0
         version: 0.18.0
