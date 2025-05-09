@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-sheets-drawing",
-    "version": "0.7.0-nightly.202505061607",
+    "version": "0.7.0-nightly.202505071607",
     "private": false,
     "description": "",
     "author": "DreamNum <developer@univer.ai>",
@@ -69,15 +69,16 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/docs-drawing": "0.7.0-nightly.202505061607",
-        "@univerjs/drawing": "0.7.0-nightly.202505061607",
-        "@univerjs/drawing-ui": "0.7.0-nightly.202505061607",
-        "@univerjs/sheets-drawing": "0.7.0-nightly.202505061607",
-        "@univerjs/sheets-drawing-ui": "0.7.0-nightly.202505061607"
+        "@univerjs/docs-drawing": "0.7.0-nightly.202505071607",
+        "@univerjs/drawing": "0.7.0-nightly.202505071607",
+        "@univerjs/drawing-ui": "0.7.0-nightly.202505071607",
+        "@univerjs/sheets-drawing": "0.7.0-nightly.202505071607",
+        "@univerjs/sheets-drawing-ui": "0.7.0-nightly.202505071607",
+        "rxjs": ">=7.0.0"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.7.0-nightly.202505061607",
+        "@univerjs/core": "0.7.0-nightly.202505071607",
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "typescript": "^5.8.3"

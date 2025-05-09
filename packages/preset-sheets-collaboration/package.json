@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-sheets-collaboration",
-    "version": "0.7.0-nightly.202505061607",
+    "version": "0.7.0-nightly.202505071607",
     "private": false,
     "description": "",
     "author": "DreamNum <developer@univer.ai>",
@@ -69,17 +69,18 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs-pro/collaboration": "0.7.0-nightly.202505061607",
-        "@univerjs-pro/collaboration-client": "0.7.0-nightly.202505061607",
-        "@univerjs-pro/collaboration-client-ui": "0.7.0-nightly.202505061607",
-        "@univerjs-pro/edit-history-loader": "0.7.0-nightly.202505061607",
-        "@univerjs-pro/edit-history-viewer": "0.7.0-nightly.202505061607",
-        "@univerjs-pro/thread-comment-datasource": "0.7.0-nightly.202505061607",
-        "@univerjs/preset-sheets-advanced": "workspace:*"
+        "@univerjs-pro/collaboration": "0.7.0-nightly.202505071607",
+        "@univerjs-pro/collaboration-client": "0.7.0-nightly.202505071607",
+        "@univerjs-pro/collaboration-client-ui": "0.7.0-nightly.202505071607",
+        "@univerjs-pro/edit-history-loader": "0.7.0-nightly.202505071607",
+        "@univerjs-pro/edit-history-viewer": "0.7.0-nightly.202505071607",
+        "@univerjs-pro/thread-comment-datasource": "0.7.0-nightly.202505071607",
+        "@univerjs/preset-sheets-advanced": "workspace:*",
+        "rxjs": ">=7.0.0"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.7.0-nightly.202505061607",
+        "@univerjs/core": "0.7.0-nightly.202505071607",
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "typescript": "^5.8.3"

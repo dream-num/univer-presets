@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/presets",
-    "version": "0.7.0-nightly.202505061607",
+    "version": "0.7.0-nightly.202505071607",
     "private": false,
     "description": "Build Univer apps faster and easier",
     "author": "DreamNum <developer@univer.ai>",
@@ -222,6 +222,16 @@
                 "import": "./lib/es/preset-sheets-node-core/*.js",
                 "require": "./lib/cjs/preset-sheets-node-core/*.js"
             },
+            "./preset-sheets-note": {
+                "types": "./lib/types/preset-sheets-note/index.d.ts",
+                "import": "./lib/es/preset-sheets-note/index.js",
+                "require": "./lib/cjs/preset-sheets-note/index.js"
+            },
+            "./preset-sheets-note/*": {
+                "types": "./lib/types/preset-sheets-note/*.d.ts",
+                "import": "./lib/es/preset-sheets-note/*.js",
+                "require": "./lib/cjs/preset-sheets-note/*.js"
+            },
             "./preset-sheets-sort": {
                 "types": "./lib/types/preset-sheets-sort/index.d.ts",
                 "import": "./lib/es/preset-sheets-sort/index.js",
@@ -231,6 +241,16 @@
                 "types": "./lib/types/preset-sheets-sort/*.d.ts",
                 "import": "./lib/es/preset-sheets-sort/*.js",
                 "require": "./lib/cjs/preset-sheets-sort/*.js"
+            },
+            "./preset-sheets-table": {
+                "types": "./lib/types/preset-sheets-table/index.d.ts",
+                "import": "./lib/es/preset-sheets-table/index.js",
+                "require": "./lib/cjs/preset-sheets-table/index.js"
+            },
+            "./preset-sheets-table/*": {
+                "types": "./lib/types/preset-sheets-table/*.d.ts",
+                "import": "./lib/es/preset-sheets-table/*.js",
+                "require": "./lib/cjs/preset-sheets-table/*.js"
             },
             "./preset-sheets-thread-comment": {
                 "types": "./lib/types/preset-sheets-thread-comment/index.d.ts",
@@ -271,8 +291,8 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/core": "0.7.0-nightly.202505061607",
-        "@univerjs/design": "0.7.0-nightly.202505061607",
+        "@univerjs/core": "0.7.0-nightly.202505071607",
+        "@univerjs/design": "0.7.0-nightly.202505071607",
         "@univerjs/preset-docs-collaboration": "workspace:*",
         "@univerjs/preset-docs-core": "workspace:*",
         "@univerjs/preset-docs-drawing": "workspace:*",
@@ -288,19 +308,22 @@
         "@univerjs/preset-sheets-find-replace": "workspace:*",
         "@univerjs/preset-sheets-hyper-link": "workspace:*",
         "@univerjs/preset-sheets-node-core": "workspace:*",
+        "@univerjs/preset-sheets-note": "workspace:*",
         "@univerjs/preset-sheets-sort": "workspace:*",
-        "@univerjs/preset-sheets-thread-comment": "workspace:*"
+        "@univerjs/preset-sheets-table": "workspace:*",
+        "@univerjs/preset-sheets-thread-comment": "workspace:*",
+        "rxjs": ">=7.0.0"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/drawing": "0.7.0-nightly.202505061607",
-        "@univerjs/engine-formula": "0.7.0-nightly.202505061607",
-        "@univerjs/engine-numfmt": "0.7.0-nightly.202505061607",
-        "@univerjs/engine-render": "0.7.0-nightly.202505061607",
-        "@univerjs/network": "0.7.0-nightly.202505061607",
+        "@univerjs/drawing": "0.7.0-nightly.202505071607",
+        "@univerjs/engine-formula": "0.7.0-nightly.202505071607",
+        "@univerjs/engine-numfmt": "0.7.0-nightly.202505071607",
+        "@univerjs/engine-render": "0.7.0-nightly.202505071607",
+        "@univerjs/network": "0.7.0-nightly.202505071607",
         "@univerjs/protocol": "0.1.45",
-        "@univerjs/rpc": "0.7.0-nightly.202505061607",
-        "@univerjs/telemetry": "0.7.0-nightly.202505061607",
+        "@univerjs/rpc": "0.7.0-nightly.202505071607",
+        "@univerjs/telemetry": "0.7.0-nightly.202505071607",
         "@wendellhu/redi": "0.18.0",
         "react": "18.3.1",
         "react-dom": "18.3.1",
