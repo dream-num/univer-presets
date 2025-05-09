@@ -1,5 +1,5 @@
 {
-    "name": "@univerjs/preset-sheets-advanced",
+    "name": "@univerjs/preset-sheets-note",
     "version": "0.7.0-nightly.202505071607",
     "private": false,
     "description": "",
@@ -26,10 +26,8 @@
     "exports": {
         ".": "./src/index.ts",
         "./*": "./src/*",
-        "./worker": "./src/worker.ts",
         "./locales/*": "./src/locales/*.ts"
     },
-    "main": "./src/index.ts",
     "publishConfig": {
         "access": "public",
         "main": "./lib/es/index.js",
@@ -45,11 +43,6 @@
                 "require": "./lib/cjs/*",
                 "types": "./lib/types/index.d.ts"
             },
-            "./worker": {
-                "import": "./lib/es/worker.js",
-                "require": "./lib/cjs/locales/*.js",
-                "types": "./lib/types/worker.d.ts"
-            },
             "./locales/*": {
                 "import": "./lib/es/locales/*.js",
                 "require": "./lib/cjs/locales/*.js",
@@ -58,6 +51,7 @@
             "./lib/*": "./lib/*"
         }
     },
+    "main": "./src/index.ts",
     "directories": {
         "lib": "lib"
     },
@@ -75,25 +69,12 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs-pro/engine-chart": "0.7.0-nightly.202505071607",
-        "@univerjs-pro/engine-formula": "0.7.0-nightly.202505071607",
-        "@univerjs-pro/exchange-client": "0.7.0-nightly.202505071607",
-        "@univerjs-pro/license": "0.7.0-nightly.202505071607",
-        "@univerjs-pro/sheets-chart": "0.7.0-nightly.202505071607",
-        "@univerjs-pro/sheets-chart-ui": "0.7.0-nightly.202505071607",
-        "@univerjs-pro/sheets-exchange-client": "0.7.0-nightly.202505071607",
-        "@univerjs-pro/sheets-pivot": "0.7.0-nightly.202505071607",
-        "@univerjs-pro/sheets-pivot-ui": "0.7.0-nightly.202505071607",
-        "@univerjs-pro/sheets-print": "0.7.0-nightly.202505071607",
-        "@univerjs-pro/sheets-sparkline": "0.7.0-nightly.202505071607",
-        "@univerjs-pro/sheets-sparkline-ui": "0.7.0-nightly.202505071607",
-        "@univerjs/sheets-graphics": "0.7.0-nightly.202505071607",
+        "@univerjs/sheets-note": "0.7.0-nightly.202505071607",
+        "@univerjs/sheets-note-ui": "0.7.0-nightly.202505071607",
         "rxjs": ">=7.0.0"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs-pro/engine-pivot": "0.7.0-nightly.202505071607",
-        "@univerjs-pro/print": "0.7.0-nightly.202505071607",
         "@univerjs/core": "0.7.0-nightly.202505071607",
         "react": "18.3.1",
         "react-dom": "18.3.1",
