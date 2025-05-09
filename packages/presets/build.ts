@@ -4,6 +4,7 @@ import { build } from '@univerjs-infra/shared/vite';
 build({
     mode: 'bootstrap',
     umdDeps: [
+        '@univerjs/themes',
         '@univerjs/protocol',
         '@univerjs/core',
         '@univerjs/network',
