@@ -27,6 +27,7 @@ import '@univerjs/engine-formula/facade';
 import '@univerjs/sheets-formula/facade';
 import '@univerjs/sheets-numfmt/facade';
 import '@univerjs/sheets-formula-ui/facade';
+
 import '@univerjs/design/lib/index.css';
 import '@univerjs/ui/lib/index.css';
 import '@univerjs/docs-ui/lib/index.css';

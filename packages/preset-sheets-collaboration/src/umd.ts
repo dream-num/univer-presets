@@ -3,6 +3,7 @@ import { UniverCollaborationPlugin } from '@univerjs-pro/collaboration';
 import { UniverCollaborationClientPlugin } from '@univerjs-pro/collaboration-client';
 import { BrowserCollaborationSocketService, UniverCollaborationClientUIPlugin } from '@univerjs-pro/collaboration-client-ui';
 import { UniverEditHistoryLoaderPlugin } from '@univerjs-pro/edit-history-loader';
+
 import '@univerjs-pro/collaboration-client-ui/lib/index.css';
 import '@univerjs-pro/edit-history-viewer/lib/index.css';
 

@@ -69,17 +69,17 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/design": "0.7.0-nightly.202505131607",
-        "@univerjs/docs": "0.7.0-nightly.202505131607",
-        "@univerjs/docs-ui": "0.7.0-nightly.202505131607",
-        "@univerjs/engine-formula": "0.7.0-nightly.202505131607",
-        "@univerjs/engine-render": "0.7.0-nightly.202505131607",
-        "@univerjs/network": "0.7.0-nightly.202505131607",
-        "@univerjs/ui": "0.7.0-nightly.202505131607"
+        "@univerjs/design": "0.7.0",
+        "@univerjs/docs": "0.7.0",
+        "@univerjs/docs-ui": "0.7.0",
+        "@univerjs/engine-formula": "0.7.0",
+        "@univerjs/engine-render": "0.7.0",
+        "@univerjs/network": "0.7.0",
+        "@univerjs/ui": "0.7.0"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.7.0-nightly.202505131607",
+        "@univerjs/core": "0.7.0",
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "rxjs": "7.8.2",
