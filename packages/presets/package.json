@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/presets",
-    "version": "0.7.0-beta.1",
+    "version": "0.7.0-nightly.202505131607",
     "private": false,
     "description": "Build Univer apps faster and easier",
     "author": "DreamNum <developer@univer.ai>",
@@ -291,8 +291,8 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/core": "0.7.0-beta.1",
-        "@univerjs/design": "0.7.0-beta.1",
+        "@univerjs/core": "0.7.0-nightly.202505131607",
+        "@univerjs/design": "0.7.0-nightly.202505131607",
         "@univerjs/preset-docs-collaboration": "workspace:*",
         "@univerjs/preset-docs-core": "workspace:*",
         "@univerjs/preset-docs-drawing": "workspace:*",
@@ -311,23 +311,23 @@
         "@univerjs/preset-sheets-note": "workspace:*",
         "@univerjs/preset-sheets-sort": "workspace:*",
         "@univerjs/preset-sheets-table": "workspace:*",
-        "@univerjs/preset-sheets-thread-comment": "workspace:*",
-        "rxjs": ">=7.0.0"
+        "@univerjs/preset-sheets-thread-comment": "workspace:*"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/drawing": "0.7.0-beta.1",
-        "@univerjs/engine-formula": "0.7.0-beta.1",
-        "@univerjs/engine-numfmt": "0.7.0-beta.1",
-        "@univerjs/engine-render": "0.7.0-beta.1",
-        "@univerjs/network": "0.7.0-beta.1",
-        "@univerjs/protocol": "0.1.45",
-        "@univerjs/rpc": "0.7.0-beta.1",
-        "@univerjs/telemetry": "0.7.0-beta.1",
-        "@univerjs/themes": "0.7.0-beta.1",
+        "@univerjs/drawing": "0.7.0-nightly.202505131607",
+        "@univerjs/engine-formula": "0.7.0-nightly.202505131607",
+        "@univerjs/engine-numfmt": "0.7.0-nightly.202505131607",
+        "@univerjs/engine-render": "0.7.0-nightly.202505131607",
+        "@univerjs/network": "0.7.0-nightly.202505131607",
+        "@univerjs/protocol": "0.1.46",
+        "@univerjs/rpc": "0.7.0-nightly.202505131607",
+        "@univerjs/telemetry": "0.7.0-nightly.202505131607",
+        "@univerjs/themes": "0.7.0-nightly.202505131607",
         "@wendellhu/redi": "0.18.0",
         "react": "18.3.1",
         "react-dom": "18.3.1",
+        "rxjs": "7.8.2",
         "typescript": "^5.8.3"
     }
 }

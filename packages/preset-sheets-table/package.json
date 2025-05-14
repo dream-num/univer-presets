@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-sheets-table",
-    "version": "0.7.0-beta.1",
+    "version": "0.7.0-nightly.202505131607",
     "private": false,
     "description": "",
     "author": "DreamNum <developer@univer.ai>",
@@ -69,15 +69,15 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/sheets-table": "0.7.0-beta.1",
-        "@univerjs/sheets-table-ui": "0.7.0-beta.1",
-        "rxjs": ">=7.0.0"
+        "@univerjs/sheets-table": "0.7.0-nightly.202505131607",
+        "@univerjs/sheets-table-ui": "0.7.0-nightly.202505131607"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.7.0-beta.1",
+        "@univerjs/core": "0.7.0-nightly.202505131607",
         "react": "18.3.1",
         "react-dom": "18.3.1",
+        "rxjs": "7.8.2",
         "typescript": "^5.8.3"
     }
 }
