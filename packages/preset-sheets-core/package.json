@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-sheets-core",
-    "version": "0.7.0-beta.1",
+    "version": "0.7.0-nightly.202505131607",
     "private": false,
     "description": "",
     "author": "DreamNum <developer@univer.ai>",
@@ -75,28 +75,28 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/design": "0.7.0-beta.1",
-        "@univerjs/docs": "0.7.0-beta.1",
-        "@univerjs/docs-ui": "0.7.0-beta.1",
-        "@univerjs/engine-formula": "0.7.0-beta.1",
-        "@univerjs/engine-numfmt": "0.7.0-beta.1",
-        "@univerjs/engine-render": "0.7.0-beta.1",
-        "@univerjs/network": "0.7.0-beta.1",
-        "@univerjs/rpc": "0.7.0-beta.1",
-        "@univerjs/sheets": "0.7.0-beta.1",
-        "@univerjs/sheets-formula": "0.7.0-beta.1",
-        "@univerjs/sheets-formula-ui": "0.7.0-beta.1",
-        "@univerjs/sheets-numfmt": "0.7.0-beta.1",
-        "@univerjs/sheets-numfmt-ui": "0.7.0-beta.1",
-        "@univerjs/sheets-ui": "0.7.0-beta.1",
-        "@univerjs/ui": "0.7.0-beta.1",
-        "rxjs": ">=7.0.0"
+        "@univerjs/design": "0.7.0-nightly.202505131607",
+        "@univerjs/docs": "0.7.0-nightly.202505131607",
+        "@univerjs/docs-ui": "0.7.0-nightly.202505131607",
+        "@univerjs/engine-formula": "0.7.0-nightly.202505131607",
+        "@univerjs/engine-numfmt": "0.7.0-nightly.202505131607",
+        "@univerjs/engine-render": "0.7.0-nightly.202505131607",
+        "@univerjs/network": "0.7.0-nightly.202505131607",
+        "@univerjs/rpc": "0.7.0-nightly.202505131607",
+        "@univerjs/sheets": "0.7.0-nightly.202505131607",
+        "@univerjs/sheets-formula": "0.7.0-nightly.202505131607",
+        "@univerjs/sheets-formula-ui": "0.7.0-nightly.202505131607",
+        "@univerjs/sheets-numfmt": "0.7.0-nightly.202505131607",
+        "@univerjs/sheets-numfmt-ui": "0.7.0-nightly.202505131607",
+        "@univerjs/sheets-ui": "0.7.0-nightly.202505131607",
+        "@univerjs/ui": "0.7.0-nightly.202505131607"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.7.0-beta.1",
+        "@univerjs/core": "0.7.0-nightly.202505131607",
         "react": "18.3.1",
         "react-dom": "18.3.1",
+        "rxjs": "7.8.2",
         "typescript": "^5.8.3"
     }
 }
