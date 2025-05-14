@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-sheets-advanced",
-    "version": "0.7.0-nightly.202505131607",
+    "version": "0.7.0",
     "private": false,
     "description": "",
     "author": "DreamNum <developer@univer.ai>",

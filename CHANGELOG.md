@@ -1,5 +1,18 @@
 # Changelog
 
+# [0.7.0](https://github.com/dream-num/univer-presets/compare/v0.7.0-beta.1...v0.7.0) (2025-05-14)
+
+
+### Bug Fixes
+
+* fix import statements for sheets-table plugins ([#74](https://github.com/dream-num/univer-presets/issues/74)) ([188071d](https://github.com/dream-num/univer-presets/commit/188071dce1316642f966111fc30f277eae26d952))
+
+
+### Features
+
+* UniverSheetsCorePreset supplement config ([#73](https://github.com/dream-num/univer-presets/issues/73)) ([3df34ac](https://github.com/dream-num/univer-presets/commit/3df34ac626521044f0131864e0a0b70a548e6ac6))
+* update sdk to 0.7.0 ([0dc2622](https://github.com/dream-num/univer-presets/commit/0dc26229604fa3c9f40f6742a450ee5106a2b1a4))
+
 # [0.7.0-beta.1](https://github.com/dream-num/univer-presets/compare/v0.6.10...v0.7.0-beta.1) (2025-05-09)
 
 
