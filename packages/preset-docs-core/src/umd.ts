@@ -7,15 +7,15 @@ import { UniverRenderEnginePlugin } from '@univerjs/engine-render';
 import { UniverNetworkPlugin } from '@univerjs/network';
 import { UniverUIPlugin } from '@univerjs/ui';
 
-import '@univerjs/network/facade';
-import '@univerjs/docs-ui/facade';
+import '@univerjs/network/lib/facade';
+import '@univerjs/docs-ui/lib/facade';
 
 import '@univerjs/design/lib/index.css';
 import '@univerjs/ui/lib/index.css';
 import '@univerjs/docs-ui/lib/index.css';
 
-export type * from '@univerjs/docs-ui/facade';
-export type * from '@univerjs/network/facade';
+export type * from '@univerjs/docs-ui/lib/facade';
+export type * from '@univerjs/network/lib/facade';
 
 export interface IUniverDocsCorePresetConfig extends
     Pick<IUniverUIConfig, 'container' | 'header' | 'footer' | 'toolbar' | 'menu' | 'contextMenu' | 'disableAutoFocus'> {

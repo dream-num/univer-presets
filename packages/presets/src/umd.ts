@@ -1,8 +1,8 @@
 import type { DependencyOverride, IUniverConfig, Plugin, PluginCtor } from '@univerjs/core';
 import { IAuthzIoService, IMentionIOService, IUndoRedoService, LogLevel, Univer } from '@univerjs/core';
-import { FUniver } from '@univerjs/core/facade';
+import { FUniver } from '@univerjs/core/lib/facade';
 
-export * from '@univerjs/core/facade';
+export * from '@univerjs/core/lib/facade';
 
 /**
  * A collection of plugins and their default configs.

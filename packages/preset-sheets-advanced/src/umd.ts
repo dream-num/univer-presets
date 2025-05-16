@@ -13,12 +13,12 @@ import { UniverSheetsPrintPlugin } from '@univerjs-pro/sheets-print';
 import { UniverSheetSparklinePlugin } from '@univerjs-pro/sheets-sparkline';
 import { UniverSheetSparklineUIPlugin } from '@univerjs-pro/sheets-sparkline-ui';
 
-import '@univerjs-pro/exchange-client/facade';
-import '@univerjs-pro/sheets-pivot/facade';
-import '@univerjs-pro/engine-formula/facade';
-import '@univerjs-pro/sheets-print/facade';
-import '@univerjs-pro/sheets-chart-ui/facade';
-import '@univerjs-pro/sheets-sparkline/facade';
+import '@univerjs-pro/exchange-client/lib/facade';
+import '@univerjs-pro/sheets-pivot/lib/facade';
+import '@univerjs-pro/engine-formula/lib/facade';
+import '@univerjs-pro/sheets-print/lib/facade';
+import '@univerjs-pro/sheets-chart-ui/lib/facade';
+import '@univerjs-pro/sheets-sparkline/lib/facade';
 
 import '@univerjs-pro/exchange-client/lib/index.css';
 import '@univerjs-pro/sheets-pivot-ui/lib/index.css';
@@ -26,12 +26,12 @@ import '@univerjs-pro/sheets-print/lib/index.css';
 import '@univerjs-pro/sheets-chart-ui/lib/index.css';
 import '@univerjs-pro/sheets-sparkline-ui/lib/index.css';
 
-export type * from '@univerjs-pro/engine-formula/facade';
-export type * from '@univerjs-pro/exchange-client/facade';
-export type * from '@univerjs-pro/sheets-chart-ui/facade';
-export type * from '@univerjs-pro/sheets-pivot/facade';
-export type * from '@univerjs-pro/sheets-print/facade';
-export type * from '@univerjs-pro/sheets-sparkline/facade';
+export type * from '@univerjs-pro/engine-formula/lib/facade';
+export type * from '@univerjs-pro/exchange-client/lib/facade';
+export type * from '@univerjs-pro/sheets-chart-ui/lib/facade';
+export type * from '@univerjs-pro/sheets-pivot/lib/facade';
+export type * from '@univerjs-pro/sheets-print/lib/facade';
+export type * from '@univerjs-pro/sheets-sparkline/lib/facade';
 
 export interface IUniverSheetsAdvancedPresetConfig {
     universerEndpoint?: string;
