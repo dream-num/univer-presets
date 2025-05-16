@@ -4,11 +4,11 @@ import { UniverDataValidationPlugin } from '@univerjs/data-validation';
 import { UniverSheetsDataValidationPlugin } from '@univerjs/sheets-data-validation';
 import { UniverSheetsDataValidationUIPlugin } from '@univerjs/sheets-data-validation-ui';
 
-import '@univerjs/sheets-data-validation/facade';
+import '@univerjs/sheets-data-validation/lib/facade';
 
 import '@univerjs/sheets-data-validation-ui/lib/index.css';
 
-export type * from '@univerjs/sheets-data-validation/facade';
+export type * from '@univerjs/sheets-data-validation/lib/facade';
 
 export interface IUniverSheetsDataValidationPresetConfig extends
     Pick<IUniverSheetsDataValidationUIConfig, 'showEditOnDropdown'> {

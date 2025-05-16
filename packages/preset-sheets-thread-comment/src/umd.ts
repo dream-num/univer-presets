@@ -3,11 +3,11 @@ import { UniverSheetsThreadCommentPlugin } from '@univerjs/sheets-thread-comment
 import { UniverSheetsThreadCommentUIPlugin } from '@univerjs/sheets-thread-comment-ui';
 import { UniverThreadCommentUIPlugin } from '@univerjs/thread-comment-ui';
 
-import '@univerjs/sheets-thread-comment/facade';
+import '@univerjs/sheets-thread-comment/lib/facade';
 
 import '@univerjs/thread-comment-ui/lib/index.css';
 
-export type * from '@univerjs/sheets-thread-comment/facade';
+export type * from '@univerjs/sheets-thread-comment/lib/facade';
 
 export interface IUniverSheetsThreadCommentPresetConfig {
 }

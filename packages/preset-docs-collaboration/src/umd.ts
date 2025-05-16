@@ -3,11 +3,11 @@ import { UniverCollaborationPlugin } from '@univerjs-pro/collaboration';
 import { UniverCollaborationClientPlugin } from '@univerjs-pro/collaboration-client';
 import { BrowserCollaborationSocketService, UniverCollaborationClientUIPlugin } from '@univerjs-pro/collaboration-client-ui';
 
-import '@univerjs-pro/collaboration-client/facade';
+import '@univerjs-pro/collaboration-client/lib/facade';
 
 import '@univerjs-pro/collaboration-client-ui/lib/index.css';
 
-export type * from '@univerjs-pro/collaboration-client/facade';
+export type * from '@univerjs-pro/collaboration-client/lib/facade';
 
 export interface IUniverDocsCollaborationPresetConfig {
     universerEndpoint?: string;
