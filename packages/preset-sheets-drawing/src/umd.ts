@@ -1,7 +1,7 @@
 import type { IPreset } from './types';
 
 import { UniverDocsDrawingPlugin } from '@univerjs/docs-drawing';
-import { UniverDrawingPlugin } from '@univerjs/drawing';
+import { IImageIoService, UniverDrawingPlugin } from '@univerjs/drawing';
 import { UniverDrawingUIPlugin } from '@univerjs/drawing-ui';
 import { UniverSheetsDrawingPlugin } from '@univerjs/sheets-drawing';
 import { UniverSheetsDrawingUIPlugin } from '@univerjs/sheets-drawing-ui';
@@ -14,12 +14,15 @@ import '@univerjs/sheets-drawing-ui/lib/index.css';
 export type * from '@univerjs/sheets-drawing-ui/lib/facade';
 
 export interface IUniverSheetsDrawingPresetConfig {
+    collaboration?: boolean;
 }
 
-export function UniverSheetsDrawingPreset(_config: Partial<IUniverSheetsDrawingPresetConfig> = {}): IPreset {
+export function UniverSheetsDrawingPreset(config: Partial<IUniverSheetsDrawingPresetConfig> = {}): IPreset {
+    const { collaboration = false } = config;
+
     return {
         plugins: [
-            UniverDrawingPlugin,
+            [UniverDrawingPlugin, { override: collaboration ? [[IImageIoService, null]] : [] }],
             UniverDocsDrawingPlugin,
             UniverDrawingUIPlugin,
             UniverSheetsDrawingPlugin,

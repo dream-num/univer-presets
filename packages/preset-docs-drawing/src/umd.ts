@@ -1,5 +1,6 @@
 import type { IPreset } from './types';
 
+import { IImageIoService } from '@univerjs/core';
 import { UniverDocsDrawingPlugin } from '@univerjs/docs-drawing';
 import { UniverDocsDrawingUIPlugin } from '@univerjs/docs-drawing-ui';
 import { UniverDrawingPlugin } from '@univerjs/drawing';
@@ -9,12 +10,15 @@ import '@univerjs/drawing-ui/lib/index.css';
 import '@univerjs/docs-drawing-ui/lib/index.css';
 
 export interface IUniverDocsDrawingPresetConfig {
+    collaboration?: boolean;
 }
 
-export function UniverDocsDrawingPreset(_config: Partial<IUniverDocsDrawingPresetConfig> = {}): IPreset {
+export function UniverDocsDrawingPreset(config: Partial<IUniverDocsDrawingPresetConfig> = {}): IPreset {
+    const { collaboration = false } = config;
+
     return {
         plugins: [
-            UniverDrawingPlugin,
+            [UniverDrawingPlugin, { override: collaboration ? [[IImageIoService, null]] : [] }],
             UniverDrawingUIPlugin,
             UniverDocsDrawingPlugin,
             UniverDocsDrawingUIPlugin,
