@@ -69,14 +69,14 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/sheets-thread-comment": "0.7.0",
-        "@univerjs/sheets-thread-comment-ui": "0.7.0",
-        "@univerjs/thread-comment": "0.7.0",
-        "@univerjs/thread-comment-ui": "0.7.0"
+        "@univerjs/sheets-thread-comment": "0.8.0-beta.0",
+        "@univerjs/sheets-thread-comment-ui": "0.8.0-beta.0",
+        "@univerjs/thread-comment": "0.8.0-beta.0",
+        "@univerjs/thread-comment-ui": "0.8.0-beta.0"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.7.0",
+        "@univerjs/core": "0.8.0-beta.0",
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "rxjs": "7.8.2",
