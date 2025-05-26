@@ -3,6 +3,7 @@ export function convertLibNameFromPackageName(name: string) {
         .replace(/^@(univerjs(?:-pro)?)\//, (_, matchedPrefix) => {
             return matchedPrefix === 'univerjs-pro' ? 'univer-pro-' : 'univer-';
         })
+        .replace('/lib', '')
         .replace('/locale/', '-')
         .replace('/facade', '-facade')
         .split('-')
