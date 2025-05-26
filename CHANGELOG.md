@@ -1,5 +1,17 @@
 # Changelog
 
+# [0.8.0-beta.0](https://github.com/dream-num/univer-presets/compare/v0.7.0...v0.8.0-beta.0) (2025-05-26)
+
+
+### Bug Fixes
+
+* add collaboration option to drawing presets ([e423230](https://github.com/dream-num/univer-presets/commit/e42323015f2e79b7b1f5fd9a77d73565f8ccdcc3))
+
+
+### Features
+
+* update sdk to 0.8.0-beta.0 ([cef448e](https://github.com/dream-num/univer-presets/commit/cef448e3ae20e93c94300294f6c21a6d1219810c))
+
 # [0.7.0](https://github.com/dream-num/univer-presets/compare/v0.7.0-beta.1...v0.7.0) (2025-05-14)
 
 
