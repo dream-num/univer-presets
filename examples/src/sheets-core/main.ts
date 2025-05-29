@@ -6,6 +6,8 @@ import sheetsCoreZhCN from '@univerjs/presets/preset-sheets-core/locales/zh-CN';
 import { UniverSheetsZenEditorPlugin } from '@univerjs/sheets-zen-editor';
 import sheetsZenEditorZhCN from '@univerjs/sheets-zen-editor/locale/zh-CN';
 
+import ImportCSVButtonPlugin from './custom-plugin/import-csv-button';
+
 import '@univerjs/presets/lib/styles/preset-sheets-core.css';
 import '@univerjs/sheets-zen-editor/lib/index.css';
 
@@ -25,7 +27,10 @@ const { univerAPI } = createUniver({
             disableTextFormatMark: true,
         }),
     ],
-    plugins: [UniverSheetsZenEditorPlugin],
+    plugins: [
+        UniverSheetsZenEditorPlugin,
+        ImportCSVButtonPlugin,
+    ],
 });
 
 univerAPI.createWorkbook({ name: 'Test Sheet' });
