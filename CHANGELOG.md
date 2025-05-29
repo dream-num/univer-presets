@@ -1,5 +1,13 @@
 # Changelog
 
+# [0.8.0-beta.1](https://github.com/dream-num/univer-presets/compare/v0.8.0-beta.0...v0.8.0-beta.1) (2025-05-29)
+
+
+### Features
+
+* UniverSheetsCorePreset add config disableForceStringAlert and d… ([#77](https://github.com/dream-num/univer-presets/issues/77)) ([0bb8dd5](https://github.com/dream-num/univer-presets/commit/0bb8dd55fc10921d9cea215ce2d16bdf6ec0c27a))
+* update sdk to 0.8.0-beta.1 ([05a153c](https://github.com/dream-num/univer-presets/commit/05a153cb9249d2c212d6bc2313a1e0a06ffd2943))
+
 # [0.8.0-beta.0](https://github.com/dream-num/univer-presets/compare/v0.7.0...v0.8.0-beta.0) (2025-05-26)
 
 
