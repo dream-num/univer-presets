@@ -10,6 +10,7 @@
         "build:demo": "node ./esbuild.config.mjs"
     },
     "dependencies": {
+        "@univerjs/icons": "0.4.4",
         "@univerjs/presets": "workspace:*",
         "@univerjs/sheets-zen-editor": "0.8.0-beta.1",
         "clsx": "^2.1.1",
