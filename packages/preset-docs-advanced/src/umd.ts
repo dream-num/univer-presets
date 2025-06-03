@@ -1,4 +1,3 @@
-import type { IUniverEngineFormulaConfig } from '@univerjs-pro/engine-formula';
 import type { IUniverExchangeClientOptions } from '@univerjs-pro/exchange-client';
 import type { IPreset } from './types';
 import { UniverDocsExchangeClientPlugin } from '@univerjs-pro/docs-exchange-client';
@@ -16,7 +15,6 @@ export interface IUniverDocsAdvancedPresetConfig {
     universerEndpoint?: string;
     license?: string;
     useWorker?: boolean;
-    formula?: Pick<IUniverEngineFormulaConfig, 'function'>;
     exchangeClientOptions?: IUniverExchangeClientOptions;
 }
 
