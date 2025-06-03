@@ -26,6 +26,8 @@
     "exports": {
         ".": "./src/index.ts",
         "./*": "./src/*",
+        "./preset-docs-advanced": "./src/preset-docs-advanced/index.ts",
+        "./preset-docs-advanced/*": "./src/preset-docs-advanced/*.ts",
         "./preset-docs-collaboration": "./src/preset-docs-collaboration/index.ts",
         "./preset-docs-collaboration/*": "./src/preset-docs-collaboration/*.ts",
         "./preset-docs-core": "./src/preset-docs-core/index.ts",
@@ -82,6 +84,16 @@
                 "require": "./lib/cjs/*"
             },
             "./lib/*": "./lib/*",
+            "./preset-docs-advanced": {
+                "types": "./lib/types/preset-docs-advanced/index.d.ts",
+                "import": "./lib/es/preset-docs-advanced/index.js",
+                "require": "./lib/cjs/preset-docs-advanced/index.js"
+            },
+            "./preset-docs-advanced/*": {
+                "types": "./lib/types/preset-docs-advanced/*.d.ts",
+                "import": "./lib/es/preset-docs-advanced/*.js",
+                "require": "./lib/cjs/preset-docs-advanced/*.js"
+            },
             "./preset-docs-collaboration": {
                 "types": "./lib/types/preset-docs-collaboration/index.d.ts",
                 "import": "./lib/es/preset-docs-collaboration/index.js",
@@ -293,6 +305,7 @@
     "dependencies": {
         "@univerjs/core": "0.8.0-beta.1",
         "@univerjs/design": "0.8.0-beta.1",
+        "@univerjs/preset-docs-advanced": "workspace:*",
         "@univerjs/preset-docs-collaboration": "workspace:*",
         "@univerjs/preset-docs-core": "workspace:*",
         "@univerjs/preset-docs-drawing": "workspace:*",

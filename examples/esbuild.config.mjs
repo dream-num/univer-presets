@@ -184,6 +184,8 @@ const ctx = await esbuild[args.watch ? 'context' : 'build']({
     entryPoints: [
         './src/docs-core/main.ts',
 
+        './src/docs-advanced/main.ts',
+
         './src/docs-collaboration/main.ts',
 
         './src/sheets-core/main.ts',
