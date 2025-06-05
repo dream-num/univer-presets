@@ -18,7 +18,7 @@ export type * from '@univerjs/docs-ui/lib/facade';
 export type * from '@univerjs/network/lib/facade';
 
 export interface IUniverDocsCorePresetConfig extends
-    Pick<IUniverUIConfig, 'container' | 'header' | 'footer' | 'toolbar' | 'menu' | 'contextMenu' | 'disableAutoFocus'> {
+    Pick<IUniverUIConfig, 'container' | 'header' | 'footer' | 'toolbar' | 'ribbonType' | 'menu' | 'contextMenu' | 'disableAutoFocus'> {
     collaboration?: true;
 }
 
@@ -28,6 +28,7 @@ export function UniverDocsCorePreset(config: Partial<IUniverDocsCorePresetConfig
         header,
         footer,
         toolbar,
+        ribbonType,
         menu,
         contextMenu,
         disableAutoFocus,
@@ -44,6 +45,7 @@ export function UniverDocsCorePreset(config: Partial<IUniverDocsCorePresetConfig
                 header,
                 footer,
                 toolbar,
+                ribbonType,
                 menu,
                 contextMenu,
                 disableAutoFocus,
