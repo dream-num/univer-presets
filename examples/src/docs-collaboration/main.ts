@@ -15,6 +15,7 @@ import docsDrawingZhCN from '@univerjs/presets/preset-docs-drawing/locales/zh-CN
 import '@univerjs/presets/lib/styles/preset-docs-core.css';
 import '@univerjs/presets/lib/styles/preset-docs-collaboration.css';
 import '@univerjs/presets/lib/styles/preset-docs-drawing.css';
+import '@univerjs/presets/lib/styles/preset-docs-advanced.css';
 
 createUniver({
     locale: LocaleType.ZH_CN,
