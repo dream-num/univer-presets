@@ -17,7 +17,7 @@ import '@univerjs/presets/lib/styles/preset-docs-collaboration.css';
 import '@univerjs/presets/lib/styles/preset-docs-drawing.css';
 import '@univerjs/presets/lib/styles/preset-docs-advanced.css';
 
-createUniver({
+const { univerAPI } = createUniver({
     locale: LocaleType.ZH_CN,
     locales: {
         zhCN: merge(
@@ -37,6 +37,8 @@ createUniver({
         UniverDocsCollaborationPreset(),
     ],
 });
+
+window.univerAPI = univerAPI;
 
 // check if the unit is already created
 const url = new URL(window.location.href);
