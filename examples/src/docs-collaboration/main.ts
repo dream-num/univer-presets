@@ -1,5 +1,8 @@
 import { createUniver, defaultTheme, LocaleType, merge, UniverInstanceType } from '@univerjs/presets';
 
+import { UniverDocsAdvancedPreset } from '@univerjs/presets/preset-docs-advanced';
+import docsAdvancedZhCN from '@univerjs/presets/preset-docs-advanced/locales/zh-CN';
+
 import { UniverDocsCollaborationPreset } from '@univerjs/presets/preset-docs-collaboration';
 import docsCollaborationZhCN from '@univerjs/presets/preset-docs-collaboration/locales/zh-CN';
 
@@ -19,6 +22,7 @@ createUniver({
         zhCN: merge(
             {},
             docsCoreZhCN,
+            docsAdvancedZhCN,
             docsCollaborationZhCN,
             docsDrawingZhCN,
         ),
@@ -27,8 +31,9 @@ createUniver({
     collaboration: true,
     presets: [
         UniverDocsCorePreset({ collaboration: true }),
-        UniverDocsCollaborationPreset(),
         UniverDocsDrawingPreset({ collaboration: true }),
+        UniverDocsAdvancedPreset(),
+        UniverDocsCollaborationPreset(),
     ],
 });
 
