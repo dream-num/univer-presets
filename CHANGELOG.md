@@ -1,5 +1,19 @@
 # Changelog
 
+# [0.8.0](https://github.com/dream-num/univer-presets/compare/v0.8.0-beta.1...v0.8.0) (2025-06-06)
+
+
+### Bug Fixes
+
+* fix UniverSheetsCorePreset config ([#83](https://github.com/dream-num/univer-presets/issues/83)) ([c4c48c8](https://github.com/dream-num/univer-presets/commit/c4c48c8b56086ac91f1af826a40d70b53834d6a3))
+
+
+### Features
+
+* add `@univerjs/preset-docs-advanced` ([#79](https://github.com/dream-num/univer-presets/issues/79)) ([c5172ce](https://github.com/dream-num/univer-presets/commit/c5172ce596fee92f0e1671c24b77379a3b78949e))
+* add UniverUIPlugin ribbonType config ([#82](https://github.com/dream-num/univer-presets/issues/82)) ([254eaf1](https://github.com/dream-num/univer-presets/commit/254eaf153f451372942b5af57ea3d466c0a9b1e7))
+* update sdk to 0.8.0 ([b53a026](https://github.com/dream-num/univer-presets/commit/b53a02633e4849ab72591cb9fc589b82f0822bb4))
+
 # [0.8.0-beta.1](https://github.com/dream-num/univer-presets/compare/v0.8.0-beta.0...v0.8.0-beta.1) (2025-05-29)
 
 
