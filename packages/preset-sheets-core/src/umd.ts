@@ -137,6 +137,8 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
                 scrollConfig: sheets?.scrollConfig,
                 protectedRangeShadow: sheets?.protectedRangeShadow ?? true,
                 protectedRangeUserSelector: sheets?.protectedRangeUserSelector,
+                disableForceStringAlert: sheets?.disableForceStringAlert,
+                disableForceStringMark: sheets?.disableForceStringMark,
             }],
             [UniverSheetsNumfmtPlugin, {
                 disableTextFormatAlert,
