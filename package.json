@@ -25,8 +25,8 @@
     },
     "devDependencies": {
         "@antfu/eslint-config": "^4.13.2",
-        "@release-it-plugins/workspaces": "^4.2.0",
-        "@release-it/conventional-changelog": "^10.0.1",
+        "@release-it-plugins/workspaces": "4.2.0",
+        "@release-it/conventional-changelog": "9.0.4",
         "@types/fs-extra": "^11.0.4",
         "@univerjs/core": "0.8.0",
         "cross-env": "^7.0.3",
@@ -34,7 +34,7 @@
         "eslint-plugin-format": "^1.0.1",
         "fs-extra": "^11.3.0",
         "lint-staged": "^16.1.0",
-        "release-it": "^19.0.3",
+        "release-it": "17.11.0",
         "simple-git-hooks": "^2.13.0",
         "tsx": "^4.19.4",
         "turbo": "^2.5.4"
