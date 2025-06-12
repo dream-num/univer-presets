@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.1](https://github.com/dream-num/univer-presets/compare/v0.8.0...v0.8.1) (2025-06-12)
+
+
+### Features
+
+* update sdk to 0.8.1 ([a44c978](https://github.com/dream-num/univer-presets/commit/a44c9782ee1fe0490eaf51e2a43b7f3ef503b289))
+
 # [0.8.0](https://github.com/dream-num/univer-presets/compare/v0.8.0-beta.1...v0.8.0) (2025-06-06)
 
 

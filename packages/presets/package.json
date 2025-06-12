@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/presets",
-    "version": "0.8.0-nightly.202506111607",
+    "version": "0.8.1",
     "private": false,
     "description": "Build Univer apps faster and easier",
     "author": "DreamNum <developer@univer.ai>",
