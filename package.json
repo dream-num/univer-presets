@@ -1,6 +1,6 @@
 {
     "name": "univer-presets",
-    "version": "0.8.1",
+    "version": "0.8.2",
     "private": true,
     "packageManager": "pnpm@10.11.0",
     "author": "DreamNum Inc. <developer@univer.ai>",

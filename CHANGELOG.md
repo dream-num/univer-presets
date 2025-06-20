@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.8.2](https://github.com/dream-num/univer-presets/compare/v0.8.1...v0.8.2) (2025-06-20)
+
+
+### Features
+
+* add '@univerjs/thread-comment' dependency and include in build configuration ([#86](https://github.com/dream-num/univer-presets/issues/86)) ([97f537c](https://github.com/dream-num/univer-presets/commit/97f537cec63e76f5f4a584f5e5295297163d7cd6))
+* update sdk to 0.8.2 ([35c50d0](https://github.com/dream-num/univer-presets/commit/35c50d05c51ecfc72db5223f682f6fd6506efdb0))
+
 ## [0.8.1](https://github.com/dream-num/univer-presets/compare/v0.8.0...v0.8.1) (2025-06-12)
 
 
