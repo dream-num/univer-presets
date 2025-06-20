@@ -28,7 +28,7 @@
         "@release-it-plugins/workspaces": "4.2.0",
         "@release-it/conventional-changelog": "9.0.4",
         "@types/fs-extra": "^11.0.4",
-        "@univerjs/core": "0.8.1",
+        "@univerjs/core": "0.8.2",
         "cross-env": "^7.0.3",
         "eslint": "^9.28.0",
         "eslint-plugin-format": "^1.0.1",
