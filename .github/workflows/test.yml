@@ -25,9 +25,6 @@ jobs:
             - name: Setup Node.js
               uses: ./.github/actions/setup-node
 
-            - name: Types Check
-              run: pnpm lint:types
-
             - name: 🩺 Run build
               run: pnpm build
 
@@ -35,7 +32,32 @@ jobs:
               run: |
                   pnpm build:demo
                   pnpm build:node-demo
+
             - name: Run test
               run: |
                   pnpm exec tsx ./examples-node/src/sheets-node-basic/main.ts
                   node ./examples-node/dist/main.js
+
+    types:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Setup Node.js
+              uses: ./.github/actions/setup-node
+
+            - name: Lint
+              run: pnpm lint:types
+
+    lint:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Setup Node.js
+              uses: ./.github/actions/setup-node
+
+            - name: Lint
+              run: pnpm lint
