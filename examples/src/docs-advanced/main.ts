@@ -43,7 +43,7 @@ univerAPI.createUniverDoc({});
 
 window.univerAPI = univerAPI;
 
-declare global{
+declare global {
     interface Window {
         univerAPI: any;
     }

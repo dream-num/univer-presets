@@ -27,7 +27,7 @@ univerAPI.createWorkbook({ name: 'Test Sheet' });
 
 window.univerAPI = univerAPI;
 
-declare global{
+declare global {
     interface Window {
         univerAPI: any;
     }

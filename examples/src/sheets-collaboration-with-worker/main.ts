@@ -86,7 +86,7 @@ else {
         });
 }
 
-declare global{
+declare global {
     interface Window {
         univerAPI: any;
     }
