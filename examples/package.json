@@ -2,7 +2,7 @@
     "name": "examples",
     "version": "0.6.9",
     "private": true,
-    "author": "DreamNum Inc. <developer@univer.ai>",
+    "author": "DreamNum Co., Ltd. <developer@univer.ai>",
     "license": "Apache-2.0",
     "scripts": {
         "dev:demo": "node ./esbuild.config.mjs --watch",
