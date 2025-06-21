@@ -3,7 +3,7 @@
     "version": "0.8.2",
     "private": true,
     "description": "Some infrastructures for univerjs",
-    "author": "DreamNum <developer@univer.ai>",
+    "author": "DreamNum Co., Ltd. <developer@univer.ai>",
     "license": "Apache-2.0",
     "homepage": "https://github.com/dream-num/univer",
     "repository": {

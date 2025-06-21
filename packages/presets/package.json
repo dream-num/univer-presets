@@ -3,7 +3,7 @@
     "version": "0.8.2",
     "private": false,
     "description": "Build Univer apps faster and easier",
-    "author": "DreamNum <developer@univer.ai>",
+    "author": "DreamNum Co., Ltd. <developer@univer.ai>",
     "license": "Apache-2.0",
     "funding": {
         "type": "opencollective",
@@ -18,7 +18,8 @@
         "url": "https://github.com/dream-num/univer-presets/issues"
     },
     "keywords": [
-        "univer"
+        "univer",
+        "univer-preset"
     ],
     "sideEffects": [
         "*.css"

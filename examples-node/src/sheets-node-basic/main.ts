@@ -1,3 +1,4 @@
+import path from 'node:path';
 import process from 'node:process';
 import { createUniver, LocaleType } from '@univerjs/presets';
 import { UniverSheetsNodeCorePreset } from '@univerjs/presets/preset-sheets-node-core';
@@ -5,11 +6,13 @@ import { UniverSheetsNodeCorePreset } from '@univerjs/presets/preset-sheets-node
 // From now on, Univer is a full-stack SDK.
 
 async function run(): Promise<void> {
+    const workerSrc = path.resolve(__dirname, './worker');
+
     const { univerAPI } = createUniver({
         locale: LocaleType.ZH_CN,
         locales: {},
         presets: [
-            UniverSheetsNodeCorePreset({ workerSrc: './worker.js' }),
+            UniverSheetsNodeCorePreset({ workerSrc }),
         ],
     });
 
