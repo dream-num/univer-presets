@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.8.3](https://github.com/dream-num/univer-presets/compare/v0.8.2...v0.8.3) (2025-06-27)
+
+
+### Features
+
+* add locale support for Korean(ko-KR) ([#89](https://github.com/dream-num/univer-presets/issues/89)) ([7bd27b1](https://github.com/dream-num/univer-presets/commit/7bd27b1c7663f0c1232ffad7d1e3477dfb94770b))
+* **presets:** add export for `@univerjs/themes` ([#88](https://github.com/dream-num/univer-presets/issues/88)) ([dc14ea2](https://github.com/dream-num/univer-presets/commit/dc14ea2fa4225b49da835b31ef956ec21e768cf5))
+* update sdk to 0.8.3 ([d58a9ba](https://github.com/dream-num/univer-presets/commit/d58a9bae1a6f8ebe67b2800e59e64e5995b30eab))
+
 ## [0.8.2](https://github.com/dream-num/univer-presets/compare/v0.8.1...v0.8.2) (2025-06-20)
 
 
