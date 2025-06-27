@@ -70,15 +70,15 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/docs-drawing": "0.8.2-nightly.202506241607",
-        "@univerjs/drawing": "0.8.2-nightly.202506241607",
-        "@univerjs/drawing-ui": "0.8.2-nightly.202506241607",
-        "@univerjs/sheets-drawing": "0.8.2-nightly.202506241607",
-        "@univerjs/sheets-drawing-ui": "0.8.2-nightly.202506241607"
+        "@univerjs/docs-drawing": "0.8.3",
+        "@univerjs/drawing": "0.8.3",
+        "@univerjs/drawing-ui": "0.8.3",
+        "@univerjs/sheets-drawing": "0.8.3",
+        "@univerjs/sheets-drawing-ui": "0.8.3"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.8.2-nightly.202506241607",
+        "@univerjs/core": "0.8.3",
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "rxjs": "7.8.2",

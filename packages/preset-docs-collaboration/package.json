@@ -70,13 +70,13 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs-pro/collaboration": "0.8.2-nightly.202506241607",
-        "@univerjs-pro/collaboration-client": "0.8.2-nightly.202506241607",
-        "@univerjs-pro/collaboration-client-ui": "0.8.2-nightly.202506241607"
+        "@univerjs-pro/collaboration": "0.8.3",
+        "@univerjs-pro/collaboration-client": "0.8.3",
+        "@univerjs-pro/collaboration-client-ui": "0.8.3"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.8.2-nightly.202506241607",
+        "@univerjs/core": "0.8.3",
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "rxjs": "7.8.2",
