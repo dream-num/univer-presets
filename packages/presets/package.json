@@ -37,6 +37,8 @@
         "./preset-docs-drawing/*": "./src/preset-docs-drawing/*.ts",
         "./preset-docs-hyper-link": "./src/preset-docs-hyper-link/index.ts",
         "./preset-docs-hyper-link/*": "./src/preset-docs-hyper-link/*.ts",
+        "./preset-docs-node-core": "./src/preset-docs-node-core/index.ts",
+        "./preset-docs-node-core/*": "./src/preset-docs-node-core/*.ts",
         "./preset-sheets-advanced": "./src/preset-sheets-advanced/index.ts",
         "./preset-sheets-advanced/*": "./src/preset-sheets-advanced/*.ts",
         "./preset-sheets-collaboration": "./src/preset-sheets-collaboration/index.ts",
@@ -225,6 +227,16 @@
                 "import": "./lib/es/preset-sheets-hyper-link/*.js",
                 "require": "./lib/cjs/preset-sheets-hyper-link/*.js"
             },
+            "./preset-docs-node-core": {
+                "types": "./lib/types/preset-docs-node-core/index.d.ts",
+                "import": "./lib/es/preset-docs-node-core/index.js",
+                "require": "./lib/cjs/preset-docs-node-core/index.js"
+            },
+            "./preset-docs-node-core/*": {
+                "types": "./lib/types/preset-docs-node-core/*.d.ts",
+                "import": "./lib/es/preset-docs-node-core/*.js",
+                "require": "./lib/cjs/preset-docs-node-core/*.js"
+            },
             "./preset-sheets-node-core": {
                 "types": "./lib/types/preset-sheets-node-core/index.d.ts",
                 "import": "./lib/es/preset-sheets-node-core/index.js",
@@ -311,6 +323,7 @@
         "@univerjs/preset-docs-core": "workspace:*",
         "@univerjs/preset-docs-drawing": "workspace:*",
         "@univerjs/preset-docs-hyper-link": "workspace:*",
+        "@univerjs/preset-docs-node-core": "workspace:*",
         "@univerjs/preset-docs-thread-comment": "workspace:*",
         "@univerjs/preset-sheets-advanced": "workspace:*",
         "@univerjs/preset-sheets-collaboration": "workspace:*",
