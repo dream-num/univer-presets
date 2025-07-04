@@ -10,14 +10,14 @@ import '@univerjs/engine-formula/lib/facade';
 
 export type * from '@univerjs/engine-formula/lib/facade';
 
-export interface IUniverSheetsNodeCorePresetConfig {
+export interface IUniverDocsNodeCorePresetConfig {
     /**
      * The formula configuration.
      */
     formula?: IUniverFormulaConfig;
 }
 
-export function UniverSheetsNodeCorePreset(config: Partial<IUniverSheetsNodeCorePresetConfig> = {}): IPreset {
+export function UniverDocsNodeCorePreset(config: Partial<IUniverDocsNodeCorePresetConfig> = {}): IPreset {
     const { formula } = config;
 
     return {
