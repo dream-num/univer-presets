@@ -1,5 +1,13 @@
 # Changelog
 
+# [0.9.0](https://github.com/dream-num/univer-presets/compare/v0.8.3...v0.9.0) (2025-07-04)
+
+
+### Features
+
+* add @univerjs/preset-docs-node-core ([#90](https://github.com/dream-num/univer-presets/issues/90)) ([7698a53](https://github.com/dream-num/univer-presets/commit/7698a5393318a0eecb7dc8f943d944aaae16e1bc))
+* update sdk to 0.9.0 ([4bdcadc](https://github.com/dream-num/univer-presets/commit/4bdcadcf3403e1cb29c02f76c6067c0e55ae80b0))
+
 ## [0.8.3](https://github.com/dream-num/univer-presets/compare/v0.8.2...v0.8.3) (2025-06-27)
 
 
