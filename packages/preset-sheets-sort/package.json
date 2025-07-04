@@ -70,12 +70,12 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/sheets-sort": "0.9.0",
-        "@univerjs/sheets-sort-ui": "0.9.0"
+        "@univerjs/sheets-sort": "0.9.1",
+        "@univerjs/sheets-sort-ui": "0.9.1"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.9.0",
+        "@univerjs/core": "0.9.1",
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "rxjs": "7.8.2",
