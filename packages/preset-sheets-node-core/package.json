@@ -74,24 +74,24 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/docs": "0.9.1",
-        "@univerjs/engine-formula": "0.9.1",
-        "@univerjs/engine-render": "0.9.1",
-        "@univerjs/rpc-node": "0.9.1",
-        "@univerjs/sheets": "0.9.1",
-        "@univerjs/sheets-data-validation": "0.9.1",
-        "@univerjs/sheets-drawing": "0.9.1",
-        "@univerjs/sheets-filter": "0.9.1",
-        "@univerjs/sheets-formula": "0.9.1",
-        "@univerjs/sheets-hyper-link": "0.9.1",
-        "@univerjs/sheets-numfmt": "0.9.1",
-        "@univerjs/sheets-sort": "0.9.1",
-        "@univerjs/sheets-thread-comment": "0.9.1",
-        "@univerjs/thread-comment": "0.9.1"
+        "@univerjs/docs": "0.9.2",
+        "@univerjs/engine-formula": "0.9.2",
+        "@univerjs/engine-render": "0.9.2",
+        "@univerjs/rpc-node": "0.9.2",
+        "@univerjs/sheets": "0.9.2",
+        "@univerjs/sheets-data-validation": "0.9.2",
+        "@univerjs/sheets-drawing": "0.9.2",
+        "@univerjs/sheets-filter": "0.9.2",
+        "@univerjs/sheets-formula": "0.9.2",
+        "@univerjs/sheets-hyper-link": "0.9.2",
+        "@univerjs/sheets-numfmt": "0.9.2",
+        "@univerjs/sheets-sort": "0.9.2",
+        "@univerjs/sheets-thread-comment": "0.9.2",
+        "@univerjs/thread-comment": "0.9.2"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.9.1",
+        "@univerjs/core": "0.9.2",
         "rxjs": "7.8.2",
         "typescript": "^5.8.3"
     }
