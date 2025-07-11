@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.9.2](https://github.com/dream-num/univer-presets/compare/v0.9.1...v0.9.2) (2025-07-11)
+
+
+### Bug Fixes
+
+* fix redi umd bundle ([#94](https://github.com/dream-num/univer-presets/issues/94)) ([c54cfcf](https://github.com/dream-num/univer-presets/commit/c54cfcfb070008ae5b9890c27e428394f63f821c))
+
+
+### Features
+
+* update sdk to 0.9.2 ([856525f](https://github.com/dream-num/univer-presets/commit/856525ff685c02335e2d560634a903bc91f804c4))
+
 ## [0.9.1](https://github.com/dream-num/univer-presets/compare/v0.9.0...v0.9.1) (2025-07-04)
 
 
