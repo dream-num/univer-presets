@@ -1,7 +1,7 @@
 (function(global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ?  factory(exports, require('@wendellhu/redi'), require('react'), require('react/jsx-runtime'), require('rxjs')) :
   typeof define === 'function' && define.amd ? define(['exports', '@wendellhu/redi', 'react', 'react/jsx-runtime', 'rxjs'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory((global["@wendellhu/redi/react-bindings"] = {}), global.__wendellhu_redi,global.react,global.react_jsx_runtime,global.rxjs));
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory((global["@wendellhu/redi/react-bindings"] = {}), global["@wendellhu/redi"],global.React,global.React,global.rxjs));
 })(this, function(exports, __wendellhu_redi, react, react_jsx_runtime, rxjs) {
 //#region rolldown:runtime
 var __create = Object.create;
