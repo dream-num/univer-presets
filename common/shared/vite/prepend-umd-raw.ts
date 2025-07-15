@@ -11,6 +11,8 @@ const LOCLAES_MAP = [
     'vi-VN',
     'zh-CN',
     'zh-TW',
+    'es-ES',
+    'ca-ES',
 ];
 
 interface IOptions {
