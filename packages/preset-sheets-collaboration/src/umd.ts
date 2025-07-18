@@ -19,6 +19,20 @@ export interface IUniverSheetsCollaborationPresetConfig {
      * The container id of the history list, which is used to load the history list. same as the container id of the univer.
      */
     univerContainerId?: string;
+
+    /**
+     * Enable offline editing, which allows users to edit the document when they are offline.
+     * The changes will be synced when the user is back online.
+     * @default true
+     */
+    enableOfflineEditing?: boolean;
+
+    /**
+     * Enable single active instance lock, which prevents multiple users from editing the same document at the same time.
+     * This is useful for preventing conflicts when multiple users are editing the same document.
+     * @default true
+     */
+    enableSingleActiveInstanceLock?: boolean;
 }
 
 function transformUrlProtocolToWs(url: string) {
@@ -42,7 +56,12 @@ function transformUrlProtocolToWs(url: string) {
  * @param {Partial<IUniverSheetsCollaborationPresetConfig>} config - The configuration object.
  */
 export function UniverSheetsCollaborationPreset(config: Partial<IUniverSheetsCollaborationPresetConfig> = {}): IPreset {
-    const { universerEndpoint, univerContainerId = 'app' } = config;
+    const {
+        universerEndpoint,
+        univerContainerId = 'app',
+        enableOfflineEditing = true,
+        enableSingleActiveInstanceLock = true,
+    } = config;
 
     const serverEndpoint = universerEndpoint ?? `${window.location.protocol}//${window.location.host}`;
 
@@ -51,8 +70,8 @@ export function UniverSheetsCollaborationPreset(config: Partial<IUniverSheetsCol
             UniverCollaborationPlugin,
             [UniverCollaborationClientPlugin, {
                 socketService: BrowserCollaborationSocketService,
-                enableOfflineEditing: true,
-                enableSingleActiveInstanceLock: true,
+                enableOfflineEditing,
+                enableSingleActiveInstanceLock,
                 enableAuthServer: true,
                 authzUrl: `${serverEndpoint}/universer-api/authz`,
                 snapshotServerUrl: `${serverEndpoint}/universer-api/snapshot`,
