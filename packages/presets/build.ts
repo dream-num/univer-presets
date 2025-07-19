@@ -12,7 +12,6 @@ build({
         '@univerjs/rpc',
         '@univerjs/design',
         '@univerjs/engine-render',
-        '@univerjs/engine-numfmt',
         '@univerjs/engine-formula',
         '@univerjs/drawing',
     ],
