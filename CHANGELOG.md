@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.9.3](https://github.com/dream-num/univer-presets/compare/v0.9.2...v0.9.3) (2025-07-19)
+
+
+### Features
+
+* add locales Spanish (es-ES) and Catalan (ca-ES) ([#96](https://github.com/dream-num/univer-presets/issues/96)) ([dad08a3](https://github.com/dream-num/univer-presets/commit/dad08a3e8742d3b47f2446f0fd813558d9acf765))
+* add offline editing and single active instance lock options to collaboration preset config ([#97](https://github.com/dream-num/univer-presets/issues/97)) ([e6e48e9](https://github.com/dream-num/univer-presets/commit/e6e48e90d97d617e6a2b57964471666246d907b7))
+* update sdk to 0.9.3 ([4b57f0b](https://github.com/dream-num/univer-presets/commit/4b57f0b42d09ad366c69ddaa347786d610cc1c5b))
+
 ## [0.9.2](https://github.com/dream-num/univer-presets/compare/v0.9.1...v0.9.2) (2025-07-11)
 
 
