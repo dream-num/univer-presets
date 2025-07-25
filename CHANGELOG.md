@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.4](https://github.com/dream-num/univer-presets/compare/v0.9.3...v0.9.4) (2025-07-25)
+
+
+### Features
+
+* export edit-history-viewer from collaboration preset ([#98](https://github.com/dream-num/univer-presets/issues/98)) ([fe11e01](https://github.com/dream-num/univer-presets/commit/fe11e0146d387158b29dcc941cd0bc6c6604a542))
+* update sdk to 0.9.4 ([8cf8909](https://github.com/dream-num/univer-presets/commit/8cf89097edf4752bdaf389fd482991bb98d0860a))
+
 ## [0.9.3](https://github.com/dream-num/univer-presets/compare/v0.9.2...v0.9.3) (2025-07-19)
 
 
