@@ -1,5 +1,13 @@
 # Changelog
 
+# [0.10.0](https://github.com/dream-num/univer-presets/compare/v0.9.4...v0.10.0) (2025-07-29)
+
+
+### Features
+
+* remove customComponents config ([9b519b5](https://github.com/dream-num/univer-presets/commit/9b519b58e93866b0f7abeed2dde3d7c206f1e983))
+* update sdk to 0.10.0 ([12bbe7e](https://github.com/dream-num/univer-presets/commit/12bbe7ee69ca28aaf4da63291ca92442595d8a85))
+
 ## [0.9.4](https://github.com/dream-num/univer-presets/compare/v0.9.3...v0.9.4) (2025-07-25)
 
 
