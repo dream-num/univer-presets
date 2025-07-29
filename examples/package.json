@@ -19,7 +19,7 @@
         "react-mosaic-component": "^6.1.1"
     },
     "devDependencies": {
-        "cross-env": "^7.0.3",
+        "cross-env": "^10.0.0",
         "detect-port": "^2.1.0",
         "dotenv": "^17.2.1",
         "esbuild": "^0.25.8",
