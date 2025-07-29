@@ -2,8 +2,8 @@ name: 🥷 Release Nightly
 
 on:
     workflow_dispatch:
-    schedule:
-        - cron: '45 16 * * *'
+    # schedule:
+    #     - cron: '45 16 * * *'
 
 concurrency:
     group: ${{ github.workflow }}-${{ github.ref }}
