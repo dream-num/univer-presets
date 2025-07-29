@@ -47,7 +47,7 @@ export type * from '@univerjs/ui/lib/facade';
 
 export interface IUniverSheetsCorePresetConfig extends
     Pick<IUniverUIConfig, 'container' | 'header' | 'toolbar' | 'ribbonType' | 'menu' | 'contextMenu' | 'disableAutoFocus'>,
-    Pick<IUniverSheetsUIConfig, 'formulaBar' | 'statusBarStatistic' | 'customComponents' | 'footer'>,
+    Pick<IUniverSheetsUIConfig, 'formulaBar' | 'statusBarStatistic' | 'footer'>,
     IUniverSheetsNumfmtConfig {
 
     /**
@@ -90,7 +90,6 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
         docs,
         sheets,
         formula,
-        customComponents,
         disableTextFormatAlert,
         disableTextFormatMark,
     } = config;
@@ -128,7 +127,6 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
                 autoHeightForMergedCells: sheets?.autoHeightForMergedCells,
             }],
             [UniverSheetsUIPlugin, {
-                customComponents,
                 formulaBar,
                 statusBarStatistic,
                 footer,
