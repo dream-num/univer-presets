@@ -1,5 +1,7 @@
 # Changelog
 
+## [0.10.1](https://github.com/dream-num/univer-presets/compare/v0.10.0...v0.10.1) (2025-07-31)
+
 # [0.10.0](https://github.com/dream-num/univer-presets/compare/v0.9.4...v0.10.0) (2025-07-29)
 
 
