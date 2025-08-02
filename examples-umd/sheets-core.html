@@ -37,17 +37,15 @@
 
         <script>
             const { createUniver } = UniverPresets;
-            const { LocaleType, merge } = UniverCore;
-            const { defaultTheme } = UniverDesign;
+            const { LocaleType, mergeLocales } = UniverCore;
             const { UniverSheetsCorePreset } = UniverPresetSheetsCore;
             const { UniverSheetsSortPreset } = UniverPresetSheetsSort;
 
             const { univerAPI } = createUniver({
                 locale: LocaleType.ZH_CN,
                 locales: {
-                    zhCN: merge({}, UniverPresetSheetsCoreEnUS, UniverPresetSheetsSortEnUS),
+                    zhCN: mergeLocales(UniverPresetSheetsCoreEnUS, UniverPresetSheetsSortEnUS),
                 },
-                theme: defaultTheme,
                 presets: [UniverSheetsCorePreset(), UniverSheetsSortPreset()],
             });
 

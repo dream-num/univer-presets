@@ -17,11 +17,12 @@ const LOCLAES_MAP = [
 
 interface IOptions {
     umdDeps: string[];
+    umdAdditionalLocales: string[];
     umdAdditionalFiles: string[];
 }
 
 export default function prependUMDRaw(options: IOptions) {
-    const { umdDeps, umdAdditionalFiles } = options;
+    const { umdDeps, umdAdditionalLocales, umdAdditionalFiles } = options;
 
     const __nodeModules = path.resolve(process.cwd(), 'node_modules');
     const __umd = path.resolve(process.cwd(), 'lib/umd/index.js');
@@ -68,6 +69,18 @@ export default function prependUMDRaw(options: IOptions) {
 
     LOCLAES_MAP.forEach((localeKey) => {
         const localeContentsMap: Map<string, string> = new Map();
+
+        umdAdditionalLocales.forEach((locale) => {
+            const __locale = path.resolve(__nodeModules, locale, 'lib/umd/locale', `${localeKey}.js`);
+
+            if (fs.existsSync(__locale)) {
+                const key = `${locale}/locale/${localeKey}`;
+                const content = `// ${key}\n${fs.readFileSync(__locale, 'utf8')}`;
+                if (!localeContentsMap.has(key)) {
+                    localeContentsMap.set(key, content);
+                }
+            }
+        });
 
         umdDeps.forEach((dep) => {
             const __dep = path.resolve(__nodeModules, dep);
