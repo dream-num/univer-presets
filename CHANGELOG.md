@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.10.2](https://github.com/dream-num/univer-presets/compare/v0.10.1...v0.10.2) (2025-08-02)
+
+
+### Features
+
+* add umdAdditionalLocales option to build configuration ([#101](https://github.com/dream-num/univer-presets/issues/101)) ([45f4347](https://github.com/dream-num/univer-presets/commit/45f434704db135c3c90cdbe82769149e81098b61))
+* update sdk to 0.10.2 ([d418668](https://github.com/dream-num/univer-presets/commit/d418668a685f8ce84d0101686d8e029b1f3c079a))
+
 ## [0.10.1](https://github.com/dream-num/univer-presets/compare/v0.10.0...v0.10.1) (2025-07-31)
 
 # [0.10.0](https://github.com/dream-num/univer-presets/compare/v0.9.4...v0.10.0) (2025-07-29)
