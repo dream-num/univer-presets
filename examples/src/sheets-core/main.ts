@@ -1,4 +1,4 @@
-import { createUniver, defaultTheme, LocaleType, merge } from '@univerjs/presets';
+import { createUniver, defaultTheme, LocaleType, mergeLocales } from '@univerjs/presets';
 
 import { UniverSheetsCorePreset } from '@univerjs/presets/preset-sheets-core';
 import sheetsCoreZhCN from '@univerjs/presets/preset-sheets-core/locales/zh-CN';
@@ -17,8 +17,7 @@ import '@univerjs/sheets-zen-editor/lib/index.css';
 const { univerAPI } = createUniver({
     locale: LocaleType.ZH_CN,
     locales: {
-        zhCN: merge(
-            {},
+        zhCN: mergeLocales(
             sheetsCoreZhCN,
             sheetsSortZhCN,
             sheetsZenEditorZhCN,

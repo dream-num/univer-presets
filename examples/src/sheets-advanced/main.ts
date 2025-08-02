@@ -1,4 +1,4 @@
-import { createUniver, defaultTheme, LocaleType, merge } from '@univerjs/presets';
+import { createUniver, defaultTheme, LocaleType, mergeLocales } from '@univerjs/presets';
 
 import { UniverSheetsAdvancedPreset } from '@univerjs/presets/preset-sheets-advanced';
 import sheetsAdvancedZhCN from '@univerjs/presets/preset-sheets-advanced/locales/zh-CN';
@@ -48,8 +48,7 @@ import '@univerjs/presets/lib/styles/preset-sheets-thread-comment.css';
 const { univerAPI } = createUniver({
     locale: LocaleType.ZH_CN,
     locales: {
-        zhCN: merge(
-            {},
+        zhCN: mergeLocales(
             sheetsCoreZhCN,
             sheetsAdvancedZhCN,
             sheetsDrawingZhCN,

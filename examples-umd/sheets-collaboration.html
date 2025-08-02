@@ -81,8 +81,7 @@
 
         <script>
             const { createUniver } = UniverPresets;
-            const { LocaleType, merge } = UniverCore;
-            const { defaultTheme } = UniverDesign;
+            const { LocaleType, mergeLocales } = UniverCore;
             const { UniverSheetsCorePreset } = UniverPresetSheetsCore;
             const { UniverSheetsAdvancedPreset } = UniverPresetSheetsAdvanced;
             const { UniverSheetsCollaborationPreset } = UniverPresetSheetsCollaboration;
@@ -107,8 +106,7 @@
             const { univerAPI, univer } = createUniver({
                 locale: LocaleType.EN_US,
                 locales: {
-                    [LocaleType.EN_US]: merge(
-                        {},
+                    [LocaleType.EN_US]: mergeLocales(
                         UniverPresetSheetsCoreEnUS,
                         UniverPresetSheetsAdvancedEnUS,
                         UniverPresetSheetsCollaborationEnUS,
@@ -127,7 +125,6 @@
                 },
                 collaboration,
                 // logLevel: LogLevel.VERBOSE,
-                theme: defaultTheme,
                 presets: [
                     UniverSheetsCorePreset({
                         container: 'app',
