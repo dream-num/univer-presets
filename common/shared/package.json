@@ -17,8 +17,8 @@
         "./vite": "./vite/index.ts"
     },
     "dependencies": {
-        "fs-extra": "^11.3.0",
-        "vite": "^7.0.6",
+        "fs-extra": "^11.3.1",
+        "vite": "^7.1.0",
         "vite-plugin-dts": "^4.5.4",
         "vite-plugin-external": "^6.2.2"
     },
