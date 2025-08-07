@@ -83,7 +83,6 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
         toolbar,
         ribbonType,
         formulaBar,
-        statusBarStatistic,
         menu,
         contextMenu,
         disableAutoFocus,
@@ -128,7 +127,6 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
             }],
             [UniverSheetsUIPlugin, {
                 formulaBar,
-                statusBarStatistic,
                 footer,
                 maxAutoHeightCount: sheets?.maxAutoHeightCount,
                 clipboardConfig: sheets?.clipboardConfig,
