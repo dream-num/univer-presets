@@ -68,18 +68,18 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/docs": "0.10.3",
-        "@univerjs/docs-drawing": "0.10.3",
-        "@univerjs/docs-hyper-link": "0.10.3",
-        "@univerjs/drawing": "0.10.3",
-        "@univerjs/engine-formula": "0.10.3",
-        "@univerjs/engine-render": "0.10.3",
-        "@univerjs/rpc-node": "0.10.3",
-        "@univerjs/thread-comment": "0.10.3"
+        "@univerjs/docs": "0.10.4",
+        "@univerjs/docs-drawing": "0.10.4",
+        "@univerjs/docs-hyper-link": "0.10.4",
+        "@univerjs/drawing": "0.10.4",
+        "@univerjs/engine-formula": "0.10.4",
+        "@univerjs/engine-render": "0.10.4",
+        "@univerjs/rpc-node": "0.10.4",
+        "@univerjs/thread-comment": "0.10.4"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.10.3",
+        "@univerjs/core": "0.10.4",
         "rxjs": "7.8.2",
         "typescript": "^5.8.3"
     }

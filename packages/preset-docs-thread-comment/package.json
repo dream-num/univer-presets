@@ -70,13 +70,13 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/docs-thread-comment-ui": "0.10.3",
-        "@univerjs/thread-comment": "0.10.3",
-        "@univerjs/thread-comment-ui": "0.10.3"
+        "@univerjs/docs-thread-comment-ui": "0.10.4",
+        "@univerjs/thread-comment": "0.10.4",
+        "@univerjs/thread-comment-ui": "0.10.4"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.10.3",
+        "@univerjs/core": "0.10.4",
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "rxjs": "7.8.2",
