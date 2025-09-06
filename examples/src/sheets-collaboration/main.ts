@@ -72,9 +72,15 @@ const { univerAPI } = createUniver({
     presets: [
         UniverSheetsCorePreset(),
         UniverSheetsDrawingPreset({ collaboration: true }),
-        UniverSheetsAdvancedPreset(),
+        UniverSheetsAdvancedPreset({
+            print: {
+                enforceWatermark: true,
+            },
+        }),
         UniverSheetsThreadCommentPreset(),
-        UniverSheetsFilterPreset(),
+        UniverSheetsFilterPreset({
+            enableSyncSwitch: true,
+        }),
         UniverSheetsCollaborationPreset(),
         UniverSheetsFindReplacePreset(),
         UniverSheetsNotePreset(),

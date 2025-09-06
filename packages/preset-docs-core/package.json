@@ -70,17 +70,17 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/design": "0.10.6",
-        "@univerjs/docs": "0.10.6",
-        "@univerjs/docs-ui": "0.10.6",
-        "@univerjs/engine-formula": "0.10.6",
-        "@univerjs/engine-render": "0.10.6",
-        "@univerjs/network": "0.10.6",
-        "@univerjs/ui": "0.10.6"
+        "@univerjs/design": "0.10.7",
+        "@univerjs/docs": "0.10.7",
+        "@univerjs/docs-ui": "0.10.7",
+        "@univerjs/engine-formula": "0.10.7",
+        "@univerjs/engine-render": "0.10.7",
+        "@univerjs/network": "0.10.7",
+        "@univerjs/ui": "0.10.7"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.10.6",
+        "@univerjs/core": "0.10.7",
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "rxjs": "7.8.2",

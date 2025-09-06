@@ -144,6 +144,9 @@
                         // if you want to use the no-limit business feature, you can get 30-day trial license from https://univer.ai/pro/license
                         // eslint-disable-next-line node/prefer-global/process
                         // license: 'your license.txt',
+                        print: {
+                            enforceWatermark: true,
+                        },
                     }),
 
                     UniverSheetsHyperLinkPreset(),
@@ -152,7 +155,9 @@
                         collaboration,
                     }),
                     UniverSheetsConditionalFormattingPreset(),
-                    UniverSheetsFilterPreset(),
+                    UniverSheetsFilterPreset({
+                        enableSyncSwitch: true,
+                    }),
                     UniverSheetsFindReplacePreset(),
                     UniverSheetsSortPreset(),
                     UniverSheetsNotePreset(),

@@ -1,5 +1,6 @@
 import type { IUniverEngineFormulaConfig } from '@univerjs-pro/engine-formula';
 import type { IUniverExchangeClientOptions } from '@univerjs-pro/exchange-client';
+import type { IUniverSheetsPrintConfig } from '@univerjs-pro/sheets-print';
 import type { IPreset } from './types';
 import { UniverProFormulaEnginePlugin } from '@univerjs-pro/engine-formula';
 import { UniverExchangeClientPlugin } from '@univerjs-pro/exchange-client';
@@ -39,6 +40,7 @@ export interface IUniverSheetsAdvancedPresetConfig {
     useWorker?: boolean;
     formula?: Pick<IUniverEngineFormulaConfig, 'function'>;
     exchangeClientOptions?: IUniverExchangeClientOptions;
+    print?: Partial<IUniverSheetsPrintConfig>;
 }
 
 /**
@@ -54,6 +56,7 @@ export function UniverSheetsAdvancedPreset(config: Partial<IUniverSheetsAdvanced
         useWorker,
         formula,
         exchangeClientOptions,
+        print,
     } = config;
 
     const serverEndpoint = universerEndpoint ?? `${window.location.protocol}//${window.location.host}`;
@@ -73,7 +76,9 @@ export function UniverSheetsAdvancedPreset(config: Partial<IUniverSheetsAdvanced
                 function: formula?.function,
             }],
 
-            UniverSheetsPrintPlugin,
+            [UniverSheetsPrintPlugin, {
+                enforceWatermark: print?.enforceWatermark,
+            }],
 
             UniverSheetsChartPlugin,
             UniverSheetsChartUIPlugin,
