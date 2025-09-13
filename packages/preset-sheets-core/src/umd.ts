@@ -146,7 +146,9 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
                 description: formula?.description,
                 initialFormulaComputing: formula?.initialFormulaComputing,
             }],
-            UniverSheetsFormulaUIPlugin,
+            [UniverSheetsFormulaUIPlugin, {
+                functionScreenTips: formula?.functionScreenTips,
+            }],
         ].filter(v => !!v) as IPreset['plugins'],
     };
 };

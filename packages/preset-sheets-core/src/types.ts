@@ -3,6 +3,7 @@ import type { IUniverDocsConfig } from '@univerjs/docs';
 import type { IUniverEngineFormulaConfig } from '@univerjs/engine-formula';
 import type { IUniverSheetsConfig } from '@univerjs/sheets';
 import type { IUniverSheetsFormulaBaseConfig } from '@univerjs/sheets-formula';
+import type { IUniverSheetsFormulaUIConfig } from '@univerjs/sheets-formula-ui';
 import type { IUniverSheetsUIConfig } from '@univerjs/sheets-ui';
 
 /**
@@ -19,7 +20,8 @@ export interface IPresetOptions {
 
 export interface IUniverFormulaConfig extends
     Pick<IUniverEngineFormulaConfig, 'function'>,
-    Pick<IUniverSheetsFormulaBaseConfig, 'description' | 'initialFormulaComputing'> {
+    Pick<IUniverSheetsFormulaBaseConfig, 'description' | 'initialFormulaComputing'>,
+    Pick<IUniverSheetsFormulaUIConfig, 'functionScreenTips'> {
 }
 
 export interface IUniverFormulaWorkerConfig extends
