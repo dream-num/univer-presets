@@ -70,12 +70,12 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/sheets-note": "0.10.8",
-        "@univerjs/sheets-note-ui": "0.10.8"
+        "@univerjs/sheets-note": "0.10.9",
+        "@univerjs/sheets-note-ui": "0.10.9"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.10.8",
+        "@univerjs/core": "0.10.9",
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "rxjs": "7.8.2",

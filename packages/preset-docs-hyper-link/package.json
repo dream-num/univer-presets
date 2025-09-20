@@ -70,12 +70,12 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/docs-hyper-link": "0.10.8",
-        "@univerjs/docs-hyper-link-ui": "0.10.8"
+        "@univerjs/docs-hyper-link": "0.10.9",
+        "@univerjs/docs-hyper-link-ui": "0.10.9"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.10.8",
+        "@univerjs/core": "0.10.9",
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "rxjs": "7.8.2",
