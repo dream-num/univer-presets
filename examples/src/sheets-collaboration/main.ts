@@ -6,6 +6,9 @@ import sheetsAdvancedZhCN from '@univerjs/presets/preset-sheets-advanced/locales
 import { UniverSheetsCollaborationPreset } from '@univerjs/presets/preset-sheets-collaboration';
 import sheetsCollaborationZhCN from '@univerjs/presets/preset-sheets-collaboration/locales/zh-CN';
 
+import { UniverSheetsConditionalFormattingPreset } from '@univerjs/presets/preset-sheets-conditional-formatting';
+import sheetsConditionalFormattingZhCN from '@univerjs/presets/preset-sheets-conditional-formatting/locales/zh-CN';
+
 import { UniverSheetsCorePreset } from '@univerjs/presets/preset-sheets-core';
 import sheetsCoreZhCN from '@univerjs/presets/preset-sheets-core/locales/zh-CN';
 
@@ -59,6 +62,7 @@ const { univerAPI } = createUniver({
             sheetsThreadCommentZhCN,
             sheetsDrawingZhCN,
             sheetsSheetsFilterZhCN,
+            sheetsConditionalFormattingZhCN,
             sheetsFindReplaceZhCN,
             sheetsNoteZhCN,
             sheetsSortZhCN,
@@ -82,6 +86,7 @@ const { univerAPI } = createUniver({
             enableSyncSwitch: true,
         }),
         UniverSheetsCollaborationPreset(),
+        UniverSheetsConditionalFormattingPreset(),
         UniverSheetsFindReplacePreset(),
         UniverSheetsNotePreset(),
         UniverSheetsSortPreset(),

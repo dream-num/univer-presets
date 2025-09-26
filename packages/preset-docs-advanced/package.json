@@ -70,15 +70,15 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs-pro/docs-exchange-client": "0.10.9",
-        "@univerjs-pro/docs-print": "0.10.9",
-        "@univerjs-pro/exchange-client": "0.10.9",
-        "@univerjs-pro/license": "0.10.9"
+        "@univerjs-pro/docs-exchange-client": "0.10.10",
+        "@univerjs-pro/docs-print": "0.10.10",
+        "@univerjs-pro/exchange-client": "0.10.10",
+        "@univerjs-pro/license": "0.10.10"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs-pro/print": "0.10.9",
-        "@univerjs/core": "0.10.9",
+        "@univerjs-pro/print": "0.10.10",
+        "@univerjs/core": "0.10.10",
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "rxjs": "7.8.2",
