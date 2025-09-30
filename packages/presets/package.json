@@ -350,7 +350,7 @@
         "@univerjs/rpc": "0.10.10",
         "@univerjs/telemetry": "0.10.10",
         "@univerjs/themes": "0.10.10",
-        "@wendellhu/redi": "1.0.0",
+        "@wendellhu/redi": "1.0.1",
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "rxjs": "7.8.2",
