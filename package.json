@@ -2,7 +2,7 @@
     "name": "univer-presets",
     "version": "0.10.10",
     "private": true,
-    "packageManager": "pnpm@10.15.0",
+    "packageManager": "pnpm@10.17.1",
     "author": "DreamNum Co., Ltd. <developer@univer.ai>",
     "license": "Apache-2.0",
     "engines": {
@@ -17,7 +17,7 @@
         "build:demo": "pnpm --filter examples build:demo",
         "build:node-demo": "pnpm --filter examples-node build:demo",
         "lint": "eslint .",
-        "lint:types": "turbo lint:types",
+        "typecheck": "turbo lint:types",
         "release": "release-it",
         "update:sdk": "tsx scripts/update-dependencies.ts",
         "update:sdk-nightly": "cross-env SDK_RELEASE_CHANNEL=nightly pnpm update:sdk"
