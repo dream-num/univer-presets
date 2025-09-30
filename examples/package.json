@@ -10,19 +10,19 @@
         "build:demo": "node ./esbuild.config.mjs"
     },
     "dependencies": {
-        "@univerjs/icons": "0.4.6",
+        "@univerjs/icons": "0.4.9",
         "@univerjs/presets": "workspace:*",
         "@univerjs/sheets-zen-editor": "0.10.10",
-        "monaco-editor": "0.52.2",
+        "monaco-editor": "0.53.0",
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "react-mosaic-component": "^6.1.1"
     },
     "devDependencies": {
-        "cross-env": "^10.0.0",
+        "cross-env": "^10.1.0",
         "detect-port": "^2.1.0",
-        "dotenv": "^17.2.1",
-        "esbuild": "^0.25.9",
+        "dotenv": "^17.2.3",
+        "esbuild": "^0.25.10",
         "esbuild-plugin-clean": "^1.0.1",
         "esbuild-plugin-copy": "^2.1.1",
         "esbuild-plugin-vue3": "^0.4.2",

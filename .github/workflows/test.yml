@@ -46,7 +46,7 @@ jobs:
               uses: ./.github/actions/setup-node
 
             - name: Lint
-              run: pnpm lint:types
+              run: pnpm typecheck
 
     lint:
         runs-on: ubuntu-latest
