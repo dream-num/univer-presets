@@ -68,7 +68,7 @@
     "scripts": {
         "prebuild:preset": "tsx prepare.ts",
         "build:preset": "tsx build.ts",
-        "lint:types": "tsc --noEmit"
+        "typecheck": "tsc --noEmit"
     },
     "peerDependencies": {
         "rxjs": ">=7.0.0"

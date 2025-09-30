@@ -86,7 +86,7 @@ jobs:
 
             - name: 🔍 Lint types
               run: |
-                  pnpm lint:types
+                  pnpm typecheck
 
             - name: 🏗️ Build
               run: |

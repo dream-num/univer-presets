@@ -38,8 +38,7 @@ export function UniverDocsCorePreset(config: Partial<IUniverDocsCorePresetConfig
         plugins: [
             UniverNetworkPlugin,
             UniverDocsPlugin,
-            UniverRenderEnginePlugin,
-            UniverFormulaEnginePlugin,
+            UniverRenderEnginePlugin as any,
             [UniverUIPlugin, {
                 container,
                 header,
@@ -51,6 +50,7 @@ export function UniverDocsCorePreset(config: Partial<IUniverDocsCorePresetConfig
                 disableAutoFocus,
             }],
             UniverDocsUIPlugin,
+            UniverFormulaEnginePlugin,
         ],
     };
 }
