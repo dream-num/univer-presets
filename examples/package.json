@@ -13,7 +13,7 @@
         "@univerjs/icons": "0.4.9",
         "@univerjs/presets": "workspace:*",
         "@univerjs/sheets-zen-editor": "0.10.10",
-        "monaco-editor": "0.53.0",
+        "monaco-editor": "0.54.0",
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "react-mosaic-component": "^6.1.1"
@@ -29,6 +29,6 @@
         "esbuild-style-plugin": "^1.6.3",
         "http-proxy": "^1.18.1",
         "minimist": "^1.2.8",
-        "typescript": "^5.9.2"
+        "typescript": "^5.9.3"
     }
 }

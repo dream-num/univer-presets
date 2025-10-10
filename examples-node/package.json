@@ -16,6 +16,6 @@
         "esbuild-plugin-clean": "^1.0.1",
         "esbuild-plugin-copy": "^2.1.1",
         "minimist": "^1.2.8",
-        "typescript": "^5.9.2"
+        "typescript": "^5.9.3"
     }
 }
