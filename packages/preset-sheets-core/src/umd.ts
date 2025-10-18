@@ -124,6 +124,7 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
                 onlyRegisterFormulaRelatedMutations: false,
                 isRowStylePrecedeColumnStyle: sheets?.isRowStylePrecedeColumnStyle,
                 autoHeightForMergedCells: sheets?.autoHeightForMergedCells,
+                freezeSync: sheets?.freezeSync,
             }],
             [UniverSheetsUIPlugin, {
                 formulaBar,
