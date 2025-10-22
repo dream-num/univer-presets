@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.12](https://github.com/dream-num/univer-presets/compare/v0.10.11...v0.10.12) (2025-10-22)
+
+
+### Features
+
+* update sdk to 0.10.12 ([491b4ff](https://github.com/dream-num/univer-presets/commit/491b4ff66e30d186f5f5eacd10b8708d4592a925))
+
 ## [0.10.11](https://github.com/dream-num/univer-presets/compare/v0.10.10...v0.10.11) (2025-10-18)
 
 
