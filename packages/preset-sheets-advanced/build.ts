@@ -5,6 +5,7 @@ build({
         '@univerjs-pro/license',
         '@univerjs-pro/engine-formula',
         '@univerjs-pro/engine-chart',
+        '@univerjs-pro/collaboration',
         '@univerjs-pro/exchange-client',
         '@univerjs-pro/sheets-exchange-client',
         '@univerjs-pro/engine-pivot',

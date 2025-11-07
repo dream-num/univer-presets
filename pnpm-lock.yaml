@@ -168,6 +168,9 @@ importers:
       '@univerjs-infra/shared':
         specifier: workspace:*
         version: link:../../common/shared
+      '@univerjs-pro/collaboration':
+        specifier: 0.10.14
+        version: 0.10.14(@wendellhu/redi@1.0.1(react@18.3.1))(rxjs@7.8.2)
       '@univerjs-pro/print':
         specifier: 0.10.14
         version: 0.10.14
@@ -439,6 +442,9 @@ importers:
       '@univerjs-infra/shared':
         specifier: workspace:*
         version: link:../../common/shared
+      '@univerjs-pro/collaboration':
+        specifier: 0.10.14
+        version: 0.10.14(@wendellhu/redi@1.0.1(react@18.3.1))(rxjs@7.8.2)
       '@univerjs-pro/engine-pivot':
         specifier: 0.10.14
         version: 0.10.14
