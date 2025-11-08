@@ -1,5 +1,17 @@
 # Changelog
 
+# [0.11.0](https://github.com/dream-num/univer-presets/compare/v0.10.14...v0.11.0) (2025-11-08)
+
+
+### Bug Fixes
+
+* fix the issue where the import/export feature is broken in UMD bundle ([#106](https://github.com/dream-num/univer-presets/issues/106)) ([9582c46](https://github.com/dream-num/univer-presets/commit/9582c465e9b2cc1566eb13ee54e0e63089c0b650))
+
+
+### Features
+
+* update sdk to 0.11.0 ([560e78d](https://github.com/dream-num/univer-presets/commit/560e78d89658dd43f9c40b02243d03a8c269f814))
+
 ## [0.10.14](https://github.com/dream-num/univer-presets/compare/v0.10.13...v0.10.14) (2025-10-29)
 
 
