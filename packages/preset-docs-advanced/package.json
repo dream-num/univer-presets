@@ -70,16 +70,16 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs-pro/docs-exchange-client": "0.10.14",
-        "@univerjs-pro/docs-print": "0.10.14",
-        "@univerjs-pro/exchange-client": "0.10.14",
-        "@univerjs-pro/license": "0.10.14"
+        "@univerjs-pro/docs-exchange-client": "0.11.0",
+        "@univerjs-pro/docs-print": "0.11.0",
+        "@univerjs-pro/exchange-client": "0.11.0",
+        "@univerjs-pro/license": "0.11.0"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs-pro/collaboration": "0.10.14",
-        "@univerjs-pro/print": "0.10.14",
-        "@univerjs/core": "0.10.14",
+        "@univerjs-pro/collaboration": "0.11.0",
+        "@univerjs-pro/print": "0.11.0",
+        "@univerjs/core": "0.11.0",
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "rxjs": "7.8.2",
