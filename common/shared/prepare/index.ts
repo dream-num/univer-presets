@@ -6,6 +6,7 @@ const LOCLAES_MAP = [
     'en-US',
     'fa-IR',
     'fr-FR',
+    'ja-JP',
     'ko-KR',
     'ru-RU',
     'vi-VN',
