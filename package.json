@@ -2,7 +2,7 @@
     "name": "univer-presets",
     "version": "0.12.3",
     "private": true,
-    "packageManager": "pnpm@10.21.0",
+    "packageManager": "pnpm@10.24.0",
     "author": "DreamNum Co., Ltd. <developer@univer.ai>",
     "license": "Apache-2.0",
     "engines": {
@@ -25,17 +25,17 @@
     "devDependencies": {
         "@antfu/eslint-config": "^6.2.0",
         "@release-it-plugins/workspaces": "^5.0.3",
-        "@release-it/conventional-changelog": "^10.0.1",
+        "@release-it/conventional-changelog": "^10.0.2",
         "@types/fs-extra": "^11.0.4",
         "@univerjs/core": "0.12.3",
         "cross-env": "^10.1.0",
         "eslint": "^9.39.1",
         "eslint-plugin-format": "^1.0.2",
         "fs-extra": "^11.3.2",
-        "lint-staged": "^16.2.6",
+        "lint-staged": "^16.2.7",
         "release-it": "19.0.6",
         "simple-git-hooks": "^2.13.1",
-        "tsx": "^4.20.6",
+        "tsx": "^4.21.0",
         "turbo": "^2.6.1"
     },
     "simple-git-hooks": {
