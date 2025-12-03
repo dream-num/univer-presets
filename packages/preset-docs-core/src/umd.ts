@@ -17,14 +17,14 @@ import '@univerjs/docs-ui/lib/index.css';
 export type * from '@univerjs/docs-ui/lib/facade';
 export type * from '@univerjs/network/lib/facade';
 
-export interface IUniverDocsCorePresetConfig extends
-    Pick<IUniverUIConfig, 'container' | 'header' | 'footer' | 'toolbar' | 'ribbonType' | 'menu' | 'contextMenu' | 'disableAutoFocus'> {
+export interface IUniverDocsCorePresetConfig extends IUniverUIConfig {
     collaboration?: true;
 }
 
 export function UniverDocsCorePreset(config: Partial<IUniverDocsCorePresetConfig> = {}): IPreset {
     const {
         container = 'app',
+        customFontFamily,
         header,
         footer,
         toolbar,
@@ -41,6 +41,7 @@ export function UniverDocsCorePreset(config: Partial<IUniverDocsCorePresetConfig
             UniverRenderEnginePlugin as any,
             [UniverUIPlugin, {
                 container,
+                customFontFamily,
                 header,
                 footer,
                 toolbar,

@@ -45,8 +45,7 @@ export type * from '@univerjs/sheets-ui/lib/facade';
 export type * from '@univerjs/sheets/lib/facade';
 export type * from '@univerjs/ui/lib/facade';
 
-export interface IUniverSheetsCorePresetConfig extends
-    Pick<IUniverUIConfig, 'container' | 'header' | 'toolbar' | 'ribbonType' | 'menu' | 'contextMenu' | 'disableAutoFocus'>,
+export interface IUniverSheetsCorePresetConfig extends Omit<IUniverUIConfig, 'footer'>,
     Pick<IUniverSheetsUIConfig, 'formulaBar' | 'statusBarStatistic' | 'footer'>,
     IUniverSheetsNumfmtConfig {
 
@@ -77,6 +76,7 @@ export interface IUniverSheetsCorePresetConfig extends
 export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetConfig> = {}): IPreset {
     const {
         container = 'app',
+        customFontFamily,
         workerURL: workerSrc,
         header,
         footer,
@@ -104,6 +104,7 @@ export function UniverSheetsCorePreset(config: Partial<IUniverSheetsCorePresetCo
             UniverRenderEnginePlugin,
             [UniverUIPlugin, {
                 container,
+                customFontFamily,
                 header,
                 toolbar,
                 ribbonType,
