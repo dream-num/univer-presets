@@ -18,4 +18,5 @@ export default antfu({
     },
     typescript: true,
     formatters: true,
+    pnpm: false,
 });
