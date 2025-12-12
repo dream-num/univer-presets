@@ -13,7 +13,7 @@
         "@univerjs/icons": "1.0.2",
         "@univerjs/presets": "workspace:*",
         "@univerjs/sheets-zen-editor": "0.12.4",
-        "monaco-editor": "0.54.0",
+        "monaco-editor": "0.55.1",
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "react-mosaic-component": "^6.1.1"
@@ -22,7 +22,7 @@
         "cross-env": "^10.1.0",
         "detect-port": "^2.1.0",
         "dotenv": "^17.2.3",
-        "esbuild": "^0.27.0",
+        "esbuild": "^0.27.1",
         "esbuild-plugin-clean": "^1.0.1",
         "esbuild-plugin-copy": "^2.1.1",
         "esbuild-plugin-vue3": "^0.5.1",
