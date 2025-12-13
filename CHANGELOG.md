@@ -1,5 +1,12 @@
 # Changelog
 
+# [0.13.0](/compare/v0.12.4...v0.13.0) (2025-12-13)
+
+
+### Features
+
+* update sdk to 0.13.0 684eb11
+
 ## [0.12.4](https://github.com/dream-num/univer-presets/compare/v0.12.3...v0.12.4) (2025-12-06)
 
 
