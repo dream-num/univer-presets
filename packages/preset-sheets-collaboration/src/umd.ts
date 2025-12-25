@@ -1,3 +1,4 @@
+import type { IUniverCollaborationClientUIConfig } from '@univerjs-pro/collaboration-client-ui';
 import type { IPreset } from './types';
 import { UniverCollaborationPlugin } from '@univerjs-pro/collaboration';
 import { UniverCollaborationClientPlugin } from '@univerjs-pro/collaboration-client';
@@ -13,7 +14,8 @@ import '@univerjs-pro/collaboration-client-ui/lib/facade';
 export type * from '@univerjs-pro/collaboration-client-ui/lib/facade';
 export type * from '@univerjs-pro/collaboration-client/lib/facade';
 
-export interface IUniverSheetsCollaborationPresetConfig {
+export interface IUniverSheetsCollaborationPresetConfig extends
+    Pick<IUniverCollaborationClientUIConfig, 'enableFrontendLog'> {
     universerEndpoint?: string;
     /**
      * The container id of the history list, which is used to load the history list. same as the container id of the univer.
@@ -61,6 +63,7 @@ export function UniverSheetsCollaborationPreset(config: Partial<IUniverSheetsCol
         univerContainerId = 'app',
         enableOfflineEditing = true,
         enableSingleActiveInstanceLock = true,
+        enableFrontendLog = false,
     } = config;
 
     const serverEndpoint = universerEndpoint ?? `${window.location.protocol}//${window.location.host}`;
@@ -84,7 +87,9 @@ export function UniverSheetsCollaborationPreset(config: Partial<IUniverSheetsCol
                 wsSessionTicketUrl: `${serverEndpoint}/universer-api/user/session-ticket`,
                 sendChangesetTimeout: 200,
             }],
-            [UniverCollaborationClientUIPlugin, {}],
+            [UniverCollaborationClientUIPlugin, {
+                enableFrontendLog,
+            }],
             [UniverEditHistoryLoaderPlugin, {
                 univerContainerId,
                 historyListServerUrl: `${serverEndpoint}/universer-api/history`,
