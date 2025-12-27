@@ -1,5 +1,13 @@
 # Changelog
 
+# [0.15.0](/compare/v0.14.0...v0.15.0) (2025-12-27)
+
+
+### Features
+
+* UniverSheetsCollaborationPreset add enableFrontendLog config (#112) f59430f, closes #112
+* update sdk to 0.15.0 1217284
+
 # [0.14.0](/compare/v0.13.0...v0.14.0) (2025-12-20)
 
 
