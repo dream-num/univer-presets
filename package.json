@@ -2,7 +2,7 @@
     "name": "univer-presets",
     "version": "0.15.0",
     "private": true,
-    "packageManager": "pnpm@10.25.0",
+    "packageManager": "pnpm@10.27.0",
     "author": "DreamNum Co., Ltd. <developer@univer.ai>",
     "license": "Apache-2.0",
     "engines": {
@@ -30,7 +30,7 @@
         "cross-env": "^10.1.0",
         "eslint": "^9.39.1",
         "eslint-plugin-format": "^1.1.0",
-        "fs-extra": "^11.3.2",
+        "fs-extra": "^11.3.3",
         "lint-staged": "^16.2.7",
         "release-it": "19.1.0",
         "simple-git-hooks": "^2.13.1",
