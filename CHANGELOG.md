@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.15.1](https://github.com/dream-num/univer-presets/compare/v0.15.0...v0.15.1) (2026-01-10)
+
+
+### Features
+
+* preset-sheets-data-validation add showSearchOnDropdown config ([0025b03](https://github.com/dream-num/univer-presets/commit/0025b0399daeda54bb3d31fb8e27a16fcb9510d4))
+
 # [0.15.0](/compare/v0.14.0...v0.15.0) (2025-12-27)
 
 
