@@ -11,11 +11,11 @@ import '@univerjs/sheets-data-validation-ui/lib/index.css';
 export type * from '@univerjs/sheets-data-validation/lib/facade';
 
 export interface IUniverSheetsDataValidationPresetConfig extends
-    Pick<IUniverSheetsDataValidationUIConfig, 'showEditOnDropdown'> {
+    Pick<IUniverSheetsDataValidationUIConfig, 'showEditOnDropdown' | 'showSearchOnDropdown'> {
 }
 
 export function UniverSheetsDataValidationPreset(config: Partial<IUniverSheetsDataValidationPresetConfig> = {}): IPreset {
-    const { showEditOnDropdown } = config;
+    const { showEditOnDropdown, showSearchOnDropdown } = config;
 
     return {
         plugins: [
@@ -23,6 +23,7 @@ export function UniverSheetsDataValidationPreset(config: Partial<IUniverSheetsDa
             UniverSheetsDataValidationPlugin,
             [UniverSheetsDataValidationUIPlugin, {
                 showEditOnDropdown,
+                showSearchOnDropdown,
             }],
         ].filter(v => !!v) as IPreset['plugins'],
     };
