@@ -85,6 +85,9 @@ export function UniverSheetsCollaborationPreset(config: Partial<IUniverSheetsCol
                 signUrlServerUrl: `${serverEndpoint}/universer-api/file/{fileID}/sign-url`,
                 downloadEndpointUrl: `${serverEndpoint}/`,
                 wsSessionTicketUrl: `${serverEndpoint}/universer-api/user/session-ticket`,
+                startFormulaLimitUrl: `${serverEndpoint}/universer-api/license/formula/limit/start`,
+                getFormulaLimitStatusUrl: `${serverEndpoint}/universer-api/license/formula/limit/status`,
+                releaseFormulaLimitUrl: `${serverEndpoint}/universer-api/license/formula/limit/done`,
                 sendChangesetTimeout: 200,
             }],
             [UniverCollaborationClientUIPlugin, {
