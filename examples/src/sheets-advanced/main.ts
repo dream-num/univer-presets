@@ -67,9 +67,7 @@ const { univerAPI } = createUniver({
         UniverSheetsCorePreset(),
         UniverSheetsFilterPreset(),
         UniverSheetsDrawingPreset(),
-        UniverSheetsAdvancedPreset({
-            universerEndpoint: 'https://dev.univer.plus',
-        }),
+        UniverSheetsAdvancedPreset(),
         UniverSheetsHyperLinkPreset(),
         UniverSheetsDataValidationPreset(),
         UniverSheetsFindReplacePreset(),
