@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.15.4](https://github.com/dream-num/univer-presets/compare/v0.15.3...v0.15.4) (2026-01-31)
+
+
+### Features
+
+* add 'sk-SK' locale to LOCLAES_MAP ([#115](https://github.com/dream-num/univer-presets/issues/115)) ([90f0d76](https://github.com/dream-num/univer-presets/commit/90f0d76cc4a309ffbe8c3eb31fab5e7805745713))
+* update sdk to 0.15.4 ([9962600](https://github.com/dream-num/univer-presets/commit/996260062fb8aadf9e40a5a7a2c2dc9d66b9cdfe))
+
 ## [0.15.3](https://github.com/dream-num/univer-presets/compare/v0.15.2...v0.15.3) (2026-01-24)
 
 
