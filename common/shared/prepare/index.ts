@@ -14,6 +14,7 @@ const LOCLAES_MAP = [
     'zh-TW',
     'es-ES',
     'ca-ES',
+    'sk-SK',
 ];
 
 const __dirname = process.cwd();
