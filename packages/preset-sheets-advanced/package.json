@@ -78,6 +78,7 @@
     "dependencies": {
         "@univerjs-pro/engine-chart": "0.15.5",
         "@univerjs-pro/engine-formula": "0.15.5",
+        "@univerjs-pro/engine-shape": "0.15.5",
         "@univerjs-pro/exchange-client": "0.15.5",
         "@univerjs-pro/license": "0.15.5",
         "@univerjs-pro/sheets-chart": "0.15.5",
@@ -86,6 +87,8 @@
         "@univerjs-pro/sheets-pivot": "0.15.5",
         "@univerjs-pro/sheets-pivot-ui": "0.15.5",
         "@univerjs-pro/sheets-print": "0.15.5",
+        "@univerjs-pro/sheets-shape": "0.15.5",
+        "@univerjs-pro/sheets-shape-ui": "0.15.5",
         "@univerjs-pro/sheets-sparkline": "0.15.5",
         "@univerjs-pro/sheets-sparkline-ui": "0.15.5",
         "@univerjs/sheets-graphics": "0.15.5"
