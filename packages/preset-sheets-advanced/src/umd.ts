@@ -11,6 +11,8 @@ import { UniverSheetsExchangeClientPlugin } from '@univerjs-pro/sheets-exchange-
 import { UniverSheetsPivotTablePlugin } from '@univerjs-pro/sheets-pivot';
 import { UniverSheetsPivotTableUIPlugin } from '@univerjs-pro/sheets-pivot-ui';
 import { UniverSheetsPrintPlugin } from '@univerjs-pro/sheets-print';
+import { UniverSheetsShapePlugin } from '@univerjs-pro/sheets-shape';
+import { UniverSheetsShapeUIPlugin } from '@univerjs-pro/sheets-shape-ui';
 import { UniverSheetSparklinePlugin } from '@univerjs-pro/sheets-sparkline';
 import { UniverSheetSparklineUIPlugin } from '@univerjs-pro/sheets-sparkline-ui';
 
@@ -19,6 +21,7 @@ import '@univerjs-pro/sheets-pivot/lib/facade';
 import '@univerjs-pro/engine-formula/lib/facade';
 import '@univerjs-pro/sheets-print/lib/facade';
 import '@univerjs-pro/sheets-chart-ui/lib/facade';
+// import '@univerjs-pro/sheets-shape-ui/lib/facade';
 import '@univerjs-pro/sheets-sparkline/lib/facade';
 
 import '@univerjs-pro/exchange-client/lib/index.css';
@@ -26,12 +29,14 @@ import '@univerjs-pro/sheets-pivot-ui/lib/index.css';
 import '@univerjs-pro/sheets-print/lib/index.css';
 import '@univerjs-pro/sheets-chart-ui/lib/index.css';
 import '@univerjs-pro/sheets-sparkline-ui/lib/index.css';
+// import '@univerjs-pro/sheets-shape-ui/lib/index.css';
 
 export type * from '@univerjs-pro/engine-formula/lib/facade';
 export type * from '@univerjs-pro/exchange-client/lib/facade';
 export type * from '@univerjs-pro/sheets-chart-ui/lib/facade';
 export type * from '@univerjs-pro/sheets-pivot/lib/facade';
 export type * from '@univerjs-pro/sheets-print/lib/facade';
+// export type * from '@univerjs-pro/sheets-shape-ui/lib/facade';
 export type * from '@univerjs-pro/sheets-sparkline/lib/facade';
 
 export interface IUniverSheetsAdvancedPresetConfig {
@@ -82,6 +87,9 @@ export function UniverSheetsAdvancedPreset(config: Partial<IUniverSheetsAdvanced
 
             UniverSheetsChartPlugin,
             UniverSheetsChartUIPlugin,
+
+            UniverSheetsShapePlugin,
+            UniverSheetsShapeUIPlugin,
 
             UniverSheetSparklinePlugin,
             UniverSheetSparklineUIPlugin,

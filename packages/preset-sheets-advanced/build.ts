@@ -5,6 +5,7 @@ build({
         '@univerjs-pro/license',
         '@univerjs-pro/engine-formula',
         '@univerjs-pro/engine-chart',
+        '@univerjs-pro/engine-shape',
         '@univerjs-pro/collaboration',
         '@univerjs-pro/exchange-client',
         '@univerjs-pro/sheets-exchange-client',
@@ -18,5 +19,7 @@ build({
         '@univerjs/sheets-graphics',
         '@univerjs-pro/sheets-sparkline',
         '@univerjs-pro/sheets-sparkline-ui',
+        '@univerjs-pro/sheets-shape',
+        '@univerjs-pro/sheets-shape-ui',
     ],
 });
