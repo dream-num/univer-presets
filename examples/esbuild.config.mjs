@@ -249,6 +249,7 @@ if (args.watch) {
 
     console.log(
         'Visit:\n'
-        + `http://localhost:${process.env.CLIENT_PORT || 3010}\n`,
+        + `http://localhost:${process.env.CLIENT_PORT || 3010}\n`
+        + `http://127.0.0.1:${process.env.CLIENT_PORT || 3010}\n`,
     );
 }
