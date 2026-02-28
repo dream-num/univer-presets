@@ -1,5 +1,13 @@
 # Changelog
 
+# [0.16.0](https://github.com/dream-num/univer-presets/compare/v0.15.5...v0.16.0) (2026-02-28)
+
+
+### Features
+
+* advanced preset add shape feature ([#116](https://github.com/dream-num/univer-presets/issues/116)) ([18e6267](https://github.com/dream-num/univer-presets/commit/18e62672df07b4a3af01ecd418a4b4d835fa2ab0))
+* update sdk to 0.16.0 ([303e667](https://github.com/dream-num/univer-presets/commit/303e6679360ad51a8d6adfcc5bd07fc656499bf6))
+
 ## [0.15.5](https://github.com/dream-num/univer-presets/compare/v0.15.4...v0.15.5) (2026-02-11)
 
 
