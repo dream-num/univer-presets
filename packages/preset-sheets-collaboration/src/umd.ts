@@ -35,6 +35,8 @@ export interface IUniverSheetsCollaborationPresetConfig extends
      * @default true
      */
     enableSingleActiveInstanceLock?: boolean;
+
+    historyWorkerURL?: string | URL | Worker;
 }
 
 function transformUrlProtocolToWs(url: string) {
@@ -64,6 +66,7 @@ export function UniverSheetsCollaborationPreset(config: Partial<IUniverSheetsCol
         enableOfflineEditing = true,
         enableSingleActiveInstanceLock = true,
         enableFrontendLog = false,
+        historyWorkerURL: workerURL,
     } = config;
 
     const serverEndpoint = universerEndpoint ?? `${window.location.protocol}//${window.location.host}`;
@@ -96,6 +99,7 @@ export function UniverSheetsCollaborationPreset(config: Partial<IUniverSheetsCol
             [UniverEditHistoryLoaderPlugin, {
                 univerContainerId,
                 historyListServerUrl: `${serverEndpoint}/universer-api/history`,
+                workerURL,
             }],
         ],
     };

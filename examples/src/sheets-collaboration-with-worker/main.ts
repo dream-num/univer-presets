@@ -1,9 +1,9 @@
-import { createUniver, defaultTheme, LocaleType, mergeLocales, UniverInstanceType } from '@univerjs/presets';
+import { createUniver, defaultTheme, IConfigService, LocaleType, mergeLocales, UniverInstanceType } from '@univerjs/presets';
 
 import { UniverSheetsAdvancedPreset } from '@univerjs/presets/preset-sheets-advanced';
 import sheetsAdvancedZhCN from '@univerjs/presets/preset-sheets-advanced/locales/zh-CN';
 
-import { UniverSheetsCollaborationPreset } from '@univerjs/presets/preset-sheets-collaboration';
+import { EDIT_HISTORY_LOADER_PLUGIN_CONFIG_KEY, ToggleEditHistoryOperation, UniverSheetsCollaborationPreset } from '@univerjs/presets/preset-sheets-collaboration';
 import sheetsCollaborationZhCN from '@univerjs/presets/preset-sheets-collaboration/locales/zh-CN';
 
 import { UniverSheetsCorePreset } from '@univerjs/presets/preset-sheets-core';
@@ -17,7 +17,7 @@ import '@univerjs/presets/lib/styles/preset-sheets-drawing.css';
 import '@univerjs/presets/lib/styles/preset-sheets-advanced.css';
 import '@univerjs/presets/lib/styles/preset-sheets-collaboration.css';
 
-const { univerAPI } = createUniver({
+const { univer, univerAPI } = createUniver({
     locale: LocaleType.ZH_CN,
     locales: {
         zhCN: mergeLocales(
@@ -42,11 +42,24 @@ const { univerAPI } = createUniver({
             // eslint-disable-next-line node/prefer-global/process
             license: process.env.UNIVER_CLIENT_LICENSE || 'your license.txt',
         }),
-        UniverSheetsCollaborationPreset(),
+        UniverSheetsCollaborationPreset({
+            historyWorkerURL: new Worker(new URL('./worker.js', import.meta.url), { type: 'module' }),
+        }),
     ],
 });
 
 window.univerAPI = univerAPI;
+
+// The edit history workerURL is a Worker instance demo.
+univerAPI.addEvent(univerAPI.Event.BeforeCommandExecute, (event) => {
+    if (event.id === ToggleEditHistoryOperation.id) {
+        const workerURL = new Worker(new URL('./worker.js', import.meta.url), { type: 'module' });
+        const configService = univer.__getInjector().get(IConfigService);
+        configService.setConfig(EDIT_HISTORY_LOADER_PLUGIN_CONFIG_KEY, {
+            workerURL,
+        });
+    }
+});
 
 // check if the unit is already created
 const url = new URL(window.location.href);
