@@ -33,6 +33,8 @@ const { univerAPI } = createUniver({
         UniverDocsDrawingPreset(),
         UniverDocsAdvancedPreset({
             universerEndpoint: 'https://dev.univer.plus',
+            // eslint-disable-next-line node/prefer-global/process
+            license: process.env.UNIVER_CLIENT_LICENSE,
         }),
         UniverDocsHyperLinkPreset(),
     ],

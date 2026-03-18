@@ -32,7 +32,10 @@ const { univerAPI } = createUniver({
     presets: [
         UniverDocsCorePreset({ collaboration: true }),
         UniverDocsDrawingPreset({ collaboration: true }),
-        UniverDocsAdvancedPreset(),
+        UniverDocsAdvancedPreset({
+            // eslint-disable-next-line node/prefer-global/process
+            license: process.env.UNIVER_CLIENT_LICENSE,
+        }),
         UniverDocsCollaborationPreset(),
     ],
 });
