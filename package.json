@@ -13,7 +13,7 @@
         "prepare": "simple-git-hooks",
         "dev": "pnpm --filter examples dev:demo",
         "dev:libs": "pnpm --filter examples dev:demo-libs",
-        "build": "turbo build:preset --concurrency=2 && pnpm --filter @univerjs/presets build",
+        "build": "turbo build:preset --concurrency=100% && pnpm --filter @univerjs/presets build",
         "build:demo": "pnpm --filter examples build:demo",
         "build:node-demo": "pnpm --filter examples-node build:demo",
         "lint": "eslint .",
@@ -24,18 +24,21 @@
     "devDependencies": {
         "@antfu/eslint-config": "^6.7.3",
         "@release-it-plugins/workspaces": "^5.0.3",
-        "@release-it/conventional-changelog": "^10.0.4",
+        "@release-it/conventional-changelog": "^10.0.6",
         "@types/fs-extra": "^11.0.4",
         "@univerjs/core": "0.18.0",
         "cross-env": "^10.1.0",
         "eslint": "^9.39.2",
         "eslint-plugin-format": "^1.2.0",
-        "fs-extra": "^11.3.3",
-        "lint-staged": "^16.2.7",
-        "release-it": "19.2.3",
+        "fs-extra": "^11.3.4",
+        "lint-staged": "^16.4.0",
+        "release-it": "19.2.4",
         "simple-git-hooks": "^2.13.1",
         "tsx": "^4.21.0",
-        "turbo": "^2.7.3"
+        "turbo": "^2.8.17"
+    },
+    "overrides": {
+        "vite": "7"
     },
     "simple-git-hooks": {
         "pre-commit": "pnpm lint-staged"
