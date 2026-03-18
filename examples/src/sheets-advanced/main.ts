@@ -67,7 +67,10 @@ const { univerAPI } = createUniver({
         UniverSheetsCorePreset(),
         UniverSheetsFilterPreset(),
         UniverSheetsDrawingPreset(),
-        UniverSheetsAdvancedPreset(),
+        UniverSheetsAdvancedPreset({
+            // eslint-disable-next-line node/prefer-global/process
+            license: process.env.UNIVER_CLIENT_LICENSE,
+        }),
         UniverSheetsHyperLinkPreset(),
         UniverSheetsDataValidationPreset(),
         UniverSheetsFindReplacePreset(),
