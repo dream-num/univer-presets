@@ -77,6 +77,8 @@ const { univerAPI } = createUniver({
         UniverSheetsCorePreset(),
         UniverSheetsDrawingPreset({ collaboration: true }),
         UniverSheetsAdvancedPreset({
+            // eslint-disable-next-line node/prefer-global/process
+            license: process.env.UNIVER_CLIENT_LICENSE,
             print: {
                 enforceWatermark: true,
             },
