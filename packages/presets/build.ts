@@ -10,7 +10,6 @@ build({
         '@univerjs/network',
         '@univerjs/telemetry',
         '@univerjs/rpc',
-        '@univerjs/design',
         '@univerjs/engine-render',
         '@univerjs/engine-formula',
         '@univerjs/drawing',

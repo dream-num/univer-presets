@@ -17,7 +17,6 @@ interface IBuildExecuterOptions {
     pkg: Record<string, any>;
     entry: Record<string, string>;
     umdDeps: string[];
-    umdAdditionalLocales: string[];
     umdAdditionalFiles: string[];
 }
 
@@ -114,7 +113,7 @@ async function buildCJS(sharedConfig: InlineConfig, options: IBuildExecuterOptio
 }
 
 async function buildUMD(sharedConfig: InlineConfig, options: IBuildExecuterOptions) {
-    const { pkg, entry, umdDeps, umdAdditionalLocales, umdAdditionalFiles } = options;
+    const { pkg, entry, umdDeps, umdAdditionalFiles } = options;
 
     const __dirname = process.cwd();
     entry.index = path.resolve(__dirname, 'src/umd.ts');
@@ -147,7 +146,6 @@ async function buildUMD(sharedConfig: InlineConfig, options: IBuildExecuterOptio
 
     prependUMDRaw({
         umdDeps,
-        umdAdditionalLocales,
         umdAdditionalFiles,
     });
 
@@ -157,12 +155,11 @@ async function buildUMD(sharedConfig: InlineConfig, options: IBuildExecuterOptio
 interface IBuildOptions {
     mode?: BuildMode;
     umdDeps?: string[];
-    umdAdditionalLocales?: string[];
     umdAdditionalFiles?: string[];
 }
 
 export async function build(options?: IBuildOptions) {
-    const { mode, umdDeps = [], umdAdditionalLocales = [], umdAdditionalFiles = [] } = options ?? {};
+    const { mode, umdDeps = [], umdAdditionalFiles = [] } = options ?? {};
 
     const __dirname = process.cwd();
 
@@ -193,7 +190,6 @@ export async function build(options?: IBuildOptions) {
         pkg,
         entry,
         umdDeps,
-        umdAdditionalLocales,
         umdAdditionalFiles,
     };
 
