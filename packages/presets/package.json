@@ -317,7 +317,6 @@
     },
     "dependencies": {
         "@univerjs/core": "0.18.0",
-        "@univerjs/design": "0.18.0",
         "@univerjs/preset-docs-advanced": "workspace:*",
         "@univerjs/preset-docs-collaboration": "workspace:*",
         "@univerjs/preset-docs-core": "workspace:*",

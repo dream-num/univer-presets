@@ -944,9 +944,6 @@ importers:
       '@univerjs/core':
         specifier: 0.18.0
         version: 0.18.0(react@18.3.1)(rxjs@7.8.2)
-      '@univerjs/design':
-        specifier: 0.18.0
-        version: 0.18.0(@types/react@19.1.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@univerjs/preset-docs-advanced':
         specifier: workspace:*
         version: link:../preset-docs-advanced
