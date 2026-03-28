@@ -1,5 +1,6 @@
 import type { IUniverEngineFormulaConfig } from '@univerjs-pro/engine-formula';
 import type { IUniverExchangeClientOptions } from '@univerjs-pro/exchange-client';
+import type { IUniverSheetsPivotConfig } from '@univerjs-pro/sheets-pivot';
 import type { IUniverSheetsPrintConfig } from '@univerjs-pro/sheets-print';
 import type { IPreset } from './types';
 import { UniverProFormulaEnginePlugin } from '@univerjs-pro/engine-formula';
@@ -46,6 +47,7 @@ export interface IUniverSheetsAdvancedPresetConfig {
     formula?: Pick<IUniverEngineFormulaConfig, 'function'>;
     exchangeClientOptions?: IUniverExchangeClientOptions;
     print?: Partial<IUniverSheetsPrintConfig>;
+    pivot?: Pick<IUniverSheetsPivotConfig, 'maxLimitItemCount'>;
 }
 
 /**
@@ -62,6 +64,7 @@ export function UniverSheetsAdvancedPreset(config: Partial<IUniverSheetsAdvanced
         formula,
         exchangeClientOptions,
         print,
+        pivot,
     } = config;
 
     const serverEndpoint = universerEndpoint ?? `${window.location.protocol}//${window.location.host}`;
@@ -70,10 +73,10 @@ export function UniverSheetsAdvancedPreset(config: Partial<IUniverSheetsAdvanced
         plugins: [
             [UniverLicensePlugin, { license }],
 
-            // TODO: @wzhudev: if we use worker, we need to add different configurations to SheetsPivotTable
-            useWorker
-                ? [UniverSheetsPivotTablePlugin, { notExecuteFormula: true }]
-                : [UniverSheetsPivotTablePlugin],
+            [UniverSheetsPivotTablePlugin, {
+                notExecuteFormula: useWorker,
+                maxLimitItemCount: pivot?.maxLimitItemCount,
+            }],
             UniverSheetsPivotTableUIPlugin,
 
             [UniverProFormulaEnginePlugin, {
