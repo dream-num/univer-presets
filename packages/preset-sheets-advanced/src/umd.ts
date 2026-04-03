@@ -21,8 +21,8 @@ import '@univerjs-pro/exchange-client/lib/facade';
 import '@univerjs-pro/sheets-pivot/lib/facade';
 import '@univerjs-pro/engine-formula/lib/facade';
 import '@univerjs-pro/sheets-print/lib/facade';
-import '@univerjs-pro/sheets-chart-ui/lib/facade';
-import '@univerjs-pro/sheets-shape-ui/lib/facade';
+import '@univerjs-pro/sheets-chart/lib/facade';
+import '@univerjs-pro/sheets-shape/lib/facade';
 import '@univerjs-pro/sheets-sparkline/lib/facade';
 
 import '@univerjs-pro/exchange-client/lib/index.css';
@@ -34,10 +34,10 @@ import '@univerjs-pro/sheets-shape-ui/lib/index.css';
 
 export type * from '@univerjs-pro/engine-formula/lib/facade';
 export type * from '@univerjs-pro/exchange-client/lib/facade';
-export type * from '@univerjs-pro/sheets-chart-ui/lib/facade';
+export type * from '@univerjs-pro/sheets-chart/lib/facade';
 export type * from '@univerjs-pro/sheets-pivot/lib/facade';
 export type * from '@univerjs-pro/sheets-print/lib/facade';
-export type * from '@univerjs-pro/sheets-shape-ui/lib/facade';
+export type * from '@univerjs-pro/sheets-shape/lib/facade';
 export type * from '@univerjs-pro/sheets-sparkline/lib/facade';
 
 export interface IUniverSheetsAdvancedPresetConfig {
