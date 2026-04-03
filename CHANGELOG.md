@@ -1,5 +1,13 @@
 # Changelog
 
+# [0.20.0](https://github.com/dream-num/univer-presets/compare/v0.19.0...v0.20.0) (2026-04-03)
+
+
+### Features
+
+* add pivot.maxLimitItemCount config in UniverSheetsAdvancedPreset ([#119](https://github.com/dream-num/univer-presets/issues/119)) ([75e5ee3](https://github.com/dream-num/univer-presets/commit/75e5ee341d22e8b08c7dbe37dd8a84494caa18f5))
+* update sdk to 0.20.0 ([5bc4d1a](https://github.com/dream-num/univer-presets/commit/5bc4d1a76081083d6b428c93839fe82e92ca1352))
+
 # [0.19.0](https://github.com/dream-num/univer-presets/compare/v0.18.0...v0.19.0) (2026-03-28)
 
 
