@@ -38,7 +38,7 @@ if (!NEW_VERSION) {
     process.exit(1);
 }
 
-const EXCLUDED_PACKAGES = ['@univerjs/protocol', '@univerjs/icons'];
+const EXCLUDED_PACKAGES = ['@univerjs/icons'];
 const EXCLUDED_VERSIONS = ['workspace:*'];
 
 function getLatestTagVersion(packageName: string, tag: string = 'latest') {

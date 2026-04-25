@@ -1024,8 +1024,8 @@ importers:
         specifier: 0.21.0
         version: 0.21.0(react@18.3.1)(rxjs@7.8.2)
       '@univerjs/protocol':
-        specifier: 0.1.48
-        version: 0.1.48
+        specifier: 0.21.0
+        version: 0.21.0
       '@univerjs/rpc':
         specifier: 0.21.0
         version: 0.21.0(react@18.3.1)(rxjs@7.8.2)
@@ -2878,9 +2878,6 @@ packages:
     resolution: {integrity: sha512-/NBTmSIQEBDisXWLGagWVWtOrLMw+ejbNPFHikXpKqYq6pqATCuQdFhu51a62fgQkNubEZQ1RF+nw/Psi7fpSw==}
     peerDependencies:
       rxjs: '>=7.0.0'
-
-  '@univerjs/protocol@0.1.48':
-    resolution: {integrity: sha512-nFHNtGAWOV0u1+IqoznH9K7hV/M9OZ61Vqwy8JMWKlgLLsx12m3vJqodkrVlLkI2YU5WuwjaUT1+J8/nM+kcUg==}
 
   '@univerjs/protocol@0.21.0':
     resolution: {integrity: sha512-jcMLFiZQJQx/VvQNg7QLVT/yavH/+dcBfAKE+Fx1A7ahnjaKwzvbAUUkQoHJyQ3iuy3JmFgcRQJLYPKiSly9KQ==}
@@ -8033,8 +8030,6 @@ snapshots:
       rxjs: 7.8.2
     transitivePeerDependencies:
       - react
-
-  '@univerjs/protocol@0.1.48': {}
 
   '@univerjs/protocol@0.21.0':
     dependencies:

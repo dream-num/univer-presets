@@ -345,7 +345,7 @@
         "@univerjs/engine-formula": "0.21.0",
         "@univerjs/engine-render": "0.21.0",
         "@univerjs/network": "0.21.0",
-        "@univerjs/protocol": "0.1.48",
+        "@univerjs/protocol": "0.21.0",
         "@univerjs/rpc": "0.21.0",
         "@univerjs/telemetry": "0.21.0",
         "@univerjs/themes": "0.21.0",
