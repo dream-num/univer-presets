@@ -2,7 +2,7 @@
     "name": "@univerjs/presets",
     "version": "0.21.1",
     "private": false,
-    "description": "Build Univer apps faster and easier",
+    "description": "Build Univer apps faster and easier with pre-configured plugin collections.",
     "author": "DreamNum Co., Ltd. <developer@univer.ai>",
     "license": "Apache-2.0",
     "funding": {
@@ -19,7 +19,8 @@
     },
     "keywords": [
         "univer",
-        "univer-preset"
+        "univer-preset",
+        "presets"
     ],
     "sideEffects": [
         "*.css"
@@ -353,6 +354,6 @@
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "rxjs": "7.8.2",
-        "typescript": "^5.9.3"
+        "typescript": "^6.0.3"
     }
 }

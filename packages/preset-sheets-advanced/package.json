@@ -2,7 +2,7 @@
     "name": "@univerjs/preset-sheets-advanced",
     "version": "0.21.1",
     "private": false,
-    "description": "",
+    "description": "Preset for advanced Univer Sheets with charts, pivot tables, and print capabilities.",
     "author": "DreamNum Co., Ltd. <developer@univer.ai>",
     "license": "Apache-2.0",
     "funding": {
@@ -19,7 +19,10 @@
     },
     "keywords": [
         "univer",
-        "univer-preset"
+        "univer-preset",
+        "sheets",
+        "advanced",
+        "chart"
     ],
     "sideEffects": [
         "*.css"
@@ -102,6 +105,6 @@
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "rxjs": "7.8.2",
-        "typescript": "^5.9.3"
+        "typescript": "^6.0.3"
     }
 }
