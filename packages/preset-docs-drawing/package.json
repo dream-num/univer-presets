@@ -2,7 +2,7 @@
     "name": "@univerjs/preset-docs-drawing",
     "version": "0.21.1",
     "private": false,
-    "description": "",
+    "description": "Preset for drawing capabilities in Univer Docs.",
     "author": "DreamNum Co., Ltd. <developer@univer.ai>",
     "license": "Apache-2.0",
     "funding": {
@@ -19,7 +19,9 @@
     },
     "keywords": [
         "univer",
-        "univer-preset"
+        "univer-preset",
+        "docs",
+        "drawing"
     ],
     "sideEffects": [
         "*.css"
@@ -81,6 +83,6 @@
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "rxjs": "7.8.2",
-        "typescript": "^5.9.3"
+        "typescript": "^6.0.3"
     }
 }
