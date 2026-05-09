@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-sheets-advanced",
-    "version": "0.21.1",
+    "version": "0.22.0",
     "private": false,
     "description": "Preset for advanced Univer Sheets with charts, pivot tables, and print capabilities.",
     "author": "DreamNum Co., Ltd. <developer@univer.ai>",
