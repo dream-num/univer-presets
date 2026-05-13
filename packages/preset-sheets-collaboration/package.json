@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-sheets-collaboration",
-    "version": "0.22.0",
+    "version": "0.22.1",
     "private": false,
     "description": "Preset for real-time collaboration and edit history in Univer Sheets.",
     "author": "DreamNum Co., Ltd. <developer@univer.ai>",
