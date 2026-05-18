@@ -1,6 +1,6 @@
 {
     "name": "@univerjs/preset-docs-advanced",
-    "version": "0.22.1",
+    "version": "0.23.0",
     "private": false,
     "description": "Preset for advanced Univer Docs with print and exchange capabilities.",
     "author": "DreamNum Co., Ltd. <developer@univer.ai>",
