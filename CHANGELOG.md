@@ -1,5 +1,13 @@
 # Changelog
 
+# [0.24.0](https://github.com/dream-num/univer-presets/compare/v0.23.0...v0.24.0) (2026-05-23)
+
+
+### Features
+
+* UniverSheetsAdvancedPreset add outline plugin ([f999942](https://github.com/dream-num/univer-presets/commit/f999942073be036157d9f7ba9de98088499a26f4))
+* update sdk to 0.24.0 ([135471e](https://github.com/dream-num/univer-presets/commit/135471e882411f880329385beadaa7c0639750fc))
+
 # [0.23.0](https://github.com/dream-num/univer-presets/compare/v0.22.1...v0.23.0) (2026-05-18)
 
 
