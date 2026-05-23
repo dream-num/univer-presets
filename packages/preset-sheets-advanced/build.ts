@@ -6,7 +6,6 @@ build({
         '@univerjs-pro/engine-formula',
         '@univerjs-pro/engine-chart',
         '@univerjs-pro/engine-shape',
-        '@univerjs-pro/collaboration',
         '@univerjs-pro/exchange-client',
         '@univerjs-pro/sheets-exchange-client',
         '@univerjs-pro/engine-pivot',
@@ -23,5 +22,6 @@ build({
         '@univerjs-pro/sheets-shape-ui',
         '@univerjs-pro/sheets-outline',
         '@univerjs-pro/sheets-outline-ui',
+        '@univerjs-pro/collaboration',
     ],
 });
