@@ -78,12 +78,12 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs/sheets-filter": "0.23.0",
-        "@univerjs/sheets-filter-ui": "0.23.0"
+        "@univerjs/sheets-filter": "0.23.0-insiders.20260523-10caf99",
+        "@univerjs/sheets-filter-ui": "0.23.0-insiders.20260523-10caf99"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs/core": "0.23.0",
+        "@univerjs/core": "0.23.0-insiders.20260523-10caf99",
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "rxjs": "7.8.2",

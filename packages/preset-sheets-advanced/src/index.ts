@@ -8,6 +8,8 @@ export * from '@univerjs-pro/license';
 export * from '@univerjs-pro/sheets-chart';
 export * from '@univerjs-pro/sheets-chart-ui';
 export * from '@univerjs-pro/sheets-exchange-client';
+export * from '@univerjs-pro/sheets-outline';
+export * from '@univerjs-pro/sheets-outline-ui';
 export * from '@univerjs-pro/sheets-pivot';
 export * from '@univerjs-pro/sheets-pivot-ui';
 export * from '@univerjs-pro/sheets-print';

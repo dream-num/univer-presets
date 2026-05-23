@@ -1,6 +1,6 @@
 {
     "name": "examples",
-    "version": "0.0.0",
+    "version": "0.23.0",
     "private": true,
     "author": "DreamNum Co., Ltd. <developer@univer.ai>",
     "license": "Apache-2.0",
@@ -10,9 +10,9 @@
         "build:demo": "node ./esbuild.config.mjs"
     },
     "dependencies": {
-        "@univerjs/icons": "1.1.1",
+        "@univerjs/icons": "1.3.0",
         "@univerjs/presets": "workspace:*",
-        "@univerjs/sheets-zen-editor": "0.23.0",
+        "@univerjs/sheets-zen-editor": "0.23.0-insiders.20260523-10caf99",
         "monaco-editor": "0.55.1",
         "react": "18.3.1",
         "react-dom": "18.3.1",

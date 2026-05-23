@@ -21,5 +21,7 @@ build({
         '@univerjs-pro/sheets-sparkline-ui',
         '@univerjs-pro/sheets-shape',
         '@univerjs-pro/sheets-shape-ui',
+        '@univerjs-pro/sheets-outline',
+        '@univerjs-pro/sheets-outline-ui',
     ],
 });

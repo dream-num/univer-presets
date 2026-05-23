@@ -73,16 +73,16 @@
         "rxjs": ">=7.0.0"
     },
     "dependencies": {
-        "@univerjs-pro/docs-exchange-client": "0.23.0",
-        "@univerjs-pro/docs-print": "0.23.0",
-        "@univerjs-pro/exchange-client": "0.23.0",
-        "@univerjs-pro/license": "0.23.0"
+        "@univerjs-pro/docs-exchange-client": "0.23.0-insiders.20260523-10caf99",
+        "@univerjs-pro/docs-print": "0.23.0-insiders.20260523-10caf99",
+        "@univerjs-pro/exchange-client": "0.23.0-insiders.20260523-10caf99",
+        "@univerjs-pro/license": "0.23.0-insiders.20260523-10caf99"
     },
     "devDependencies": {
         "@univerjs-infra/shared": "workspace:*",
-        "@univerjs-pro/collaboration": "0.23.0",
-        "@univerjs-pro/print": "0.23.0",
-        "@univerjs/core": "0.23.0",
+        "@univerjs-pro/collaboration": "0.23.0-insiders.20260523-10caf99",
+        "@univerjs-pro/print": "0.23.0-insiders.20260523-10caf99",
+        "@univerjs/core": "0.23.0-insiders.20260523-10caf99",
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "rxjs": "7.8.2",
