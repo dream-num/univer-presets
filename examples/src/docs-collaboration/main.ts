@@ -12,10 +12,18 @@ import docsCoreZhCN from '@univerjs/presets/preset-docs-core/locales/zh-CN';
 import { UniverDocsDrawingPreset } from '@univerjs/presets/preset-docs-drawing';
 import docsDrawingZhCN from '@univerjs/presets/preset-docs-drawing/locales/zh-CN';
 
+import { UniverDocsHyperLinkPreset } from '@univerjs/presets/preset-docs-hyper-link';
+import docsHyperLinkZhCN from '@univerjs/presets/preset-docs-hyper-link/locales/zh-CN';
+
+import { UniverDocsThreadCommentPreset } from '@univerjs/presets/preset-docs-thread-comment';
+import docsThreadCommentZhCN from '@univerjs/presets/preset-docs-thread-comment/locales/zh-CN';
+
 import '@univerjs/presets/lib/styles/preset-docs-core.css';
 import '@univerjs/presets/lib/styles/preset-docs-collaboration.css';
 import '@univerjs/presets/lib/styles/preset-docs-drawing.css';
 import '@univerjs/presets/lib/styles/preset-docs-advanced.css';
+import '@univerjs/presets/lib/styles/preset-docs-hyper-link.css';
+import '@univerjs/presets/lib/styles/preset-docs-thread-comment.css';
 
 const { univerAPI } = createUniver({
     locale: LocaleType.ZH_CN,
@@ -25,6 +33,8 @@ const { univerAPI } = createUniver({
             docsAdvancedZhCN,
             docsCollaborationZhCN,
             docsDrawingZhCN,
+            docsHyperLinkZhCN,
+            docsThreadCommentZhCN,
         ),
     },
     theme: defaultTheme,
@@ -32,6 +42,8 @@ const { univerAPI } = createUniver({
     presets: [
         UniverDocsCorePreset({ collaboration: true }),
         UniverDocsDrawingPreset({ collaboration: true }),
+        UniverDocsHyperLinkPreset(),
+        UniverDocsThreadCommentPreset(),
         UniverDocsAdvancedPreset({
             // eslint-disable-next-line node/prefer-global/process
             license: process.env.UNIVER_CLIENT_LICENSE,

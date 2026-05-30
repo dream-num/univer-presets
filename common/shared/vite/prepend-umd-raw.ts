@@ -3,18 +3,25 @@ import process from 'node:process';
 import fs from 'fs-extra';
 
 const LOCLAES_MAP = [
+    'ar-SA',
+    'ca-ES',
+    'de-DE',
     'en-US',
+    'es-ES',
     'fa-IR',
     'fr-FR',
+    'id-ID',
+    'it-IT',
     'ja-JP',
     'ko-KR',
+    'pl-PL',
+    'pt-BR',
     'ru-RU',
+    'sk-SK',
     'vi-VN',
     'zh-CN',
+    'zh-HK',
     'zh-TW',
-    'es-ES',
-    'ca-ES',
-    'sk-SK',
 ];
 
 interface IOptions {
